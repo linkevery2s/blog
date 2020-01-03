@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link href="css/pass.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" src="js/pass.js"></script>
+
+    <title>パスMAKE</title>
+    
+  </head>
+
+<body onload="home()">
+	<center>
+
+	<div id="header">
+	<center>
+	<span style="font-size:30px;color:#FFF;">パスMAKE</span><br>
+	<span style="color:#FFF;">～パスワード作成ツール～</span>
+	</center>
+	</div>
+
+	<div id="con_main">
+
+	<div class = "table tr" id="main">
+		<center>
+		<div style ="font-size: 20px;">早速、作ってみましょう！</div><br>
+		<table><tr><td>
+		<form id ="radf" action="" style="text-align:left;">
+		<input type="radio" name="vari" value="0" checked >数　字<br>
+		<input type="radio" name="vari" value="1">英数字（小文字）<br>
+		<input type="radio" name="vari" value="2">英数字（大小混合）
+		</form>
+		</div>
+	</td><td>
+		<div style="text-align:left; width:102px;">
+		<select id="number" style="font-size: 20px;width: 102px;">
+			<option value="4">4桁</option><option value="5">5桁</option><option value="6">6桁</option><option value="7">7桁</option><option value="8">8桁</option><option value="9">9桁</option><option value="10">10桁</option><option value="11">11桁</option><option value="12">12桁</option><option value="13">13桁</option><option value="14">14桁</option><option value="15">15桁</option><option value="16">16桁</option>
+		</select>
+		<br><br>
+		<input type="checkbox" name="other" id ="other" value="3">-_!を含む
+		</div>
+	</td></tr></table>
+		<br>
+		<input type="text" id ="text" style ="width:90%; height:60px; text-align:center; font-size:16px;" onclick="this.focus();this.select()" readonly = "readonly" wrap ="soft">
+		
+		<p><input type ="button" value ="パスワード生成"  style="font-size: 20px;" onclick="passmake()">
+
+		<div style ="font-size: 20px;">≪使い方≫</div><br>
+		<div style="text-align:left;">
+		１．数字、英数字（小文字）、英数字（大小混合）のどれかを選択して下さい。<br>
+		２．桁数を選択して下さい。<br>
+		３．「パスワード生成」ボタンを押すと、パスワードがランダムに生成されます。<br>
+		※「-_!を含む」チェックボックスにチェックを入れると、パスワードに「-_!」が含まれます。
+		</div>
+			</center>
+			
+		</div><!--main-->
+
+
+		<div class = "table tr" id ="sns">
+		<center>
+		<div style ="font-size: 20px;">ＳＮＳシェア</div><br>
+		<div style="text-align:left;">より多くの方にご利用いただくためにシェアをお願いします。</div><br>
+		
+		<table><tr>
+		<td align="left">Facebook</td>
+		<td>
+		<div class="fb-like" data-href="https://linkevery2s.github.io/passmake/index.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+		</td></tr>
+		<tr>
+		<td align="left">Twitter</td>
+		<td>
+		<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://linkevery2s.github.io/passmake/index.html" data-lang="ja">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</td></tr>
+		<tr>
+		<td align="left">LINE</td>
+		<td>
+		<a href="line://msg/text/https://linkevery2s.github.io/passmake/index.html" border="0"><img src ='img/linebutton.png' width='82px' height='20px' border="0"></a>
+		</td>
+		</tr>
+		</table>
+		
+		</center>
+		</div>
+
+		<div class = "table tr" id="qr">
+		<center>
+		<div style ="font-size: 20px;">ＱＲコード</div><br>
+		アプリのＱＲコードです。<br>
+		<img src="img/qr_code.png">
+		</center>
+		</div>
+
+		<div class = "table tr" id="rss">
+		<center>
+		<div style ="font-size: 20px;">情報発信</div>
+		<div style="text-align:left;">
+		情報セキュリティに関するサービスのRSSを掲載しています。<br><br>
+		JPCERT/CC</div>
+		<div id="feed" style="text-align:left;"></div>
+		</center>
+		</div>
+
+		<div class = "table tr" id="rule">
+		<center>
+		<div style ="font-size: 20px;">利用規約</div><br>
+
+		<div style="text-align:left;">
+		この利用規約（以下，「本規約」といいます。）は，利用者の皆様が本WEBアプリ「パスワード生成ツール」（以下、「本アプリ」といいます。）を利用する上での利用条件を定めるものです。利用者の皆様には，本規約に従って，本アプリをご利用いただきます。<br><br>
+		１．適用<br>
+		本規約は本アプリを利用する全ての利用者の皆様（以下、「ユーザー」といいます。）に適用されます。<br><br>
+		２．本アプリの利用について<br>
+		ユーザーは、本アプリを無料で利用できます。ただし、インターネットを利用しているので、インターネット通信料は利用者の皆様のご負担となります。<br><br>
+		３．禁止事項<br>
+		本アプリの利用にあたり，以下の行為をしてはなりません。<br><br>
+（1）法令または公序良俗に違反する行為<br>
+（2）犯罪行為に関連する行為<br>
+（3）本アプリの運営を妨害するおそれのある行為<br>
+（4）他の利用者の皆様に関する個人情報等を収集または蓄積する行為<br>
+（5）他の利用者の皆様に成りすます行為<br>
+（6）反社会的勢力に対して直接または間接に利益を供与する行為<br>
+（7）その他，管理人「仁志」が不適切と判断する行為<br><br>
+		４．免責事項<br>
+		本アプリで生成されるパスワードは完全なセキュリティを保障するものではありません。本アプリにより生じた、いかなる損害も保障しません。<br><br>
+		５．準拠法<br>
+		本規約の解釈にあたっては，日本法を準拠法とします。
+		</div>
+		</center>
+		</div>
+
+
+	</div>
+<center>
+<div id="fotter">
+	<ul class="menu">
+		<li><span class="list" onclick="home();"><i class="fa fa-globe"></i><br>
+		ＨＯＭＥ</span></li>
+		<li><span class="list" onclick="rss();"><i class="fa fa-book"></i><br>
+		情報配信</span></li>
+		<li><span class="list" onclick="rule();"><i class="fa fa-check-square"></i><br>
+		利用規約</span></li>
+		<li><span class="list" onclick="share();"><i class="fa fa-comment"></i><br>
+		シェア</span></li>
+	</ul>
+&copy;　仁志</div>
+
+</center>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+
+<script type="text/javascript">
+   //読み込み最大記事数
+   var max_length = 5; 
+
+  $(function(){
+    $.getJSON("https://query.yahooapis.com/v1/public/yql?callback=?", {
+      q: "select * from rss where url='https://www.jpcert.or.jp/rss/jpcert.rdf'",
+      format: "json"
+    }, function(json) {
+      for (var i = 0; i < json.query.results.item.length; i++) {
+        if(i == max_length) break;
+
+        var entry = json.query.results.item[i];
+
+        var title = entry.title;//記事タイトル
+        var link = entry.link; //記事へのリンク
+        //タイトルを挿入
+        $('#feed').append("<a href='" + link  +"' target='_blank'>"+ title +"</a><br><br>"); 
+
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
