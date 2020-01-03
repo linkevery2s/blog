@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta property="og:title" content="VBA" />
+        <meta property="og:title" content="Excel VBAで最終行、最終列を取得する。" />
 <meta property="og:description" content="Excel" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://linkevery2s.github.io/blog/post/2020/01/03/vba/" />
@@ -12,12 +12,13 @@
 <meta property="article:modified_time" content="2020-01-03T18:07:04+09:00" />
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="VBA"/>
+<meta name="twitter:title" content="Excel VBAで最終行、最終列を取得する。"/>
 <meta name="twitter:description" content="Excel"/>
+<meta name="twitter:site" content="@hitoshi2s"/>
 
         
         <title>
-  VBA | プログラム For Everyone
+  Excel VBAで最終行、最終列を取得する。 | プログラム For Everyone
 </title>
 
         <link rel="icon" type="image/png" href='https://linkevery2s.github.io/blog/images/favicon-16x16.png' sizes="16x16">
@@ -34,7 +35,8 @@
         <link rel="stylesheet" href="https://linkevery2s.github.io/blog/css/bundle.min.b97f193de70a99ff0493bab9f65bdc1a4620f1d92b801069ccd3b39cd1f972f5.css" integrity="sha256-uX8ZPecKmf8Ek7q59lvcGkYg8dkrgBBpzNOznNH5cvU="  />
 
         
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="me" type="text/html" href="https://twitter.com/hitoshi2s"/> 
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 
 <link rel="alternate" type="application/rss+xml" href='https://linkevery2s.github.io/blog/index.xml' />
@@ -70,7 +72,8 @@
 </li>
                     </ul>
                     <div class="social-icons d-none d-lg-block">
-                        <a class="py-2 px-2" href='https://linkevery2s.github.io/blog/index.xml'><i class="fas fa-rss"></i></a>
+                        <a class="py-2 px-2" href="https://twitter.com/hitoshi2s"><i class="fab fa-twitter"></i></a>
+<a class="py-2 px-2" href='https://linkevery2s.github.io/blog/index.xml'><i class="fas fa-rss"></i></a>
 
                     </div>
                 </div>
@@ -85,45 +88,37 @@
         <div class="main">
             
 <div class="container mt-4 post">
-    <h1>VBA</h1>
+    <h1>Excel VBAで最終行、最終列を取得する。</h1>
     <div class="mb-3">
     <small>
         <strong>By hitoshi</strong>
         | <i class="far fa-calendar-alt"></i>&nbsp;Jan 3, 2020&nbsp;
-        | <i class="fa fa-tags" title="Tags" aria-hidden="true"></i> 
+        
     </small>
 </div>
 
     <div class="share-icons d-flex justify-content-center d-print-none">
-        <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2flinkevery2s.github.io%2fblog%2fpost%2f2020%2f01%2f03%2fvba%2f&text=VBA&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
+        <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2flinkevery2s.github.io%2fblog%2fpost%2f2020%2f01%2f03%2fvba%2f&text=Excel%20VBA%e3%81%a7%e6%9c%80%e7%b5%82%e8%a1%8c%e3%80%81%e6%9c%80%e7%b5%82%e5%88%97%e3%82%92%e5%8f%96%e5%be%97%e3%81%99%e3%82%8b%e3%80%82&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
     <div>
         <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
         </span>
     </div>
-    <div class="fa-inverse text-center"><small>Tweet</small></div>
+    
 </a>
 
-<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2flinkevery2s.github.io%2fblog%2fpost%2f2020%2f01%2f03%2fvba%2f&t=VBA" class="p-2" title="Share on Facebook" target="_blank" rel="nofollow">
+<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2flinkevery2s.github.io%2fblog%2fpost%2f2020%2f01%2f03%2fvba%2f&t=Excel%20VBA%e3%81%a7%e6%9c%80%e7%b5%82%e8%a1%8c%e3%80%81%e6%9c%80%e7%b5%82%e5%88%97%e3%82%92%e5%8f%96%e5%be%97%e3%81%99%e3%82%8b%e3%80%82" class="p-2" title="Share on Facebook" target="_blank" rel="nofollow">
     <div>
         <span class="fa-stack">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
         </span>
     </div>
-    <div class="fa-inverse text-center"><small>Share</small></div>
+    
 </a>
 
-<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2flinkevery2s.github.io%2fblog%2fpost%2f2020%2f01%2f03%2fvba%2f&title=VBA&source=mattbutton.com" class="p-2" title="Share on LinkedIn" target="_blank" rel="nofollow">
-    <div>
-        <span class="fa-stack">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-        </span>
-    </div>
-    <div class="fa-inverse text-center"><small>Share</small></div>
-</a>
+
 
 <a href="javascript:window.print()" title="Print this article" class="p-2" target="_blank" rel="nofollow">
     <div>
@@ -132,7 +127,7 @@
             <i class="fa fa-print fa-stack-1x fa-inverse"></i>
         </span>
     </div>
-    <div class="fa-inverse text-center"><small>Print</small></div>
+    
 </a>
     </div>
 
@@ -140,7 +135,39 @@
         <p>Excel</p>
 
 
-        
+        <div class="share-icons d-flex justify-content-center d-print-none">
+            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2flinkevery2s.github.io%2fblog%2fpost%2f2020%2f01%2f03%2fvba%2f&text=Excel%20VBA%e3%81%a7%e6%9c%80%e7%b5%82%e8%a1%8c%e3%80%81%e6%9c%80%e7%b5%82%e5%88%97%e3%82%92%e5%8f%96%e5%be%97%e3%81%99%e3%82%8b%e3%80%82&tw_p=tweetbutton" class="p-2" title="Share on Twitter" target="_blank" rel="nofollow">
+    <div>
+        <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+    </div>
+    
+</a>
+
+<a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2flinkevery2s.github.io%2fblog%2fpost%2f2020%2f01%2f03%2fvba%2f&t=Excel%20VBA%e3%81%a7%e6%9c%80%e7%b5%82%e8%a1%8c%e3%80%81%e6%9c%80%e7%b5%82%e5%88%97%e3%82%92%e5%8f%96%e5%be%97%e3%81%99%e3%82%8b%e3%80%82" class="p-2" title="Share on Facebook" target="_blank" rel="nofollow">
+    <div>
+        <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+    </div>
+    
+</a>
+
+
+
+<a href="javascript:window.print()" title="Print this article" class="p-2" target="_blank" rel="nofollow">
+    <div>
+        <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fa fa-print fa-stack-1x fa-inverse"></i>
+        </span>
+    </div>
+    
+</a>
+        </div>
     </div>
 
     
@@ -158,7 +185,7 @@
     <h2 class="mt-4">Recent Posts</h2>
     <nav class="nav flex-column">
         
-        <a href="https://linkevery2s.github.io/blog/post/2020/01/03/vba/" class="nav-link">VBA</a>
+        <a href="https://linkevery2s.github.io/blog/post/2020/01/03/vba/" class="nav-link">Excel VBAで最終行、最終列を取得する。</a>
         
     </nav>
     
@@ -169,11 +196,6 @@
         vba
         <span class="badge badge-pill badge-secondary">1</span>
         </a>
-        
-    </nav>
-    
-    <h2 class="mt-4 text-capitalize">tags</h2>
-    <nav class="nav flex-column">
         
     </nav>
     
@@ -203,7 +225,8 @@ This blog was created using the <a href="https://gohugo.io/">Hugo</a> static sit
                 <hr />
 
                 <div class="d-flex justify-content-center icons">
-                    <a class="py-2 px-2" href='https://linkevery2s.github.io/blog/index.xml'><i class="fas fa-rss"></i></a>
+                    <a class="py-2 px-2" href="https://twitter.com/hitoshi2s"><i class="fab fa-twitter"></i></a>
+<a class="py-2 px-2" href='https://linkevery2s.github.io/blog/index.xml'><i class="fas fa-rss"></i></a>
 
                 </div>
             </div>
