@@ -3,15 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://linkevery2s.github.io/blog/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://linkevery2s.github.io/blog/tags/</loc>
-  </url>
-  
-  <url>
     <loc>https://linkevery2s.github.io/blog/</loc>
+    <lastmod>2020-01-03T14:14:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linkevery2s.github.io/blog/profile/</loc>
+    <lastmod>2020-01-03T14:14:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linkevery2s.github.io/blog/rule/</loc>
+    <lastmod>2020-01-03T14:12:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linkevery2s.github.io/blog/about/</loc>
+    <lastmod>2020-01-03T14:08:55+09:00</lastmod>
   </url>
   
 </urlset>
