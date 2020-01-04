@@ -6,10 +6,20 @@
     <description>Recent content in Posts on ProgForOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 03 Jan 2020 18:07:04 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jan 2020 13:50:37 +0900</lastBuildDate>
     
 	<atom:link href="https://linkevery2s.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Excel</title>
+      <link>https://linkevery2s.github.io/blog/post/2020/01/04/excel/</link>
+      <pubDate>Sat, 04 Jan 2020 13:50:37 +0900</pubDate>
+      
+      <guid>https://linkevery2s.github.io/blog/post/2020/01/04/excel/</guid>
+      <description> ★文章を入れる★
+   aaa bbb ccc ddd  更新履歴 2020.01.03 新規作成 </description>
+    </item>
     
     <item>
       <title>Excel VBAで最終行、最終列を取得する。</title>
@@ -17,8 +27,8 @@
       <pubDate>Fri, 03 Jan 2020 18:07:04 +0900</pubDate>
       
       <guid>https://linkevery2s.github.io/blog/post/2020/01/03/vba/</guid>
-      <description>★ここに画像を入れる ★  ★文章を入れる★
-   HTML CSS Photoshop Illustrator  </description>
+      <description> ★文章を入れる★
+   aaa bbb ccc ddd  更新履歴 2020.01.03 新規作成 </description>
     </item>
     
   </channel>
