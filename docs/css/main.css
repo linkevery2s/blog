@@ -1,28 +1,6 @@
 h4 {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 10x !important;
-  padding-bottom: 10px;
-}
-
-h4:before {
-  position: absolute;
-  content: '';
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border: none;
-  border-left: solid 15px transparent;
-  border-bottom: solid 15px rgb(119, 195, 223);
-}
-h4:after {
-  position: absolute;
-  content: '';
-  bottom: -3px;
-  left: 10px;
-  width: 100%;
-  border-bottom: solid 3px rgb(119, 195, 223);
+padding-bottom: 10px;
+border-bottom: solid 3px rgb(119, 195, 223);
 }
 
 /* 目次 */
