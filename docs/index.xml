@@ -27,7 +27,7 @@
       <pubDate>Sun, 05 Jan 2020 13:20:31 +0900</pubDate>
       
       <guid>https://linkevery2s.github.io/blog/search/</guid>
-      <description></description>
+      <description> キーワードを入力するとリアルタイムで検索を始めます。 入力欄フォーカス中は、エンターキー、矢印キーでベージ送りします。     </description>
     </item>
     
     <item>
