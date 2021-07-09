@@ -17,6 +17,7 @@ ul.m li {
   border-bottom: dashed 1px silver;
   list-style-type: none!important;
 }
+
 ul.m li:last-of-type {
   border-bottom: none;
 }
@@ -58,8 +59,8 @@ ul.m li:after {
 .balloon .faceicon img{
   width: 100%;
   height: auto;
-  border: solid 3px #d7ebfe;
-  border-radius: 50%;
+  /*border: solid 3px #d7ebfe;
+  border-radius: 50%;*/
 }
 
 .balloon .chatting {
@@ -72,8 +73,8 @@ ul.m li:after {
   margin: 5px 0 0 105px;
   padding: 17px 13px;
   border-radius: 12px;
+  background-color: #D1F8C2;
 
-  border: 3px solid #d7ebfe;
 }
 
 .says:after {
@@ -83,7 +84,7 @@ ul.m li:after {
   top: 18px; 
   left: -24px;
   border: 12px solid transparent;
-  border-right: 12px solid #d7ebfe;
+  border-right: 12px solid #D1F8C2;
 }
 
 .says p {
@@ -94,9 +95,9 @@ ul.m li:after {
 /* 更新履歴 */
 
 ul.up{
-  background: #EEEEEE;
+  background: #FFFFCC;
   padding: 0.5em 0.5em 0.5em 2em;
-  border: solid 3px gray;
+  border: solid 3px #FFCC66;
   border-radius: 10px;
 }
 
@@ -110,10 +111,10 @@ ul.up li {
 hr {
 	border-top: 1px dashed #8c8b8b;
 	border-bottom: 1px dashed #fff;
-	padding: 10px 0 10px 0;
+	padding: 5px 0 5px 0;
 }
 
-/* 上へスクロール */
+/* 上へスクロールボタン */
 #page_top{
   width: 50px;
   height: 50px;
@@ -121,7 +122,7 @@ hr {
   right: 25px;
   bottom: 25px;
   background: #3f98ef;
-  opacity: 0.6;
+  opacity: 0.9;
   border-radius: 50%;
 }
 #page_top a{
@@ -146,3 +147,4 @@ hr {
   left: 0;
   margin: auto;
 }
+

@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CSS on ProgForOne</title>
-    <link>https://linkevery2s.github.io/blog/categories/css/</link>
-    <description>Recent content in CSS on ProgForOne</description>
+    <title>CSS on DP Note</title>
+    <link>https://progforone.netlify.app/categories/css/</link>
+    <description>Recent content in CSS on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 05 Jan 2020 13:44:06 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 21:10:39 +0900</lastBuildDate>
     
-	<atom:link href="https://linkevery2s.github.io/blog/categories/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://progforone.netlify.app/categories/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>デザインあれこれ</title>
-      <link>https://linkevery2s.github.io/blog/post/2020/01/05/css/</link>
+      <title>フォントの指定方法</title>
+      <link>https://progforone.netlify.app/post/5/</link>
+      <pubDate>Sun, 08 Mar 2020 21:10:39 +0900</pubDate>
+      
+      <guid>https://progforone.netlify.app/post/5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>classとidの話</title>
+      <link>https://progforone.netlify.app/post/3/</link>
       <pubDate>Sun, 05 Jan 2020 13:44:06 +0900</pubDate>
       
-      <guid>https://linkevery2s.github.io/blog/post/2020/01/05/css/</guid>
-      <description> ★文章を入れる★
-   aaa bbb ccc ddd  更新履歴 2020.01.05 新規作成 </description>
+      <guid>https://progforone.netlify.app/post/3/</guid>
+      <description></description>
     </item>
     
   </channel>

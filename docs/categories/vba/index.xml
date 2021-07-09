@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VBA on ProgForOne</title>
-    <link>https://linkevery2s.github.io/blog/categories/vba/</link>
-    <description>Recent content in VBA on ProgForOne</description>
+    <title>VBA on DP Note</title>
+    <link>https://progforone.netlify.app/categories/vba/</link>
+    <description>Recent content in VBA on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 03 Jan 2020 18:07:04 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2020 20:25:00 +0900</lastBuildDate>
     
-	<atom:link href="https://linkevery2s.github.io/blog/categories/vba/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://progforone.netlify.app/categories/vba/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>ハイパーリンクを一括で有効にする</title>
+      <link>https://progforone.netlify.app/post/6/</link>
+      <pubDate>Sat, 18 Jul 2020 20:25:00 +0900</pubDate>
+      
+      <guid>https://progforone.netlify.app/post/6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>開いているExcelファイルと同じパスを取得する。</title>
+      <link>https://progforone.netlify.app/post/2/</link>
+      <pubDate>Sat, 04 Jan 2020 13:50:37 +0900</pubDate>
+      
+      <guid>https://progforone.netlify.app/post/2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Excel VBAで最終行、最終列を取得する。</title>
-      <link>https://linkevery2s.github.io/blog/post/2020/01/03/vba/</link>
+      <link>https://progforone.netlify.app/post/1/</link>
       <pubDate>Fri, 03 Jan 2020 18:07:04 +0900</pubDate>
       
-      <guid>https://linkevery2s.github.io/blog/post/2020/01/03/vba/</guid>
-      <description> ★文章を入れる★
-   aaa bbb ccc ddd  aaaaaaa
- 更新履歴 2020.01.03 新規作成 </description>
+      <guid>https://progforone.netlify.app/post/1/</guid>
+      <description></description>
     </item>
     
   </channel>
