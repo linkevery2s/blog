@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DP Note</title>
-    <link>https://progforone.netlify.app/</link>
+    <link>https://dpnote.netlify.app/</link>
     <description>Recent content on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 19 Jul 2020 20:46:00 +0900</lastBuildDate>
     
-	<atom:link href="https://progforone.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>leaflet初期設定方法</title>
-      <link>https://progforone.netlify.app/post/7/</link>
+      <link>https://dpnote.netlify.app/post/7/</link>
       <pubDate>Sun, 19 Jul 2020 20:46:00 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/7/</guid>
+      <guid>https://dpnote.netlify.app/post/7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ハイパーリンクを一括で有効にする</title>
-      <link>https://progforone.netlify.app/post/6/</link>
+      <link>https://dpnote.netlify.app/post/6/</link>
       <pubDate>Sat, 18 Jul 2020 20:25:00 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/6/</guid>
+      <guid>https://dpnote.netlify.app/post/6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>フォントの指定方法</title>
-      <link>https://progforone.netlify.app/post/5/</link>
+      <link>https://dpnote.netlify.app/post/5/</link>
       <pubDate>Sun, 08 Mar 2020 21:10:39 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/5/</guid>
+      <guid>https://dpnote.netlify.app/post/5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Twitter cardの記入方法</title>
-      <link>https://progforone.netlify.app/post/4/</link>
+      <link>https://dpnote.netlify.app/post/4/</link>
       <pubDate>Sun, 09 Feb 2020 13:28:21 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/4/</guid>
+      <guid>https://dpnote.netlify.app/post/4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>classとidの話</title>
-      <link>https://progforone.netlify.app/post/3/</link>
+      <link>https://dpnote.netlify.app/post/3/</link>
       <pubDate>Sun, 05 Jan 2020 13:44:06 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/3/</guid>
+      <guid>https://dpnote.netlify.app/post/3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>開いているExcelファイルと同じパスを取得する。</title>
-      <link>https://progforone.netlify.app/post/2/</link>
+      <link>https://dpnote.netlify.app/post/2/</link>
       <pubDate>Sat, 04 Jan 2020 13:50:37 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/2/</guid>
+      <guid>https://dpnote.netlify.app/post/2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Excel VBAで最終行、最終列を取得する。</title>
-      <link>https://progforone.netlify.app/post/1/</link>
+      <link>https://dpnote.netlify.app/post/1/</link>
       <pubDate>Fri, 03 Jan 2020 18:07:04 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/1/</guid>
+      <guid>https://dpnote.netlify.app/post/1/</guid>
       <description></description>
     </item>
     

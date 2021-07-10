@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on DP Note</title>
-    <link>https://progforone.netlify.app/categories/css/</link>
+    <link>https://dpnote.netlify.app/categories/css/</link>
     <description>Recent content in CSS on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 08 Mar 2020 21:10:39 +0900</lastBuildDate>
     
-	<atom:link href="https://progforone.netlify.app/categories/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dpnote.netlify.app/categories/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>フォントの指定方法</title>
-      <link>https://progforone.netlify.app/post/5/</link>
+      <link>https://dpnote.netlify.app/post/5/</link>
       <pubDate>Sun, 08 Mar 2020 21:10:39 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/5/</guid>
+      <guid>https://dpnote.netlify.app/post/5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>classとidの話</title>
-      <link>https://progforone.netlify.app/post/3/</link>
+      <link>https://dpnote.netlify.app/post/3/</link>
       <pubDate>Sun, 05 Jan 2020 13:44:06 +0900</pubDate>
       
-      <guid>https://progforone.netlify.app/post/3/</guid>
+      <guid>https://dpnote.netlify.app/post/3/</guid>
       <description></description>
     </item>
     
