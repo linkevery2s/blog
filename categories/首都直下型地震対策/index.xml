@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DP Note</title>
-    <link>https://dpnote.netlify.app/</link>
-    <description>Recent content on DP Note</description>
+    <title>首都直下型地震対策 on DP Note</title>
+    <link>https://dpnote.netlify.app/categories/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87%E5%AF%BE%E7%AD%96/</link>
+    <description>Recent content in 首都直下型地震対策 on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 03 Jan 2020 18:07:04 +0900</lastBuildDate>
     
-	<atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dpnote.netlify.app/categories/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87%E5%AF%BE%E7%AD%96/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

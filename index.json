@@ -1,41 +1,26 @@
  var data = [
  {
- url: "https://dpnote.netlify.app/post/7/",
- title: "leaflet初期設定方法",
- content: "[地図を表示するのに便利なAPI「leaflet」の初期設定方法とは？ どう書こう？ プログラムコード どう書こう？ 地図を扱うAPIで利用が広がっているleaflet。ここでは、初期設定の記述方法をご紹介します。 どう書こう？ プログラムコードは以下のとおりです。 &lt;!DOCTYPE html&gt; &lt;html lang=&#39;ja&#39;&gt; &lt;head&gt; &lt;meta charset=&#39;UTF-8&#39; name=&#39;viewport&#39; content=&#39;width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no&#39;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;https://unpkg.com/leaflet@1.6.0/dist/leaflet.css&#34; /&gt; &lt;script src=&#34;https://unpkg.com/leaflet@1.6.0/dist/leaflet.js&#34;&gt;&lt;/script&gt; &lt;style&gt; html,body,#map{ margin: 0; padding: 0; width: 100%; height: 100%; } &lt;/style&gt; &lt;script&gt; function ini(){ var map = L.map(&#39;map&#39;); L.tileLayer(&#39;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, { attribution: &#39;&amp;copy; &lt;a href=&#34;https://www.openstreetmap.org/copyright&#34;&gt;OpenStreetMap&lt;/a&gt; contributors&#39; }).addTo(map); map.setView([37.3, 137.8], 5) } &lt;/script&gt; &lt;title&gt;leaflet初期設定方法&lt;/title&gt; &lt;/head&gt; &lt;body onLoad=&#39;ini()&#39;&gt; &lt;div id=&#39;map&#39;&gt;&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; 更新履歴 2020.07.19 新規作成]"
- }
- ,{
  url: "https://dpnote.netlify.app/post/",
  title: "Posts",
  content: "[]"
  }
  ,{
- url: "https://dpnote.netlify.app/post/6/",
- title: "ハイパーリンクを一括で有効にする",
- content: "[ハイパーリンクを有効にするには、どうしたら良いんだろう？ どう書こう？ プログラムコード どう書こう？ Exel VBAでハイパーリンクを有効にする方法です。 列ごとに一括で有効にできます。 プログラムコード コードは以下のとおりです。 &#39;ハイパーリンクを有効にする。 Dim i As Long With ActiveSheet.Hyperlinks For i = 1 To 500 .Add Anchor:=Cells(i, 5), Address:=Cells(i, 5).Value Next i End With 更新履歴 2020.07.18 新規作成]"
- }
- ,{
- url: "https://dpnote.netlify.app/post/5/",
- title: "フォントの指定方法",
- content: "[CSSではフォントのサイズや色など、様々な指定方法があるよ。 どう書こう？ 更新履歴 どう書こう？ 色の指定 font-color: #fff; /* 白色にする */ 太字にする font-weight: bold; 更新履歴 2020.03.08 新規作成]"
- }
- ,{
- url: "https://dpnote.netlify.app/post/4/",
- title: "Twitter cardの記入方法",
- content: "[TwitterにURLを入れて、ツイートする時に、画像や文章を挿入したい。 Twitter Cardの挿入方法 更新履歴 Twitter Cardの挿入方法 挿入方法は、以下のとおりです。 &lt;head&gt;&lt;/head&gt;の中に以下のように記述する。 &lt;meta name=&#39;twitter:card&#39; content=&#39;summary_large_image&#39;&gt; &lt;meta name=&#39;twitter:title&#39; content=&#39;サイトのタイトル&#39; /&gt; &lt;meta name=&#39;twitter:description&#39; content=&#39;サイトの説明&#39; /&gt; &lt;meta name=&#39;twitter:image&#39; content=&#39;URL&#39; /&gt; &lt;meta name=&#39;author&#39; content=&#39;開発者の指名&#39;&gt; &lt;meta name=&#39;keywords&#39; content=&#39;SEO対策のためのキーワードを記入&#39;&gt; 正しく反映されたかどうかは、バリデーターでチェックできる。 更新履歴 2020.01.06 新規作成]"
- }
- ,{
- url: "https://dpnote.netlify.app/post/3/",
- title: "classとidの話",
- content: "[classとidを使い分けしたい。 使いこなそう 内部リンクはidで 更新履歴 使いこなそう htmlのdiv要素などにclassを指定した場合、cssは「.クラス名」となります。 idを指定した場合、cssは「#id名」となります。 内部リンクはidで ハッシュタグ（#）を用いた内部リンクにする場合、div要素には、idを用います。classは指定できません。 更新履歴 2020.01.05 新規作成]"
+ url: "https://dpnote.netlify.app/post/1/",
+ title: "首都直下型地震対策を考える１",
+ content: "[Exel VBAで最終行、最終列を取得する方法です。 範囲指定で1行目～セルの値のある最終行まで指定したい場合などに使用します。 僕もよく忘れるので、記事にしました。 コードは以下のとおりです。]"
  }
  ,{
  url: "https://dpnote.netlify.app/post/2/",
- title: "開いているExcelファイルと同じパスを取得する。",
- content: "[作業ファイルと同じパスを取得したい。 プログラムコード 更新履歴 Excel VBAでファイル操作していて、作業ファイルと同じパスを取得したいときがあります。 作業ファイルと同じパスにデータ出力したい時などに使います。 プログラムコード コードは以下のとおりです。 &#39;作業ファイルと同じパスと取得する。 ThisWorkbook.Path 更新履歴 2020.01.18 新規作成]"
+ title: "首都直下型地震対策を考える１",
+ content: "[Exel VBAで最終行、最終列を取得する方法です。 範囲指定で1行目～セルの値のある最終行まで指定したい場合などに使用します。 僕もよく忘れるので、記事にしました。 コードは以下のとおりです。]"
  }
  ,{
- url: "https://dpnote.netlify.app/post/1/",
- title: "Excel VBAで最終行、最終列を取得する。",
- content: "[Excel VBAで最終行、最終列を取得する方法をすぐに忘れてしまうんだよね…。 どう書こう？ プログラムコード 更新履歴 どう書こう？ Exel VBAで最終行、最終列を取得する方法です。 範囲指定で1行目～セルの値のある最終行まで指定したい場合などに使用します。 僕もよく忘れるので、記事にしました。 プログラムコード コードは以下のとおりです。 &#39;A列の最終行を取得する。 MaxRow = Cells(Rows.Count, 1).End(xlUp).Row &#39;1行目の最終列を取得する。 MaxCol = Cells(1, Columns.Count).End(xlToLeft).Column 更新履歴 2020.01.03 新規作成]"
+ url: "https://dpnote.netlify.app/post/3/",
+ title: "首都直下型地震対策を考える１",
+ content: "[Exel VBAで最終行、最終列を取得する方法です。 範囲指定で1行目～セルの値のある最終行まで指定したい場合などに使用します。 僕もよく忘れるので、記事にしました。 コードは以下のとおりです。]"
+ }
+ ,{
+ url: "https://dpnote.netlify.app/post/4/",
+ title: "首都直下型地震対策を考える１",
+ content: "[Exel VBAで最終行、最終列を取得する方法です。 範囲指定で1行目～セルの値のある最終行まで指定したい場合などに使用します。 僕もよく忘れるので、記事にしました。 コードは以下のとおりです。]"
  }]
