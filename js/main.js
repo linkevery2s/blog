@@ -1,4 +1,4 @@
-		$(function() {
+/*		$(function() {
     var topBtn = $('#page_top');
     topBtn.hide();
 
@@ -19,3 +19,5 @@
         return false;
     });
 });
+
+*/
