@@ -12,6 +12,40 @@ h3{
 	padding: 0;
 }
 
+#header1{
+	position: fixed;
+	width: 100%;
+	height: 85px;
+	background-color: #1f3134;
+	color: #ffffff !important;
+	margin:0;
+	padding: 0 0 0 15px;
+	top: 0;
+	z-index: 10;
+}
+
+.h_h1{
+	color: #ffffff;
+}
+
+.h_s{
+	position: fixed;
+	top: 0;
+	right:0;
+	padding: 20px 15px 0 0;
+	color: #ffffff !important;
+	z-index: 11;
+}
+
+.h_circle{
+text-align: center;
+	  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  line-height: 50px;
+}
+
 .li_menu{
 	list-style: none;
 	margin: 0;
@@ -56,4 +90,36 @@ h3{
   line-height: 50px;
   display: inline-block;
   font-size: 1.25em;
+}
+
+.post_tag{
+	color: #0077b8;
+}
+
+.fa-tags{
+	margin-right: 3px;
+}
+
+.post_date{
+	padding-top: 3px !important;
+}
+
+#pre_next{
+	display: inline-block;
+	margin: 25px 0 25px 0;
+}
+
+#pre_next:hover{
+	color: #0077b8 !important;
+}
+
+.pre_next_list{
+	text-align: center;
+	border-top: 1px solid #94846a;
+	border-bottom: 1px solid #94846a;
+	
+}
+
+.fa-chevron-left, .fa-chevron-right{
+	color: #94846a;
 }
