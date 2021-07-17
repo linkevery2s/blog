@@ -123,3 +123,7 @@ text-align: center;
 .fa-chevron-left, .fa-chevron-right{
 	color: #94846a;
 }
+
+#sns_settei{
+	display: inline-block;
+}
