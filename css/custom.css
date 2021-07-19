@@ -1,3 +1,7 @@
+html, body{
+font-family: "Meiryo","Hiragino Maru Gothic Pro",sans-serif;
+}
+
 h3{
 	border-bottom: 2px dotted #5a544b;
 }
