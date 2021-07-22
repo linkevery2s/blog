@@ -1,5 +1,5 @@
-html, body{
-font-family: "Meiryo","Hiragino Maru Gothic Pro",sans-serif;
+html, body, .ul_menu{
+font-family: "Meiryo","Hiragino Maru Gothic Pro",sans-serif !important;
 }
 
 h3{
@@ -110,7 +110,7 @@ text-align: center;
 
 #pre_next{
 	display: inline-block;
-	margin: 25px 0 25px 0;
+	height: 50px;
 }
 
 #pre_next:hover{

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ja" data-figures="" class="page">
   <head>
-<title>ブログ内検索 | DP Note</title>
+<title>Search | DP Note</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,15 @@
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="キーワードを入力するとリアルタイムで検索することができます。
+検索    ">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="ブログ内検索" />
+<meta name="twitter:title" content="Search" />
 <meta property="og:url" content="https://dpnote.netlify.app/search/" />
-<meta property="og:title" content="ブログ内検索" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="Search" />
+<meta property="og:description" content="キーワードを入力するとリアルタイムで検索することができます。
+検索    " />
 <meta property="og:image" content="https://dpnote.netlify.app/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dpnote.netlify.app/icons/apple-touch-icon.png">
@@ -65,18 +67,27 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">ブログ内検索</h1>
+    <h1 class="post_title">Search</h1>
   <div class="post_meta">
     <i class="far fa-calendar-alt"></i>
     <span class="post_date">
-      2020.01.03</span>
+      0001.01.01</span>
     <span class="post_time"> </span>
   
 
   </div>
 
     
-    
+    <p>キーワードを入力するとリアルタイムで検索することができます。</p>
+<ul class="icons">
+<span class = "wordkensaku">
+<form name="form1" id="form1" action="">
+<input type="text" name="text1" id="text" autocomplete="off" placeholder="キーワード検索">
+<span class="exp" onclick="search2();">検索</span>
+</span>
+</ul>
+<ul id ="output"></ul>
+<script type="javascript" src="https://dpnote.netlify.app/js/search.js"></script>
 
 
 
@@ -109,6 +120,21 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<div class="pre_next_list">
+<div class="next-post" id="pre_next">
+	
+	<a class="link-reverse" href="https://dpnote.netlify.app/post/3/"><i class="fas fa-chevron-left"></i> 首都直下型地震対策を考える１</a>
+	
+</div>
+
+
+<div class="previous-post" id="pre_next">
+	
+</div>
+
+</div>
+
+
   </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
@@ -116,11 +142,6 @@
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">Category</h2>
       <ul class="ul_menu">
-        <a href='https://dpnote.netlify.app/tags/it%E3%82%92%E6%B4%BB%E3%81%8B%E3%81%99/'><li class="li_menu">
-          ITを活かす
-          
-        </li></a>
-        
         <a href='https://dpnote.netlify.app/tags/%E5%8D%97%E6%B5%B7%E3%83%88%E3%83%A9%E3%83%95%E5%9C%B0%E9%9C%87/'><li class="li_menu">
           南海トラフ地震
           
@@ -128,6 +149,11 @@
         
         <a href='https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/'><li class="li_menu">
           災害データ可視化
+          
+        </li></a>
+        
+        <a href='https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%EF%BD%84%EF%BD%98/'><li class="li_menu">
+          防災ＤＸ
           
         </li></a>
         
@@ -144,19 +170,6 @@
 
   
 
-
-<div class="pre_next_list">
-<div class="next-post" id="pre_next">
-	
-	<a class="link-reverse" href="https://dpnote.netlify.app/post/3/"><i class="fas fa-chevron-left"></i> 首都直下型地震対策を考える１</a>
-	
-</div>
-
-<div class="previous-post" id="pre_next">
-	
-</div>
-
-</div>
 
 </div>
     </main><svg width="0" height="0" class="hidden">
