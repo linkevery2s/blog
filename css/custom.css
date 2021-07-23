@@ -55,13 +55,14 @@ text-align: center;
 	margin: 0;
 	padding: 0;
 	border-top: solid #b2b2b2;
-	border-width: 2px 0 0 0;
+	border-width: 1px 0 0 0;
 	padding: 15px 0 15px 10px;
 }
 
-.li_menu:last-child{
-	border-bottom-width: 2px;
+.ul_menu:last-child{
+	border-bottom: 1px solid #b2b2b2;
 }
+
 
 .post_item{
 	list-style: none;
@@ -110,7 +111,7 @@ text-align: center;
 
 #pre_next{
 	display: inline-block;
-	height: 50px;
+	margin: 25px 0 25px 0;
 }
 
 #pre_next:hover{
@@ -121,7 +122,6 @@ text-align: center;
 	text-align: center;
 	border-top: 1px solid #94846a;
 	border-bottom: 1px solid #94846a;
-	
 }
 
 .fa-chevron-left, .fa-chevron-right{
