@@ -3,7 +3,7 @@ var map;var p;var zoom;var hash;var todou = new Array(47);
 	function start(x, y, z){
 		map = L.map('map');
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors'
+		attribution: '&copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors<br>東京都：<a href="https://catalog.data.metro.tokyo.lg.jp/dataset/t000019d0000000001">給水拠点一覧データ</a>'
 	}).addTo(map);
 		map.setView([x, y], z);
 		
