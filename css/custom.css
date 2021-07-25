@@ -122,6 +122,18 @@ text-align: center;
   font-size: 1.25em;
 }
 
+.circle4{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #f2a0a1;
+  line-height: 50px;
+  display: inline-block;
+  margin: 0 10px 20px 0;
+  font-size: 1.25em;
+}
+
 .post_tag{
 	color: #0077b8;
 }
