@@ -168,8 +168,3 @@ text-align: center;
 #sns_settei{
 	display: inline-block;
 }
-
-/* Facebook調整 */
-.fb_iframe_widget > span {
-		vertical-align: baseline !important;
-}
