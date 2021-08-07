@@ -6,20 +6,23 @@
     <description>Recent content on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>首都直下型地震対策を考える１</title>
-      <link>https://dpnote.netlify.app/post/1/</link>
-      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      <title>東京都火災発生件数を可視化しました</title>
+      <link>https://dpnote.netlify.app/post/tokyofire/</link>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/1/</guid>
+      <guid>https://dpnote.netlify.app/post/tokyofire/</guid>
       <description>
         
-          &lt;h2 id=&#34;東京都の昼間人口&#34;&gt;東京都の昼間人口&lt;/h2&gt;
-&lt;p&gt;Exel VBAで最終行、最終列を取得する方法です。&lt;/p&gt;
-&lt;p&gt;範囲指定で1行目～セルの値のある最終行まで指定したい場合などに使用します。&lt;/p&gt;
-&lt;p&gt;僕もよく忘れるので、記事にしました。&lt;/p&gt;
-&lt;p&gt;コードは以下のとおりです。&lt;/p&gt;
+          &lt;p&gt;東京都のオープンデータを利用して、都内の火災発生件数を可視化しました。&lt;/p&gt;
+&lt;p&gt;令和2年火災年報によると全国で発生した火災のうち&lt;/p&gt;
+&lt;p&gt;出火原因1位:たばこ、2位:たき火&lt;/p&gt;
+&lt;p&gt;とのことです。&lt;/p&gt;
+&lt;p&gt;知識の整理&lt;/p&gt;
+&lt;p&gt;➊ 避難時はブレーカーを落とす　→　通電火災防止&lt;/p&gt;
+&lt;p&gt;❷ 家の周りに燃える物を置かない　→　放火防止&lt;/p&gt;
+&lt;p&gt;❸ 火災報知器の取り付け・点検&lt;/p&gt;
         
       </description>
     </item>
