@@ -39,7 +39,7 @@ function geo_k(feature, layer) {
         popup = "名称：" + feature.properties.W01_001;
     }
     if (feature.properties && feature.properties.W01_013) {
-        popup = "住所：" + feature.properties.W01_013;
+        popup += "<br>住所：" + feature.properties.W01_013;
     }
     if (feature.properties && feature.properties.W01_003){
     	popup += '<br>水系名：' + feature.properties.W01_003;
