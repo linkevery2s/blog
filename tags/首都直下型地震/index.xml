@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>首都直下型地震 on DP Note</title>
+    <link>https://dpnote.netlify.app/tags/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87/</link>
+    <description>Recent content in 首都直下型地震 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>被害率曲線をご存じですか？</title>
+      <link>https://dpnote.netlify.app/post/destructionrate/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/destructionrate/</guid>
+      <description>
+        
+          &lt;p&gt;今日は、被害率曲線のお話です。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;南海トラフ地震対策を考える②&lt;br&gt;「被害率曲線をご存知ですか？」&lt;br&gt;&lt;br&gt;耐震化は、まずは1981年がポイントです。&lt;br&gt;&lt;br&gt;内閣府の資料の木造建物の被害率曲線をみると、1981年以後と以前で震度6以上から全壊率に &amp;quot;開き&amp;quot; が出ています。&lt;br&gt;&lt;br&gt;家の築年数を調べてみましょう。また、自治体に耐震診断を依頼できます。 &lt;a href=&#34;https://t.co/CnU0SDLYwi&#34;&gt;pic.twitter.com/CnU0SDLYwi&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし 防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1415636560909770755?ref_src=twsrc%5Etfw&#34;&gt;July 15, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東京都災害時給水ステーションをマップ化してみた。</title>
+      <link>https://dpnote.netlify.app/post/tokyowater/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/tokyowater/</guid>
+      <description>
+        
+          &lt;p&gt;東京都のオープンデータを用いて、災害時給水ステーションをマップ化してみました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/watersupply.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;首都直下型地震対策を考える⑦&lt;br&gt;「東京都災害時給水ステーションをマップ化」&lt;br&gt;&lt;br&gt;人が生きていく上で何よりも「水」が大切‼️&lt;br&gt;&lt;br&gt;東京都のオープンデータを利用。地域に偏りが無いことが分かります。日本全国のオープンデータ化を求めます！&lt;br&gt;&lt;br&gt;👇マップURLはこちら&lt;a href=&#34;https://t.co/QTo91hZfJ6&#34;&gt;https://t.co/QTo91hZfJ6&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし 防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1419254853600047105?ref_src=twsrc%5Etfw&#34;&gt;July 25, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東京都の昼間人口を可視化してみた。</title>
+      <link>https://dpnote.netlify.app/post/tokyodaytime/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/tokyodaytime/</guid>
+      <description>
+        
+          &lt;p&gt;東京都の昼間人口を可視化してみました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;首都直下型地震対策を考える⑤&lt;br&gt;「東京都 昼間人口を可視化」&lt;br&gt;&lt;br&gt;昼夜間人口率は、117.8&lt;br&gt;（参考：昼夜間人口比率＝昼間人口÷常住人口×100）&lt;br&gt;&lt;br&gt;❶昼間の方が人が多い&lt;br&gt;❷通勤・通学の行き来が多い&lt;br&gt;&lt;br&gt;ことが分かります。朝の通勤・通学及び夜の帰宅ラッシュ時の災害対策と帰宅困難者対策は必須です！ &lt;a href=&#34;https://t.co/TplJe8Sh1T&#34;&gt;pic.twitter.com/TplJe8Sh1T&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし 防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1413817777522036736?ref_src=twsrc%5Etfw&#34;&gt;July 10, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

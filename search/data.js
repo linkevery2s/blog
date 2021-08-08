@@ -20,10 +20,10 @@ var data = [
     body: "Tags"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E5%8D%97%E6%B5%B7%E3%83%88%E3%83%A9%E3%83%95%E5%9C%B0%E9%9C%87%E5%AF%BE%E7%AD%96/",
-    title: "南海トラフ地震対策",
+    url: "https://dpnote.netlify.app/tags/%E5%8D%97%E6%B5%B7%E3%83%88%E3%83%A9%E3%83%95%E5%9C%B0%E9%9C%87/",
+    title: "南海トラフ地震",
     date: "2021-08-05T00:00:00Z",
-    body: "南海トラフ地震対策"
+    body: "南海トラフ地震"
   },
   {
     url: "https://dpnote.netlify.app/post/destructionrate/",
@@ -32,10 +32,10 @@ var data = [
     body: "被害率曲線をご存じですか？ 今日は、被害率曲線のお話です。 南海トラフ地震対策を考える② 「被害率曲線をご存知ですか？」 耐震化は、まずは1981年がポイントです。 内閣府の資料の木造建物の被害率曲線をみると、1981年以後と以前で震度6以上から全壊率に \u0026quot;開き\u0026quot; が出ています。 家の築年数を調べてみましょう。また、自治体に耐震診断を依頼できます。 pic.twitter.com/CnU0SDLYwi \u0026mdash; ひとし 防災エンジニア (@hitoshi2sl) July 15, 2021"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87%E5%AF%BE%E7%AD%96/",
-    title: "首都直下型地震対策",
+    url: "https://dpnote.netlify.app/tags/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87/",
+    title: "首都直下型地震",
     date: "2021-08-05T00:00:00Z",
-    body: "首都直下型地震対策"
+    body: "首都直下型地震"
   },
   {
     url: "https://dpnote.netlify.app/post/hazardmap/",
