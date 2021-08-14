@@ -16,8 +16,22 @@
 
     <style>
         body { margin: 0; overflow: hidden; }
+        #menu{
+        	position: fixed;
+        	bottom: 0; right: 0;
+        	z-index: 1000;
+        	margin: 0 3px 3px 0;
+        	text-align: right;
+        	background: rgba(255, 255, 255, 0.5)
+        }
+        .title{
+        	position: fixed;
+        	top: 0; left: 0;
+        	z-index: 1000;
+        	margin: 0 0 0 5px;
+        	text-align: right;
+        }
     </style>
-
     <script src="https://cyberjapandata.gsi.go.jp/3d/three.min.js"></script>
     <script src="https://cyberjapandata.gsi.go.jp/3d/TrackballControls.js"></script> 
     <script>
@@ -1092,6 +1106,10 @@
 </head>
 <body onload="Init();">
     <div id="webgl"></div>
-
+    <div class="title"><h2>熱海市土砂災害3Dマップ</h2></div>
+	<div id="menu">
+    出典：
+    <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>、<a href="https://www.gsi.go.jp/BOUSAI/R3_0701_heavyrain.html" target="_blank">令和3年7月1日からの大雨に関する情報</a>、国土地理院<br>&copy; 仁志、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a></div>
+	</div>
 </body>
 </html>
