@@ -86,7 +86,7 @@ var map;var p;var zoom;var hash;var todou; var tiri;var koukuu;
 	}
 
     function hokkaido_ini() {
-		start(43.469, 141.987, 8);
+		start(43.469, 141.987, 6);
 		todou = L.geoJson(hokkaido, {style: sty,onEachFeature: geo_k, pointToLayer: iro});
 		map.addLayer(todou);
 	}
