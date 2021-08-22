@@ -60,6 +60,11 @@ var map;var p;var zoom;var hash;var todou; var tiri;var koukuu;
 
 	}
 
+	function ini(){
+		
+		document.getElementById("river").innerHTML = '<iframe width="100%" height="500px" scrolling="no" frameborder="no" src="river_prefdata/aomori.html"></iframe>';
+		
+	}
 
 	function start(x, y, z){
 		map = L.map('map');
