@@ -168,3 +168,8 @@ text-align: center;
 #sns_settei{
 	display: inline-block;
 }
+
+.post_tag{
+	padding:0 5px 0 0 !important;
+	margin:0 !important;
+}
