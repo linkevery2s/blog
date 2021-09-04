@@ -32,28 +32,34 @@ var data = [
     body: "災害データ可視化"
   },
   {
-    url: "https://dpnote.netlify.app/post/river/",
-    title: "日本の各都道府県を河川だけで表現してみる",
+    url: "https://dpnote.netlify.app/post/siri/",
+    title: "Siriに防災を学ばせてみた！",
     date: "2021-08-30T00:00:00Z",
-    body: "日本の各都道府県を河川だけで表現してみる 日本の各都道府県を河川だけで表現してみました。 日本の都道府県を河川だけで表現してみました！ 川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？ あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う#防災のためにできること https://t.co/rqP7WUOUvH \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 25, 2021"
-  },
-  {
-    url: "https://dpnote.netlify.app/post/publicdns/",
-    title: "パブリックDNSをご存じですか？",
-    date: "2021-08-29T00:00:00Z",
-    body: "パブリックDNSをご存じですか？ パブリックDNSについて、ご紹介します。 防災✖️ITを考える① 「パブリックDNS」をご存知ですか？ WEB閲覧時の名前解決を高速化してくれるパブリックDNS 災害時など、ネット回線が混雑したときに有効活用できるかなと🤔 いつか来る大規模な災害時に、この知識が役に立つ日が来ることを信じて...ここにツイートを残します‼️🙇‍♂️ pic.twitter.com/ka7HBUjLuG \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 26, 2020"
+    body: "Siriに防災を学ばせてみた！ Siriに防災について、学習させてみました！ ㊗️YouTubeチャンネル開設‼️✨ 本日、防災アプリ開発者の仁志チャンネルを開設しました‼️ 第１回目は... 「Siriに防災について学ばせてみた！」 です。 フルバージョンはYouTube動画をご覧ください‼️👍 チャンネル登録も是非お願いいたします‼️🙇‍♂️https://t.co/sSxI9wEQcv#防災 #YouTube #Siri pic.twitter.com/HkkjtcY8i9 \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) February 27, 2021"
   },
   {
     url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDit/",
     title: "防災×IT",
-    date: "2021-08-29T00:00:00Z",
+    date: "2021-08-30T00:00:00Z",
     body: "防災×IT"
   },
   {
     url: "https://dpnote.netlify.app/post/atami3d/",
     title: "熱海市土砂災害を3Dにて可視化しました",
-    date: "2021-08-28T00:00:00Z",
+    date: "2021-08-29T00:00:00Z",
     body: "熱海市土砂災害を3Dにて可視化しました 熱海市土砂災害を3Dにて可視化しました。 熱海市土砂災害を3Dにて可視化しました！ 傾斜地＋森林＋豪雨＋長時間 この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。 ※PC、スマホ等で動かせます。 マップURLは👇こちらhttps://t.co/jkNXPyvhLu \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 18, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/publicdns/",
+    title: "パブリックDNSをご存じですか？",
+    date: "2021-08-28T00:00:00Z",
+    body: "パブリックDNSをご存じですか？ パブリックDNSについて、ご紹介します。 防災✖️ITを考える① 「パブリックDNS」をご存知ですか？ WEB閲覧時の名前解決を高速化してくれるパブリックDNS 災害時など、ネット回線が混雑したときに有効活用できるかなと🤔 いつか来る大規模な災害時に、この知識が役に立つ日が来ることを信じて...ここにツイートを残します‼️🙇‍♂️ pic.twitter.com/ka7HBUjLuG \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 26, 2020"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/river/",
+    title: "日本の各都道府県を河川だけで表現してみる",
+    date: "2021-08-27T00:00:00Z",
+    body: "日本の各都道府県を河川だけで表現してみる 日本の各都道府県を河川だけで表現してみました。 日本の都道府県を河川だけで表現してみました！ 川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？ あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う#防災のためにできること https://t.co/rqP7WUOUvH \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 25, 2021"
   },
   {
     url: "https://dpnote.netlify.app/post/00000japan/",
@@ -71,7 +77,7 @@ var data = [
     url: "https://dpnote.netlify.app/post/kumamotoearthquake/",
     title: "熊本地震「活断層図と震度マップの重ね合わせ」",
     date: "2021-08-24T00:00:00Z",
-    body: "熊本地震「活断層図と震度マップの重ね合わせ」 可視化シミュレーション① 熊本地震「活断層図と震度マップの重ね合わせ」 活断層型地震、群発地震の特徴がある #熊本地震 の可視化シミュレーションに挑戦しました！ ①活断層上に震源がある ②大地震の周りに小規模地震が数多く起きている ことが分かります。 こちら👇https://t.co/OkfxIpEnK7 pic.twitter.com/WuR58O7uBY \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) April 4, 2021"
+    body: "熊本地震「活断層図と震度マップの重ね合わせ」 熊本地震の震度マップと活断層図を重ね合わせてみました。 可視化シミュレーション① 熊本地震「活断層図と震度マップの重ね合わせ」 活断層型地震、群発地震の特徴がある #熊本地震 の可視化シミュレーションに挑戦しました！ ①活断層上に震源がある ②大地震の周りに小規模地震が数多く起きている ことが分かります。 こちら👇https://t.co/OkfxIpEnK7 pic.twitter.com/WuR58O7uBY \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) April 4, 2021"
   },
   {
     url: "https://dpnote.netlify.app/post/questionnaire1/",
