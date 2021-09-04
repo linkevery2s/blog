@@ -56,16 +56,22 @@ var data = [
     body: "パブリックDNSをご存じですか？ パブリックDNSについて、ご紹介します。 防災✖️ITを考える① 「パブリックDNS」をご存知ですか？ WEB閲覧時の名前解決を高速化してくれるパブリックDNS 災害時など、ネット回線が混雑したときに有効活用できるかなと🤔 いつか来る大規模な災害時に、この知識が役に立つ日が来ることを信じて...ここにツイートを残します‼️🙇‍♂️ pic.twitter.com/ka7HBUjLuG \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 26, 2020"
   },
   {
-    url: "https://dpnote.netlify.app/post/river/",
-    title: "日本の各都道府県を河川だけで表現してみる",
+    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/",
+    title: "災害事例集",
     date: "2021-08-27T00:00:00Z",
-    body: "日本の各都道府県を河川だけで表現してみる 日本の各都道府県を河川だけで表現してみました。 日本の都道府県を河川だけで表現してみました！ 川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？ あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う#防災のためにできること https://t.co/rqP7WUOUvH \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 25, 2021"
+    body: "災害事例集"
   },
   {
-    url: "https://dpnote.netlify.app/post/00000japan/",
-    title: "00000JAPANをご紹介します。",
+    url: "https://dpnote.netlify.app/post/instagram1/",
+    title: "災害事例集「安否確認に１週間」",
+    date: "2021-08-27T00:00:00Z",
+    body: "災害事例集「安否確認に１週間」 今日は、災害事例集を投稿します。 この投稿をInstagramで見る ひとし@防災を紡ぐ人(@hitoshi17l)がシェアした投稿"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/river/",
+    title: "日本の各都道府県を河川だけで表現してみる",
     date: "2021-08-26T00:00:00Z",
-    body: "00000JAPANをご紹介します。 今日は、00000JAPANについて説明します。 防災×ITを考える② 「00000JAPAN」をご存知ですか？ 災害時に、被災者等がインターネットに接続できるよう通信事業者等が公衆無線LANのアクセスポイントを無料で開放する取り組みです。🙆‍♂️ ※暗号化はされていないので個人情報の使用は控えてくださいね☺️ 総務省URLhttps://t.co/wy29Dd6Tcv pic.twitter.com/hoZrA0lGJZ \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 30, 2020"
+    body: "日本の各都道府県を河川だけで表現してみる 日本の各都道府県を河川だけで表現してみました。 日本の都道府県を河川だけで表現してみました！ 川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？ あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う#防災のためにできること https://t.co/rqP7WUOUvH \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 25, 2021"
   },
   {
     url: "https://dpnote.netlify.app/post/rokkaku/",
@@ -78,6 +84,12 @@ var data = [
     title: "熊本地震「活断層図と震度マップの重ね合わせ」",
     date: "2021-08-24T00:00:00Z",
     body: "熊本地震「活断層図と震度マップの重ね合わせ」 熊本地震の震度マップと活断層図を重ね合わせてみました。 可視化シミュレーション① 熊本地震「活断層図と震度マップの重ね合わせ」 活断層型地震、群発地震の特徴がある #熊本地震 の可視化シミュレーションに挑戦しました！ ①活断層上に震源がある ②大地震の周りに小規模地震が数多く起きている ことが分かります。 こちら👇https://t.co/OkfxIpEnK7 pic.twitter.com/WuR58O7uBY \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) April 4, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/00000japan/",
+    title: "00000JAPANをご紹介します。",
+    date: "2021-08-23T00:00:00Z",
+    body: "00000JAPANをご紹介します。 今日は、00000JAPANについて説明します。 防災×ITを考える② 「00000JAPAN」をご存知ですか？ 災害時に、被災者等がインターネットに接続できるよう通信事業者等が公衆無線LANのアクセスポイントを無料で開放する取り組みです。🙆‍♂️ ※暗号化はされていないので個人情報の使用は控えてくださいね☺️ 総務省URLhttps://t.co/wy29Dd6Tcv pic.twitter.com/hoZrA0lGJZ \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 30, 2020"
   },
   {
     url: "https://dpnote.netlify.app/post/questionnaire1/",
