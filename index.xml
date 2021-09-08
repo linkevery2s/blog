@@ -6,11 +6,11 @@
     <description>Recent content on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>日本全国のダムの情報をマップ化しました。</title>
       <link>https://dpnote.netlify.app/post/dam/</link>
-      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/post/dam/</guid>
       <description>
@@ -26,7 +26,7 @@
     <item>
       <title>Siriに防災を学ばせてみた！</title>
       <link>https://dpnote.netlify.app/post/siri/</link>
-      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/post/siri/</guid>
       <description>
@@ -43,7 +43,7 @@
     <item>
       <title>熱海市土砂災害を3Dにて可視化しました</title>
       <link>https://dpnote.netlify.app/post/atami3d/</link>
-      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/post/atami3d/</guid>
       <description>
@@ -52,6 +52,38 @@
 &lt;center&gt;
 &lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/qaon6oIV1-g&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;熱海市土砂災害を3Dにて可視化しました！&lt;br&gt;&lt;br&gt;傾斜地＋森林＋豪雨＋長時間&lt;br&gt;&lt;br&gt;この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。&lt;br&gt;&lt;br&gt;※PC、スマホ等で動かせます。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/jkNXPyvhLu&#34;&gt;https://t.co/jkNXPyvhLu&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1427949646396104718?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>00000JAPANをご紹介します。</title>
+      <link>https://dpnote.netlify.app/post/00000japan/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/00000japan/</guid>
+      <description>
+        
+          &lt;p&gt;今日は、00000JAPANについて説明します。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;防災×ITを考える②&lt;br&gt;「00000JAPAN」をご存知ですか？&lt;br&gt;&lt;br&gt;災害時に、被災者等がインターネットに接続できるよう通信事業者等が公衆無線LANのアクセスポイントを無料で開放する取り組みです。🙆‍♂️&lt;br&gt;&lt;br&gt;※暗号化はされていないので個人情報の使用は控えてくださいね☺️&lt;br&gt;&lt;br&gt;総務省URL&lt;a href=&#34;https://t.co/wy29Dd6Tcv&#34;&gt;https://t.co/wy29Dd6Tcv&lt;/a&gt; &lt;a href=&#34;https://t.co/hoZrA0lGJZ&#34;&gt;pic.twitter.com/hoZrA0lGJZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1333375220871172096?ref_src=twsrc%5Etfw&#34;&gt;November 30, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Phonerelay</title>
+      <link>https://dpnote.netlify.app/post/phonerelay/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/phonerelay/</guid>
+      <description>
+        
+          &lt;p&gt;今日は、電話リレーサービスについてご紹介します。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;電話リレーサービスをご存知ですか？&lt;br&gt;&lt;br&gt;聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。昨年の法改正により令和3年7月1日から開始しました。&lt;br&gt;&lt;br&gt;必要な方々に教えてあげてください！&lt;br&gt;&lt;br&gt;総務省URL&lt;a href=&#34;https://t.co/hrfv6dBhDy&#34;&gt;https://t.co/hrfv6dBhDy&lt;/a&gt; &lt;a href=&#34;https://t.co/3ac2zevVpk&#34;&gt;pic.twitter.com/3ac2zevVpk&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1417800762717966340?ref_src=twsrc%5Etfw&#34;&gt;July 21, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/center&gt;
         
       </description>
@@ -133,22 +165,6 @@
           &lt;p&gt;熊本地震の震度マップと活断層図を重ね合わせてみました。&lt;/p&gt;
 &lt;center&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;可視化シミュレーション①&lt;br&gt;熊本地震「活断層図と震度マップの重ね合わせ」&lt;br&gt;&lt;br&gt;活断層型地震、群発地震の特徴がある &lt;a href=&#34;https://twitter.com/hashtag/%E7%86%8A%E6%9C%AC%E5%9C%B0%E9%9C%87?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#熊本地震&lt;/a&gt; の可視化シミュレーションに挑戦しました！&lt;br&gt;&lt;br&gt;①活断層上に震源がある&lt;br&gt;②大地震の周りに小規模地震が数多く起きている&lt;br&gt;&lt;br&gt;ことが分かります。&lt;br&gt;&lt;br&gt;こちら👇&lt;a href=&#34;https://t.co/OkfxIpEnK7&#34;&gt;https://t.co/OkfxIpEnK7&lt;/a&gt; &lt;a href=&#34;https://t.co/WuR58O7uBY&#34;&gt;pic.twitter.com/WuR58O7uBY&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1378682900363681795?ref_src=twsrc%5Etfw&#34;&gt;April 4, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>00000JAPANをご紹介します。</title>
-      <link>https://dpnote.netlify.app/post/00000japan/</link>
-      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/post/00000japan/</guid>
-      <description>
-        
-          &lt;p&gt;今日は、00000JAPANについて説明します。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;防災×ITを考える②&lt;br&gt;「00000JAPAN」をご存知ですか？&lt;br&gt;&lt;br&gt;災害時に、被災者等がインターネットに接続できるよう通信事業者等が公衆無線LANのアクセスポイントを無料で開放する取り組みです。🙆‍♂️&lt;br&gt;&lt;br&gt;※暗号化はされていないので個人情報の使用は控えてくださいね☺️&lt;br&gt;&lt;br&gt;総務省URL&lt;a href=&#34;https://t.co/wy29Dd6Tcv&#34;&gt;https://t.co/wy29Dd6Tcv&lt;/a&gt; &lt;a href=&#34;https://t.co/hoZrA0lGJZ&#34;&gt;pic.twitter.com/hoZrA0lGJZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1333375220871172096?ref_src=twsrc%5Etfw&#34;&gt;November 30, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/center&gt;
         
       </description>

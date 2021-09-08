@@ -4,50 +4,62 @@ var data = [
   {
     url: "https://dpnote.netlify.app/",
     title: "DP Note",
-    date: "2021-08-31T00:00:00Z",
+    date: "2021-09-08T00:00:00Z",
     body: "DP Note"
   },
   {
     url: "https://dpnote.netlify.app/post/",
     title: "Posts",
-    date: "2021-08-31T00:00:00Z",
+    date: "2021-09-08T00:00:00Z",
     body: "Posts"
   },
   {
     url: "https://dpnote.netlify.app/tags/",
     title: "Tags",
-    date: "2021-08-31T00:00:00Z",
+    date: "2021-09-08T00:00:00Z",
     body: "Tags"
   },
   {
     url: "https://dpnote.netlify.app/post/dam/",
     title: "日本全国のダムの情報をマップ化しました。",
-    date: "2021-08-31T00:00:00Z",
+    date: "2021-09-08T00:00:00Z",
     body: "日本全国のダムの情報をマップ化しました。 日本全国のダムの情報をマップ化しました。 日本全国のダムの情報を可視化しました。 ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！ そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます🙇‍♂️ マップURLは👇こちらhttps://t.co/V6M0X6gp7W \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 8, 2021"
   },
   {
     url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
     title: "災害データ可視化",
-    date: "2021-08-31T00:00:00Z",
+    date: "2021-09-08T00:00:00Z",
     body: "災害データ可視化"
   },
   {
     url: "https://dpnote.netlify.app/post/siri/",
     title: "Siriに防災を学ばせてみた！",
-    date: "2021-08-30T00:00:00Z",
+    date: "2021-09-05T00:00:00Z",
     body: "Siriに防災を学ばせてみた！ Siriに防災について、学習させてみました！ ㊗️YouTubeチャンネル開設‼️✨ 本日、防災アプリ開発者の仁志チャンネルを開設しました‼️ 第１回目は... 「Siriに防災について学ばせてみた！」 です。 フルバージョンはYouTube動画をご覧ください‼️👍 チャンネル登録も是非お願いいたします‼️🙇‍♂️https://t.co/sSxI9wEQcv#防災 #YouTube #Siri pic.twitter.com/HkkjtcY8i9 \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) February 27, 2021"
   },
   {
     url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDit/",
     title: "防災×IT",
-    date: "2021-08-30T00:00:00Z",
+    date: "2021-09-05T00:00:00Z",
     body: "防災×IT"
   },
   {
     url: "https://dpnote.netlify.app/post/atami3d/",
     title: "熱海市土砂災害を3Dにて可視化しました",
-    date: "2021-08-29T00:00:00Z",
+    date: "2021-09-02T00:00:00Z",
     body: "熱海市土砂災害を3Dにて可視化しました 熱海市土砂災害を3Dにて可視化しました。 熱海市土砂災害を3Dにて可視化しました！ 傾斜地＋森林＋豪雨＋長時間 この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。 ※PC、スマホ等で動かせます。 マップURLは👇こちらhttps://t.co/jkNXPyvhLu \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 18, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/00000japan/",
+    title: "00000JAPANをご紹介します。",
+    date: "2021-08-31T00:00:00Z",
+    body: "00000JAPANをご紹介します。 今日は、00000JAPANについて説明します。 防災×ITを考える② 「00000JAPAN」をご存知ですか？ 災害時に、被災者等がインターネットに接続できるよう通信事業者等が公衆無線LANのアクセスポイントを無料で開放する取り組みです。🙆‍♂️ ※暗号化はされていないので個人情報の使用は控えてくださいね☺️ 総務省URLhttps://t.co/wy29Dd6Tcv pic.twitter.com/hoZrA0lGJZ \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 30, 2020"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/phonerelay/",
+    title: "Phonerelay",
+    date: "2021-08-29T00:00:00Z",
+    body: "Phonerelay 今日は、電話リレーサービスについてご紹介します。 電話リレーサービスをご存知ですか？ 聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。昨年の法改正により令和3年7月1日から開始しました。 必要な方々に教えてあげてください！ 総務省URLhttps://t.co/hrfv6dBhDy pic.twitter.com/3ac2zevVpk \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) July 21, 2021"
   },
   {
     url: "https://dpnote.netlify.app/post/publicdns/",
@@ -84,12 +96,6 @@ var data = [
     title: "熊本地震「活断層図と震度マップの重ね合わせ」",
     date: "2021-08-24T00:00:00Z",
     body: "熊本地震「活断層図と震度マップの重ね合わせ」 熊本地震の震度マップと活断層図を重ね合わせてみました。 可視化シミュレーション① 熊本地震「活断層図と震度マップの重ね合わせ」 活断層型地震、群発地震の特徴がある #熊本地震 の可視化シミュレーションに挑戦しました！ ①活断層上に震源がある ②大地震の周りに小規模地震が数多く起きている ことが分かります。 こちら👇https://t.co/OkfxIpEnK7 pic.twitter.com/WuR58O7uBY \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) April 4, 2021"
-  },
-  {
-    url: "https://dpnote.netlify.app/post/00000japan/",
-    title: "00000JAPANをご紹介します。",
-    date: "2021-08-23T00:00:00Z",
-    body: "00000JAPANをご紹介します。 今日は、00000JAPANについて説明します。 防災×ITを考える② 「00000JAPAN」をご存知ですか？ 災害時に、被災者等がインターネットに接続できるよう通信事業者等が公衆無線LANのアクセスポイントを無料で開放する取り組みです。🙆‍♂️ ※暗号化はされていないので個人情報の使用は控えてくださいね☺️ 総務省URLhttps://t.co/wy29Dd6Tcv pic.twitter.com/hoZrA0lGJZ \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 30, 2020"
   },
   {
     url: "https://dpnote.netlify.app/post/questionnaire1/",
