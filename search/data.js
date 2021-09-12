@@ -63,9 +63,9 @@ var data = [
   },
   {
     url: "https://dpnote.netlify.app/post/phonerelay/",
-    title: "Phonerelay",
+    title: "電話リレーサービスをご存じですか？",
     date: "2021-08-29T00:00:00Z",
-    body: "Phonerelay 今日は、電話リレーサービスについてご紹介します。 電話リレーサービスをご存知ですか？ 聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。昨年の法改正により令和3年7月1日から開始しました。 必要な方々に教えてあげてください！ 総務省URLhttps://t.co/hrfv6dBhDy pic.twitter.com/3ac2zevVpk \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) July 21, 2021"
+    body: "電話リレーサービスをご存じですか？ 今日は、電話リレーサービスについてご紹介します。 電話リレーサービスをご存知ですか？ 聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。昨年の法改正により令和3年7月1日から開始しました。 必要な方々に教えてあげてください！ 総務省URLhttps://t.co/hrfv6dBhDy pic.twitter.com/3ac2zevVpk \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) July 21, 2021"
   },
   {
     url: "https://dpnote.netlify.app/post/publicdns/",
