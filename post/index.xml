@@ -6,7 +6,46 @@
     <description>Recent content in Posts on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>可視化データランキング５選</title>
+      <link>https://dpnote.netlify.app/post/datarank/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/datarank/</guid>
+      <description>
+        
+          &lt;p&gt;2021年より本格的に災害データ可視化を進めていますが、上半期（４月～９月）で注目度の高かった可視化をランキングにしてみました。&lt;/p&gt;
+&lt;h3 class=&#34;title&#34;&gt;第５位　熱海市土砂災害３Ｄマップ&lt;/h1&gt;
+国土地理院の&lt;a href=&#34;https://maps.gsi.go.jp/&#34; target=&#34;_blank&#34;&gt;電子国土WEB&lt;/a&gt;の機能を利用して、WEB GLで表現した３Ｄマップ。ハザードマップの３Ｄ化を構想している自分には、今後も有効利用していきたいと思っています。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;熱海市土砂災害を3Dにて可視化しました！&lt;br&gt;&lt;br&gt;傾斜地＋森林＋豪雨＋長時間&lt;br&gt;&lt;br&gt;この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。&lt;br&gt;&lt;br&gt;※PC、スマホ等で動かせます。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/jkNXPyvhLu&#34;&gt;https://t.co/jkNXPyvhLu&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1427949646396104718?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;h3 class=&#34;title&#34;&gt;第４位　熱海市土砂災害マップ&lt;/h1&gt;
+国土地理院の防災データを利用。航空写真やドローンで撮影した動画を組み合わせてマップ化しました。&lt;a href=&#34;https://leafletjs.com/&#34; target=&#34;_blank&#34;&gt;leaflet&lt;/a&gt;は地図APIのライブラリも多く、これからも活用していきます。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「熱海市土砂災害をマップ化」&lt;br&gt;国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。&lt;br&gt;&lt;br&gt;山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思う。&lt;a href=&#34;https://t.co/YcD1FqRHfc&#34;&gt;https://t.co/YcD1FqRHfc&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1421790310456254471?ref_src=twsrc%5Etfw&#34;&gt;August 1, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;h3 class=&#34;title&#34;&gt;第３位　日本列島を河川だけで表現&lt;/h1&gt;
+&lt;a href=&#34;https://nlftp.mlit.go.jp/ksj/&#34; target=&#34;_blank&#34;&gt;国土数値情報&lt;/a&gt;を利用。今まで、geoJSONだけでしたが、topoJSONの使い方を学びました。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本の都道府県を河川だけで表現してみました！&lt;br&gt;川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？&lt;br&gt;あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う&lt;a href=&#34;https://twitter.com/hashtag/%E9%98%B2%E7%81%BD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#防災のためにできること&lt;/a&gt; &lt;a href=&#34;https://t.co/rqP7WUOUvH&#34;&gt;https://t.co/rqP7WUOUvH&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1430486361325375490?ref_src=twsrc%5Etfw&#34;&gt;August 25, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;h3 class=&#34;title&#34;&gt;第２位　震源リストマップ&lt;/h1&gt;
+気象庁の&lt;a href=&#34;https://www.data.jma.go.jp/svd/eqev/data/daily_map/index.html&#34; target=&#34;_blank&#34;&gt;震源リスト&lt;/a&gt;をマップ化。緯度・経度が60進数になっているので、10進数に変換する必要があり、ちょっと手間がかかるため、Excelでテキストデータからマップデータに変換するVBAを組みました。自動でマップデータを作成できるようになったので、今後も定期的に投稿していきます。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。&lt;br&gt;マップURLは↓こちら&lt;a href=&#34;https://t.co/j1eRTA1taz&#34;&gt;https://t.co/j1eRTA1taz&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1439909703786459141?ref_src=twsrc%5Etfw&#34;&gt;September 20, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;h3 class=&#34;title&#34;&gt;第１位　ダムの可視化マップ&lt;/h1&gt;
+2021年10月9日現在、いいね数601、RT数229、インプレッション67,000超えを獲得したマップ。ダントツの注目度でしたね。Twitterで通知が止まらなくなるというのは、こういうことかと初めて体験しました。１つのマップに落とし込む情報量（マップでは属性といいます。）が豊富だったことも要因かなと思います。今後のマップ化の道標となるマップ化でした。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本全国のダムの情報を可視化しました。&lt;br&gt;&lt;br&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;br&gt;&lt;br&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます🙇‍♂️&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/V6M0X6gp7W&#34;&gt;https://t.co/V6M0X6gp7W&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1424327617096781829?ref_src=twsrc%5Etfw&#34;&gt;August 8, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;p&gt;ランキング５選は以上の結果になりました。これからも色々な可視化・マップを作っていきたいと思っています。今後もよろしくお願いします。&lt;/p&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>1日の震源リストを可視化させてみる</title>
       <link>https://dpnote.netlify.app/post/earthquakelist/</link>
