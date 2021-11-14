@@ -4,32 +4,38 @@ var data = [
   {
     url: "https://dpnote.netlify.app/",
     title: "DP Note",
-    date: "2021-10-28T00:00:00Z",
+    date: "2021-11-14T00:00:00Z",
     body: "DP Note"
   },
   {
     url: "https://dpnote.netlify.app/post/",
     title: "Posts",
-    date: "2021-10-28T00:00:00Z",
+    date: "2021-11-14T00:00:00Z",
     body: "Posts"
   },
   {
     url: "https://dpnote.netlify.app/tags/",
     title: "Tags",
-    date: "2021-10-28T00:00:00Z",
+    date: "2021-11-14T00:00:00Z",
     body: "Tags"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/bias/",
+    title: "正常性バイアス",
+    date: "2021-11-14T00:00:00Z",
+    body: "正常性バイアス 防災を語るうえで欠くことのできない人間の心理「正常性バイアス」について解説します。 大切なので何度でも言います。『正常性バイアス』予期せぬ出来事に対し正常心を保つための人の特性。災害時に、これが強くかかると〝なぜか〟大丈夫と思い込み、避難行動に移さないというリスクがあります。災害に遭ったら、まずは身を守ります。そして、次の行動のとき、この言葉を思い出してね。 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) October 28, 2021 大事なこと言います。「同調性バイアス」集団の中にいると、つい他人と同じ行動をとってしまう心理。避難が遅れる原因にもなり得ます。特に危険なのが火災。その時の判断ミスで命に関わります。この心理を逆利用して、誰かが率先して逃げると皆、動きます。あなたが率先して逃げて！というお話。 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) November 13, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
+    title: "防災全般",
+    date: "2021-11-14T00:00:00Z",
+    body: "防災全般"
   },
   {
     url: "https://dpnote.netlify.app/post/hinan4/",
     title: "避難時に覚えておきたい４つのこと",
     date: "2021-10-28T00:00:00Z",
     body: "避難時に覚えておきたい４つのこと 避難時に「忘れがち」な事項をまとめました。 忘れがちなんですが...自宅から避難する際、❶ブレーカーを落とす(通電火災防止)、❷戸締り(盗難防止)、❸ガス栓を閉める(火災防止)ことは、よく言われます。あと、もう一つ❹『洗濯機の水栓は普段、閉めてますか？』何かの拍子にホースが外れると大変なことになります。習慣化しておくと良いですね！ \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) October 19, 2021"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDit/",
-    title: "防災×IT",
-    date: "2021-10-28T00:00:00Z",
-    body: "防災×IT"
   },
   {
     url: "https://dpnote.netlify.app/post/datarank/",
@@ -48,6 +54,12 @@ var data = [
     title: "1日の震源リストを可視化させてみる",
     date: "2021-09-25T00:00:00Z",
     body: "1日の震源リストを可視化させてみる 「1000回以上」揺れてます。最近の地震の動向が気になったので、可視化してみました！ 「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。 マップURLは↓こちらhttps://t.co/j1eRTA1taz \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) September 20, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDit/",
+    title: "防災×IT",
+    date: "2021-09-11T00:00:00Z",
+    body: "防災×IT"
   },
   {
     url: "https://dpnote.netlify.app/post/population/",
