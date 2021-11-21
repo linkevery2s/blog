@@ -45,9 +45,15 @@ var data = [
   },
   {
     url: "https://dpnote.netlify.app/post/childrenmessage/",
-    title: "Childrenmessage",
+    title: "子ども達の言葉",
     date: "2021-11-16T00:00:00Z",
-    body: "Childrenmessage 東日本大震災の時の子どもたちの言葉をご紹介します。 突き刺さった。東日本大震災の時、盗難被害が相次いだ。それを知った子供達の言葉『しっかりしろ！大人！！』子供達は純粋で、ちゃんと分かってるんだなと思った。この子達が社会に出る時に\u0026quot;ちゃんとした大人もいるんだよ\u0026quot;と胸張って言えるように、このアカウントの世界観を作っていきたいと思うのです \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) October 23, 2021"
+    body: "子ども達の言葉 東日本大震災の時の子ども達の言葉をご紹介します。 突き刺さった。東日本大震災の時、盗難被害が相次いだ。それを知った子供達の言葉『しっかりしろ！大人！！』子供達は純粋で、ちゃんと分かってるんだなと思った。この子達が社会に出る時に\u0026quot;ちゃんとした大人もいるんだよ\u0026quot;と胸張って言えるように、このアカウントの世界観を作っていきたいと思うのです \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) October 23, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/",
+    title: "災害事例集",
+    date: "2021-11-16T00:00:00Z",
+    body: "災害事例集"
   },
   {
     url: "https://dpnote.netlify.app/post/bias/",
@@ -120,12 +126,6 @@ var data = [
     title: "パブリックDNSをご存じですか？",
     date: "2021-08-28T00:00:00Z",
     body: "パブリックDNSをご存じですか？ パブリックDNSについて、ご紹介します。 防災✖️ITを考える① 「パブリックDNS」をご存知ですか？ WEB閲覧時の名前解決を高速化してくれるパブリックDNS 災害時など、ネット回線が混雑したときに有効活用できるかなと🤔 いつか来る大規模な災害時に、この知識が役に立つ日が来ることを信じて...ここにツイートを残します‼️🙇‍♂️ pic.twitter.com/ka7HBUjLuG \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 26, 2020"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/",
-    title: "災害事例集",
-    date: "2021-08-27T00:00:00Z",
-    body: "災害事例集"
   },
   {
     url: "https://dpnote.netlify.app/post/instagram1/",
