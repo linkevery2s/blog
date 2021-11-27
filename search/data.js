@@ -4,20 +4,44 @@ var data = [
   {
     url: "https://dpnote.netlify.app/",
     title: "DP Note",
-    date: "2021-11-20T00:00:00Z",
+    date: "2021-11-26T00:00:00Z",
     body: "DP Note"
   },
   {
     url: "https://dpnote.netlify.app/post/",
     title: "Posts",
-    date: "2021-11-20T00:00:00Z",
+    date: "2021-11-26T00:00:00Z",
     body: "Posts"
   },
   {
     url: "https://dpnote.netlify.app/tags/",
     title: "Tags",
-    date: "2021-11-20T00:00:00Z",
+    date: "2021-11-26T00:00:00Z",
     body: "Tags"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/water/",
+    title: "水の力と津波の危険性",
+    date: "2021-11-26T00:00:00Z",
+    body: "水の力と津波の危険性 水の力と津波の危険性について、まとめました。 覚えておいて。水の力は凄まじい。水力発電でエネルギーを作られるぐらいの力を持っている。「ん？50cmの津波、大したことないやん。」ちょっと待ってくれ、津波は『体積』でやってくるのよ。50cmは男性の8割は立ってられない力を持っています。警報・注意報来たら、迷わず行動起こしてねというお話。 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) October 24, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
+    title: "防災全般",
+    date: "2021-11-26T00:00:00Z",
+    body: "防災全般"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/glass/",
+    title: "内部被害による怪我の原因",
+    date: "2021-11-23T00:00:00Z",
+    body: "内部被害による怪我の原因 阪神淡路大震災のときの内部被害の統計を可視化してみました。 阪神淡路大震災のときの内部被害の可視化。これを見れば分かるとおり、地震時には、上から降ってくるor飛んでくるリスクがあるから、やっぱり整理整頓は大切ですね。 pic.twitter.com/AfjV1Wc0mm \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) November 16, 2021 やってみよう。今日から出来る超簡単な防災があります。阪神淡路大震災にて内部被害のあったご家庭のうち、29%の方は【ガラス】による被害があったと報告されています（総務省消防庁）。つまり、あなたの寝室に『スリッパ』を置きましょう。ちなみに僕は寝るのが趣味の一つです。現場からは以上です。 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) October 30, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
+    title: "災害データ可視化",
+    date: "2021-11-23T00:00:00Z",
+    body: "災害データ可視化"
   },
   {
     url: "https://dpnote.netlify.app/post/smoke/",
@@ -26,22 +50,10 @@ var data = [
     body: "人は煙のスピードに勝てない 人と煙の速度を図解にして比較してみました。 衝撃です！人は煙のスピードに「勝てない」というお話。いかに事前に危険を察知して「逃げ切れるか」だと思う。あとは、❶煙は上に上がるので、低い姿勢で歩く、❷お出かけの際は、ハンカチやタオルは持っていくなど、災害データから見えてくる防災は確実に存在する。 pic.twitter.com/1F6T8aHxtD \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) November 17, 2021"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
-    title: "災害データ可視化",
-    date: "2021-11-20T00:00:00Z",
-    body: "災害データ可視化"
-  },
-  {
     url: "https://dpnote.netlify.app/post/siren/",
     title: "消防車のサイレンの違い",
     date: "2021-11-18T00:00:00Z",
     body: "消防車のサイレンの違い 消防車のサイレンには意味があることをご存知ですか？ あまり知られていないのですが、消防車のサイレンには意味があります。❶\u0026quot;ウー、ウー、カンカンカン\u0026quot;(サイレンと鐘)は火災の出動、❷\u0026quot;ウー、ウー\u0026quot;(サイレンのみ)は火災以外(交通事故、水害の救助など)の出動、❸\u0026quot;カンカン\u0026quot;(鐘のみ)は鎮静後の戻り。乾燥シーズン、火には気を付けようね！ \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) November 6, 2021"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
-    title: "防災全般",
-    date: "2021-11-18T00:00:00Z",
-    body: "防災全般"
   },
   {
     url: "https://dpnote.netlify.app/post/childrenmessage/",
