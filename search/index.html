@@ -94,9 +94,9 @@
   <article class="post_content">
     <h1 class="post_title">ブログ内検索</h1>
     <p>キーワードを入力するとリアルタイムで検索することができます。</p>
-    <input type="text" name="text1" id="text" autocomplete="off" placeholder="キーワード検索">
-	<span class="exp" onclick="search2();">検索</span>
-	<ul id ="output"></ul>
+	<input onkeyup="search(this.value)" size="15" autocomplete="off" autofocus placeholder="検索ワード" />
+	<span id="inputWord"></span> <span id="resultCount"></span>
+	<div id="result"></div>
 
   </article>
 
@@ -181,35 +181,71 @@
 
     <script type="text/javascript" src="https://dpnote.netlify.app/js/bundle.min.617c4c3549a10c9fe7e1bb91e87f0722f6a285b59e742c7123c755df9fb33530bae76060ebd303966dd0e1c09813e679f8042802b7fd059315ef1345f0429ad2.js" integrity="sha512-YXxMNUmhDJ/n4buR6H8HIvaihbWedCxxI8dV35&#43;zNTC652Bg69MDlm3Q4cCYE&#43;Z5&#43;AQoArf9BZMV7xNF8EKa0g==" crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
 <script>
+function search(query) {
+  var result = searchData(query);
+  var html = createHtml(result);
+  showResult(html);
+  showResultCount(result.length, data.length);
+}
 
-var kensaku; var i;
+function searchData(query) {
+  
+  
+  var result = [];
 
-function search2(){
-	document.getElementById("output").style.display = "block";
-	kensaku = document.getElementById("text").value;
-	$("#output").empty();
-	if(kensaku == ""){
-		}else{
-    			todou();
+  query = query.trim();
+  if (query.length < 1) {
+    return result;
+  }
+  var re = new RegExp(query, 'i');
+  for (var i = 0; i < data.length; ++i) {
+    var pos = data[i].body.search(re);
+    if (pos != -1) {
+      result.push([i, pos, pos + query.length]);
     }
+  }
+  return result;
 }
 
-function todou(){
-	$(document).ready(function () {
-   		$.getJSON("https://dpnote.netlify.app/search/data.json", function(data){
-        	for(var i in data){
-        		if(data[i].Jusho.indexOf(kensaku) != -1) {
-        		$("#output").append("<li class='lin'><a href='" + data[i].saigai + "'>" + data[i].Name + "</a><div class='setu'>" + data[i].Jusho + "</div></li>");
-        		}
-        	}
-    	});
-	});
+function createHtml(result) {
+  var htmls = [];
+  for (var i = 0; i < result.length; ++i) {
+    var dataIndex = result[i][0];
+    var startPos = result[i][1];
+    var endPos = result[i][2];
+    var url = data[dataIndex].url;
+    var title = data[dataIndex].title;
+    var body = data[dataIndex].body;
+    htmls.push(createEntry(url, title, body, startPos, endPos));
+  }
+  return htmls.join('');
 }
 
+function createEntry(url, title, body, startPos, endPos) {
+  return '<div class="item">' +
+      '<a class="item_title" href="' + url + '">' + title + '</a>' +
+      '<div class="item_excerpt">' + excerpt(body, startPos, endPos) + '</div>' +
+      '</div>';
+}
+
+function excerpt(body, startPos, endPos) {
+  return [
+    body.substring(startPos - 30, startPos),
+    '<b>', body.substring(startPos, endPos), '</b>',
+    body.substring(endPos, endPos + 200)
+  ].join('');
+}
+
+function showResult(html) {
+  var el = document.getElementById('result');
+  el.innerHTML = html;
+}
+
+function showResultCount(count, total) {
+  var el = document.getElementById('resultCount');
+  el.innerHTML = '<b>' + count + '</b> 件見つかりました（' + total + '件中）';
+}
 </script>
-
 </body>
 </html>
