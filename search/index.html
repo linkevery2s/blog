@@ -43,6 +43,17 @@
     input::-webkit-input-placeholder {
       color: rgba(0, 119, 184, 0.5);
     }
+    #exp{
+      font-size: 1.2em;
+      font-weight: bolder;
+      height: 45px;	
+      background: #007bbb;
+      color: #fff;
+      padding: .5em;
+      cursor: pointer;
+      border-radius: .3em;
+    }
+    
     #result {
       margin: 1em;
     }
@@ -52,10 +63,11 @@
       font-weight: bolder;
     }
     .item_excerpt {
-      background: white;
+      background: #fff;
       margin: 0.5em 2em 1em 1em;
       padding: 0.5em;
       font-size: smaller;
+      border-radius: .5em;
     }
     .item_excerpt b {
       	color:#666600;
@@ -68,14 +80,6 @@
     .item {
     	border-top: 1px dotted #000;
     	padding-top: 1em;
-    }
-    .search_button{
-    	cursor: pointer;
-    	background-color: #0077b8;
-    	color: #ffffff;
-    	padding: 12px;
-    	margin-left: 5px;
-    	border-radius: 0.5em;
     }
 	</style>
 </head>
@@ -94,7 +98,7 @@
   <article class="post_content">
     <h1 class="post_title">ブログ内検索</h1>
     <p>キーワードを入力するとリアルタイムで検索することができます。</p>
-	<input onkeyup="search(this.value)" size="15" autocomplete="off" autofocus placeholder="検索ワード" />
+	<input type="text" name="text1" id="text" size="15" autocomplete="off" autofocus placeholder="キーワード検索" /> <span id="exp" onclick="search(text.value)">検 索</span><br>
 	<span id="inputWord"></span> <span id="resultCount"></span>
 	<div id="result"></div>
 
@@ -190,8 +194,7 @@ function search(query) {
 }
 
 function searchData(query) {
-  
-  
+ 
   var result = [];
 
   query = query.trim();
