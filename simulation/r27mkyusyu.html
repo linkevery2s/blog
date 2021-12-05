@@ -38,6 +38,21 @@
 
         <style type="text/css">
           body {margin: 0; padding: 0; overflow: hidden;}
+          
+          #dict{
+              position: fixed;
+              z-index: 100; 
+              right: 10px;
+              bottom: 45px; 
+              font-size: 10px;
+              color: #c0c6c9;            
+          }
+          
+          #dict a{
+              text-decoration: none;
+              color: #2ca9e1;
+              border-bottom: 1px dotted #2ca9e1;
+          }
         </style>
 
         <!--MapBox token-->
@@ -62,6 +77,12 @@
         <div id="app">
           <!-- Kepler.gl map will be placed here-->
         </div>
+
+        <span id="dict">
+
+            出典：<a href="https://www.data.jma.go.jp/obd/stats/etrn/" target="_blank">気象データ</a>、気象庁、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a>
+
+        </span>
 
         <!-- Load our React component. -->
         <script>
