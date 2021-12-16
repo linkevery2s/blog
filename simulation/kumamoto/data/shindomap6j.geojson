@@ -1,0 +1,5 @@
+﻿var shindomap6j={"type":"FeatureCollection","name":"aichi","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[130.835833333333,32.7680555555556]},"properties":{"Date":"2016/4/14","time":"22:07:35","magnitude":"5.8","shindo":"震度６弱","deep":"8 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.885833333333,32.8519444444444]},"properties":{"Date":"2016/4/16","time":"01:45:55","magnitude":"5.9","shindo":"震度６弱","deep":"11 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.833611111111,32.8355555555556]},"properties":{"Date":"2016/4/16","time":"09:48:33","magnitude":"5.4","shindo":"震度６弱","deep":"16 km"}}
+]};

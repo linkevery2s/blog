@@ -1,0 +1,12 @@
+﻿var shindomap5j={"type":"FeatureCollection","name":"aichi","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[130.733611111111,32.6683333333333]},"properties":{"Date":"2016/4/14","time":"22:38:43","magnitude":"5.0","shindo":"震度５弱","deep":"11 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.818333333333,32.7666666666667]},"properties":{"Date":"2016/4/14","time":"23:43:41","magnitude":"5.1","shindo":"震度５弱","deep":"14 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.750277777778,32.7]},"properties":{"Date":"2016/4/15","time":"01:53:01","magnitude":"4.8","shindo":"震度５弱","deep":"12 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.750277777778,32.7]},"properties":{"Date":"2016/4/15","time":"01:53:01","magnitude":"4.8","shindo":"震度５弱","deep":"12 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.751666666667,32.7502777777778]},"properties":{"Date":"2016/4/16","time":"01:44:07","magnitude":"5.4","shindo":"震度５弱","deep":"15 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[131.083888888889,32.9669444444444]},"properties":{"Date":"2016/4/16","time":"03:09:30","magnitude":"4.2","shindo":"震度５弱","deep":"10 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[131.385277777778,33.2672222222222]},"properties":{"Date":"2016/4/16","time":"07:11:37","magnitude":"5.4","shindo":"震度５弱","deep":"6 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.767777777778,32.7838888888889]},"properties":{"Date":"2016/4/16","time":"07:23:54","magnitude":"4.8","shindo":"震度５弱","deep":"12 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.818611111111,32.8502777777778]},"properties":{"Date":"2016/4/16","time":"09:50:06","magnitude":"4.5","shindo":"震度５弱","deep":"15 km"}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[130.717222222222,32.6858333333333]},"properties":{"Date":"2016/4/16","time":"16:02:01","magnitude":"5.4","shindo":"震度５弱","deep":"12 km"}}
+]};
