@@ -83,6 +83,7 @@
   <div id="app">
     <!-- Kepler.gl map will be placed here-->
   </div>
+
   <span id="dict">
 
     出典：<a href="https://www.jma.go.jp/jma/kishou/books/saigaiji/saigaiji_201101/saigaiji_201101.html" target="_blank">災害時地震・津波速報 平成23年(2011年)東北地方太平洋沖地震</a>、気象庁、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
@@ -280,7 +281,7 @@
       const datasets = [{
         "version": "v1",
         "data": {
-          "id": "bvas8z8ks",
+          "id": "et67pwz3g",
           "label": "data.csv",
           "color": [143, 47, 191],
           "allData": [
@@ -470,10 +471,10 @@
           "visState": {
             "filters": [],
             "layers": [{
-              "id": "glx1j3",
+              "id": "vbh838a",
               "type": "hexagon",
               "config": {
-                "dataId": "bvas8z8ks",
+                "dataId": "et67pwz3g",
                 "label": "Point",
                 "color": [255, 203, 153],
                 "highlightColor": [252, 242, 26, 255],
@@ -483,7 +484,7 @@
                 },
                 "isVisible": true,
                 "visConfig": {
-                  "opacity": 0.8,
+                  "opacity": 0.6,
                   "worldUnitSize": 12.987,
                   "resolution": 8,
                   "colorRange": {
@@ -493,13 +494,13 @@
                     "colors": ["#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"]
                   },
                   "coverage": 1,
-                  "sizeRange": [0, 500],
-                  "percentile": [0, 100],
-                  "elevationPercentile": [0, 100],
-                  "elevationScale": 88.3,
+                  "sizeRange": [0, 1000],
+                  "percentile": [0, "1000"],
+                  "elevationPercentile": [0, "1000"],
+                  "elevationScale": 53.2,
                   "enableElevationZoomFactor": true,
-                  "colorAggregation": "average",
-                  "sizeAggregation": "average",
+                  "colorAggregation": "maximum",
+                  "sizeAggregation": "maximum",
                   "enable3d": true
                 },
                 "hidden": false,
@@ -528,14 +529,14 @@
             "interactionConfig": {
               "tooltip": {
                 "fieldsToShow": {
-                  "bvas8z8ks": [{
+                  "et67pwz3g": [{
                     "name": "heigh",
                     "format": null
                   }]
                 },
                 "compareMode": false,
                 "compareType": "absolute",
-                "enabled": true
+                "enabled": false
               },
               "brush": {
                 "size": 0.5,
@@ -556,12 +557,12 @@
             }
           },
           "mapState": {
-            "bearing": -23.134502923976594,
+            "bearing": -21.26315789473684,
             "dragRotate": true,
-            "latitude": 33.73038019889315,
-            "longitude": 136.56670613933878,
-            "pitch": 49.968893358083896,
-            "zoom": 4.9166680069217055,
+            "latitude": 34.87198161249602,
+            "longitude": 135.6323367325173,
+            "pitch": 55.95859716263545,
+            "zoom": 4.733251593861444,
             "isSplit": false
           },
           "mapStyle": {
