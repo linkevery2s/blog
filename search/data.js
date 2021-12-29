@@ -4,20 +4,38 @@ const data = [
   {
     url: "https://dpnote.netlify.app/",
     title: "DP Note",
-    date: "2021-12-11T00:00:00Z",
+    date: "2021-12-29T00:00:00Z",
     body: "DP Note"
   },
   {
     url: "https://dpnote.netlify.app/post/",
     title: "Posts",
-    date: "2021-12-11T00:00:00Z",
+    date: "2021-12-29T00:00:00Z",
     body: "Posts"
   },
   {
     url: "https://dpnote.netlify.app/tags/",
     title: "Tags",
-    date: "2021-12-11T00:00:00Z",
+    date: "2021-12-29T00:00:00Z",
     body: "Tags"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/time/",
+    title: "『時間軸』を図解にて可視化",
+    date: "2021-12-29T00:00:00Z",
+    body: "『時間軸』を図解にて可視化 天気予報などで使われる『時間軸』を図解にて可視化してみました。 ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。 pic.twitter.com/maaEy4786o \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) December 27, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
+    title: "災害データ可視化",
+    date: "2021-12-29T00:00:00Z",
+    body: "災害データ可視化"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
+    title: "防災全般",
+    date: "2021-12-29T00:00:00Z",
+    body: "防災全般"
   },
   {
     url: "https://dpnote.netlify.app/post/r27mkyusyu/",
@@ -26,22 +44,10 @@ const data = [
     body: "令和2年九州豪雨を可視化しました。 令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。 令和2年九州豪雨を可視化しました。 各観測地点の24時間降雨量最大値をマッピング。400mmを超える地点もあり、３Dにすると降雨量の多さが確認できますね。 PC、スマホから操作できます↓https://t.co/rOyG0LOxcE pic.twitter.com/zAjtVj2Ue1 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) December 5, 2021"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
-    title: "災害データ可視化",
-    date: "2021-12-11T00:00:00Z",
-    body: "災害データ可視化"
-  },
-  {
     url: "https://dpnote.netlify.app/post/bbias/",
     title: "防災における人の心理バイアスを図解にて可視化",
     date: "2021-12-04T00:00:00Z",
     body: "防災における人の心理バイアスを図解にて可視化 防災における人の心理バイアスを図解にて可視化しました。 防災における人の心理バイアスについて、図解にて可視化してみました。いざという時に冷静な行動を取れるように覚えておこう。 pic.twitter.com/N5MpVjmcaW \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) November 28, 2021 大切なので何度でも言います。『正常性バイアス』予期せぬ出来事に対し正常心を保つための人の特性。災害時に、これが強くかかると〝なぜか〟大丈夫と思い込み、避難行動に移さないというリスクがあります。災害に遭ったら、まずは身を守ります。そして、次の行動のとき、この言葉を思い出してね。 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) October 28, 2021 大事なこと言います。「同調性バイアス」集団の中にいると、つい他人と同じ行動をとってしまう心理。避難が遅れる原因にもなり得ます。特に危険なのが火災。その時の判断ミスで命に関わります。この心理を逆利用して、誰かが率先して逃げると皆、動きます。あなたが率先して逃げて！というお話。 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) November 13, 2021 大事なこと言います。「同化性バイアス」異常があっても背景に埋もれてしまい、危険と認識しない心理状態。小石が落ち始めるなどの土砂災害の前兆を「見逃す」のが典型例。クイズ番組で背景変化の問題がありますが、人はわずかな変化を察知するのが苦手です。防災訓練で意識することが大切ですね。 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) November 23, 2021"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
-    title: "防災全般",
-    date: "2021-12-04T00:00:00Z",
-    body: "防災全般"
   },
   {
     url: "https://dpnote.netlify.app/post/water/",

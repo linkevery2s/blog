@@ -6,7 +6,23 @@
     <description>Recent content in Posts on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 11 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『時間軸』を図解にて可視化</title>
+      <link>https://dpnote.netlify.app/post/time/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/time/</guid>
+      <description>
+        
+          &lt;p&gt;天気予報などで使われる『時間軸』を図解にて可視化してみました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。 &lt;a href=&#34;https://t.co/maaEy4786o&#34;&gt;pic.twitter.com/maaEy4786o&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1475413649175064578?ref_src=twsrc%5Etfw&#34;&gt;December 27, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>令和2年九州豪雨を可視化しました。</title>
       <link>https://dpnote.netlify.app/post/r27mkyusyu/</link>
