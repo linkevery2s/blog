@@ -1,0 +1,601 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<title>東日本大震災の津波観測マップ</title>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Uber Font-->
+  <link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css">
+
+  <!--MapBox css-->
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css" rel="stylesheet">
+
+  <meta property="og:title" content="東日本大震災の津波観測マップ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dpnote.netlify.app/simulation/higashinihontsunami.jpg" />
+  <meta property="og:description" content="東日本大震災の津波観測マップ" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="東日本大震災の津波観測マップ" />
+  <meta name="twitter:image" content="https://dpnote.netlify.app/simulation/higashinihontsunami.jpg" />
+  <meta name="twitter:description" content="東日本大震災の津波観測マップ" />
+  <meta name="author" content="仁志">
+  <meta name="keywords" content="東日本大震災,津波,津波観測,マップ,3Dマップ" />
+
+  <!-- Load React/Redux -->
+  <script src="https://unpkg.com/react@16.8.4/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/redux@3.7.2/dist/redux.js" crossorigin></script>
+  <script src="https://unpkg.com/react-redux@7.1.3/dist/react-redux.min.js" crossorigin></script>
+  <script src="https://unpkg.com/styled-components@4.1.3/dist/styled-components.min.js" crossorigin></script>
+
+  <!-- Load Kepler.gl -->
+  <script src="https://unpkg.com/kepler.gl@2.5.5/umd/keplergl.min.js" crossorigin></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-202486341-1');
+  </script>
+
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #dict {
+      position: fixed;
+      z-index: 100;
+      right: 10px;
+      bottom: 45px;
+      font-size: 10px;
+      color: #c0c6c9;
+    }
+
+    #dict a {
+      text-decoration: none;
+      color: #2ca9e1;
+      border-bottom: 1px dotted #2ca9e1;
+    }
+  </style>
+
+  <!--MapBox token-->
+  <script>
+    /**
+     * Provide your MapBox Token
+     **/
+    const MAPBOX_TOKEN = 'pk.eyJ1IjoiaGl0b3NoaTJzIiwiYSI6ImNrd3RiNTEzNzEwZjAydW10bGVnaGg1N2EifQ.21GL9qXbFX80awm7kBJ0-A';
+    const WARNING_MESSAGE = 'Please Provide a Mapbox Token in order to use Kepler.gl. Edit this file and fill out MAPBOX_TOKEN with your access key';
+  </script>
+
+</head>
+
+<body>
+  <!-- We will put our React component inside this div. -->
+  <div id="app">
+    <!-- Kepler.gl map will be placed here-->
+  </div>
+  <span id="dict">
+
+    出典：<a href="https://www.jma.go.jp/jma/kishou/books/saigaiji/saigaiji_201101/saigaiji_201101.html" target="_blank">災害時地震・津波速報 平成23年(2011年)東北地方太平洋沖地震</a>、気象庁、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
+      4.0</a>
+
+  </span>
+
+  <!-- Load our React component. -->
+  <script>
+    /* Validate Mapbox Token */
+    if ((MAPBOX_TOKEN || '') === '' || MAPBOX_TOKEN === 'PROVIDE_MAPBOX_TOKEN') {
+      alert(WARNING_MESSAGE);
+    }
+
+    /** STORE **/
+    const reducers = (function createReducers(redux, keplerGl) {
+      return redux.combineReducers({
+        // mount keplerGl reducer
+        keplerGl: keplerGl.keplerGlReducer.initialState({
+          uiState: {
+            readOnly: true,
+            currentModal: null
+          }
+        })
+      });
+    }(Redux, KeplerGl));
+
+    const middleWares = (function createMiddlewares(keplerGl) {
+      return keplerGl.enhanceReduxMiddleware([
+        // Add other middlewares here
+      ]);
+    }(KeplerGl));
+
+    const enhancers = (function craeteEnhancers(redux, middles) {
+      return redux.applyMiddleware(...middles);
+    }(Redux, middleWares));
+
+    const store = (function createStore(redux, enhancers) {
+      const initialState = {};
+
+      return redux.createStore(
+        reducers,
+        initialState,
+        redux.compose(enhancers)
+      );
+    }(Redux, enhancers));
+    /** END STORE **/
+
+    /** COMPONENTS **/
+    var KeplerElement = (function makeKeplerElement(react, keplerGl, mapboxToken) {
+      var LogoSvg = function LogoSvg() {
+        return react.createElement(
+          "div", {
+            className: "logo-container",
+            style: {
+              position: 'fixed',
+              zIndex: 10000,
+              padding: '4px'
+            }
+          },
+          react.createElement(
+            "svg", {
+              className: "kepler_gl__logo",
+              width: "107px",
+              height: "21px",
+              viewBox: "0 0 124 24"
+            },
+            react.createElement(
+              "g", {
+                transform: "translate(13.500000, 13.500000) rotate(45.000000) translate(-13.500000, -13.500000) translate(4.000000, 4.000000)"
+              },
+              react.createElement("rect", {
+                x: "0",
+                y: "6",
+                transform: "matrix(2.535181e-06 1 -1 2.535181e-06 18.1107 6.0369)",
+                fill: "#535C6C",
+                width: "12.1",
+                height: "12.1"
+              }),
+              react.createElement("rect", {
+                x: "6",
+                y: "0",
+                transform: "matrix(2.535182e-06 1 -1 2.535182e-06 18.1107 -6.0369)",
+                fill: "#1FBAD6",
+                width: "12.1",
+                height: "12.1"
+              })
+            ),
+            react.createElement(
+              "g", {},
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M39,8.7h2.2l-2.8,4.2l2.9,5.1H39l-2.4-4.2h-1.3V18h-2V5l2-0.1v7.3h1.3L39,8.7z"
+              }),
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M42.4,13.3c0-1.5,0.4-2.7,1.1-3.5s1.8-1.2,3.1-1.2c1.3,0,2.2,0.4,2.8,1.1c0.6,0.7,0.9,1.8,0.9,3.3 c0,0.4,0,0.8,0,1.1h-5.8c0,1.6,0.8,2.4,2.4,2.4c1,0,2-0.2,2.9-0.6l0.2,1.7c-0.4,0.2-0.9,0.4-1.4,0.5s-1.1,0.2-1.7,0.2 c-1.5,0-2.6-0.4-3.3-1.2C42.8,16.1,42.4,14.9,42.4,13.3z M46.6,10.1c-0.7,0-1.2,0.2-1.5,0.5c-0.4,0.4-0.6,0.9-0.6,1.7h4 c0-0.8-0.2-1.4-0.5-1.7S47.2,10.1,46.6,10.1z"
+              }),
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M57.1,18.2c-1,0-1.8-0.3-2.3-0.9l0,0l0,1.3v2.5h-2V8.7h1.5l0.3,0.9h0c0.3-0.3,0.7-0.6,1.2-0.7 c0.4-0.2,0.9-0.3,1.4-0.3c1.2,0,2.1,0.4,2.7,1.1c0.6,0.7,0.9,2,0.9,3.7c0,1.6-0.3,2.8-1,3.7C59.2,17.8,58.3,18.2,57.1,18.2z M56.7,10.3c-0.4,0-0.8,0.1-1.1,0.2c-0.3,0.2-0.6,0.4-0.8,0.7v4.3c0.2,0.3,0.4,0.5,0.7,0.7c0.3,0.2,0.7,0.3,1.1,0.3 c0.7,0,1.2-0.2,1.6-0.7c0.4-0.5,0.5-1.3,0.5-2.5c0-0.8-0.1-1.4-0.2-1.8s-0.4-0.7-0.7-0.9C57.6,10.4,57.2,10.3,56.7,10.3z"
+              }),
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M63.2,16V5l2-0.1v10.8c0,0.3,0.1,0.5,0.2,0.6c0.1,0.1,0.3,0.2,0.6,0.2c0.3,0,0.6,0,0.9-0.1V18 c-0.4,0.1-1,0.2-1.6,0.2c-0.8,0-1.3-0.2-1.7-0.5S63.2,16.8,63.2,16z"
+              }),
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M68.2,13.3c0-1.5,0.4-2.7,1.1-3.5c0.7-0.8,1.8-1.2,3.1-1.2c1.3,0,2.2,0.4,2.8,1.1c0.6,0.7,0.9,1.8,0.9,3.3 c0,0.4,0,0.8,0,1.1h-5.8c0,1.6,0.8,2.4,2.4,2.4c1,0,2-0.2,2.9-0.6l0.2,1.7c-0.4,0.2-0.9,0.4-1.4,0.5s-1.1,0.2-1.7,0.2 c-1.5,0-2.6-0.4-3.3-1.2C68.6,16.1,68.2,14.9,68.2,13.3z M72.4,10.1c-0.7,0-1.2,0.2-1.5,0.5c-0.4,0.4-0.6,0.9-0.6,1.7h4 c0-0.8-0.2-1.4-0.5-1.7S73,10.1,72.4,10.1z"
+              }),
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M80.2,8.7l0.1,1.7h0c0.3-0.6,0.7-1.1,1.1-1.4c0.4-0.3,1-0.5,1.6-0.5c0.4,0,0.7,0,1,0.1l-0.1,2 c-0.3-0.1-0.7-0.2-1-0.2c-0.7,0-1.3,0.3-1.7,0.8c-0.4,0.5-0.7,1.2-0.7,2.1V18h-2V8.7H80.2z"
+              }),
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M83.8,17c0-0.8,0.4-1.2,1.2-1.2c0.8,0,1.2,0.4,1.2,1.2c0,0.8-0.4,1.1-1.2,1.1C84.2,18.2,83.8,17.8,83.8,17z"
+              }),
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M88.5,18.7c0-0.8,0.4-1.4,1.2-1.8c-0.6-0.3-0.9-0.8-0.9-1.5c0-0.7,0.4-1.2,1.1-1.6c-0.3-0.3-0.6-0.6-0.7-0.9 c-0.2-0.4-0.2-0.8-0.2-1.3c0-1,0.3-1.8,0.9-2.3c0.6-0.5,1.6-0.8,2.8-0.8c0.5,0,1,0,1.4,0.1c0.4,0.1,0.8,0.2,1.1,0.4l2.4-0.2v1.5 h-1.5c0.2,0.4,0.2,0.8,0.2,1.3c0,1-0.3,1.7-0.9,2.2s-1.5,0.8-2.7,0.8c-0.7,0-1.2-0.1-1.6-0.2c-0.1,0.1-0.2,0.2-0.3,0.3 c-0.1,0.1-0.1,0.2-0.1,0.4c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.3,0.2,0.6,0.2l2.7,0.2c1,0.1,1.7,0.3,2.2,0.6c0.5,0.3,0.8,0.9,0.8,1.7 c0,0.6-0.2,1.1-0.5,1.5c-0.4,0.4-0.9,0.8-1.5,1c-0.7,0.2-1.5,0.4-2.4,0.4c-1.3,0-2.3-0.2-3-0.6C88.8,20.1,88.5,19.5,88.5,18.7z M95.1,18.4c0-0.3-0.1-0.5-0.3-0.7s-0.6-0.2-1.1-0.3l-2.7-0.3c-0.2,0.1-0.4,0.3-0.5,0.5c-0.1,0.2-0.2,0.4-0.2,0.6 c0,0.4,0.2,0.8,0.5,1c0.4,0.2,1,0.3,1.8,0.3C94.2,19.5,95.1,19.2,95.1,18.4z M94.3,11.5c0-0.6-0.1-1-0.4-1.2 c-0.3-0.2-0.7-0.3-1.3-0.3c-0.7,0-1.1,0.1-1.4,0.3c-0.3,0.2-0.4,0.6-0.4,1.2s0.1,1,0.4,1.2c0.3,0.2,0.7,0.3,1.4,0.3 c0.6,0,1.1-0.1,1.3-0.4S94.3,12,94.3,11.5z"
+              }),
+              react.createElement("path", {
+                fill: "#1FBAD6",
+                d: "M99.4,16V5l2-0.1v10.8c0,0.3,0.1,0.5,0.2,0.6c0.1,0.1,0.3,0.2,0.6,0.2c0.3,0,0.6,0,0.9-0.1V18 c-0.4,0.1-1,0.2-1.6,0.2c-0.8,0-1.3-0.2-1.7-0.5S99.4,16.8,99.4,16z"
+              })
+            )
+          )
+        );
+      };
+
+      return function App() {
+        var rootElm = react.useRef(null);
+        var _useState = react.useState({
+          width: window.innerWidth,
+          height: window.innerHeight
+        });
+        var windowDimension = _useState[0];
+        var setDimension = _useState[1];
+        react.useEffect(function sideEffect() {
+          function handleResize() {
+            setDimension({
+              width: window.innerWidth,
+              height: window.innerHeight
+            });
+          };
+          window.addEventListener('resize', handleResize);
+          return function() {
+            window.removeEventListener('resize', handleResize);
+          };
+        }, []);
+        return react.createElement(
+          'div', {
+            style: {
+              position: 'absolute',
+              left: 0,
+              width: '100vw',
+              height: '100vh'
+            }
+          },
+          LogoSvg(),
+          react.createElement(keplerGl.KeplerGl, {
+            mapboxApiAccessToken: mapboxToken,
+            id: "map",
+            width: windowDimension.width,
+            height: windowDimension.height
+          })
+        )
+      }
+    }(React, KeplerGl, MAPBOX_TOKEN));
+
+    const app = (function createReactReduxProvider(react, reactRedux, KeplerElement) {
+      return react.createElement(
+        reactRedux.Provider, {
+          store
+        },
+        react.createElement(KeplerElement, null)
+      )
+    }(React, ReactRedux, KeplerElement));
+    /** END COMPONENTS **/
+
+    /** Render **/
+    (function render(react, reactDOM, app) {
+      reactDOM.render(app, document.getElementById('app'));
+    }(React, ReactDOM, app));
+  </script>
+  <!-- The next script will show how to interact directly with Kepler map store -->
+  <script>
+    /**
+     * Customize map.
+     * In the following section you can use the store object to dispatch Kepler.gl actions
+     * to add new data and customize behavior
+     */
+    (function customize(keplerGl, store) {
+      const datasets = [{
+        "version": "v1",
+        "data": {
+          "id": "bvas8z8ks",
+          "label": "data.csv",
+          "color": [143, 47, 191],
+          "allData": [
+            ["えりも町庶野", 42.0431, 143.2942, 350],
+            ["根室市花咲", 43.2781, 145.5682, 286],
+            ["浦河", 42.1617, 142.7747, 280],
+            ["十勝港", 42.2972, 143.3222, 276],
+            ["浜中町霧多布港", 43.0783, 145.1164, 257],
+            ["苫小牧東港", 42.6058, 141.8172, 246],
+            ["函館", 41.7817, 140.7248, 239],
+            ["苫小牧西港", 42.63, 141.6211, 225],
+            ["釧路", 42.9748, 144.3711, 208],
+            ["白老港", 42.5217, 141.3206, 173],
+            ["渡島森港", 42.1119, 140.5908, 164],
+            ["室蘭港", 42.3417, 140.9569, 92],
+            ["根室港", 43.3433, 145.5844, 68],
+            ["枝幸港", 44.9522, 142.5792, 43],
+            ["稚内", 45.4077, 141.6853, 38],
+            ["網走", 44.0197, 144.2857, 34],
+            ["小樽", 43.1833, 141.0336, 32],
+            ["石狩湾新港", 43.2158, 141.3075, 30],
+            ["岩内港", 42.9869, 140.5072, 26],
+            ["瀬棚港", 42.4539, 139.8458, 24],
+            ["留萌", 43.9506, 141.635, 22],
+            ["忍路", 43.2094, 140.8586, 16],
+            ["江差", 41.8706, 140.1253, 15],
+            ["沓形港", 45.1894, 141.1378, 11],
+            ["八戸", 40.5353, 141.5556, 420],
+            ["むつ市関根浜", 41.3637, 141.2306, 279],
+            ["竜飛", 41.2425, 140.3814, 46],
+            ["青森", 40.8353, 140.7639, 30],
+            ["宮古", 39.6362, 141.9797, 850],
+            ["大船渡", 39.0196, 141.7537, 800],
+            ["釜石", 39.2733, 141.8892, 420],
+            ["石巻市鮎川", 38.2966, 141.5051, 860],
+            ["酒田", 38.9175, 139.8236, 40],
+            ["鼠ヶ関", 38.5631, 139.5461, 13],
+            ["相馬", 37.8308, 140.9625, 930],
+            ["いわき市小名浜", 36.937, 140.8919, 333],
+            ["大洗", 36.3075, 140.5739, 400],
+            ["銚子", 35.7444, 140.8583, 250],
+            ["館山市布良", 34.9189, 139.8248, 172],
+            ["千葉", 35.5681, 140.0456, 93],
+            ["父島二見", 27.0953, 142.1882, 182],
+            ["東京晴海", 35.6488, 139.7701, 150],
+            ["八丈島八重根", 33.1003, 139.7786, 140],
+            ["八丈島神湊", 33.1303, 139.8047, 121],
+            ["三宅島坪田", 34.0569, 139.5436, 85],
+            ["神津島神津島港", 34.2092, 139.1317, 85],
+            ["伊豆大島岡田", 34.7894, 139.3913, 73],
+            ["三宅島阿古", 34.0672, 139.4808, 65],
+            ["南鳥島", 24.2956, 153.9739, 41],
+            ["横浜", 35.4683, 139.6369, 155],
+            ["横須賀", 35.2881, 139.6514, 136],
+            ["小田原", 35.2381, 139.1481, 94],
+            ["御前崎", 34.6086, 138.2219, 144],
+            ["沼津市内浦", 35.0175, 138.8896, 134],
+            ["清水", 35.0119, 138.5177, 93],
+            ["焼津", 34.8706, 138.3275, 83],
+            ["伊東", 34.8953, 139.1328, 77],
+            ["南伊豆町石廊崎", 34.612, 138.8491, 71],
+            ["舞阪", 34.6822, 137.6089, 73],
+            ["下田港", 34.6753, 138.9592, 71],
+            ["西伊豆町田子", 34.8072, 138.7642, 41],
+            ["田原市赤羽根", 34.605, 137.1883, 155],
+            ["名古屋", 35.0913, 136.8809, 105],
+            ["半田市衣浦", 34.8818, 136.9435, 74],
+            ["豊橋市三河港", 34.7333, 137.3203, 70],
+            ["鳥羽", 34.4853, 136.8246, 182],
+            ["尾鷲", 34.0767, 136.2074, 175],
+            ["熊野市遊木", 33.9258, 136.1689, 76],
+            ["四日市", 34.9933, 136.6576, 59],
+            ["新潟(西港)", 37.9406, 139.0611, 18],
+            ["柏崎市鯨波", 37.3567, 138.5089, 10],
+            ["粟島", 38.4678, 139.255, 8],
+            ["伏木富山港新湊", 36.7753, 137.1181, 9],
+            ["金沢", 36.6178, 136.6028, 19],
+            ["七尾港", 37.0494, 136.9683, 19],
+            ["舞鶴", 35.4765, 135.3872, 25],
+            ["大阪天保山", 34.6585, 135.4328, 62],
+            ["岬町淡輪", 34.3386, 135.1778, 25],
+            ["神戸", 34.6819, 135.1897, 27],
+            ["姫路", 34.7998, 134.6545, 24],
+            ["洲本", 34.3467, 134.9011, 21],
+            ["豊岡市津居山", 35.6467, 134.8286, 7],
+            ["串本町袋港", 33.4759, 135.7733, 151],
+            ["那智勝浦町浦神", 33.5581, 135.8961, 124],
+            ["白浜町堅田", 33.6834, 135.3758, 113],
+            ["御坊市祓井戸", 33.8508, 135.1644, 109],
+            ["和歌山", 34.2219, 135.1456, 76],
+            ["境港市境", 35.5478, 133.2429, 26],
+            ["岩美町田後", 35.5936, 134.3158, 9],
+            ["浜田", 34.8973, 132.0661, 14],
+            ["隠岐西郷", 36.2014, 133.3304, 10],
+            ["玉野市宇野", 34.4874, 133.9496, 10],
+            ["呉", 34.2406, 132.5503, 29],
+            ["広島", 34.3531, 132.4647, 20],
+            ["下関港長府", 34.0147, 131.0039, 32],
+            ["徳山", 34.0408, 131.8028, 25],
+            ["下関市彦島弟子待", 33.9247, 130.9271, 31],
+            ["三田尻中関港", 34.0339, 131.5883, 22],
+            ["宇部港", 33.9389, 131.2431, 14],
+            ["下関市南風泊港", 33.9483, 130.8769, 11],
+            ["徳島由岐", 33.7711, 134.5922, 115],
+            ["小松島", 34.0092, 134.5873, 75],
+            ["高松", 34.3516, 134.0571, 17],
+            ["坂出市与島港", 34.3844, 133.8231, 11],
+            ["多度津港", 34.275, 133.7456, 9],
+            ["宇和島", 33.2339, 132.5539, 69],
+            ["松山", 33.8589, 132.7122, 20],
+            ["今治市小島", 34.0629, 132.9737, 11],
+            ["須崎港", 33.3833, 133.3, 278],
+            ["土佐清水", 32.7793, 132.9589, 132],
+            ["高知", 33.4989, 133.5689, 77],
+            ["室戸市室戸岬", 33.2665, 134.1646, 73],
+            ["福岡市博多", 33.6189, 130.4078, 32],
+            ["北九州市門司", 33.9453, 130.9572, 34],
+            ["北九州港青浜", 33.9489, 131.0186, 25],
+            ["北九州港日明", 33.9094, 130.8792, 20],
+            ["苅田港", 33.7936, 131.0006, 18],
+            ["玄海町仮屋", 33.473, 129.8494, 20],
+            ["唐津港", 33.4669, 129.9617, 19],
+            ["太良町大浦野崎", 32.9767, 130.2203, 7],
+            ["長崎", 32.7353, 129.8666, 84],
+            ["佐世保", 33.1581, 129.7239, 68],
+            ["長崎港皇后", 32.7225, 129.8347, 58],
+            ["平戸市田平港", 33.3667, 129.5833, 32],
+            ["福江島福江港", 32.6961, 128.8498, 22],
+            ["口之津", 32.6053, 130.1955, 15],
+            ["壱岐島郷ノ浦港", 33.7433, 129.6878, 12],
+            ["対馬比田勝", 34.6553, 129.4783, 9],
+            ["対馬市厳原", 34.1978, 129.2917, 9],
+            ["天草市本渡港", 32.4239, 130.2169, 70],
+            ["苓北町都呂々", 32.4675, 130.0369, 31],
+            ["八代港", 32.5119, 130.5667, 25],
+            ["熊本港", 32.7522, 130.5647, 14],
+            ["三角", 32.6231, 130.4516, 7],
+            ["別府港", 33.2986, 131.5036, 55],
+            ["佐伯市松浦", 32.9461, 131.9608, 43],
+            ["大分", 33.2661, 131.6867, 42],
+            ["宮崎港", 31.9028, 131.4564, 164],
+            ["日南市油津", 31.5768, 131.409, 123],
+            ["日向市細島", 32.4426, 131.6748, 88],
+            ["種子島熊野", 30.4636, 130.9644, 152],
+            ["奄美市小湊", 28.3229, 129.5343, 121],
+            ["志布志港", 31.475, 131.1089, 106],
+            ["南大隅町大泊", 31.0236, 130.6892, 93],
+            ["枕崎", 31.2677, 130.293, 91],
+            ["種子島西之表", 30.735, 130.9922, 83],
+            ["中之島", 29.8419, 129.8478, 82],
+            ["奄美市名瀬", 28.3856, 129.4953, 51],
+            ["阿久根", 32.0172, 130.1911, 47],
+            ["鹿児島", 31.581, 130.5705, 19],
+            ["宮古島平良", 24.8136, 125.2783, 65],
+            ["那覇", 26.2128, 127.6656, 60],
+            ["南城市安座真", 26.1792, 127.8247, 37],
+            ["石垣島石垣港", 24.3322, 124.1631, 23],
+            ["南大東漁港", 25.8683, 131.2281, 19],
+            ["与那国島久部良", 24.4535, 122.9438, 14]
+          ],
+          "fields": [{
+            "name": "point",
+            "type": "string",
+            "format": "",
+            "analyzerType": "STRING"
+          }, {
+            "name": "latitude",
+            "type": "real",
+            "format": "",
+            "analyzerType": "FLOAT"
+          }, {
+            "name": "longitude",
+            "type": "real",
+            "format": "",
+            "analyzerType": "FLOAT"
+          }, {
+            "name": "heigh",
+            "type": "integer",
+            "format": "",
+            "analyzerType": "INT"
+          }]
+        }
+      }];
+      const config = {
+        "version": "v1",
+        "config": {
+          "visState": {
+            "filters": [],
+            "layers": [{
+              "id": "glx1j3",
+              "type": "hexagon",
+              "config": {
+                "dataId": "bvas8z8ks",
+                "label": "Point",
+                "color": [255, 203, 153],
+                "highlightColor": [252, 242, 26, 255],
+                "columns": {
+                  "lat": "latitude",
+                  "lng": "longitude"
+                },
+                "isVisible": true,
+                "visConfig": {
+                  "opacity": 0.8,
+                  "worldUnitSize": 12.987,
+                  "resolution": 8,
+                  "colorRange": {
+                    "name": "ColorBrewer YlOrRd-5",
+                    "type": "sequential",
+                    "category": "ColorBrewer",
+                    "colors": ["#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"]
+                  },
+                  "coverage": 1,
+                  "sizeRange": [0, 500],
+                  "percentile": [0, 100],
+                  "elevationPercentile": [0, 100],
+                  "elevationScale": 88.3,
+                  "enableElevationZoomFactor": true,
+                  "colorAggregation": "average",
+                  "sizeAggregation": "average",
+                  "enable3d": true
+                },
+                "hidden": false,
+                "textLabel": [{
+                  "field": null,
+                  "color": [255, 255, 255],
+                  "size": 18,
+                  "offset": [0, 0],
+                  "anchor": "start",
+                  "alignment": "center"
+                }]
+              },
+              "visualChannels": {
+                "colorField": {
+                  "name": "heigh",
+                  "type": "integer"
+                },
+                "colorScale": "quantile",
+                "sizeField": {
+                  "name": "heigh",
+                  "type": "integer"
+                },
+                "sizeScale": "linear"
+              }
+            }],
+            "interactionConfig": {
+              "tooltip": {
+                "fieldsToShow": {
+                  "bvas8z8ks": [{
+                    "name": "heigh",
+                    "format": null
+                  }]
+                },
+                "compareMode": false,
+                "compareType": "absolute",
+                "enabled": true
+              },
+              "brush": {
+                "size": 0.5,
+                "enabled": false
+              },
+              "geocoder": {
+                "enabled": false
+              },
+              "coordinate": {
+                "enabled": false
+              }
+            },
+            "layerBlending": "normal",
+            "splitMaps": [],
+            "animationConfig": {
+              "currentTime": null,
+              "speed": 1
+            }
+          },
+          "mapState": {
+            "bearing": -23.134502923976594,
+            "dragRotate": true,
+            "latitude": 33.73038019889315,
+            "longitude": 136.56670613933878,
+            "pitch": 49.968893358083896,
+            "zoom": 4.9166680069217055,
+            "isSplit": false
+          },
+          "mapStyle": {
+            "styleType": "light",
+            "topLayerGroups": {},
+            "visibleLayerGroups": {
+              "label": true,
+              "road": true,
+              "border": false,
+              "building": true,
+              "water": true,
+              "land": true,
+              "3d building": false
+            },
+            "threeDBuildingColor": [218.82023004728686, 223.47597962276103, 223.47597962276103],
+            "mapStyles": {}
+          }
+        }
+      };
+
+      const loadedData = keplerGl.KeplerGlSchema.load(
+        datasets,
+        config
+      );
+
+      store.dispatch(keplerGl.addDataToMap({
+        datasets: loadedData.datasets,
+        config: loadedData.config,
+        options: {
+          centerMap: false
+        }
+      }));
+    }(KeplerGl, store))
+  </script>
+</body>
+
+</html>
