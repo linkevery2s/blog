@@ -4,26 +4,38 @@ const data = [
   {
     url: "https://dpnote.netlify.app/",
     title: "DP Note",
-    date: "2021-12-29T00:00:00Z",
+    date: "2022-01-01T00:00:00Z",
     body: "DP Note"
   },
   {
     url: "https://dpnote.netlify.app/post/",
     title: "Posts",
-    date: "2021-12-29T00:00:00Z",
+    date: "2022-01-01T00:00:00Z",
     body: "Posts"
   },
   {
     url: "https://dpnote.netlify.app/tags/",
     title: "Tags",
-    date: "2021-12-29T00:00:00Z",
+    date: "2022-01-01T00:00:00Z",
     body: "Tags"
   },
   {
+    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/",
+    title: "災害事例集",
+    date: "2022-01-01T00:00:00Z",
+    body: "災害事例集"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/tsunamit/",
+    title: "災害事例集「津波てんでんこの意味実感」",
+    date: "2022-01-01T00:00:00Z",
+    body: "災害事例集「津波てんでんこの意味実感」 災害事例集を投稿します。 この投稿をInstagramで見る ひとし｜防災エンジニア(@hitoshi17l)がシェアした投稿"
+  },
+  {
     url: "https://dpnote.netlify.app/post/time/",
-    title: "『時間軸』を図解にて可視化",
+    title: "時間軸を図解にて可視化",
     date: "2021-12-29T00:00:00Z",
-    body: "『時間軸』を図解にて可視化 天気予報などで使われる『時間軸』を図解にて可視化してみました。 ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。 pic.twitter.com/maaEy4786o \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) December 27, 2021"
+    body: "時間軸を図解にて可視化 天気予報などで使われる『時間軸』を図解にて可視化してみました。 ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。 pic.twitter.com/maaEy4786o \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) December 27, 2021"
   },
   {
     url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
@@ -78,12 +90,6 @@ const data = [
     title: "子ども達の言葉",
     date: "2021-11-16T00:00:00Z",
     body: "子ども達の言葉 東日本大震災の時の子ども達の言葉をご紹介します。 突き刺さった。東日本大震災の時、盗難被害が相次いだ。それを知った子供達の言葉『しっかりしろ！大人！！』子供達は純粋で、ちゃんと分かってるんだなと思った。この子達が社会に出る時に\u0026quot;ちゃんとした大人もいるんだよ\u0026quot;と胸張って言えるように、このアカウントの世界観を作っていきたいと思うのです \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) October 23, 2021"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/",
-    title: "災害事例集",
-    date: "2021-11-16T00:00:00Z",
-    body: "災害事例集"
   },
   {
     url: "https://dpnote.netlify.app/post/bias/",
