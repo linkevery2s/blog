@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<title>トンガ火山噴火に伴う津波の様子の可視化</title>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="トンガ火山噴火に伴う津波の様子の可視化" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dpnote.netlify.app/simulation/tonga/ogp.png" />
+  <meta property="og:description" content="トンガ諸島付近のフンガ・トンガ-フンガ・ハアパイ火山の大規模噴火に伴う津波の発生について、３Dマップで可視化しました。" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="トンガ火山噴火に伴う津波の様子の可視化" />
+  <meta name="twitter:image" content="https://dpnote.netlify.app/simulation/tonga/ogp.png" />
+  <meta name="twitter:description" content="トンガ諸島付近のフンガ・トンガ-フンガ・ハアパイ火山の大規模噴火に伴う津波の発生について、３Dマップで可視化しました。" />
+  <meta name="author" content="仁志">
+  <meta name="keywords" content="トンガ,火山噴火,火山,津波,3D,可視化" />
+  <!-- deck.gl standalone bundle -->
+  <script src="https://unpkg.com/deck.gl@^8.6.0-alpha.0/dist.min.js"></script>
+
+  <style type="text/css">
+    html {
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      background: #111;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+
+</body>
+
+<script type="text/javascript">
+  // source: Natural Earth http://www.naturalearthdata.com/ via geojson.xyz
+  const COUNTRIES =
+    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_scale_rank.geojson'; //eslint-disable-line
+  const AREA =
+    'data.geojson';
+
+  const INITIAL_VIEW_STATE = {
+    latitude: 12.983,
+    longitude: 142.502,
+    zoom: 1
+  };
+
+  const deckgl = new deck.DeckGL({
+    container: 'container',
+
+    views: new deck._GlobeView(),
+    initialViewState: INITIAL_VIEW_STATE,
+    controller: true,
+    layers: [
+      new deck.SolidPolygonLayer({
+        id: 'background',
+        data: [
+          [
+            [-180, 90],
+            [0, 90],
+            [180, 90],
+            [180, -90],
+            [0, -90],
+            [-180, -90]
+          ]
+        ],
+        opacity: 0.5,
+        getPolygon: d => d,
+        stroked: false,
+        filled: true,
+        getFillColor: [234,244,252]
+      }),
+      new deck.GeoJsonLayer({
+        id: 'base-map',
+        data: COUNTRIES,
+        // Styles
+        stroked: true,
+        filled: true,
+        lineWidthMinPixels: 2,
+        getLineColor: [5, 10, 40],
+        getFillColor: [15, 157, 80]
+      }),
+      new deck.GeoJsonLayer({
+        id: 'airports',
+        data: AREA,
+        // Styles
+        filled: true,
+        pointRadiusMinPixels: 2,
+        pointRadiusScale: 2000,
+        getPointRadius: f => 11,
+        getFillColor: [200, 0, 80, 180],
+        // Interactive props
+        pickable: true,
+        autoHighlight: true,
+        onClick: info =>
+          info.object && alert(`${info.object.properties.name}`)
+      }),
+      new deck.ArcLayer({
+        id: 'arcs',
+        data: AREA,
+        dataTransform: d => d.features,
+        // Styles
+        getSourcePosition: f => [-21.0744343, -176.2500947],
+        getTargetPosition: f => f.geometry.coordinates,
+        getSourceColor: [0, 128, 200],
+        getTargetColor: [200, 0, 80],
+        getWidth: 0.5
+      })
+    ]
+  });
+</script>
+
+</html>
