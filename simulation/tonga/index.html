@@ -17,6 +17,16 @@
   <meta name="keywords" content="トンガ,火山噴火,火山,津波,3D,可視化" />
   <!-- deck.gl standalone bundle -->
   <script src="https://unpkg.com/deck.gl@^8.6.0-alpha.0/dist.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-202486341-1');
+  </script>
 
   <style type="text/css">
     html {
@@ -35,7 +45,6 @@
       height: 100vh;
       z-index: 10;
     }
-
   </style>
 </head>
 
@@ -80,7 +89,7 @@
         getPolygon: d => d,
         stroked: false,
         filled: true,
-        getFillColor: [234,244,252]
+        getFillColor: [234, 244, 252]
       }),
       new deck.GeoJsonLayer({
         id: 'base-map',
