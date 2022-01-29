@@ -3,13 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dpnote.netlify.app/</loc>
-    <lastmod>2022-01-16T12:39:29+09:00</lastmod>
+    <lastmod>2022-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/</loc>
-    <lastmod>2022-01-16T12:39:29+09:00</lastmod>
+    <lastmod>2022-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/tags/</loc>
-    <lastmod>2022-01-16T12:39:29+09:00</lastmod>
+    <lastmod>2022-01-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dpnote.netlify.app/post/publicdns/</loc>
+    <lastmod>2022-01-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/</loc>
+    <lastmod>2022-01-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/higashinihontsunami/</loc>
     <lastmod>2022-01-16T12:39:29+09:00</lastmod>
@@ -61,9 +67,6 @@
   </url><url>
     <loc>https://dpnote.netlify.app/post/earthquakelist/</loc>
     <lastmod>2021-09-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/population/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
@@ -134,7 +137,5 @@
     <loc>https://dpnote.netlify.app/search/data.js</loc>
   </url><url>
     <loc>https://dpnote.netlify.app/search/</loc>
-  </url><url>
-    <loc>https://dpnote.netlify.app/post/publicdns/</loc>
   </url>
 </urlset>
