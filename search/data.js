@@ -164,12 +164,6 @@ const data = [
     body: "電話リレーサービスをご存じですか？ 今日は、電話リレーサービスについてご紹介します。 電話リレーサービスをご存知ですか？ 聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。昨年の法改正により令和3年7月1日から開始しました。 必要な方々に教えてあげてください！ 総務省URLhttps://t.co/hrfv6dBhDy pic.twitter.com/3ac2zevVpk \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) July 21, 2021"
   },
   {
-    url: "https://dpnote.netlify.app/post/publicdns/",
-    title: "パブリックDNSをご存じですか？",
-    date: "2021-08-28T00:00:00Z",
-    body: "パブリックDNSをご存じですか？ パブリックDNSについて、ご紹介します。 防災✖️ITを考える① 「パブリックDNS」をご存知ですか？ WEB閲覧時の名前解決を高速化してくれるパブリックDNS 災害時など、ネット回線が混雑したときに有効活用できるかなと🤔 いつか来る大規模な災害時に、この知識が役に立つ日が来ることを信じて...ここにツイートを残します‼️🙇‍♂️ pic.twitter.com/ka7HBUjLuG \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) November 26, 2020"
-  },
-  {
     url: "https://dpnote.netlify.app/post/instagram1/",
     title: "災害事例集「安否確認に１週間」",
     date: "2021-08-27T00:00:00Z",
@@ -276,5 +270,11 @@ const data = [
     title: "Searches",
     date: "0001-01-01T00:00:00Z",
     body: "Searches"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/publicdns/",
+    title: "パブリックDNSをご存じですか？",
+    date: "0001-01-01T00:00:00Z",
+    body: "パブリックDNSをご存じですか？ パブリックDNSについて、ご紹介します。 「ブクマ必須」パブリックDNSについて、図解にてまとめました。いざという時にきっと、役に立つ知識だと思います。 pic.twitter.com/23UCqIFETW \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) January 11, 2022"
   },
 ]
