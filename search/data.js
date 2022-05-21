@@ -32,10 +32,10 @@ const data = [
     body: "災害データ可視化"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%EF%BD%84%EF%BD%98/",
-    title: "防災ＤＸ",
+    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/",
+    title: "防災DX",
     date: "2022-05-14T16:48:28+09:00",
-    body: "防災ＤＸ"
+    body: "防災DX"
   },
   {
     url: "https://dpnote.netlify.app/tags/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87/",
@@ -60,12 +60,6 @@ const data = [
     title: "パブリックDNSをご存じですか？",
     date: "2022-01-29T00:00:00Z",
     body: "パブリックDNSをご存じですか？ パブリックDNSについて、ご紹介します。 「ブクマ必須」パブリックDNSについて、図解にてまとめました。いざという時にきっと、役に立つ知識だと思います。 pic.twitter.com/23UCqIFETW \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) January 11, 2022"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/",
-    title: "防災DX",
-    date: "2022-01-29T00:00:00Z",
-    body: "防災DX"
   },
   {
     url: "https://dpnote.netlify.app/post/higashinihontsunami/",
