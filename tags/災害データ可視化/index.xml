@@ -18,6 +18,7 @@
           &lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、MAPに載せてみました！&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/krader.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。動作テストを行い、問題なければ、防災INSIGHTに組み込みたいと思います。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;a href=&#34;https://t.co/yoJtvUW1dw&#34;&gt;https://t.co/yoJtvUW1dw&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1558400469235638273?ref_src=twsrc%5Etfw&#34;&gt;August 13, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/center&gt;
         
       </description>
