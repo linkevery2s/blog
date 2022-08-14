@@ -28,22 +28,19 @@
 
 						let day_time = data[0].basetime;
 						let valid_time = data[0].validtime;
-
 						let year = day_time.slice(0,4);
-
 						let month = day_time.slice(4,6);
-
 						let day = day_time.slice(6,8);
-
 						let jikoku_h = parseInt(day_time.slice(8,10),10) + 9;
+
+						if(jikoku_h > 24){
+							jikoku_h = jikoku_h - 24;
+						}else{}
 
 						let jikoku_m = day_time.slice(10,12)
 
-						console.log(jikoku_h);
 
 						time_stamp.innerHTML = year + "年" + month + "月" + day + "日" + jikoku_h + "時" + jikoku_m + "分";
-
-
 
 						var tiri = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg', {
 								attribution: '&copy; <a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
@@ -53,7 +50,6 @@
 								opacity: 0.8
 								});
 
-						//地図を生成（初期表示の中心座標，ズームレベル，レイヤなどをオプションで設定）
 						var map = L.map('map', {center: [34.624,135.341], maxZoom: 14, minZoom: 4,zoomControl: false, zoom: 7,layers: [tiri, test]});
 
 						L.control.zoom({
