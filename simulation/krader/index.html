@@ -18,9 +18,53 @@
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 	<script type='text/javascript'>
-		function ini() {
+		async function ini() {
 
-			fetch('https://www.jma.go.jp/bosai/jmatile/data/nowc/targetTimes_N1.json')
+			const res =  await fetch('https://www.jma.go.jp/bosai/jmatile/data/nowc/targetTimes_N1.json');
+
+			const data = await res.json();
+
+			//const data = json;
+
+			let day_time = data[0].basetime;
+			let valid_time = data[0].validtime;
+			let year = day_time.slice(0, 4);
+			let month = day_time.slice(4, 6);
+			let day = day_time.slice(6, 8);
+			let jikoku_h = parseInt(day_time.slice(8, 10), 10) + 9;
+
+			if (jikoku_h > 24) {
+				jikoku_h = jikoku_h - 24;
+			} else {}
+
+			let jikoku_m = day_time.slice(10, 12);
+
+			time_stamp.innerHTML = year + "年" + month + "月" + day + "日" + jikoku_h + "時" + jikoku_m + "分";
+
+			let tiri = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg', {
+				attribution: '&copy; <a href="http://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+			});
+
+			let ame_layer = new L.tileLayer("https://www.jma.go.jp/bosai/jmatile/data/nowc/" + day_time + "/none/" + valid_time + "/surf/hrpns/{z}/{x}/{y}.png", {
+				opacity: 0.8,
+				attribution: "<a href='https://www.jma.go.jp/jma/kishou/know/kurashi/highres_nowcast.html'>気象庁(高解像度降水ナウキャスト)</a>"
+			});
+
+			const map = L.map('map', {
+				center: [34.624, 135.341],
+				maxZoom: 14,
+				minZoom: 4,
+				zoomControl: false,
+				zoom: 7,
+				layers: [tiri, ame_layer]
+			});
+
+			L.control.zoom({
+				position: 'topright'
+			}).addTo(map);
+
+
+			/*fetch('https://www.jma.go.jp/bosai/jmatile/data/nowc/targetTimes_N1.json')
 				.then(response => response.json())
 				.then(data => {
 
@@ -64,7 +108,7 @@
 
 					}
 
-				);
+				);*/
 
 
 		}
@@ -109,7 +153,7 @@
 
 </head>
 
-<body onLoad='ini()'>
+<body onload="ini()">
 
 	<div id="time_stamp"></div>
 	<div id='map'></div>
