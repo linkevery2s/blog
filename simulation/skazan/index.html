@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<title>火山基本図データ</title>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:title" content="火山基本図データ" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://dpnote.netlify.app/images/skazan.png" />
+	<meta property="og:description" content="桜島の火山活動を受けて、国土地理院の令和4年（2022年）桜島の火山活動に関する情報をお借りし、可視化しました。" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="火山基本図データ" />
+	<meta name="twitter:image" content="https://dpnote.netlify.app/images/skazan.png" />
+	<meta name="twitter:description" content="桜島の火山活動を受けて、国土地理院の令和4年（2022年）桜島の火山活動に関する情報をお借りし、可視化しました。" />
+	<meta name="author" content="仁志">
+	<meta name="keywords" content="災害,防災,桜島,火山,火山活動" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="shortcut icon" href="images/apple-touch-icon.png">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+	<style>
+		html,
+		body,
+		#map {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script>
+		function ini() {
+
+			const map = L.map('map',{maxZoom: 18,minZoom: 11});
+
+			let tile0 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/vbmd_bm/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://maps.gsi.go.jp/development/ichiran.html">地理院タイル</a> contributors'
+			}).addTo(map);
+
+			map.setView([31.585687, 130.657532], 13)
+
+			let tile1 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/vbmd_colorrel/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://maps.gsi.go.jp/development/ichiran.html">地理院タイル</a> contributors'
+			});
+
+			let tile2 = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/vbmd_pm/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://maps.gsi.go.jp/development/ichiran.html">地理院タイル</a> contributors'
+			});
+
+			/* レイヤー選択メニュー追加*/
+			const baseMaps = {
+				"基図": tile0,
+				"陰影段彩図": tile1,
+				"写真地図": tile2
+			};
+
+			L.control.layers(baseMaps).addTo(map);
+
+		}
+	</script>
+
+</head>
+
+<body onLoad='ini()'>
+	<div id='map'></div>
+</body>
+
+</html>
