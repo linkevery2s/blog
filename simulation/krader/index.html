@@ -22,13 +22,14 @@
 
 			const res = await fetch('https://www.jma.go.jp/bosai/jmatile/data/nowc/targetTimes_N1.json');
 			const data = await res.json();
+
 			let day_time = data[0].basetime;
 			let valid_time = data[0].validtime;
 			let year = day_time.slice(0, 4);
 			let month = day_time.slice(4, 6);
 			let day = day_time.slice(6, 8);
 			let jikoku_h = parseInt(day_time.slice(8, 10), 10) + 9;
-			if (jikoku_h > 24) {
+			if (jikoku_h > 23) {
 				jikoku_h = jikoku_h - 24;
 			} else {}
 
