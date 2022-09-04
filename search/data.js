@@ -4,20 +4,86 @@ const data = [
   {
     url: "https://dpnote.netlify.app/",
     title: "DP Note",
-    date: "2022-08-13T13:36:53+09:00",
+    date: "2022-09-04T11:52:12+09:00",
     body: "DP Note"
   },
   {
     url: "https://dpnote.netlify.app/post/",
     title: "Posts",
-    date: "2022-08-13T13:36:53+09:00",
+    date: "2022-09-04T11:52:12+09:00",
     body: "Posts"
   },
   {
     url: "https://dpnote.netlify.app/tags/",
     title: "Tags",
-    date: "2022-08-13T13:36:53+09:00",
+    date: "2022-09-04T11:52:12+09:00",
     body: "Tags"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
+    title: "災害データ可視化",
+    date: "2022-09-04T11:52:12+09:00",
+    body: "災害データ可視化"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/nishinihonrain/",
+    title: "西日本集中豪雨を可視化",
+    date: "2022-09-04T11:52:12+09:00",
+    body: "西日本集中豪雨を可視化 西日本集中豪雨を可視化しました。 ついに完成！西日本集中豪雨を３Dマップにしました。四国・中国地方、九州地方、岐阜県と的を絞って、1日の最大降水量をマッピング。猛烈な雨だったことが一目に分かります。 URL→https://t.co/nZdzJkDAf8 pic.twitter.com/X0jzV5MEZB \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) May 15, 2022"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/",
+    title: "防災DX",
+    date: "2022-09-04T11:52:12+09:00",
+    body: "防災DX"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
+    title: "防災全般",
+    date: "2022-09-04T11:52:12+09:00",
+    body: "防災全般"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/",
+    title: "災害事例集",
+    date: "2022-08-27T00:00:00Z",
+    body: "災害事例集"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/jirei1/",
+    title: "災害事例集「安否確認に１週間」",
+    date: "2022-08-27T00:00:00Z",
+    body: "災害事例集「安否確認に１週間」 今日は、災害事例集を投稿します。 【新連載スタート】みんなの災害経験談。経験を糧に未来に活かせる防災を！この物語の主人公が「あなた」だったら、どう行動しますか？ pic.twitter.com/1zDv8h8chB \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) June 29, 2022"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E3%82%A2%E3%83%B3%E3%82%B1%E3%83%BC%E3%83%88/",
+    title: "アンケート",
+    date: "2022-08-20T12:21:33+09:00",
+    body: "アンケート"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/tonga/",
+    title: "トンガ火山噴火に伴う津波の様子",
+    date: "2022-08-20T12:21:33+09:00",
+    body: "トンガ火山噴火に伴う津波の様子 トンガ火山噴火に伴う津波の様子を可視化しました。 「初公開！」誰も見たことがない津波マップを公開します。トンガ火山噴火に伴う津波の様子を可視化しました。 前例のない情報収集で、気象庁の方々も大変だったと思います。本当にお疲れ様でした。 マップURLはこちら↓https://t.co/9nGLktBxdO \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) January 22, 2022"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E5%8D%97%E6%B5%B7%E3%83%88%E3%83%A9%E3%83%95%E5%9C%B0%E9%9C%87/",
+    title: "南海トラフ地震",
+    date: "2022-08-20T12:21:33+09:00",
+    body: "南海トラフ地震"
+  },
+  {
+    url: "https://dpnote.netlify.app/tags/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87/",
+    title: "首都直下型地震",
+    date: "2022-08-20T12:21:33+09:00",
+    body: "首都直下型地震"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/loadmap/",
+    title: "防災ロードマップを図解化",
+    date: "2022-08-20T11:44:29+09:00",
+    body: "防災ロードマップを図解化 防災ロードマップを図解にしました。 「防災って大事だけど何から始めればいいか分からないあなたへ」今からでも「出来ること」をやろう！防災ロードマップに沿って取り組んでいけば、あなたのご家庭の防災力は確実に上がります。やってみて！ pic.twitter.com/rR6RW3pSCd \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) June 20, 2022"
   },
   {
     url: "https://dpnote.netlify.app/post/krader/",
@@ -26,34 +92,46 @@ const data = [
     body: "気象庁の雨雲レーダーの取得に成功しました 気象庁の雨雲レーダーの取得方法が分かったので、MAPに載せてみました！ 気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。動作テストを行い、問題なければ、防災INSIGHTに組み込みたいと思います。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。https://t.co/yoJtvUW1dw \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) August 13, 2022"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
-    title: "災害データ可視化",
-    date: "2022-08-13T13:36:53+09:00",
-    body: "災害データ可視化"
+    url: "https://dpnote.netlify.app/post/elevator/",
+    title: "エレベーターからの避難方法",
+    date: "2022-08-01T12:08:48+09:00",
+    body: "エレベーターからの避難方法 エレベーターからの避難方法を図解にしました。 目に焼き付けて。エレベーターからの避難方法を図解にまとめました。頭で分かっていても、いざという時に行動出来ないのが「人」です。ただ、立ち尽くすのではなく、冷静に状況を判断し、行動に移すことで、助かる可能性が上がると思います。覚えておこうね！ pic.twitter.com/ovKsjzLD9J \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) March 20, 2022"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/",
-    title: "防災DX",
-    date: "2022-08-13T13:36:53+09:00",
-    body: "防災DX"
+    url: "https://dpnote.netlify.app/post/kasai2020/",
+    title: "火災統計２０２０を図解化",
+    date: "2022-07-27T11:48:14+09:00",
+    body: "火災統計２０２０を図解化 火災統計２０２０を図解にしました。 火災統計2020を図解にしました（令和3年消防白書）。過去10年間で約70％にまで減少していますが、全国で1年間に「3万件以上」の火災が発生しています。出火原因は、タバコ・焚き火・コンロと続いています。これからも、火災には気を付けようね！ pic.twitter.com/W9ZzAfFGLP \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) May 1, 2022"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
-    title: "防災全般",
-    date: "2022-08-13T13:36:53+09:00",
-    body: "防災全般"
+    url: "https://dpnote.netlify.app/post/nankai70/",
+    title: "30年以内に70%という確率",
+    date: "2022-07-24T12:15:30+09:00",
+    body: "30年以内に70%という確率 30年以内に70%という確率について考えます。 大事なこと言います。確率は不確定な所もあって絶対ではない。ただ、熊本地震は発生確率1%と言われながら起きた。南海トラフ地震や首都直下型地震は【30年以内に70%】と言われている。まだこれらの巨大地震は起きていない。今からでも一人一人が出来ることをやれば、被害を限りなく減らせると思う。 \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) November 3, 2021"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/inform/",
+    title: "伝えると伝わるは異なる",
+    date: "2022-07-14T11:55:58+09:00",
+    body: "伝えると伝わるは異なる 伝えると伝わるは異なるというお話。 忘れがちなんだけどさ。「伝える」と「伝わる」は異なるんだよね。伝えるは自分目線、伝わるは相手目線。良い文章書けたと自分では思っていても、相手に伝わるかどうかは、また別の次元だと思う。だから、家族や友人など、他の人に読んでもらうことは大切。伝わる文章にこだわっていきたいというお話。 \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) April 22, 2022"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/tspeed/",
+    title: "津波のスピードを図解化",
+    date: "2022-06-24T12:19:04+09:00",
+    body: "津波のスピードを図解化 津波のスピードを図解にしました。 「津波のスピードを図解にしてみた」津波の速さの式には、震度やマグニチュードの値が「含まれていない」ことが分かる。このことからも、津波は「地震以外で起こりうること」に起因しているのかもしれない。 pic.twitter.com/3DMvhcwuV8 \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) February 1, 2022"
+  },
+  {
+    url: "https://dpnote.netlify.app/post/furniture/",
+    title: "家具の固定について",
+    date: "2022-06-18T12:27:48+09:00",
+    body: "家具の固定について 家具の固定について、考えてみます。 重要なこと言います。家具の固定は当然大事なんだけど、それ以上に「家具を無くす」ことの方が大事だと思ってる。家具が多いほど、地震時の危険になり得る。リスク\u0026quot;そのもの\u0026quot;を取り除けば、被害は0になる。情報セキュリティも防災もこの観点を押さえると色々な対策が見えてくる。覚えておいてね！ \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) June 7, 2022"
   },
   {
     url: "https://dpnote.netlify.app/post/tkriver/",
     title: "東京都河川ライブカメラマップの作成",
     date: "2022-05-14T16:48:28+09:00",
     body: "東京都河川ライブカメラマップの作成 東京都のオープンデータを用いて、河川ライブカメラマップを作成しました。 これすごく良い！東京都河川ライブカメラマップを公開しました。東京都のオープンデータが非常に使いやすい。同様の取り組みが、全国に広まると良いですね！https://t.co/zdIb0Ejl09 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) May 6, 2022"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87/",
-    title: "首都直下型地震",
-    date: "2022-05-14T16:48:28+09:00",
-    body: "首都直下型地震"
   },
   {
     url: "https://dpnote.netlify.app/post/blackice/",
@@ -72,12 +150,6 @@ const data = [
     title: "東日本大震災の津波観測を3Dマップにて可視化",
     date: "2022-01-16T12:39:29+09:00",
     body: "東日本大震災の津波観測を3Dマップにて可視化 東日本大震災の津波観測を3Dマップにて可視化しました。 東日本大震災の津波観測を3Dマップにて可視化しました！9mを超える観測地点もあり、3Dでも充分に高さが伝わると思います。これからも僕のやり方で、後世に伝えていきたい。https://t.co/JZAv9vWjTV \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) January 8, 2022"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/",
-    title: "災害事例集",
-    date: "2022-01-01T00:00:00Z",
-    body: "災害事例集"
   },
   {
     url: "https://dpnote.netlify.app/post/tsunamit/",
@@ -194,12 +266,6 @@ const data = [
     body: "電話リレーサービスをご存じですか？ 今日は、電話リレーサービスについてご紹介します。 電話リレーサービスをご存知ですか？ 聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。昨年の法改正により令和3年7月1日から開始しました。 必要な方々に教えてあげてください！ 総務省URLhttps://t.co/hrfv6dBhDy pic.twitter.com/3ac2zevVpk \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) July 21, 2021"
   },
   {
-    url: "https://dpnote.netlify.app/post/instagram1/",
-    title: "災害事例集「安否確認に１週間」",
-    date: "2021-08-27T00:00:00Z",
-    body: "災害事例集「安否確認に１週間」 今日は、災害事例集を投稿します。 この投稿をInstagramで見る ひとし@防災を紡ぐ人(@hitoshi17l)がシェアした投稿"
-  },
-  {
     url: "https://dpnote.netlify.app/post/river/",
     title: "日本の各都道府県を河川だけで表現してみる",
     date: "2021-08-26T00:00:00Z",
@@ -224,12 +290,6 @@ const data = [
     body: "Twitterアンケート「備蓄編」 Twitterでアンケートを実施しました！ 皆さん、防災リュックって家の中のどこに保管されてますか？🤔 僕は2階の寝室です。 理由は夜中に地震が起きて、1階が潰れても2階から脱出できるからです！ 皆さんの考えを教えて下さい！🙇‍♂️ \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) July 26, 2020"
   },
   {
-    url: "https://dpnote.netlify.app/tags/%E3%82%A2%E3%83%B3%E3%82%B1%E3%83%BC%E3%83%88/",
-    title: "アンケート",
-    date: "2021-08-20T00:00:00Z",
-    body: "アンケート"
-  },
-  {
     url: "https://dpnote.netlify.app/post/net119/",
     title: "Net119をご存じですか？",
     date: "2021-08-17T00:00:00Z",
@@ -240,12 +300,6 @@ const data = [
     title: "熱海市土砂災害をマップ化しました",
     date: "2021-08-06T00:00:00Z",
     body: "熱海市土砂災害をマップ化しました 令和3年7月に起きた熱海市土砂災害をマップ化しました。 「熱海市土砂災害をマップ化」 国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。 山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思う。https://t.co/YcD1FqRHfc \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 1, 2021"
-  },
-  {
-    url: "https://dpnote.netlify.app/tags/%E5%8D%97%E6%B5%B7%E3%83%88%E3%83%A9%E3%83%95%E5%9C%B0%E9%9C%87/",
-    title: "南海トラフ地震",
-    date: "2021-08-05T00:00:00Z",
-    body: "南海トラフ地震"
   },
   {
     url: "https://dpnote.netlify.app/post/destructionrate/",

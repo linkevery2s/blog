@@ -6,7 +6,41 @@
     <description>Recent content in 災害データ可視化 on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 13 Aug 2022 13:36:53 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Sep 2022 11:52:12 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>西日本集中豪雨を可視化</title>
+      <link>https://dpnote.netlify.app/post/nishinihonrain/</link>
+      <pubDate>Sun, 04 Sep 2022 11:52:12 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/nishinihonrain/</guid>
+      <description>
+        
+          &lt;p&gt;西日本集中豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/nishinihon.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ついに完成！西日本集中豪雨を３Dマップにしました。四国・中国地方、九州地方、岐阜県と的を絞って、1日の最大降水量をマッピング。猛烈な雨だったことが一目に分かります。 URL→&lt;a href=&#34;https://t.co/nZdzJkDAf8&#34;&gt;https://t.co/nZdzJkDAf8&lt;/a&gt; &lt;a href=&#34;https://t.co/X0jzV5MEZB&#34;&gt;pic.twitter.com/X0jzV5MEZB&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1525785564166987782?ref_src=twsrc%5Etfw&#34;&gt;May 15, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>トンガ火山噴火に伴う津波の様子</title>
+      <link>https://dpnote.netlify.app/post/tonga/</link>
+      <pubDate>Sat, 20 Aug 2022 12:21:33 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/tonga/</guid>
+      <description>
+        
+          &lt;p&gt;トンガ火山噴火に伴う津波の様子を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/tonga/index.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「初公開！」誰も見たことがない津波マップを公開します。トンガ火山噴火に伴う津波の様子を可視化しました。&lt;br&gt;&lt;br&gt;前例のない情報収集で、気象庁の方々も大変だったと思います。本当にお疲れ様でした。&lt;br&gt;&lt;br&gt;マップURLはこちら↓&lt;a href=&#34;https://t.co/9nGLktBxdO&#34;&gt;https://t.co/9nGLktBxdO&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1484835733961535489?ref_src=twsrc%5Etfw&#34;&gt;January 22, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>気象庁の雨雲レーダーの取得に成功しました</title>
       <link>https://dpnote.netlify.app/post/krader/</link>
@@ -19,6 +53,38 @@
 &lt;iframe src =&#34;../../simulation/krader.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;center&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。動作テストを行い、問題なければ、防災INSIGHTに組み込みたいと思います。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;a href=&#34;https://t.co/yoJtvUW1dw&#34;&gt;https://t.co/yoJtvUW1dw&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1558400469235638273?ref_src=twsrc%5Etfw&#34;&gt;August 13, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>火災統計２０２０を図解化</title>
+      <link>https://dpnote.netlify.app/post/kasai2020/</link>
+      <pubDate>Wed, 27 Jul 2022 11:48:14 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/kasai2020/</guid>
+      <description>
+        
+          &lt;p&gt;火災統計２０２０を図解にしました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;火災統計2020を図解にしました（令和3年消防白書）。過去10年間で約70％にまで減少していますが、全国で1年間に「3万件以上」の火災が発生しています。出火原因は、タバコ・焚き火・コンロと続いています。これからも、火災には気を付けようね！ &lt;a href=&#34;https://t.co/W9ZzAfFGLP&#34;&gt;pic.twitter.com/W9ZzAfFGLP&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1520712131209048066?ref_src=twsrc%5Etfw&#34;&gt;May 1, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>津波のスピードを図解化</title>
+      <link>https://dpnote.netlify.app/post/tspeed/</link>
+      <pubDate>Fri, 24 Jun 2022 12:19:04 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/tspeed/</guid>
+      <description>
+        
+          &lt;p&gt;津波のスピードを図解にしました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「津波のスピードを図解にしてみた」津波の速さの式には、震度やマグニチュードの値が「含まれていない」ことが分かる。このことからも、津波は「地震以外で起こりうること」に起因しているのかもしれない。 &lt;a href=&#34;https://t.co/3DMvhcwuV8&#34;&gt;pic.twitter.com/3DMvhcwuV8&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1488459611157925890?ref_src=twsrc%5Etfw&#34;&gt;February 1, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/center&gt;
         
       </description>
