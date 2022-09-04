@@ -152,12 +152,6 @@ const data = [
     body: "東日本大震災の津波観測を3Dマップにて可視化 東日本大震災の津波観測を3Dマップにて可視化しました。 東日本大震災の津波観測を3Dマップにて可視化しました！9mを超える観測地点もあり、3Dでも充分に高さが伝わると思います。これからも僕のやり方で、後世に伝えていきたい。https://t.co/JZAv9vWjTV \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) January 8, 2022"
   },
   {
-    url: "https://dpnote.netlify.app/post/tsunamit/",
-    title: "災害事例集「津波てんでんこの意味実感」",
-    date: "2022-01-01T00:00:00Z",
-    body: "災害事例集「津波てんでんこの意味実感」 災害事例集を投稿します。 この投稿をInstagramで見る ひとし｜防災エンジニア(@hitoshi17l)がシェアした投稿"
-  },
-  {
     url: "https://dpnote.netlify.app/post/time/",
     title: "時間軸を図解にて可視化",
     date: "2021-12-29T00:00:00Z",
