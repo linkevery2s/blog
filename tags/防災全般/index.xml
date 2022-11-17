@@ -6,7 +6,24 @@
     <description>Recent content in 防災全般 on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 04 Sep 2022 11:52:12 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）</title>
+      <link>https://dpnote.netlify.app/post/heavyrain20220803/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/heavyrain20220803/</guid>
+      <description>
+        
+          &lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/20220803heavyrain.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水想定図）を可視化しました。２画面描写で、浸水想定と実際の浸水状況を比較できるようになっています。&lt;a href=&#34;https://t.co/qkHTo6Ff1T&#34;&gt;https://t.co/qkHTo6Ff1T&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1589125310859350018?ref_src=twsrc%5Etfw&#34;&gt;November 6, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>西日本集中豪雨を可視化</title>
       <link>https://dpnote.netlify.app/post/nishinihonrain/</link>
