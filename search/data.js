@@ -50,12 +50,6 @@ const data = [
     body: "防災全般"
   },
   {
-    url: "https://dpnote.netlify.app/post/childrenhinan/",
-    title: "避難所の中に子供たちの居場所をつくる",
-    date: "2022-10-30T00:00:00Z",
-    body: "避難所の中に子供たちの居場所をつくる 子供たちの避難所生活の事例を掲載します。 この投稿をInstagramで見る ひとし｜災害体験語る人(@hitoshi17l)がシェアした投稿"
-  },
-  {
     url: "https://dpnote.netlify.app/post/nishinihonrain/",
     title: "西日本集中豪雨を可視化",
     date: "2022-09-04T11:52:12+09:00",
