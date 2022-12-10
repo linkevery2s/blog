@@ -150,7 +150,7 @@
       <article class="post_content">
         <h1 class="post_title">ブログ内検索</h1>
         <p>キーワードを入力するとリアルタイムで検索することができます。</p>
-        <input type="text" name="text1" id="text" size="15" autocomplete="off" autofocus placeholder="キーワード検索" /> <span id="exp" onclick="search()">検 索</span><br>
+        <input type="text" name="text1" id="text" size="15" autocomplete="off" autofocus placeholder="キーワード検索" /> <span id="exp">検 索</span><br>
         <span id="inputWord"></span> <span id="resultCount"></span>
         <div id="result"></div>
 
@@ -261,30 +261,36 @@
     integrity="sha512-YXxMNUmhDJ/n4buR6H8HIvaihbWedCxxI8dV35&#43;zNTC652Bg69MDlm3Q4cCYE&#43;Z5&#43;AQoArf9BZMV7xNF8EKa0g==" crossorigin="anonymous"></script>
 
   <script type="module">
-    window.search = async () => {
-      result.innerHTML = "";
 
-      const res = await fetch("https://dpnote.netlify.app/search/data.json");
-      const data = await res.json();
+  document.getElementById('exp').addEventListener('click',
 
-      let kensaku = text.value;
-      console.log(kensaku);
-      const max = data.length;
-      let count = 0;
+  async () => {
+    result.innerHTML = "";
 
-      for (let j = 0; j < max; j++) {
-        if (data[j].body.indexOf(kensaku) != -1) {
-          result.innerHTML += '<div class="item">' +
-      '<a class="item_title" href="' + data[j].url + '">' + data[j].title + '</a>' +
-      '<div class="item_excerpt">' + data[j].body + '</div>' +
-      '</div>';
-      count = count + 1;
-        }
+    const res = await fetch("https://dpnote.netlify.app/search/data.json");
+    const data = await res.json();
+
+    let kensaku = text.value;
+    console.log(kensaku);
+    const max = data.length;
+    let count = 0;
+
+    for (let j = 0; j < max; j++) {
+      if (data[j].body.indexOf(kensaku) != -1) {
+        result.innerHTML += '<div class="item">' +
+    '<a class="item_title" href="' + data[j].url + '">' + data[j].title + '</a>' +
+    '<div class="item_excerpt">' + data[j].body + '</div>' +
+    '</div>';
+    count = count + 1;
       }
-
-      resultCount.innerHTML = '<b>' + count + '</b> 件見つかりました（' + max + '件中）';
-
     }
+
+    resultCount.innerHTML = '<b>' + count + '</b> 件見つかりました（' + max + '件中）';
+
+  }
+
+);
+
   </script>
 </body>
 
