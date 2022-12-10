@@ -115,7 +115,19 @@
       padding: 0.5em;
       font-size: smaller;
       border-radius: .5em;
+      position: relative;
+      height: 100px;
+      overflow: hidden;
+      padding-right: 8px;
+    }
 
+    .item_excerpt:after {
+      content: "…";
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
     }
 
     .item_excerpt b {
@@ -261,36 +273,34 @@
     integrity="sha512-YXxMNUmhDJ/n4buR6H8HIvaihbWedCxxI8dV35&#43;zNTC652Bg69MDlm3Q4cCYE&#43;Z5&#43;AQoArf9BZMV7xNF8EKa0g==" crossorigin="anonymous"></script>
 
   <script type="module">
+    document.getElementById('exp').addEventListener('click',
 
-  document.getElementById('exp').addEventListener('click',
+      async () => {
+        result.innerHTML = "";
 
-  async () => {
-    result.innerHTML = "";
+        const res = await fetch("https://dpnote.netlify.app/search/data.json");
+        const data = await res.json();
 
-    const res = await fetch("https://dpnote.netlify.app/search/data.json");
-    const data = await res.json();
+        let kensaku = text.value;
+        console.log(kensaku);
+        const max = data.length;
+        let count = 0;
 
-    let kensaku = text.value;
-    console.log(kensaku);
-    const max = data.length;
-    let count = 0;
+        for (let j = 0; j < max; j++) {
+          if (data[j].body.indexOf(kensaku) != -1) {
+            result.innerHTML += '<div class="item">' +
+              '<a class="item_title" href="' + data[j].url + '">' + data[j].title + '</a>' +
+              '<div class="item_excerpt">' + data[j].body + '</div>' +
+              '</div>';
+            count = count + 1;
+          }
+        }
 
-    for (let j = 0; j < max; j++) {
-      if (data[j].body.indexOf(kensaku) != -1) {
-        result.innerHTML += '<div class="item">' +
-    '<a class="item_title" href="' + data[j].url + '">' + data[j].title + '</a>' +
-    '<div class="item_excerpt">' + data[j].body + '</div>' +
-    '</div>';
-    count = count + 1;
+        resultCount.innerHTML = '<b>' + count + '</b> 件見つかりました（' + max + '件中）';
+
       }
-    }
 
-    resultCount.innerHTML = '<b>' + count + '</b> 件見つかりました（' + max + '件中）';
-
-  }
-
-);
-
+    );
   </script>
 </body>
 
