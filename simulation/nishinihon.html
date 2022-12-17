@@ -54,7 +54,8 @@
 <body>
 
   <div class="attribution">
-    © <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors
+    © <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors、<a href="https://www.data.jma.go.jp/gmd/risk/obsdl/index.php" target="_blank">過去の気象データ</a>、気象庁：<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
+             4.0</a>
   </div>
 
 </body>
@@ -69,7 +70,7 @@
 
   const layer = new HexagonLayer({
     id: 'hexagon-layer',
-    data: "https://raw.githubusercontent.com/linkevery2s/testdata/main/data.json",
+    data: "./data/nishinihon.json",
     pickable: true,
     extruded: true,
     getElevationWeight: d => Number(d.count),
