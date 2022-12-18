@@ -109,7 +109,7 @@
       font-weight: bolder;
     }
 
-    .item_excerpt {
+    .item_ex {
       background: #fff;
       margin: 0.5em 2em 1em 1em;
       padding: 0.5em;
@@ -121,13 +121,13 @@
       padding-right: 8px;
     }
 
-    .item_excerpt b {
+    .item_ex b {
+      margin: 0 2px 0 2px;
+      padding: 3px;
       color: #666600;
       background-color: #ffffdd;
       font-weight: bold;
       border: 1px solid #bbbb00;
-      margin: 0 2px 0 2px;
-      padding: 0 2px 0 2px;
     }
 
     .item {
@@ -273,7 +273,7 @@
         const data = await res.json();
 
         let kensaku = text.value;
-        console.log(kensaku);
+
         const max = data.length;
         let count = 0;
 
@@ -281,7 +281,7 @@
           if (data[j].body.indexOf(kensaku) != -1) {
             result.innerHTML += '<div class="item">' +
               '<a class="item_title" href="' + data[j].url + '">' + data[j].title + '</a>' +
-              '<div class="item_excerpt">' + data[j].body + '</div>' +
+              '<div class="item_ex">' + data[j].body.substring(data[j].body.indexOf(kensaku)-3, data[j].body.indexOf(kensaku) + 200).replace(kensaku, "<b>"+ kensaku +"</b>") + '</div>' +
               '</div>';
             count = count + 1;
           }
