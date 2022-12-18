@@ -1,141 +1,152 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <head>
-        <meta charset="UTF-8"/>
-        <title>西日本集中豪雨の3Dマップ</title>
 
-        <meta property="og:title" content="西日本集中豪雨の3Dマップ" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://dpnote.netlify.app/simulation/nishinihon.jpg" />
-        <meta property="og:description" content="西日本集中豪雨の3Dマップ" />
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="西日本集中豪雨の3Dマップ" />
-        <meta name="twitter:image" content="https://dpnote.netlify.app/simulation/nishinihon.jpg" />
-        <meta name="twitter:description" content="西日本集中豪雨の3Dマップ" />
-        <meta name="author" content="仁志">
-        <meta name="keywords" content="西日本集中豪雨,マップ,3Dマップ" />
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-      <script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
-      <style>
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          width: 100%;
-          height: 100%;
-        }
+	<head>
+		<meta charset="UTF-8" />
+		<title>西日本集中豪雨の3Dマップ</title>
 
-        .deck-tooltip {
-          font-family: Helvetica, Arial, sans-serif;
-          padding: 8px !important;
-          color: #fff !important;
-          background: #192f60 !important;
-          max-width: 110px;
-          font-size: .8em;
-          opacity: 0.8;
-        }
+		<meta property="og:title" content="西日本集中豪雨の3Dマップ" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://dpnote.netlify.app/simulation/nishinihon.jpg" />
+		<meta property="og:description" content="西日本集中豪雨の3Dマップ" />
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="西日本集中豪雨の3Dマップ" />
+		<meta name="twitter:image" content="https://dpnote.netlify.app/simulation/nishinihon.jpg" />
+		<meta name="twitter:description" content="西日本集中豪雨の3Dマップ" />
+		<meta name="author" content="仁志">
+		<meta name="keywords" content="西日本集中豪雨,マップ,3Dマップ" />
+		<script>
+			window.dataLayer = window.dataLayer || [];
 
-        .attribution {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: 9;
-          padding: 2px 4px;
-          background-color: rgba(255, 255, 255, 0.5);
-          font-size: 11px;
-          pointer-events: auto;
-        }
-      </style>
-</head>
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'UA-202486341-1');
+		</script>
+		<script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
+		<style>
+			html,
+			body {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			.deck-tooltip {
+				font-family: Helvetica, Arial, sans-serif;
+				padding: 8px !important;
+				color: #fff !important;
+				background: #192f60 !important;
+				max-width: 110px;
+				font-size: .8em;
+				opacity: 0.8;
+			}
+
+			.attribution {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: 9;
+				padding: 2px 4px;
+				background-color: rgba(255, 255, 255, 0.5);
+				font-size: 11px;
+				pointer-events: auto;
+			}
+		</style>
+	</head>
 
 <body>
 
-  <div class="attribution">
-    © <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors、<a href="https://www.data.jma.go.jp/gmd/risk/obsdl/index.php" target="_blank">過去の気象データ</a>、気象庁：<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
-             4.0</a>
-  </div>
+	<div class="attribution">
+		© <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors、<a href="https://www.data.jma.go.jp/gmd/risk/obsdl/index.php" target="_blank">過去の気象データ</a>、気象庁：<a
+			href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
+			4.0</a>
+	</div>
 
 </body>
 
 <script type="text/javascript">
-  const {
-    Deck,
-    TileLayer,
-    BitmapLayer,
-    HexagonLayer
-  } = deck;
+	const {
+		Deck,
+		TileLayer,
+		BitmapLayer,
+		HexagonLayer
+	} = deck;
 
-  const layer = new HexagonLayer({
-    id: 'hexagon-layer',
-    data: "./data/nishinihon.json",
-    pickable: true,
-    extruded: true,
-    getElevationWeight: d => Number(d.count),
-    elevationAggregation: 'MAX',
-    getColorWeight: point => Number(point.count),
-    colorAggregation: 'MAX',
-    radius: 7000,
-    elevationScale: 4,
-    elevationRange: [0, 200000],
-    getPosition: p => [Number(p.lng), Number(p.lat)]
-  });
+	const layer = new HexagonLayer({
+		id: 'hexagon-layer',
+		data: "./data/nishinihon.json",
+		pickable: true,
+		extruded: true,
+		getElevationWeight: d => Number(d.count),
+		elevationAggregation: 'MAX',
+		getColorWeight: point => Number(point.count),
+		colorAggregation: 'MAX',
+		radius: 7000,
+		elevationScale: 4,
+		elevationRange: [0, 200000],
+		getPosition: p => [Number(p.lng), Number(p.lat)]
+	});
 
-  const tileLayer = new TileLayer({
-    data: 'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    minZoom: 0,
-    maxZoom: 19,
+	const tileLayer = new TileLayer({
+		data: 'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png',
+		minZoom: 0,
+		maxZoom: 19,
 
-    renderSubLayers: props => {
-      const {
-        bbox: {
-          west,
-          south,
-          east,
-          north
-        }
-      } = props.tile;
+		renderSubLayers: props => {
+			const {
+				bbox: {
+					west,
+					south,
+					east,
+					north
+				}
+			} = props.tile;
 
-      return new BitmapLayer(props, {
-        data: null,
-        image: props.data,
-        bounds: [west, south, east, north]
-      });
-    }
-  });
+			return new BitmapLayer(props, {
+				data: null,
+				image: props.data,
+				bounds: [west, south, east, north]
+			});
+		}
+	});
 
 
-  const tooltip = (d) => {
+	const tooltip = (d) => {
 
-    if (!d || !d.object) return null;
-    let obj = d.object;
+		if (!d || !d.object) return null;
+		let obj = d.object;
 
-    const html_tr = ["<table>", "降水量：" + obj.colorValue + "mm", "</table>"].join("\n");
+		const html_tr = ["<table>", "降水量：" + obj.colorValue + "mm", "</table>"].join("\n");
 
-    return {
-      html: html_tr
-    };
-  };
+		return {
+			html: html_tr
+		};
+	};
 
-  new Deck({
-    initialViewState: {
-      longitude: 133.12,
-      latitude: 33.551,
-      zoom: 4.8,
-      maxZoom: 20,
-      pitch: 40,
-      bearing: -10
-    },
-    controller: {
-      touchRotate: true
-    },
-    layers: [
-      tileLayer, layer
-    ],
-    getTooltip: tooltip
-  });
+	new Deck({
+		initialViewState: {
+			longitude: 133.12,
+			latitude: 33.551,
+			zoom: 4.8,
+			maxZoom: 20,
+			pitch: 40,
+			bearing: -10
+		},
+		controller: {
+			touchRotate: true
+		},
+		layers: [
+			tileLayer, layer
+		],
+		getTooltip: tooltip
+	});
 </script>
 
 </html>
