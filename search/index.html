@@ -281,7 +281,7 @@
           if (data[j].body.indexOf(kensaku) != -1) {
             result.innerHTML += '<div class="item">' +
               '<a class="item_title" href="' + data[j].url + '">' + data[j].title + '</a>' +
-              '<div class="item_ex">' + data[j].body.substring(data[j].body.indexOf(kensaku)-3, data[j].body.indexOf(kensaku) + 200).replace(kensaku, "<b>"+ kensaku +"</b>") + '</div>' +
+              '<div class="item_ex">' + data[j].body.substring(data[j].body.indexOf(kensaku)-3, data[j].body.indexOf(kensaku) + 200).replaceAll(kensaku, "<b>"+ kensaku +"</b>") + '</div>' +
               '</div>';
             count = count + 1;
           }
