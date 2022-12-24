@@ -6,7 +6,25 @@
     <description>Recent content in 防災DX on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 17 Dec 2022 16:29:09 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Dec 2022 17:41:54 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3Dマップを作ってみた。</title>
+      <link>https://dpnote.netlify.app/post/3dmap/</link>
+      <pubDate>Sat, 24 Dec 2022 17:41:54 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/3dmap/</guid>
+      <description>
+        
+          &lt;p&gt;ハザードマップの３D可視化に向けて、まずは都市空間の３D化に取り組みました。&lt;/p&gt;
+&lt;iframe src =&#34;../../maptest/3dhazard/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../maptest/3dhazard/&#34; target=&#34;_blank&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「街空間の３D化」OSM BuildingsいうAPIを見つけたので、早速マップに取り込んでみました。&lt;br&gt;&lt;br&gt;ビルの街並みが良い感じに３Dに表示されています。これが無料でできるというすごい時代になりました。&lt;br&gt;&lt;br&gt;このマップにハザードマップを重ねると十分３D表示が達成できるかな？&lt;a href=&#34;https://t.co/ifmQn0OAX4&#34;&gt;https://t.co/ifmQn0OAX4&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜二刀流エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1472152157516353538?ref_src=twsrc%5Etfw&#34;&gt;December 18, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>自然災害伝承碑マップを作成しました。</title>
       <link>https://dpnote.netlify.app/post/denshouhi/</link>

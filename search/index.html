@@ -3,7 +3,6 @@
 
 <head>
   <meta name="generator" content="Hugo 0.89.4" />
-  <title>DP Note</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +20,7 @@
   <meta property="og:locale" content="ja" />
 
   <meta property="og:type" content="website">
-  <meta name="description" content="キーワードからブログ内を検索できます。">
+  <meta name="description" content="キーワードからアプリ内を検索できます。">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="">
   <meta name="twitter:title" content="DP Note" />
@@ -38,7 +37,7 @@
 
   <meta property="og:url" content="https://dpnote.netlify.app/" />
   <meta property="og:title" content="DP Note" />
-  <meta property="og:description" content="キーワードからブログ内を検索できます。" />
+  <meta property="og:description" content="キーワードからアプリ内を検索できます。" />
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://dpnote.netlify.app/icons/apple-touch-icon.png">
@@ -74,7 +73,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-202486341-1');
   </script>
-  <title>ブログ内検索 | DP Note</title>
+  <title>アプリ内検索 | DP Note</title>
 
   <style>
     input {
@@ -151,8 +150,8 @@
 
     <div class="grid-inverse wrap content">
       <article class="post_content">
-        <h1 class="post_title">ブログ内検索</h1>
-        <p>キーワードを入力するとリアルタイムで検索することができます。</p>
+        <h1 class="post_title">アプリ内検索</h1>
+        <p>キーワードを入力すると検索することができます。</p>
         <input type="text" name="text1" id="text" size="15" autocomplete="off" autofocus placeholder="キーワード検索" /> <span id="exp">検 索</span><br>
         <span id="inputWord"></span> <span id="resultCount"></span>
         <div id="result"></div>
@@ -281,7 +280,7 @@
           if (data[j].body.indexOf(kensaku) != -1) {
             result.innerHTML += '<div class="item">' +
               '<a class="item_title" href="' + data[j].url + '">' + data[j].title + '</a>' +
-              '<div class="item_ex">' + data[j].body.substring(data[j].body.indexOf(kensaku)-3, data[j].body.indexOf(kensaku) + 200).replaceAll(kensaku, "<b>"+ kensaku +"</b>") + '</div>' +
+              '<div class="item_ex">' + data[j].body.substring(data[j].body.indexOf(kensaku) - 3, data[j].body.indexOf(kensaku) + 200).replaceAll(kensaku, "<b>" + kensaku + "</b>") + '</div>' +
               '</div>';
             count = count + 1;
           }
