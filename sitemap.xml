@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dpnote.netlify.app/post/3dmap/</loc>
-    <lastmod>2022-12-24T17:41:54+09:00</lastmod>
-  </url><url>
     <loc>https://dpnote.netlify.app/</loc>
     <lastmod>2022-12-24T17:41:54+09:00</lastmod>
   </url><url>
@@ -15,6 +12,9 @@
     <lastmod>2022-12-24T17:41:54+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/</loc>
+    <lastmod>2022-12-24T17:41:54+09:00</lastmod>
+  </url><url>
+    <loc>https://dpnote.netlify.app/post/3dmap/</loc>
     <lastmod>2022-12-24T17:41:54+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/</loc>
