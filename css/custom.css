@@ -81,8 +81,8 @@ h3 {
   border-bottom: 1px dotted #f39800;
 }
 
-.footer a:hover{
-	color: #fef263 !important;
+.footer a:hover {
+  color: #fef263 !important;
 }
 
 .footer_link:hover {
@@ -193,7 +193,7 @@ h3 {
 
 .linka:hover {
   color: #2ca9e1;
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .linka::after {
@@ -208,7 +208,6 @@ h3 {
   border: 1px solid #d5dfe6;
   padding: 1.2em;
   border-radius: .5em;
-  margin-bottom: 10px;
 }
 
 .linkz {
@@ -218,7 +217,7 @@ h3 {
 
 .linkz:hover {
   color: #2ca9e1;
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .linkz::before {
@@ -230,18 +229,94 @@ h3 {
 }
 
 .heading1 {
-	position: relative;
-	padding-bottom: 10px;
-	font-size: 26px;
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 26px;
 }
 
 .heading1::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 8px;
-	background-image: repeating-linear-gradient(45deg, #b4a983 0px, #b4a983 1px, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%);
-	background-size: 8px 8px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-image: repeating-linear-gradient(45deg, #b4a983 0px, #b4a983 1px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%);
+  background-size: 8px 8px;
+}
+
+.blcard {
+  border: 1px solid #d5dfe6;
+  padding: 1.2em 1.2em 0 1.2em;
+  border-radius: .5em;
+  display: flex;
+  margin: 1em;
+}
+
+.blcard-content {
+  display: inline-block;
+}
+
+.blcard-content a {
+  border-bottom: 1px dotted;
+  padding-bottom: 3px;
+}
+
+.blcard-content a:hover {
+  color: #2ca9e1;
+  border-bottom: none;
+}
+
+.blcard-title {
+  margin-bottom: 10px;
+}
+
+.blcard-excerpt {
+  color: #b3ada0;
+  font-size: .8em;
+}
+
+.blcard-thumbnail {
+  width: 30%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .blcard {
+    margin: 0;
+    padding: .8em .8em 0 .8em;
+  }
+
+  .blcard-title {
+    font-size: .8em;
+  }
+
+  .blcard-thumbnail {
+    width: 180px !important;
+  }
+
+  .blcard-excerpt {
+    display: none;
+  }
+}
+
+.related{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 0;
+  padding: 0 .2em 0 .2em;
+  width: 50%;
+
+}
+
+ul,li{
+  list-style: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
 }
