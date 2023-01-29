@@ -36,7 +36,6 @@
         
           &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/krader3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;a href=&#34;https://dpnote.netlify.app/simulation/krader3d.html&#34; target=&#34;_blank&#34; class=&#34;linkz&#34;&gt;全画面で見る&lt;/a&gt;
 &lt;center&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;a href=&#34;https://t.co/o2i2lwGje6&#34;&gt;https://t.co/o2i2lwGje6&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜災害データ可視化する人 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1608418791784083459?ref_src=twsrc%5Etfw&#34;&gt;December 29, 2022&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
