@@ -151,17 +151,41 @@ h3 {
 #pre_next {
   display: inline-block;
   margin: 25px 0 25px 0;
+
 }
 
-#pre_next:hover {
-  color: #0077b8 !important;
-}
 
 .pre_next_list {
   text-align: center;
   border-top: 1px solid #94846a;
   border-bottom: 1px solid #94846a;
+  padding: 0 !important;
 }
+
+<!-- #next_cont{
+  text-align: left !important;
+  margin: 0;
+  padding: 5px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#pre_cont{
+  text-align: right !important;
+  margin: 0;
+  padding: 5px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#next_title{
+  display: inline-block;
+}
+
+.link-reverse img{
+  display: inline-block;
+  width: 100px;
+}-->
 
 .fa-chevron-left, .fa-chevron-right {
   color: #94846a;
@@ -318,5 +342,39 @@ ul,li{
 
 ul{
   margin: 0;
+  padding: 0;
+}
+
+.balloon {
+  position: relative;
+  margin: 2em 0 2em 40px;
+  padding: 15px;
+  background: #fff0c6;
+  border-radius: 30px;
+}
+
+.balloon:before {  
+  content: "";
+  position: absolute;
+  left: -38px;
+  width: 13px;
+  height: 12px;
+  bottom: 0;
+  background: #fff0c6;
+  border-radius: 50%;
+}
+
+.balloon:after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  width: 20px;
+  height: 18px;
+  bottom: 3px;
+  background: #fff0c6;
+  border-radius: 50%;
+}
+.balloon p {
+  margin: 0; 
   padding: 0;
 }

@@ -3,7 +3,7 @@
 <html lang="ja" data-figures=""  class="page" >
 
 <head>
-<title>気象庁の降水ナウキャストを３Dにて可視化 | DP Note</title>
+<title>東日本大震災の津波観測地点を結んでみる | DP Note</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,31 +19,31 @@
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="気象庁の降水ナウキャストを３Dにて可視化しました。">
+<meta name="description" content="東日本大震災の津波観測地点をArcLayerで結んでみました。">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="気象庁の降水ナウキャストを３Dにて可視化" />
+<meta name="twitter:title" content="東日本大震災の津波観測地点を結んでみる" />
 
 
 
 
-<meta name="twitter:image" content="https://dpnote.netlify.app/images/krader3d.png" />
+<meta name="twitter:image" content="https://dpnote.netlify.app/images/post/higashinihon.png" />
 
 
 
-<meta property="og:image" content="https://dpnote.netlify.app/images/krader3d.png">
+<meta property="og:image" content="https://dpnote.netlify.app/images/post/higashinihon.png">
 
 
-<meta property="og:url" content="https://dpnote.netlify.app/post/krader3d/" />
-<meta property="og:title" content="気象庁の降水ナウキャストを３Dにて可視化" />
-<meta property="og:description" content="気象庁の降水ナウキャストを３Dにて可視化しました。" />
+<meta property="og:url" content="https://dpnote.netlify.app/post/higashinihon_arclayer/" />
+<meta property="og:title" content="東日本大震災の津波観測地点を結んでみる" />
+<meta property="og:description" content="東日本大震災の津波観測地点をArcLayerで結んでみました。" />
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dpnote.netlify.app/icons/apple-touch-icon.png">
 
 <link rel="manifest" href="https://dpnote.netlify.app/icons/site.webmanifest">
 <link rel="shortcut icon" href="https://dpnote.netlify.app/icons/favicon-32x32.png">
-<link rel="canonical" href="https://dpnote.netlify.app/post/krader3d/">
+<link rel="canonical" href="https://dpnote.netlify.app/post/higashinihon_arclayer/">
 
   
 
@@ -83,25 +83,53 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">気象庁の降水ナウキャストを３Dにて可視化</h1>
+    <h1 class="post_title">東日本大震災の津波観測地点を結んでみる</h1>
   <div class="post_meta">
     投稿日：
     <span class="post_date">
-      2023.01.09</span>
-    <span> <a href='https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx' class="post_tag"><i class="fas fa-tags"></i>防災DX</a><a href='https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96' class="post_tag"><i class="fas fa-tags"></i>災害データ可視化</a>
+      2023.02.07</span>
+    <span> <a href='https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx' class="post_tag"><i class="fas fa-tags"></i>防災DX</a><a href='https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96' class="post_tag"><i class="fas fa-tags"></i>災害データ可視化</a><a href='https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC' class="post_tag"><i class="fas fa-tags"></i>防災全般</a>
     </span>
   
 
   </div>
 
     
-    <p>気象庁の降水ナウキャストを３Dにて可視化しました。</p>
-<iframe src ="../../simulation/krader3d.html" width="100%" height="550px" frameborder="no" scrolling="no"></iframe>
-<center>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！<a href="https://t.co/o2i2lwGje6">https://t.co/o2i2lwGje6</a></p>&mdash; ひとし🍀二刀流エンジニア (@hitoshi2sl) <a href="https://twitter.com/hitoshi2sl/status/1608418791784083459?ref_src=twsrc%5Etfw">December 29, 2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <p>東日本大震災の津波観測地点をArcLayerで結んでみました。</p>
+<iframe src ="../../simulation/higashinihon_arclayer.html" width="100%" height="550px" frameborder="no" scrolling="no"></iframe>
+<!-- 見出し -->
+<h2 class="heading1">どの範囲まで津波が届いたのか？</h2>
+<!-- 吹き出し -->
+<div class="balloon">
+  <p>東日本大震災の津波を統計的に可視化する方法はないかな？</p>
+</div>
+<p>このように考えたのがきっかけです。</p>
+<p>DECK.GLのArcLayerを用いて表現してみました。</p>
+<!-- カードリンク 
+<div class="blcard">
+<div class="blcard-content">
+    <div class="blcard-title">
+      <a href="" target="_blank">
+	
+      </a>
+    </div>
+    <div class="blcard-excerpt">
+      
 
-</center>
+
+    </div>
+</div>
+
+  <div class="blcard-thumbnail">
+    <a href="" target="_blank">
+    <img src=".jpg"/>
+    </a>
+  </div>
+
+</div>
+-->
+<!-- ソースコード 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"></code></pre></div>-->
 
 
 <br>
@@ -136,14 +164,12 @@
 <div class="pre_next_list">
 <div class="next-post" id="pre_next">
 	
-	<a class="link-reverse" href="https://dpnote.netlify.app/post/hojoki/"><i class="fas fa-chevron-left"></i> 方丈記の世界観を可視化しました。</a>
-	
 </div>
 
 
 <div class="previous-post" id="pre_next">
 	
-	<a class="link-reverse" href="https://dpnote.netlify.app/post/3dmap/">都市空間の3Dマップを作りました。 <i class="fas fa-chevron-right"></i></a>
+	<a class="link-reverse" href="https://dpnote.netlify.app/post/hojoki/">方丈記の世界観を可視化しました。 <i class="fas fa-chevron-right"></i></a>
 	
 </div>
 
@@ -156,18 +182,11 @@
 <h3>関連記事</h3>
   <div class="related">
     
-      <div class="item1"><a href="/post/3dmap/">
-              <img src='https://dpnote.netlify.app/maptest/3dhazard/3dbuilding.jpg'>
+      <div class="item1"><a href="/post/hojoki/">
+              <img src='https://dpnote.netlify.app/images/hojoki.png'>
           </a>
 
-        <a href="/post/3dmap/">都市空間の3Dマップを作りました。</a>
-      </div>
-    
-      <div class="item1"><a href="/post/denshouhi/">
-              <img src='https://dpnote.netlify.app/images/denshouhi.png'>
-          </a>
-
-        <a href="/post/denshouhi/">自然災害伝承碑マップを作成しました。</a>
+        <a href="/post/hojoki/">方丈記の世界観を可視化しました。</a>
       </div>
     
       <div class="item1"><a href="/post/heavyrain20220803/">
@@ -182,6 +201,13 @@
           </a>
 
         <a href="/post/nishinihonrain/">西日本集中豪雨を可視化</a>
+      </div>
+    
+      <div class="item1"><a href="/post/tonga/">
+              <img src='https://dpnote.netlify.app/simulation/tonga/ogp.png'>
+          </a>
+
+        <a href="/post/tonga/">トンガ火山噴火に伴う津波の様子</a>
       </div>
     
 </div>

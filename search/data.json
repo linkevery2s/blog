@@ -3,26 +3,44 @@
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2023-01-12T20:06:39+09:00",
+    "date": "2023-02-07T20:12:34+09:00",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2023-01-12T20:06:39+09:00",
+    "date": "2023-02-07T20:12:34+09:00",
     "body": "Posts"
   },
   {
     "url": "https://dpnote.netlify.app/tags/",
     "title": "Tags",
-    "date": "2023-01-12T20:06:39+09:00",
+    "date": "2023-02-07T20:12:34+09:00",
     "body": "Tags"
   },
   {
     "url": "https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/",
     "title": "災害データ可視化",
-    "date": "2023-01-12T20:06:39+09:00",
+    "date": "2023-02-07T20:12:34+09:00",
     "body": "災害データ可視化"
+  },
+  {
+    "url": "https://dpnote.netlify.app/post/higashinihon_arclayer/",
+    "title": "東日本大震災の津波観測地点を結んでみる",
+    "date": "2023-02-07T20:12:34+09:00",
+    "body": "東日本大震災の津波観測地点を結んでみる 東日本大震災の津波観測地点をArcLayerで結んでみました。 どの範囲まで津波が届いたのか？ 東日本大震災の津波を統計的に可視化する方法はないかな？ このように考えたのがきっかけです。 DECK.GLのArcLayerを用いて表現してみました。 -- --"
+  },
+  {
+    "url": "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/",
+    "title": "防災DX",
+    "date": "2023-02-07T20:12:34+09:00",
+    "body": "防災DX"
+  },
+  {
+    "url": "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
+    "title": "防災全般",
+    "date": "2023-02-07T20:12:34+09:00",
+    "body": "防災全般"
   },
   {
     "url": "https://dpnote.netlify.app/post/hojoki/",
@@ -31,22 +49,10 @@
     "body": "方丈記の世界観を可視化しました。 方丈記の世界観を味読するため、文献を参考に可視化しました。 可視化URL 方丈記の世界観を可視化しました。正常性バイアスという言葉がなかった時代に、それを感じ取っていた鴨長明の繊細な感覚に寄り添ってみたかった。素晴らしい随筆家だったんだろうなと思ってる。https://t.co/HrvH6a76wJ \u0026mdash; ひとし (@hitoshi2sl) January 9, 2023"
   },
   {
-    "url": "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/",
-    "title": "防災DX",
-    "date": "2023-01-12T20:06:39+09:00",
-    "body": "防災DX"
-  },
-  {
-    "url": "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/",
-    "title": "防災全般",
-    "date": "2023-01-12T20:06:39+09:00",
-    "body": "防災全般"
-  },
-  {
     "url": "https://dpnote.netlify.app/post/krader3d/",
     "title": "気象庁の降水ナウキャストを３Dにて可視化",
     "date": "2023-01-09T16:15:17+09:00",
-    "body": "気象庁の降水ナウキャストを３Dにて可視化 気象庁の降水ナウキャストを３Dにて可視化しました。 気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！https://t.co/o2i2lwGje6 \u0026mdash; ひとし｜災害データ可視化する人 (@hitoshi2sl) December 29, 2022"
+    "body": "気象庁の降水ナウキャストを３Dにて可視化 気象庁の降水ナウキャストを３Dにて可視化しました。 気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！https://t.co/o2i2lwGje6 \u0026mdash; ひとし🍀二刀流エンジニア (@hitoshi2sl) December 29, 2022"
   },
   {
     "url": "https://dpnote.netlify.app/post/3dmap/",

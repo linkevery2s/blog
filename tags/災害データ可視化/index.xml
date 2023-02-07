@@ -6,7 +6,54 @@
     <description>Recent content in 災害データ可視化 on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Jan 2023 20:06:39 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2023 20:12:34 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>東日本大震災の津波観測地点を結んでみる</title>
+      <link>https://dpnote.netlify.app/post/higashinihon_arclayer/</link>
+      <pubDate>Tue, 07 Feb 2023 20:12:34 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/higashinihon_arclayer/</guid>
+      <description>
+        
+          &lt;p&gt;東日本大震災の津波観測地点をArcLayerで結んでみました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/higashinihon_arclayer.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;!-- 見出し --&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;どの範囲まで津波が届いたのか？&lt;/h2&gt;
+&lt;!-- 吹き出し --&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;東日本大震災の津波を統計的に可視化する方法はないかな？&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;このように考えたのがきっかけです。&lt;/p&gt;
+&lt;p&gt;DECK.GLのArcLayerを用いて表現してみました。&lt;/p&gt;
+&lt;!-- カードリンク 
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
+	
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;.jpg&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+--&gt;
+&lt;!-- ソースコード 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;--&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>方丈記の世界観を可視化しました。</title>
       <link>https://dpnote.netlify.app/post/hojoki/</link>
@@ -37,7 +84,7 @@
           &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/krader3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;a href=&#34;https://t.co/o2i2lwGje6&#34;&gt;https://t.co/o2i2lwGje6&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜災害データ可視化する人 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1608418791784083459?ref_src=twsrc%5Etfw&#34;&gt;December 29, 2022&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;a href=&#34;https://t.co/o2i2lwGje6&#34;&gt;https://t.co/o2i2lwGje6&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし🍀二刀流エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1608418791784083459?ref_src=twsrc%5Etfw&#34;&gt;December 29, 2022&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;/center&gt;

@@ -6,7 +6,54 @@
     <description>Recent content in 防災全般 on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Jan 2023 20:06:39 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2023 20:12:34 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>東日本大震災の津波観測地点を結んでみる</title>
+      <link>https://dpnote.netlify.app/post/higashinihon_arclayer/</link>
+      <pubDate>Tue, 07 Feb 2023 20:12:34 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/higashinihon_arclayer/</guid>
+      <description>
+        
+          &lt;p&gt;東日本大震災の津波観測地点をArcLayerで結んでみました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/higashinihon_arclayer.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;!-- 見出し --&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;どの範囲まで津波が届いたのか？&lt;/h2&gt;
+&lt;!-- 吹き出し --&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;東日本大震災の津波を統計的に可視化する方法はないかな？&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;このように考えたのがきっかけです。&lt;/p&gt;
+&lt;p&gt;DECK.GLのArcLayerを用いて表現してみました。&lt;/p&gt;
+&lt;!-- カードリンク 
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
+	
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;.jpg&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+--&gt;
+&lt;!-- ソースコード 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;--&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>方丈記の世界観を可視化しました。</title>
       <link>https://dpnote.netlify.app/post/hojoki/</link>
