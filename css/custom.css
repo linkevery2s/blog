@@ -271,7 +271,7 @@ h3 {
 
 .blcard {
   border: 1px solid #d5dfe6;
-  padding: 1.2em 1.2em 0 1.2em;
+  padding: .5em 1.2em 0 1.2em;
   border-radius: .5em;
   display: flex;
   margin: 1em;
@@ -279,6 +279,7 @@ h3 {
 
 .blcard-content {
   display: inline-block;
+  width: 70%;
 }
 
 .blcard-content a {
@@ -298,17 +299,21 @@ h3 {
 .blcard-excerpt {
   color: #b3ada0;
   font-size: .8em;
+  margin-right: .5em;
+
 }
 
 .blcard-thumbnail {
   width: 30%;
   display: inline-block;
+  max-width: 150px !important;
+
 }
 
 @media screen and (max-width: 767px) {
   .blcard {
     margin: 0;
-    padding: .8em .8em 0 .8em;
+    padding: .8em;
   }
 
   .blcard-title {
@@ -316,11 +321,11 @@ h3 {
   }
 
   .blcard-thumbnail {
-    width: 180px !important;
+    width: 120px !important;
   }
 
   .blcard-excerpt {
-    display: none;
+    margin-right: .1em !important;
   }
 }
 

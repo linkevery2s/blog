@@ -25,29 +25,30 @@
 &lt;/div&gt;
 &lt;p&gt;このように考えたのがきっかけです。&lt;/p&gt;
 &lt;p&gt;DECK.GLのArcLayerを用いて表現してみました。&lt;/p&gt;
-&lt;!-- カードリンク 
 &lt;div class=&#34;blcard&#34;&gt;
 &lt;div class=&#34;blcard-content&#34;&gt;
     &lt;div class=&#34;blcard-title&#34;&gt;
-      &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
-	
+      &lt;a href=&#34;https://deck.gl&#34; target=&#34;_blank&#34;&gt;
+	deck.gl
       &lt;/a&gt;
     &lt;/div&gt;
     &lt;div class=&#34;blcard-excerpt&#34;&gt;
       
+
+WebGL-powered visualization framework for large-scale datasets
 
 
     &lt;/div&gt;
 &lt;/div&gt;
 
   &lt;div class=&#34;blcard-thumbnail&#34;&gt;
-    &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
-    &lt;img src=&#34;.jpg&#34;/&gt;
+    &lt;a href=&#34;https://deck.gl&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;https://deck.gl/images/trips-layer-unfurl-4.0.jpg&#34;/&gt;
     &lt;/a&gt;
   &lt;/div&gt;
 
 &lt;/div&gt;
---&gt;
+
 &lt;!-- ソースコード 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;--&gt;
         

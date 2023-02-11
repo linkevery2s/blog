@@ -28,7 +28,7 @@
     "url": "https://dpnote.netlify.app/post/higashinihon_arclayer/",
     "title": "東日本大震災の津波観測地点を結んでみる",
     "date": "2023-02-07T20:12:34+09:00",
-    "body": "東日本大震災の津波観測地点を結んでみる 東日本大震災の津波観測地点をArcLayerで結んでみました。 どの範囲まで津波が届いたのか？ 東日本大震災の津波を統計的に可視化する方法はないかな？ このように考えたのがきっかけです。 DECK.GLのArcLayerを用いて表現してみました。 -- --"
+    "body": "東日本大震災の津波観測地点を結んでみる 東日本大震災の津波観測地点をArcLayerで結んでみました。 どの範囲まで津波が届いたのか？ 東日本大震災の津波を統計的に可視化する方法はないかな？ このように考えたのがきっかけです。 DECK.GLのArcLayerを用いて表現してみました。 deck.gl WebGL-powered visualization framework for large-scale datasets --"
   },
   {
     "url": "https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/",
