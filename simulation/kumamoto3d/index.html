@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Plotly.js 3D Point Clustering</title>
-  
+<!DOCTYPE HTML>
+<html lang="ja">
+<title>熊本地震を3Dにて深さまで可視化</title>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:title" content="熊本地震を3Dにて深さまで可視化" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="ogp.png" />
+<meta property="og:description" content="熊本地震を立体的に捉えるため、深さの次元も入れて、３Dにて可視化しました。" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="熊本地震を3Dにて深さまで可視化" />
+<meta name="twitter:image" content="ogp.png" />
+<meta name="twitter:description" content="熊本地震を立体的に捉えるため、深さの次元も入れて、３Dにて可視化しました。" />
+<meta name="author" content="仁志">
+<meta name="keywords" content="熊本地震,可視化"/>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<head>
-	<!-- Load plotly.js into the DOM -->
+
 	<script src='https://cdn.plot.ly/plotly-2.18.0.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
 </head>
@@ -19,6 +25,17 @@
 </body>
 <!-- partial -->
   <script  src="./script.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-202486341-1');
+  </script>
 
 </body>
 </html>
