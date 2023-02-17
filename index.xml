@@ -752,8 +752,8 @@ WebGL-powered visualization framework for large-scale datasets
       <guid>https://dpnote.netlify.app/post/kumamotoearthquake/</guid>
       <description>
         
-          &lt;iframe src =&#34;../../simulation/kumamoto/visualization1.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;p&gt;熊本地震の震度マップと活断層図を重ね合わせてみました。&lt;/p&gt;
+          &lt;p&gt;熊本地震の震度マップと活断層図を重ね合わせてみました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/kumamoto/visualization1.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
         
       </description>
     </item>
