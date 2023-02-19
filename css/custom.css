@@ -252,6 +252,17 @@ h3 {
   display: inline-block;
 }
 
+.linkb {
+  border-bottom: 1px dotted;
+  padding-bottom: 3px;
+}
+
+.linkb:hover {
+  color: #2ca9e1;
+  border-bottom: none;
+}
+
+/* 見出し１ */
 .heading1 {
   position: relative;
   padding-bottom: 10px;
@@ -269,6 +280,34 @@ h3 {
   background-size: 8px 8px;
 }
 
+/* 見出し２ */
+.heading2 {
+  position: relative;
+  padding-left: 30px;
+  color:#153c6e;
+  margin-bottom: 0;
+}
+
+.heading2:before {
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f121";
+  background: #c9e2ff;
+  color: #153c6e;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ブログカード */
 .blcard {
   border: 1px solid #d5dfe6;
   padding: .5em 1.2em 0 1.2em;
@@ -350,6 +389,7 @@ ul{
   padding: 0;
 }
 
+/* 吹き出し  */
 .balloon {
   position: relative;
   margin: 2em 0 2em 40px;
@@ -382,6 +422,7 @@ ul{
 .balloon p {
   margin: 0; 
   padding: 0;
+  color: #000;
 }
 
 /* 黒板　テーブル */
@@ -396,6 +437,13 @@ ul{
  border-radius: 3px; 
  box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
 }
+
+@media screen and (max-width: 767px) {
+  .kokuban-t2 {
+    width: 100%;
+  }
+}
+
 .kokuban-t2::before,
 .kokuban-t2::after {
  position: absolute;
@@ -420,5 +468,7 @@ ul{
  top: .5em;
  font-weight: bold;
  font-size: 1.1em;
- color: #ffff6b; /* タイトル色 */
+ color: #ffff6b;
 }
+
+

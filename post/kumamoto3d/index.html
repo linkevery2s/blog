@@ -110,11 +110,258 @@
     
     <p>熊本地震の震源地の深さで３Dにしたら、どうなるのか？そこの疑問から可視化しました。</p>
 <center>
-<iframe src ="../../simulation/kumamoto3d/index.html" width="100%" height="900px" frameborder="no" scrolling="no"></iframe>
+	<iframe src ="../../simulation/kumamoto3d/index.html" width="100%" height="900px" frameborder="no" scrolling="no"></iframe>
 </center>
+<h2 class="heading1">可視化する意義</h2>
+<div class="balloon">
+	<p>熊本地震の群発地震の様子を地中の震源地でどのように起きているのか、可視化してみたい。</p>
+</div>
+<h2 class="heading1">ソースコード解説</h2>
+<h4 class="heading2">CDNからインポート</h4>
+<p>まずは、<a href="https://plotly.com//" target="_blank" class="linkb">Plotly</a>をCDNから読み込みます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#a6e22e">script</span> <span style="color:#a6e22e">src</span>=<span style="color:#e6db74">&#34;https://cdn.plot.ly/plotly-2.18.0.min.js&#34;</span>&gt;&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">script</span>&gt;</span></span></code></pre></div>
+<p>バージョンは最新版でも、指定したバージョンでも可です。僕は、ここでは、v2.18.0を読み込んでいます。</p>
+<h4 class="heading2">DIVの指定</h4>
+<p>divを指定します。ここにグラフが表示されるようになります。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#a6e22e">div</span> <span style="color:#a6e22e">id</span>=<span style="color:#e6db74">&#34;myDiv&#34;</span>&gt;&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">div</span>&gt;</span></span></code></pre></div>
+<h4 class="heading2">ES Moduleの読み込み</h4>
+<p>JavaScriptは歴史が長いプログラミング言語です。マニュアルを見ると、新旧混在したコードも見受けられます。僕は、なるべく最新のES Moduleで記述するようにしています。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#a6e22e">script</span> <span style="color:#66d9ef">type</span>=<span style="color:#e6db74">&#34;module&#34;</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#75715e">	ここにソースコードを記述していく。
+</span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">script</span>&gt;</span></span></code></pre></div>
+<div class="blcard">
+<div class="blcard-content">
+    <div class="blcard-title">
+      <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Modules" target="_blank">
+	JavaScript モジュール - JavaScript | MDN
+      </a>
+    </div>
+    <div class="blcard-excerpt">
+      
+本章では、JavaScript のモジュールを使い始めるために必要なことすべてを紹介します。
+
+    </div>
+</div>
+
+  <div class="blcard-thumbnail">
+    <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Modules" target="_blank">
+    <img src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png"/>
+    </a>
+  </div>
+
+</div>
+
+<h4 class="heading2">JSONファイルの取得</h4>
+<p>僕は、クライアントサイドが大好きなので、<a href="https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" class="linkb">fetch</a>で取得しています。<a href="https://d3js.org/" target="_blank" class="linkb">D3</a>を使う方法もあります。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> = <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>.<span style="color:#f92672">/</span><span style="color:#a6e22e">all</span>.<span style="color:#a6e22e">json</span><span style="color:#960050;background-color:#1e0010">&#39;</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">shindo</span> = <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>	<span style="color:#a6e22e">let</span> <span style="color:#a6e22e">a</span> = <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">Array</span>();
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>	<span style="color:#a6e22e">let</span> <span style="color:#a6e22e">b</span> = <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">Array</span>();
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>	<span style="color:#a6e22e">let</span> <span style="color:#a6e22e">c</span> = <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">Array</span>();
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>	<span style="color:#a6e22e">let</span> <span style="color:#a6e22e">d</span> = <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">Array</span>();
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span><span style="color:#66d9ef">for</span>(<span style="color:#a6e22e">let</span> <span style="color:#a6e22e">i</span> = <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#a6e22e">shindo</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>	<span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">shindo</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">lat</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>	<span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">shindo</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">lng</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>	<span style="color:#a6e22e">c</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">shindo</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">depth</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>	<span style="color:#a6e22e">d</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">shindo</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">shindo</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>};</span></span></code></pre></div>
+<h4 class="heading2">インポートデータの設定</h4>
+<p>データ設定します。modeで"markers"にすることで、プロットがマーカーになります。typeを<a href="https://plotly.com/javascript/3d-scatter-plots/" target="_blank" class="linkb">scatter3d</a>にすることで、３D散布図となります。targetでは、値により色分けしています。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#a6e22e">let</span> <span style="color:#a6e22e">shindo_data</span> = {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>	<span style="color:#a6e22e">x</span>: <span style="color:#a6e22e">b</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>	<span style="color:#a6e22e">y</span>: <span style="color:#a6e22e">a</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>	<span style="color:#a6e22e">z</span>: <span style="color:#a6e22e">c</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>	<span style="color:#a6e22e">text</span>: <span style="color:#a6e22e">d</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>	<span style="color:#a6e22e">mode</span>: <span style="color:#e6db74">&#34;markers&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>	<span style="color:#66d9ef">type</span>: <span style="color:#e6db74">&#34;scatter3d&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>	<span style="color:#a6e22e">hoverinfo</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>	<span style="color:#a6e22e">transforms</span>: [{
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>		<span style="color:#66d9ef">type</span>: <span style="color:#e6db74">&#34;groupby&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>		<span style="color:#a6e22e">groups</span>: <span style="color:#a6e22e">d</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>		<span style="color:#a6e22e">styles</span>: [
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度７&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(100,1,37,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">10</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度６強&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(226,4,27,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">9</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度６弱&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(236,109,81,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">8</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度５強&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(214,106,53,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">7</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度５弱&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(219,132,73,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">6</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度４&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(255,234,0,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">5</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度３&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(195,216,37,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">4</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度２&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(89,185,198,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">3</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>		{<span style="color:#a6e22e">target</span>: <span style="color:#e6db74">&#34;震度１&#34;</span>, <span style="color:#a6e22e">value</span>: {<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;rgba(0,123,187,1)&#34;</span>, <span style="color:#a6e22e">size</span>: <span style="color:#ae81ff">2</span>}}},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>		]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>	}]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>};</span></span></code></pre></div>
+<h4 class="heading2">シンボルデータの取得</h4>
+同じ要領でシンボルデータ（地表付近のテキストデータ）も取得します。modeを"markers+text"にすることで、散布図内にテキストが表示されるようになります。
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#a6e22e">let</span> <span style="color:#a6e22e">symbol_data</span> = {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>	<span style="color:#a6e22e">x</span>: <span style="color:#a6e22e">sb</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>	<span style="color:#a6e22e">y</span>: <span style="color:#a6e22e">sa</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>	<span style="color:#a6e22e">z</span>: <span style="color:#a6e22e">sc</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>	<span style="color:#a6e22e">text</span>: <span style="color:#a6e22e">sd</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>	<span style="color:#a6e22e">textposition</span>: <span style="color:#e6db74">&#34;right&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>	<span style="color:#a6e22e">mode</span>: <span style="color:#e6db74">&#34;markers+text&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>	<span style="color:#66d9ef">type</span>: <span style="color:#e6db74">&#34;scatter3d&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>	<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;black&#34;</span>, <span style="color:#a6e22e">size</span>:<span style="color:#ae81ff">1</span>}
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>};</span></span></code></pre></div>
+<h4 class="heading2">レイアウトの設定</h4>
+<p>カメラのアングル、軸ラベル、凡例の表示の有無など、図のレイアウトを設定します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#a6e22e">let</span> <span style="color:#a6e22e">layout</span> = {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>	<span style="color:#a6e22e">height</span>: <span style="color:#ae81ff">600</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>	<span style="color:#a6e22e">scene</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>		<span style="color:#a6e22e">aspectratio</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>			<span style="color:#a6e22e">x</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>			<span style="color:#a6e22e">y</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>			<span style="color:#a6e22e">z</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>		},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>		<span style="color:#a6e22e">camera</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>			<span style="color:#a6e22e">center</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>				<span style="color:#a6e22e">x</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>				<span style="color:#a6e22e">y</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>				<span style="color:#a6e22e">z</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>			},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>			<span style="color:#a6e22e">eye</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>				<span style="color:#a6e22e">x</span>: <span style="color:#ae81ff">0.75</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>				<span style="color:#a6e22e">y</span>: <span style="color:#f92672">-</span><span style="color:#ae81ff">1.25</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>				<span style="color:#a6e22e">z</span>: <span style="color:#ae81ff">0.25</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>			},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>			<span style="color:#a6e22e">up</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>				<span style="color:#a6e22e">x</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>				<span style="color:#a6e22e">y</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>				<span style="color:#a6e22e">z</span>: <span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>			}
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>		},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>		<span style="color:#a6e22e">xaxis</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>			<span style="color:#66d9ef">type</span>: <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>			<span style="color:#a6e22e">zeroline</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>			<span style="color:#a6e22e">title</span>: <span style="color:#e6db74">&#34;経度&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span>		},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span>		<span style="color:#a6e22e">yaxis</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span>			<span style="color:#66d9ef">type</span>: <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span>			<span style="color:#a6e22e">zeroline</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span>			<span style="color:#a6e22e">title</span>: <span style="color:#e6db74">&#34;緯度&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span><span>		},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span>		<span style="color:#a6e22e">zaxis</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span>			<span style="color:#66d9ef">type</span>: <span style="color:#e6db74">&#34;linear&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span><span>			<span style="color:#a6e22e">zeroline</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span><span>			<span style="color:#a6e22e">title</span>: <span style="color:#e6db74">&#34;深さ&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span><span>		}
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span><span>	},
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span><span>	<span style="color:#a6e22e">title</span>: <span style="color:#e6db74">&#34;熊本地震を3Dにて深さまで可視化&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span><span>	<span style="color:#a6e22e">showlegend</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span><span>};</span></span></code></pre></div>
+<h4 class="heading2">散布図のプロット</h4>
+<p>散布図をプロットします。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">Plotly</span>.<span style="color:#a6e22e">newPlot</span>(<span style="color:#e6db74">&#34;myDiv&#34;</span>, <span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">layout</span>);</span></span></code></pre></div>
+<p>以上で、３D散布図の完成です！</p>
+<h4 class="heading2">【参考】散布図の回転</h4>
+<p>動的に散布図を見たかったので、散布図の回転機能を備えました。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">icon1</span> = {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>	<span style="color:#e6db74">&#34;width&#34;</span>: <span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>	<span style="color:#e6db74">&#34;height&#34;</span>: <span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>	<span style="color:#e6db74">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;M126.9 142.9c62.2-62.2 162.7-62.5 225.3-1L311 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H447.5c0 0 0 0 0 0H456c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L397.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C57.2 122 39.6 150.7 28.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM0 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L169 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H32.4h-.7H24c-13.3 0-24 10.7-24 24z&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>};
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#a6e22e">let</span> <span style="color:#a6e22e">config</span> = {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>	<span style="color:#a6e22e">responsive</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>	<span style="color:#a6e22e">modeBarButtonsToAdd</span>: [
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>	{
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>		<span style="color:#a6e22e">name</span>: <span style="color:#e6db74">&#34;rotate&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>		<span style="color:#a6e22e">icon</span>: <span style="color:#a6e22e">icon1</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>		<span style="color:#a6e22e">click</span>: <span style="color:#a6e22e">function</span>(<span style="color:#a6e22e">gd</span>) {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>			<span style="color:#a6e22e">setInterval</span>( () =&gt; {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>				<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newData</span> = <span style="color:#a6e22e">gd</span>.<span style="color:#a6e22e">_fullLayout</span>.<span style="color:#a6e22e">scene</span>.<span style="color:#a6e22e">_scene</span>.<span style="color:#a6e22e">getCamera</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>				<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentX</span> = <span style="color:#a6e22e">newData</span>.<span style="color:#a6e22e">eye</span>.<span style="color:#a6e22e">x</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>				<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentY</span> = <span style="color:#a6e22e">newData</span>.<span style="color:#a6e22e">eye</span>.<span style="color:#a6e22e">y</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>				<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentZ</span> = <span style="color:#a6e22e">newData</span>.<span style="color:#a6e22e">eye</span>.<span style="color:#a6e22e">z</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>				<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newX</span> = (<span style="color:#a6e22e">currentX</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">Math</span>.<span style="color:#a6e22e">cos</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>(<span style="color:#a6e22e">Math</span>.<span style="color:#a6e22e">PI</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>))) <span style="color:#f92672">-</span> (<span style="color:#a6e22e">currentY</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">Math</span>.<span style="color:#a6e22e">sin</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>(<span style="color:#a6e22e">Math</span>.<span style="color:#a6e22e">PI</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>				<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newY</span> = (<span style="color:#a6e22e">currentX</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">Math</span>.<span style="color:#a6e22e">sin</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>(<span style="color:#a6e22e">Math</span>.<span style="color:#a6e22e">PI</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>))) <span style="color:#f92672">+</span> (<span style="color:#a6e22e">currentY</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">Math</span>.<span style="color:#a6e22e">cos</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>(<span style="color:#a6e22e">Math</span>.<span style="color:#a6e22e">PI</span><span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>)))
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>				<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">update</span> = {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>					<span style="color:#a6e22e">x</span>: <span style="color:#a6e22e">newX</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>					<span style="color:#a6e22e">y</span>: <span style="color:#a6e22e">newY</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>					<span style="color:#a6e22e">z</span>: <span style="color:#a6e22e">currentZ</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span>				}
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span>				<span style="color:#a6e22e">Plotly</span>.<span style="color:#a6e22e">relayout</span>(<span style="color:#a6e22e">gd</span>, <span style="color:#e6db74">&#34;scene.camera.eye&#34;</span>, <span style="color:#a6e22e">update</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span>				}, <span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span>			}
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span>		}
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span><span>		]
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span>};</span></span></code></pre></div>
+<p>アイコンでは、<a href="https://fontawesome.com/" target="_blank" class="linkb">Font Awesome</a>のSVGファイルを読み込みます。</p>
+<p>↓こちらの解説が分かりやすかったです。</p>
+<div class="blcard">
+<div class="blcard-content">
+    <div class="blcard-title">
+      <a href="https://qiita.com/ririli/items/1e017c5f2110ada9676b" target="_blank">
+	Plotly.jsで3dグラフを回転させる - Qiita
+      </a>
+    </div>
+    <div class="blcard-excerpt">
+      
+3Dグラフがその場で回転するのってかっこいいですよね。
+ということで回るようにしました。
+
+    </div>
+</div>
+
+  <div class="blcard-thumbnail">
+    <a href="https://qiita.com/ririli/items/1e017c5f2110ada9676b" target="_blank">
+    <img src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-9f5428127621718a910c8b63951390ad.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjAuMCZ3PTkxNiZ0eHQ9UGxvdGx5LmpzJUUzJTgxJUE3M2QlRTMlODIlQjAlRTMlODMlQTklRTMlODMlOTUlRTMlODIlOTIlRTUlOUIlOUUlRTglQkIlQTIlRTMlODElOTUlRTMlODElOUIlRTMlODIlOEImdHh0LWNvbG9yPSUyMzIxMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtY2xpcD1lbGxpcHNpcyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZzPTliM2Y5MDgyYTQ1ODM0NGM5Zjc4OTllNzJjYmY4YTZk&amp;mark-x=142&amp;mark-y=112&amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjAuMCZ3PTYxNiZ0eHQ9JTQwcmlyaWxpJnR4dC1jb2xvcj0lMjMyMTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LWFsaWduPWxlZnQlMkN0b3Amcz05NzY2ZDFiNTFmNjRjNjg3MzUyZDk4M2M5ZWRiMzg1NQ&amp;blend-x=142&amp;blend-y=491&amp;blend-mode=normal&amp;s=9e01a6fabd87adcb536ec05be1435fdb"/>
+    </a>
+  </div>
+
+</div>
+
 <div class="kokuban-t2">
-	<span class="title-t2">タイトル</span>
-		テキスト
+	<span class="title-t2">まとめ</span>
+	・Plotly.jsをCDNで読み込む<br>
+	・fetchでファイル取得する<br>
+	・インポートデータを設定する<br>
+	・レイアウトを設定する<br>
+	・図に表示させる
+</div>
+<p>興味のある方は、是非、可視化にトライしてみてくださいね！</p>
+<h2 class="heading1">参考文献</h2>
+<div class="blcard">
+<div class="blcard-content">
+    <div class="blcard-title">
+      <a href="https://plotly.com/javascript/" target="_blank">
+	Plotly
+      </a>
+    </div>
+    <div class="blcard-excerpt">
+      
+plotly.com
+
+    </div>
+</div>
+
+  <div class="blcard-thumbnail">
+    <a href="https://plotly.com/javascript/" target="_blank">
+    <img src="https://help.plot.ly/images/twitter-default.png"/>
+    </a>
+  </div>
+
+</div>
+
+<h2 class="heading1">YouTube動画</h2>
+
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/Wlq_GrjGhgc?controls=1&rel=0" loading="lazy"></iframe>
 </div>
 
 
