@@ -97,10 +97,15 @@
 <div class="grid-inverse wrap content">
   <article class="post_content">
     <h1 class="post_title">熊本地震を深さの次元まで含めて3Dにて可視化</h1>
+
+
   <div class="post_meta">
-    投稿日：
-    <span class="post_date">
-      2023.02.18</span>
+ 
+
+<span class="post_date"><time itemprop="datePublished" datetime="2023-02-18 19:07:24 &#43;0900 JST">投稿日：2023.02.18</time></span>
+<span class="post_date"><time itemprop="dateModified" datetime="2023-02-22 20:21:11.114983018 &#43;0900 JST">更新日：2023.02.22</time></span>
+
+
     <span> <a href='https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx' class="post_tag"><i class="fas fa-tags"></i>防災DX</a><a href='https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96' class="post_tag"><i class="fas fa-tags"></i>災害データ可視化</a>
     </span>
   
@@ -157,7 +162,7 @@
 
 <h4 class="heading2">JSONファイルの取得</h4>
 <p>僕は、クライアントサイドが大好きなので、<a href="https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" class="linkb">fetch</a>で取得しています。<a href="https://d3js.org/" target="_blank" class="linkb">D3</a>を使う方法もあります。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> = <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>.<span style="color:#f92672">/</span><span style="color:#a6e22e">all</span>.<span style="color:#a6e22e">json</span><span style="color:#960050;background-color:#1e0010">&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> = <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#34;./all.json&#34;</span>);
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">shindo</span> = <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>();
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>	<span style="color:#a6e22e">let</span> <span style="color:#a6e22e">a</span> = <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">Array</span>();
@@ -365,7 +370,6 @@ plotly.com
 </div>
 
 
-<br>
 
 <span id = "sns_settei">
 
@@ -396,7 +400,6 @@ plotly.com
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v15.0" nonce="OxlwW2qb"></script>
-
 
 <br>
 
