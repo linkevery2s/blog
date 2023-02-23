@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dpnote.netlify.app/categories/</loc>
+    <lastmod>2023-02-22T20:37:59+09:00</lastmod>
+  </url><url>
     <loc>https://dpnote.netlify.app/</loc>
     <lastmod>2023-02-22T20:37:59+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/</loc>
     <lastmod>2023-02-22T20:37:59+09:00</lastmod>
   </url><url>
-    <loc>https://dpnote.netlify.app/tags/</loc>
-    <lastmod>2023-02-22T20:37:59+09:00</lastmod>
-  </url><url>
     <loc>https://dpnote.netlify.app/post/kumamoto3d/</loc>
     <lastmod>2023-02-22T20:37:59+09:00</lastmod>
   </url><url>
-    <loc>https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/</loc>
+    <loc>https://dpnote.netlify.app/categories/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/</loc>
     <lastmod>2023-02-22T20:37:59+09:00</lastmod>
   </url><url>
-    <loc>https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BDdx/</loc>
+    <loc>https://dpnote.netlify.app/categories/%E9%98%B2%E7%81%BDdx/</loc>
     <lastmod>2023-02-22T20:37:59+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/higashinihon_arclayer/</loc>
     <lastmod>2023-02-11T15:01:25+09:00</lastmod>
   </url><url>
-    <loc>https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/</loc>
+    <loc>https://dpnote.netlify.app/categories/%E9%98%B2%E7%81%BD%E5%85%A8%E8%88%AC/</loc>
     <lastmod>2023-02-11T15:01:25+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/hojoki/</loc>
@@ -38,7 +38,7 @@
     <loc>https://dpnote.netlify.app/post/denshouhi/</loc>
     <lastmod>2022-12-18T17:32:43+09:00</lastmod>
   </url><url>
-    <loc>https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/</loc>
+    <loc>https://dpnote.netlify.app/categories/%E7%81%BD%E5%AE%B3%E4%BA%8B%E4%BE%8B%E9%9B%86/</loc>
     <lastmod>2022-11-17T20:14:09+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/heavyrain20220803/</loc>
@@ -71,13 +71,13 @@
     <loc>https://dpnote.netlify.app/post/inform/</loc>
     <lastmod>2022-09-04T12:06:49+09:00</lastmod>
   </url><url>
-    <loc>https://dpnote.netlify.app/tags/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87/</loc>
+    <loc>https://dpnote.netlify.app/categories/%E9%A6%96%E9%83%BD%E7%9B%B4%E4%B8%8B%E5%9E%8B%E5%9C%B0%E9%9C%87/</loc>
     <lastmod>2022-09-04T12:30:46+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/tspeed/</loc>
     <lastmod>2022-09-04T12:20:26+09:00</lastmod>
   </url><url>
-    <loc>https://dpnote.netlify.app/tags/%E5%8D%97%E6%B5%B7%E3%83%88%E3%83%A9%E3%83%95%E5%9C%B0%E9%9C%87/</loc>
+    <loc>https://dpnote.netlify.app/categories/%E5%8D%97%E6%B5%B7%E3%83%88%E3%83%A9%E3%83%95%E5%9C%B0%E9%9C%87/</loc>
     <lastmod>2022-09-04T12:30:46+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/furniture/</loc>
@@ -161,7 +161,7 @@
     <loc>https://dpnote.netlify.app/post/questionnaire1/</loc>
     <lastmod>2021-09-04T13:44:36+09:00</lastmod>
   </url><url>
-    <loc>https://dpnote.netlify.app/tags/%E3%82%A2%E3%83%B3%E3%82%B1%E3%83%BC%E3%83%88/</loc>
+    <loc>https://dpnote.netlify.app/categories/%E3%82%A2%E3%83%B3%E3%82%B1%E3%83%BC%E3%83%88/</loc>
     <lastmod>2021-09-04T13:44:36+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/net119/</loc>

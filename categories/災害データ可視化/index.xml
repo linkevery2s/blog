@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>災害データ可視化 on DP Note</title>
+    <link>https://dpnote.netlify.app/categories/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/</link>
+    <description>Recent content in 災害データ可視化 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 18 Feb 2023 19:07:24 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/categories/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>熊本地震を深さの次元まで含めて3Dにて可視化</title>
+      <link>https://dpnote.netlify.app/post/kumamoto3d/</link>
+      <pubDate>Sat, 18 Feb 2023 19:07:24 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/kumamoto3d/</guid>
+      <description>
+        
+          &lt;p&gt;熊本地震の震源地の深さで３Dにしたら、どうなるのか？そこの疑問から可視化しました。&lt;/p&gt;
+&lt;center&gt;
+	&lt;iframe src =&#34;../../simulation/kumamoto3d/index.html&#34; width=&#34;100%&#34; height=&#34;900px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;可視化する意義&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+	&lt;p&gt;熊本地震の群発地震の様子を地中の震源地でどのように起きているのか、可視化してみたい。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;ソースコード解説&lt;/h2&gt;
+&lt;h4 class=&#34;heading2&#34;&gt;CDNからインポート&lt;/h4&gt;
+&lt;p&gt;まずは、&lt;a href=&#34;https://plotly.com//&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;Plotly&lt;/a&gt;をCDNから読み込みます。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://cdn.plot.ly/plotly-2.18.0.min.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;バージョンは最新版でも、指定したバージョンでも可です。僕は、ここでは、v2.18.0を読み込んでいます。&lt;/p&gt;
+&lt;h4 class=&#34;heading2&#34;&gt;DIVの指定&lt;/h4&gt;
+&lt;p&gt;divを指定します。ここにグラフが表示されるようになります。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;myDiv&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&#34;heading2&#34;&gt;ES Moduleの読み込み&lt;/h4&gt;
+&lt;p&gt;JavaScriptは歴史が長いプログラミング言語です。マニュアルを見ると、新旧混在したコードも見受けられます。僕は、なるべく最新のES Moduleで記述するようにしています。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;module&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;	ここにソースコードを記述していく。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7&lt;/span&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Modules&#34; target=&#34;_blank&#34;&gt;
+	JavaScript モジュール - JavaScript | MDN
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+本章では、JavaScript のモジュールを使い始めるために必要なことすべてを紹介します。
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Modules&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;h4 class=&#34;heading2&#34;&gt;JSONファイルの取得&lt;/h4&gt;
+&lt;p&gt;僕は、クライアントサイドが大好きなので、&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;fetch&lt;/a&gt;で取得しています。&lt;a href=&#34;https://d3js.org/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;D3&lt;/a&gt;を使う方法もあります。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fetch&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./all.json&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Array&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Array&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Array&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Array&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &amp;lt; &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] = &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;lat&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] = &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;lng&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] = &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;depth&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] = &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&#34;heading2&#34;&gt;インポートデータの設定&lt;/h4&gt;
+&lt;p&gt;データ設定します。modeで&#34;markers&#34;にすることで、プロットがマーカーになります。typeを&lt;a href=&#34;https://plotly.com/javascript/3d-scatter-plots/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;scatter3d&lt;/a&gt;にすることで、３D散布図となります。targetでは、値により色分けしています。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo_data&lt;/span&gt; = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;z&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;text&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;mode&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;scatter3d&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;hoverinfo&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;transforms&lt;/span&gt;: [{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;groupby&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;groups&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;styles&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度７&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(100,1,37,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度６強&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(226,4,27,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度６弱&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(236,109,81,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度５強&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(214,106,53,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度５弱&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(219,132,73,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度４&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(255,234,0,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度３&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(195,216,37,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;20&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度２&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(89,185,198,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21&lt;/span&gt;&lt;span&gt;		{&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;震度１&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rgba(0,123,187,1)&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;}}},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;22&lt;/span&gt;&lt;span&gt;		]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;23&lt;/span&gt;&lt;span&gt;	}]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;24&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&#34;heading2&#34;&gt;シンボルデータの取得&lt;/h4&gt;
+同じ要領でシンボルデータ（地表付近のテキストデータ）も取得します。modeを&#34;markers+text&#34;にすることで、散布図内にテキストが表示されるようになります。
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;symbol_data&lt;/span&gt; = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;sb&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;sa&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;z&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;sc&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;text&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;sd&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;textposition&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;right&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;mode&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;markers+text&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;scatter3d&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;black&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&#34;heading2&#34;&gt;レイアウトの設定&lt;/h4&gt;
+&lt;p&gt;カメラのアングル、軸ラベル、凡例の表示の有無など、図のレイアウトを設定します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;layout&lt;/span&gt; = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;scene&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;aspectratio&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;z&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8&lt;/span&gt;&lt;span&gt;		},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;camera&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;center&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;z&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14&lt;/span&gt;&lt;span&gt;			},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;eye&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0.75&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.25&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;z&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0.25&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19&lt;/span&gt;&lt;span&gt;			},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;20&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;up&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;22&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;23&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;z&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;24&lt;/span&gt;&lt;span&gt;			}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;25&lt;/span&gt;&lt;span&gt;		},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;26&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;xaxis&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;27&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;linear&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;28&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;zeroline&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;29&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;経度&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;30&lt;/span&gt;&lt;span&gt;		},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;31&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;yaxis&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;32&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;linear&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;33&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;zeroline&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;34&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;緯度&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;35&lt;/span&gt;&lt;span&gt;		},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;36&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;zaxis&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;37&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;linear&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;38&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;zeroline&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;39&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;深さ&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;40&lt;/span&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;41&lt;/span&gt;&lt;span&gt;	},
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;42&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;熊本地震を3Dにて深さまで可視化&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;43&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;showlegend&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;44&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;45&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&#34;heading2&#34;&gt;散布図のプロット&lt;/h4&gt;
+&lt;p&gt;散布図をプロットします。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plotly&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;newPlot&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;myDiv&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;layout&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;以上で、３D散布図の完成です！&lt;/p&gt;
+&lt;h4 class=&#34;heading2&#34;&gt;【参考】散布図の回転&lt;/h4&gt;
+&lt;p&gt;動的に散布図を見たかったので、散布図の回転機能を備えました。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;icon1&lt;/span&gt; = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;width&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;height&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;M126.9 142.9c62.2-62.2 162.7-62.5 225.3-1L311 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H447.5c0 0 0 0 0 0H456c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L397.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C57.2 122 39.6 150.7 28.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM0 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L169 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H32.4h-.7H24c-13.3 0-24 10.7-24 24z&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5&lt;/span&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt; = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;responsive&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;modeBarButtonsToAdd&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11&lt;/span&gt;&lt;span&gt;	{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rotate&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;icon&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;icon1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14&lt;/span&gt;&lt;span&gt;		&lt;span style=&#34;color:#a6e22e&#34;&gt;click&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;gd&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15&lt;/span&gt;&lt;span&gt;			&lt;span style=&#34;color:#a6e22e&#34;&gt;setInterval&lt;/span&gt;( () =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;newData&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;gd&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;_fullLayout&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;scene&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;_scene&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;getCamera&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;currentX&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;newData&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;eye&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;20&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;currentY&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;newData&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;eye&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;currentZ&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;newData&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;eye&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;z&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;22&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;23&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;newX&lt;/span&gt; = (&lt;span style=&#34;color:#a6e22e&#34;&gt;currentX&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Math&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;cos&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Math&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;PI&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;180&lt;/span&gt;))) &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;currentY&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Math&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sin&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Math&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;PI&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;180&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;24&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;newY&lt;/span&gt; = (&lt;span style=&#34;color:#a6e22e&#34;&gt;currentX&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Math&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;sin&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Math&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;PI&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;180&lt;/span&gt;))) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;currentY&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Math&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;cos&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Math&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;PI&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;180&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;25&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;26&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;update&lt;/span&gt; = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;27&lt;/span&gt;&lt;span&gt;					&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;newX&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;28&lt;/span&gt;&lt;span&gt;					&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;newY&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;29&lt;/span&gt;&lt;span&gt;					&lt;span style=&#34;color:#a6e22e&#34;&gt;z&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;currentZ&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;30&lt;/span&gt;&lt;span&gt;				}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;31&lt;/span&gt;&lt;span&gt;				&lt;span style=&#34;color:#a6e22e&#34;&gt;Plotly&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;relayout&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;gd&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;scene.camera.eye&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;update&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;32&lt;/span&gt;&lt;span&gt;				}, &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;33&lt;/span&gt;&lt;span&gt;			}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;34&lt;/span&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;35&lt;/span&gt;&lt;span&gt;		]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;36&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;37&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;アイコンでは、&lt;a href=&#34;https://fontawesome.com/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;Font Awesome&lt;/a&gt;のSVGファイルを読み込みます。&lt;/p&gt;
+&lt;p&gt;↓こちらの解説が分かりやすかったです。&lt;/p&gt;
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;https://qiita.com/ririli/items/1e017c5f2110ada9676b&#34; target=&#34;_blank&#34;&gt;
+	Plotly.jsで3dグラフを回転させる - Qiita
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+3Dグラフがその場で回転するのってかっこいいですよね。
+ということで回るようにしました。
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;https://qiita.com/ririli/items/1e017c5f2110ada9676b&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-9f5428127621718a910c8b63951390ad.png?ixlib=rb-4.0.0&amp;amp;w=1200&amp;amp;mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjAuMCZ3PTkxNiZ0eHQ9UGxvdGx5LmpzJUUzJTgxJUE3M2QlRTMlODIlQjAlRTMlODMlQTklRTMlODMlOTUlRTMlODIlOTIlRTUlOUIlOUUlRTglQkIlQTIlRTMlODElOTUlRTMlODElOUIlRTMlODIlOEImdHh0LWNvbG9yPSUyMzIxMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtY2xpcD1lbGxpcHNpcyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZzPTliM2Y5MDgyYTQ1ODM0NGM5Zjc4OTllNzJjYmY4YTZk&amp;amp;mark-x=142&amp;amp;mark-y=112&amp;amp;blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjAuMCZ3PTYxNiZ0eHQ9JTQwcmlyaWxpJnR4dC1jb2xvcj0lMjMyMTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LWFsaWduPWxlZnQlMkN0b3Amcz05NzY2ZDFiNTFmNjRjNjg3MzUyZDk4M2M5ZWRiMzg1NQ&amp;amp;blend-x=142&amp;amp;blend-y=491&amp;amp;blend-mode=normal&amp;amp;s=9e01a6fabd87adcb536ec05be1435fdb&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&#34;kokuban-t2&#34;&gt;
+	&lt;span class=&#34;title-t2&#34;&gt;まとめ&lt;/span&gt;
+	・Plotly.jsをCDNで読み込む&lt;br&gt;
+	・fetchでファイル取得する&lt;br&gt;
+	・インポートデータを設定する&lt;br&gt;
+	・レイアウトを設定する&lt;br&gt;
+	・図に表示させる
+&lt;/div&gt;
+&lt;p&gt;興味のある方は、是非、可視化にトライしてみてくださいね！&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;https://plotly.com/javascript/&#34; target=&#34;_blank&#34;&gt;
+	Plotly
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+plotly.com
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;https://plotly.com/javascript/&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;https://help.plot.ly/images/twitter-default.png&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;h2 class=&#34;heading1&#34;&gt;YouTube動画&lt;/h2&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Wlq_GrjGhgc?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東日本大震災の津波観測地点を結んでみる</title>
+      <link>https://dpnote.netlify.app/post/higashinihon_arclayer/</link>
+      <pubDate>Tue, 07 Feb 2023 20:12:34 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/higashinihon_arclayer/</guid>
+      <description>
+        
+          &lt;p&gt;東日本大震災の津波観測地点をArcLayerで結んでみました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/higashinihon_arclayer.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;!-- 見出し --&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;どの範囲まで津波が届いたのか？&lt;/h2&gt;
+&lt;!-- 吹き出し --&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;東日本大震災の津波を統計的に可視化する方法はないかな？&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;このように考えたのがきっかけです。&lt;/p&gt;
+&lt;p&gt;DECK.GLのArcLayerを用いて表現してみました。&lt;/p&gt;
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;https://deck.gl&#34; target=&#34;_blank&#34;&gt;
+	deck.gl
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+
+WebGL-powered visualization framework for large-scale datasets
+
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;https://deck.gl&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;https://deck.gl/images/trips-layer-unfurl-4.0.jpg&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- ソースコード 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;--&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>方丈記の世界観を可視化しました。</title>
+      <link>https://dpnote.netlify.app/post/hojoki/</link>
+      <pubDate>Thu, 12 Jan 2023 20:06:39 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/hojoki/</guid>
+      <description>
+        
+          &lt;p&gt;方丈記の世界観を味読するため、文献を参考に可視化しました。&lt;/p&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://dpnote.netlify.app/simulation/hojoki/index.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;可視化URL&lt;/a&gt;
+&lt;/div&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;方丈記の世界観を可視化しました。正常性バイアスという言葉がなかった時代に、それを感じ取っていた鴨長明の繊細な感覚に寄り添ってみたかった。素晴らしい随筆家だったんだろうなと思ってる。&lt;a href=&#34;https://t.co/HrvH6a76wJ&#34;&gt;https://t.co/HrvH6a76wJ&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1612400036373041153?ref_src=twsrc%5Etfw&#34;&gt;January 9, 2023&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>気象庁の降水ナウキャストを３Dにて可視化</title>
+      <link>https://dpnote.netlify.app/post/krader3d/</link>
+      <pubDate>Mon, 09 Jan 2023 16:15:17 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/krader3d/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;a href=&#34;https://t.co/o2i2lwGje6&#34;&gt;https://t.co/o2i2lwGje6&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし🍀二刀流エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1608418791784083459?ref_src=twsrc%5Etfw&#34;&gt;December 29, 2022&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>都市空間の3Dマップを作りました。</title>
+      <link>https://dpnote.netlify.app/post/3dmap/</link>
+      <pubDate>Sat, 24 Dec 2022 17:41:54 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/3dmap/</guid>
+      <description>
+        
+          &lt;p&gt;ハザードマップの３D可視化に向けて、まずは都市空間の３D化に取り組みました。&lt;/p&gt;
+&lt;iframe src =&#34;../../maptest/3dhazard/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../maptest/3dhazard/&#34; target=&#34;_blank&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「街空間の３D化」OSM BuildingsいうAPIを見つけたので、早速マップに取り込んでみました。&lt;br&gt;&lt;br&gt;ビルの街並みが良い感じに３Dに表示されています。これが無料でできるというすごい時代になりました。&lt;br&gt;&lt;br&gt;このマップにハザードマップを重ねると十分３D表示が達成できるかな？&lt;a href=&#34;https://t.co/ifmQn0OAX4&#34;&gt;https://t.co/ifmQn0OAX4&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜二刀流エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1472152157516353538?ref_src=twsrc%5Etfw&#34;&gt;December 18, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>自然災害伝承碑マップを作成しました。</title>
+      <link>https://dpnote.netlify.app/post/denshouhi/</link>
+      <pubDate>Sat, 17 Dec 2022 16:29:09 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/denshouhi/</guid>
+      <description>
+        
+          &lt;p&gt;自然災害伝承碑マップを作成しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/denshouhi.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本全国の自然災害伝承碑マップを作成しました。全国に1,800箇所以上あります。いかに日本で大規模な災害が起きているかが、分かります。存在そのものすら、知らない方多いのではないかなと思います。次世代に語り継いでいきたいと思っています。&lt;a href=&#34;https://t.co/7Rwbzuktvo&#34;&gt;https://t.co/7Rwbzuktvo&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜二刀流エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1602614429954506752?ref_src=twsrc%5Etfw&#34;&gt;December 13, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）</title>
+      <link>https://dpnote.netlify.app/post/heavyrain20220803/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/heavyrain20220803/</guid>
+      <description>
+        
+          &lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/20220803heavyrain.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水想定図）を可視化しました。２画面描写で、浸水想定と実際の浸水状況を比較できるようになっています。&lt;a href=&#34;https://t.co/qkHTo6Ff1T&#34;&gt;https://t.co/qkHTo6Ff1T&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1589125310859350018?ref_src=twsrc%5Etfw&#34;&gt;November 6, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>西日本集中豪雨を可視化</title>
+      <link>https://dpnote.netlify.app/post/nishinihonrain/</link>
+      <pubDate>Sun, 04 Sep 2022 11:52:12 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/nishinihonrain/</guid>
+      <description>
+        
+          &lt;p&gt;西日本集中豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/nishinihon.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ついに完成！西日本集中豪雨を３Dマップにしました。四国・中国地方、九州地方、岐阜県と的を絞って、1日の最大降水量をマッピング。猛烈な雨だったことが一目に分かります。 URL→&lt;a href=&#34;https://t.co/nZdzJkDAf8&#34;&gt;https://t.co/nZdzJkDAf8&lt;/a&gt; &lt;a href=&#34;https://t.co/X0jzV5MEZB&#34;&gt;pic.twitter.com/X0jzV5MEZB&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1525785564166987782?ref_src=twsrc%5Etfw&#34;&gt;May 15, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>トンガ火山噴火に伴う津波の様子</title>
+      <link>https://dpnote.netlify.app/post/tonga/</link>
+      <pubDate>Sat, 20 Aug 2022 12:21:33 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/tonga/</guid>
+      <description>
+        
+          &lt;p&gt;トンガ火山噴火に伴う津波の様子を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/tonga/index.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「初公開！」誰も見たことがない津波マップを公開します。トンガ火山噴火に伴う津波の様子を可視化しました。&lt;br&gt;&lt;br&gt;前例のない情報収集で、気象庁の方々も大変だったと思います。本当にお疲れ様でした。&lt;br&gt;&lt;br&gt;マップURLはこちら↓&lt;a href=&#34;https://t.co/9nGLktBxdO&#34;&gt;https://t.co/9nGLktBxdO&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1484835733961535489?ref_src=twsrc%5Etfw&#34;&gt;January 22, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>気象庁の雨雲レーダーの取得に成功しました</title>
+      <link>https://dpnote.netlify.app/post/krader/</link>
+      <pubDate>Sat, 13 Aug 2022 13:36:53 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/krader/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、MAPに載せてみました！&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。動作テストを行い、問題なければ、防災INSIGHTに組み込みたいと思います。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;a href=&#34;https://t.co/yoJtvUW1dw&#34;&gt;https://t.co/yoJtvUW1dw&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1558400469235638273?ref_src=twsrc%5Etfw&#34;&gt;August 13, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>火災統計２０２０を図解化</title>
+      <link>https://dpnote.netlify.app/post/kasai2020/</link>
+      <pubDate>Wed, 27 Jul 2022 11:48:14 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/kasai2020/</guid>
+      <description>
+        
+          &lt;p&gt;火災統計２０２０を図解にしました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;火災統計2020を図解にしました（令和3年消防白書）。過去10年間で約70％にまで減少していますが、全国で1年間に「3万件以上」の火災が発生しています。出火原因は、タバコ・焚き火・コンロと続いています。これからも、火災には気を付けようね！ &lt;a href=&#34;https://t.co/W9ZzAfFGLP&#34;&gt;pic.twitter.com/W9ZzAfFGLP&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1520712131209048066?ref_src=twsrc%5Etfw&#34;&gt;May 1, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>津波のスピードを図解化</title>
+      <link>https://dpnote.netlify.app/post/tspeed/</link>
+      <pubDate>Fri, 24 Jun 2022 12:19:04 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/tspeed/</guid>
+      <description>
+        
+          &lt;p&gt;津波のスピードを図解にしました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「津波のスピードを図解にしてみた」津波の速さの式には、震度やマグニチュードの値が「含まれていない」ことが分かる。このことからも、津波は「地震以外で起こりうること」に起因しているのかもしれない。 &lt;a href=&#34;https://t.co/3DMvhcwuV8&#34;&gt;pic.twitter.com/3DMvhcwuV8&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1488459611157925890?ref_src=twsrc%5Etfw&#34;&gt;February 1, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東京都河川ライブカメラマップの作成</title>
+      <link>https://dpnote.netlify.app/post/tkriver/</link>
+      <pubDate>Sat, 14 May 2022 16:48:28 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/tkriver/</guid>
+      <description>
+        
+          &lt;p&gt;東京都のオープンデータを用いて、河川ライブカメラマップを作成しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe src =&#34;../../simulation/tkriver.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;これすごく良い！東京都河川ライブカメラマップを公開しました。東京都のオープンデータが非常に使いやすい。同様の取り組みが、全国に広まると良いですね！&lt;a href=&#34;https://t.co/zdIb0Ejl09&#34;&gt;https://t.co/zdIb0Ejl09&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1522524072633978880?ref_src=twsrc%5Etfw&#34;&gt;May 6, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東日本大震災の津波観測を3Dマップにて可視化</title>
+      <link>https://dpnote.netlify.app/post/higashinihontsunami/</link>
+      <pubDate>Sun, 16 Jan 2022 12:39:29 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/higashinihontsunami/</guid>
+      <description>
+        
+          &lt;p&gt;東日本大震災の津波観測を3Dマップにて可視化しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe src =&#34;../../simulation/higashinihontsunami.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;東日本大震災の津波観測を3Dマップにて可視化しました！9mを超える観測地点もあり、3Dでも充分に高さが伝わると思います。これからも僕のやり方で、後世に伝えていきたい。&lt;a href=&#34;https://t.co/JZAv9vWjTV&#34;&gt;https://t.co/JZAv9vWjTV&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1479762304333983745?ref_src=twsrc%5Etfw&#34;&gt;January 8, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>時間軸を図解にて可視化</title>
+      <link>https://dpnote.netlify.app/post/time/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/time/</guid>
+      <description>
+        
+          &lt;p&gt;天気予報などで使われる『時間軸』を図解にて可視化してみました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。 &lt;a href=&#34;https://t.co/maaEy4786o&#34;&gt;pic.twitter.com/maaEy4786o&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1475413649175064578?ref_src=twsrc%5Etfw&#34;&gt;December 27, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和2年九州豪雨を可視化しました。</title>
+      <link>https://dpnote.netlify.app/post/r27mkyusyu/</link>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/r27mkyusyu/</guid>
+      <description>
+        
+          &lt;p&gt;令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe src =&#34;../../simulation/r27mkyusyu.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;令和2年九州豪雨を可視化しました。&lt;br&gt;&lt;br&gt;各観測地点の24時間降雨量最大値をマッピング。400mmを超える地点もあり、３Dにすると降雨量の多さが確認できますね。&lt;br&gt;&lt;br&gt;PC、スマホから操作できます↓&lt;a href=&#34;https://t.co/rOyG0LOxcE&#34;&gt;https://t.co/rOyG0LOxcE&lt;/a&gt; &lt;a href=&#34;https://t.co/zAjtVj2Ue1&#34;&gt;pic.twitter.com/zAjtVj2Ue1&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1467429790709956612?ref_src=twsrc%5Etfw&#34;&gt;December 5, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>防災における人の心理バイアスを図解にて可視化</title>
+      <link>https://dpnote.netlify.app/post/bbias/</link>
+      <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/bbias/</guid>
+      <description>
+        
+          &lt;p&gt;防災における人の心理バイアスを図解にて可視化しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;防災における人の心理バイアスについて、図解にて可視化してみました。いざという時に冷静な行動を取れるように覚えておこう。 &lt;a href=&#34;https://t.co/N5MpVjmcaW&#34;&gt;pic.twitter.com/N5MpVjmcaW&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1464904399860477953?ref_src=twsrc%5Etfw&#34;&gt;November 28, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;大切なので何度でも言います。『正常性バイアス』予期せぬ出来事に対し正常心を保つための人の特性。災害時に、これが強くかかると〝なぜか〟大丈夫と思い込み、避難行動に移さないというリスクがあります。災害に遭ったら、まずは身を守ります。そして、次の行動のとき、この言葉を思い出してね。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1453670379243851776?ref_src=twsrc%5Etfw&#34;&gt;October 28, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;大事なこと言います。「同調性バイアス」集団の中にいると、つい他人と同じ行動をとってしまう心理。避難が遅れる原因にもなり得ます。特に危険なのが火災。その時の判断ミスで命に関わります。この心理を逆利用して、誰かが率先して逃げると皆、動きます。あなたが率先して逃げて！というお話。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1459464807518777345?ref_src=twsrc%5Etfw&#34;&gt;November 13, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;大事なこと言います。「同化性バイアス」異常があっても背景に埋もれてしまい、危険と認識しない心理状態。小石が落ち始めるなどの土砂災害の前兆を「見逃す」のが典型例。クイズ番組で背景変化の問題がありますが、人はわずかな変化を察知するのが苦手です。防災訓練で意識することが大切ですね。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1463092460943466502?ref_src=twsrc%5Etfw&#34;&gt;November 23, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>内部被害による怪我の原因</title>
+      <link>https://dpnote.netlify.app/post/glass/</link>
+      <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/glass/</guid>
+      <description>
+        
+          &lt;p&gt;阪神淡路大震災のときの内部被害の統計を可視化してみました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;阪神淡路大震災のときの内部被害の可視化。これを見れば分かるとおり、地震時には、上から降ってくるor飛んでくるリスクがあるから、やっぱり整理整頓は大切ですね。 &lt;a href=&#34;https://t.co/AfjV1Wc0mm&#34;&gt;pic.twitter.com/AfjV1Wc0mm&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1460555745901133826?ref_src=twsrc%5Etfw&#34;&gt;November 16, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;やってみよう。今日から出来る超簡単な防災があります。阪神淡路大震災にて内部被害のあったご家庭のうち、29%の方は【ガラス】による被害があったと報告されています（総務省消防庁）。つまり、あなたの寝室に『スリッパ』を置きましょう。ちなみに僕は寝るのが趣味の一つです。現場からは以上です。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1454395153234505732?ref_src=twsrc%5Etfw&#34;&gt;October 30, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>人は煙のスピードに勝てない</title>
+      <link>https://dpnote.netlify.app/post/smoke/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/smoke/</guid>
+      <description>
+        
+          &lt;p&gt;人と煙の速度を図解にして比較してみました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;衝撃です！人は煙のスピードに「勝てない」というお話。いかに事前に危険を察知して「逃げ切れるか」だと思う。あとは、❶煙は上に上がるので、低い姿勢で歩く、❷お出かけの際は、ハンカチやタオルは持っていくなど、災害データから見えてくる防災は確実に存在する。 &lt;a href=&#34;https://t.co/1F6T8aHxtD&#34;&gt;pic.twitter.com/1F6T8aHxtD&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1460916875353894913?ref_src=twsrc%5Etfw&#34;&gt;November 17, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>可視化データランキング５選</title>
+      <link>https://dpnote.netlify.app/post/datarank/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/datarank/</guid>
+      <description>
+        
+          &lt;p&gt;2021年より本格的に災害データ可視化を進めていますが、上半期（４月～９月）で注目度の高かった可視化をランキングにしてみました。&lt;/p&gt;
+&lt;h3 class=&#34;title&#34;&gt;第５位　熱海市土砂災害３Ｄマップ&lt;/h1&gt;
+国土地理院の&lt;a href=&#34;https://maps.gsi.go.jp/&#34; target=&#34;_blank&#34;&gt;電子国土WEB&lt;/a&gt;の機能を利用して、WEB GLで表現した３Ｄマップ。ハザードマップの３Ｄ化を構想している自分には、今後も有効利用していきたいと思っています。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;熱海市土砂災害を3Dにて可視化しました！&lt;br&gt;&lt;br&gt;傾斜地＋森林＋豪雨＋長時間&lt;br&gt;&lt;br&gt;この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。&lt;br&gt;&lt;br&gt;※PC、スマホ等で動かせます。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/jkNXPyvhLu&#34;&gt;https://t.co/jkNXPyvhLu&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1427949646396104718?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;h3 class=&#34;title&#34;&gt;第４位　熱海市土砂災害マップ&lt;/h1&gt;
+国土地理院の防災データを利用。航空写真やドローンで撮影した動画を組み合わせてマップ化しました。&lt;a href=&#34;https://leafletjs.com/&#34; target=&#34;_blank&#34;&gt;leaflet&lt;/a&gt;は地図APIのライブラリも多く、これからも活用していきます。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「熱海市土砂災害をマップ化」&lt;br&gt;国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。&lt;br&gt;&lt;br&gt;山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思う。&lt;a href=&#34;https://t.co/YcD1FqRHfc&#34;&gt;https://t.co/YcD1FqRHfc&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1421790310456254471?ref_src=twsrc%5Etfw&#34;&gt;August 1, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;h3 class=&#34;title&#34;&gt;第３位　日本列島を河川だけで表現&lt;/h1&gt;
+&lt;a href=&#34;https://nlftp.mlit.go.jp/ksj/&#34; target=&#34;_blank&#34;&gt;国土数値情報&lt;/a&gt;を利用。今まで、geoJSONだけでしたが、topoJSONの使い方を学びました。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本の都道府県を河川だけで表現してみました！&lt;br&gt;川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？&lt;br&gt;あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う&lt;a href=&#34;https://twitter.com/hashtag/%E9%98%B2%E7%81%BD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#防災のためにできること&lt;/a&gt; &lt;a href=&#34;https://t.co/rqP7WUOUvH&#34;&gt;https://t.co/rqP7WUOUvH&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1430486361325375490?ref_src=twsrc%5Etfw&#34;&gt;August 25, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;h3 class=&#34;title&#34;&gt;第２位　震源リストマップ&lt;/h1&gt;
+気象庁の&lt;a href=&#34;https://www.data.jma.go.jp/svd/eqev/data/daily_map/index.html&#34; target=&#34;_blank&#34;&gt;震源リスト&lt;/a&gt;をマップ化。緯度・経度が60進数になっているので、10進数に変換する必要があり、ちょっと手間がかかるため、Excelでテキストデータからマップデータに変換するVBAを組みました。自動でマップデータを作成できるようになったので、今後も定期的に投稿していきます。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。&lt;br&gt;マップURLは↓こちら&lt;a href=&#34;https://t.co/j1eRTA1taz&#34;&gt;https://t.co/j1eRTA1taz&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1439909703786459141?ref_src=twsrc%5Etfw&#34;&gt;September 20, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;h3 class=&#34;title&#34;&gt;第１位　ダムの可視化マップ&lt;/h1&gt;
+2021年10月9日現在、いいね数601、RT数229、インプレッション67,000超えを獲得したマップ。ダントツの注目度でしたね。Twitterで通知が止まらなくなるというのは、こういうことかと初めて体験しました。１つのマップに落とし込む情報量（マップでは属性といいます。）が豊富だったことも要因かなと思います。今後のマップ化の道標となるマップ化でした。
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本全国のダムの情報を可視化しました。&lt;br&gt;&lt;br&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;br&gt;&lt;br&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます🙇‍♂️&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/V6M0X6gp7W&#34;&gt;https://t.co/V6M0X6gp7W&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1424327617096781829?ref_src=twsrc%5Etfw&#34;&gt;August 8, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;p&gt;ランキング５選は以上の結果になりました。これからも色々な可視化・マップを作っていきたいと思っています。今後もよろしくお願いします。&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>1日の震源リストを可視化させてみる</title>
+      <link>https://dpnote.netlify.app/post/earthquakelist/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/earthquakelist/</guid>
+      <description>
+        
+          &lt;p&gt;「1000回以上」揺れてます。最近の地震の動向が気になったので、可視化してみました！&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/earthquakelist/20210919/index.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。&lt;br&gt;マップURLは↓こちら&lt;a href=&#34;https://t.co/j1eRTA1taz&#34;&gt;https://t.co/j1eRTA1taz&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1439909703786459141?ref_src=twsrc%5Etfw&#34;&gt;September 20, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>日本全国のダムの情報をマップ化しました。</title>
+      <link>https://dpnote.netlify.app/post/dam/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/dam/</guid>
+      <description>
+        
+          &lt;p&gt;日本全国のダムの情報をマップ化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/dam.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本全国のダムの情報を可視化しました。&lt;br&gt;&lt;br&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;br&gt;&lt;br&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます🙇‍♂️&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/V6M0X6gp7W&#34;&gt;https://t.co/V6M0X6gp7W&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1424327617096781829?ref_src=twsrc%5Etfw&#34;&gt;August 8, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熱海市土砂災害を3Dにて可視化しました</title>
+      <link>https://dpnote.netlify.app/post/atami3d/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/atami3d/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市土砂災害を3Dにて可視化しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/qaon6oIV1-g&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;熱海市土砂災害を3Dにて可視化しました！&lt;br&gt;&lt;br&gt;傾斜地＋森林＋豪雨＋長時間&lt;br&gt;&lt;br&gt;この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。&lt;br&gt;&lt;br&gt;※PC、スマホ等で動かせます。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/jkNXPyvhLu&#34;&gt;https://t.co/jkNXPyvhLu&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1427949646396104718?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>日本の各都道府県を河川だけで表現してみる</title>
+      <link>https://dpnote.netlify.app/post/river/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/river/</guid>
+      <description>
+        
+          &lt;p&gt;日本の各都道府県を河川だけで表現してみました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本の都道府県を河川だけで表現してみました！&lt;br&gt;川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？&lt;br&gt;あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う&lt;a href=&#34;https://twitter.com/hashtag/%E9%98%B2%E7%81%BD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#防災のためにできること&lt;/a&gt; &lt;a href=&#34;https://t.co/rqP7WUOUvH&#34;&gt;https://t.co/rqP7WUOUvH&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1430486361325375490?ref_src=twsrc%5Etfw&#34;&gt;August 25, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和3年8月豪雨、六角川の浸水想定を可視化しました</title>
+      <link>https://dpnote.netlify.app/post/rokkaku/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/rokkaku/</guid>
+      <description>
+        
+          &lt;p&gt;令和3年8月豪雨、六角川の浸水想定を可視化しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/4SpIxFJSzGk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;令和3年8月豪雨 六角川の浸水想定を可視化しました。&lt;br&gt;&lt;br&gt;今回は、2画面連動地図を採用しました。標準地図、色別標高図、ハザードマップと比較することができます。スマホは横にしてご覧いただければと思います。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/FG4mcXaDGX&#34;&gt;https://t.co/FG4mcXaDGX&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1429038067881545731?ref_src=twsrc%5Etfw&#34;&gt;August 21, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熊本地震「活断層図と震度マップの重ね合わせ」</title>
+      <link>https://dpnote.netlify.app/post/kumamotoearthquake/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/kumamotoearthquake/</guid>
+      <description>
+        
+          &lt;p&gt;熊本地震の震度マップと活断層図を重ね合わせてみました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/kumamoto/visualization1.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熱海市土砂災害をマップ化しました</title>
+      <link>https://dpnote.netlify.app/post/atami/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/atami/</guid>
+      <description>
+        
+          &lt;p&gt;令和3年7月に起きた熱海市土砂災害をマップ化しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「熱海市土砂災害をマップ化」&lt;br&gt;国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。&lt;br&gt;&lt;br&gt;山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思う。&lt;a href=&#34;https://t.co/YcD1FqRHfc&#34;&gt;https://t.co/YcD1FqRHfc&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1421790310456254471?ref_src=twsrc%5Etfw&#34;&gt;August 1, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ハザードマップの認知度をグラフにしてみた</title>
+      <link>https://dpnote.netlify.app/post/hazardmap/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/hazardmap/</guid>
+      <description>
+        
+          &lt;p&gt;ハザードマップの認知度をグラフにしてみました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「マップの認知度と避難行動」&lt;br&gt;&lt;br&gt;やはり、リスク管理が出来ていないと行動にシフトさせるのは難しいですね&lt;br&gt;&lt;br&gt;防災に &amp;quot;気付き&amp;quot; は大切です&lt;br&gt;&lt;br&gt;❶ハザードマップ閲覧&lt;br&gt;❷指定緊急避難場所の把握&lt;br&gt;❸水平避難、垂直避難&lt;br&gt;❹罹災証明書&lt;br&gt;❺浸水被害等の税金の減免制度&lt;br&gt;&lt;br&gt;最低限の知識は蓄えておいた方が良いと思う &lt;a href=&#34;https://t.co/wud43Qt8hD&#34;&gt;pic.twitter.com/wud43Qt8hD&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1412371817121996805?ref_src=twsrc%5Etfw&#34;&gt;July 6, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東京都火災発生件数を可視化しました</title>
+      <link>https://dpnote.netlify.app/post/tokyofire/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/post/tokyofire/</guid>
+      <description>
+        
+          &lt;p&gt;東京都のオープンデータを利用して、都内の火災発生件数を可視化しました。&lt;/p&gt;
+&lt;p&gt;令和2年火災年報によると全国で発生した火災のうち&lt;/p&gt;
+&lt;p&gt;出火原因1位:たばこ、2位:たき火&lt;/p&gt;
+&lt;p&gt;とのことです。&lt;/p&gt;
+&lt;p&gt;知識の整理&lt;/p&gt;
+&lt;p&gt;１．避難時はブレーカーを落とす　→　通電火災防止&lt;/p&gt;
+&lt;p&gt;２．家の周りに燃える物を置かない　→　放火防止&lt;/p&gt;
+&lt;p&gt;３．火災報知器の取り付け・点検&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;東京都火災件数を可視化&lt;br&gt;令和2年火災年報によると全国で発生した火災のうち&lt;br&gt;出火原因1位:たばこ、2位:たき火とのこと&lt;br&gt;&lt;br&gt;知識の整理&lt;br&gt;❶避難時はブレーカーを落とす(通電火災防止)&lt;br&gt;❷家の周りに燃える物を置かない(放火防止)&lt;br&gt;❸火災報知器の取り付け・点検&lt;br&gt;&lt;br&gt;少しずつ、地図の可視化にも慣れてきた！ &lt;a href=&#34;https://t.co/hz6k877rru&#34;&gt;pic.twitter.com/hz6k877rru&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし 防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1409102052840525834?ref_src=twsrc%5Etfw&#34;&gt;June 27, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

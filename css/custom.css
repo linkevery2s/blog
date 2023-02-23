@@ -473,3 +473,12 @@ ul{
 .post_date{
   font-size: .9rem;
 }
+
+#post_calendar:before {
+  position: relative;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f073";
+  left: 0;
+  margin-right: 3px;
+}
