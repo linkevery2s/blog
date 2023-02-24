@@ -105,7 +105,7 @@
  
 
 <span class="post_date"><time itemprop="datePublished" datetime="2023-02-18 19:07:24 &#43;0900 JST">公開日：2023.02.18</time></span>
-<span class="post_date"><time itemprop="dateModified" datetime="2023-02-23 19:55:33.904017953 &#43;0900 JST">更新日：2023.02.23</time></span>
+<span class="post_date"><time itemprop="dateModified" datetime="2023-02-24 21:03:39.985731527 &#43;0900 JST">更新日：2023.02.24</time></span>
 
 
     <span> <a href='https://dpnote.netlify.app/categories/%E9%98%B2%E7%81%BDdx' class="post_tag"><i class="fas fa-tags"></i>防災DX</a><a href='https://dpnote.netlify.app/categories/%E7%81%BD%E5%AE%B3%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96' class="post_tag"><i class="fas fa-tags"></i>災害データ可視化</a>
@@ -261,10 +261,15 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span><span>			<span style="color:#a6e22e">title</span>: <span style="color:#e6db74">&#34;深さ&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span><span>		}
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span><span>	},
-</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span><span>	<span style="color:#a6e22e">title</span>: <span style="color:#e6db74">&#34;熊本地震を3Dにて深さまで可視化&#34;</span>,
-</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span><span>	<span style="color:#a6e22e">showlegend</span>: <span style="color:#66d9ef">false</span>,
-</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span><span>};</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span><span>	<span style="color:#a6e22e">margin</span>: {
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span><span>        <span style="color:#a6e22e">l</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span><span>        <span style="color:#a6e22e">r</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span><span>        <span style="color:#a6e22e">b</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46</span><span>        <span style="color:#a6e22e">t</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47</span><span>        <span style="color:#a6e22e">pad</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48</span><span>    },
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49</span><span>	<span style="color:#a6e22e">showlegend</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50</span><span>};</span></span></code></pre></div>
 <h4 class="heading2">散布図のプロット</h4>
 <p>散布図をプロットします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">Plotly</span>.<span style="color:#a6e22e">newPlot</span>(<span style="color:#e6db74">&#34;myDiv&#34;</span>, <span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">layout</span>);</span></span></code></pre></div>
