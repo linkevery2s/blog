@@ -474,6 +474,19 @@ ul{
   font-size: .9rem;
 }
 
+/*  reading time */
+#article_time{
+  font-size: .9rem;
+  color: #8f2e14;
+  border: 1px solid #8f2e14 !important;
+  padding: .2rem !important;
+}
+
+.at{
+  text-align: right;
+}
+
+/* 投稿カレンダー */
 #post_calendar:before {
   position: relative;
   font-family: "Font Awesome 6 Free";
@@ -482,3 +495,17 @@ ul{
   left: 0;
   margin-right: 3px;
 }
+
+.breadcrumb {
+  padding: .2em 0 0 0 !important;
+
+}
+.breadcrumb li {
+  display: inline;
+  list-style: none;
+}
+.breadcrumb li:not(:last-child)::after {
+  content: '>';
+  padding: 0 0.2em;
+}
+
