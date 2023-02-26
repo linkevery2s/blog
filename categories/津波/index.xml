@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>津波 on DP Note</title>
+    <link>https://dpnote.netlify.app/categories/%E6%B4%A5%E6%B3%A2/</link>
+    <description>Recent content in 津波 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 07 Feb 2023 20:12:34 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/categories/%E6%B4%A5%E6%B3%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>東日本大震災の津波観測地点を結んでみる</title>
+      <link>https://dpnote.netlify.app/higashinihon_arclayer/</link>
+      <pubDate>Tue, 07 Feb 2023 20:12:34 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/higashinihon_arclayer/</guid>
+      <description>
+        
+          &lt;p&gt;東日本大震災の津波観測地点をArcLayerで結んでみました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/higashinihon_arclayer.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;!-- 見出し --&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;どの範囲まで津波が届いたのか？&lt;/h2&gt;
+&lt;!-- 吹き出し --&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;東日本大震災の津波を統計的に可視化する方法はないかな？&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;このように考えたのがきっかけです。&lt;/p&gt;
+&lt;p&gt;DECK.GLのArcLayerを用いて表現してみました。&lt;/p&gt;
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;https://deck.gl&#34; target=&#34;_blank&#34;&gt;
+	deck.gl
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+
+WebGL-powered visualization framework for large-scale datasets
+
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;https://deck.gl&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;https://deck.gl/images/trips-layer-unfurl-4.0.jpg&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- ソースコード 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;--&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>トンガ火山噴火に伴う津波の様子</title>
+      <link>https://dpnote.netlify.app/tonga/</link>
+      <pubDate>Sat, 20 Aug 2022 12:21:33 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/tonga/</guid>
+      <description>
+        
+          &lt;p&gt;トンガ火山噴火に伴う津波の様子を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/tonga/index.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「初公開！」誰も見たことがない津波マップを公開します。トンガ火山噴火に伴う津波の様子を可視化しました。&lt;br&gt;&lt;br&gt;前例のない情報収集で、気象庁の方々も大変だったと思います。本当にお疲れ様でした。&lt;br&gt;&lt;br&gt;マップURLはこちら↓&lt;a href=&#34;https://t.co/9nGLktBxdO&#34;&gt;https://t.co/9nGLktBxdO&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1484835733961535489?ref_src=twsrc%5Etfw&#34;&gt;January 22, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>津波のスピードを図解化</title>
+      <link>https://dpnote.netlify.app/tspeed/</link>
+      <pubDate>Fri, 24 Jun 2022 12:19:04 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/tspeed/</guid>
+      <description>
+        
+          &lt;p&gt;津波のスピードを図解にしました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「津波のスピードを図解にしてみた」津波の速さの式には、震度やマグニチュードの値が「含まれていない」ことが分かる。このことからも、津波は「地震以外で起こりうること」に起因しているのかもしれない。 &lt;a href=&#34;https://t.co/3DMvhcwuV8&#34;&gt;pic.twitter.com/3DMvhcwuV8&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1488459611157925890?ref_src=twsrc%5Etfw&#34;&gt;February 1, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東日本大震災の津波観測を3Dマップにて可視化</title>
+      <link>https://dpnote.netlify.app/higashinihontsunami/</link>
+      <pubDate>Sun, 16 Jan 2022 12:39:29 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/higashinihontsunami/</guid>
+      <description>
+        
+          &lt;p&gt;東日本大震災の津波観測を3Dマップにて可視化しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe src =&#34;../../simulation/higashinihontsunami.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;東日本大震災の津波観測を3Dマップにて可視化しました！9mを超える観測地点もあり、3Dでも充分に高さが伝わると思います。これからも僕のやり方で、後世に伝えていきたい。&lt;a href=&#34;https://t.co/JZAv9vWjTV&#34;&gt;https://t.co/JZAv9vWjTV&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1479762304333983745?ref_src=twsrc%5Etfw&#34;&gt;January 8, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>水の力と津波の危険性</title>
+      <link>https://dpnote.netlify.app/water/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/water/</guid>
+      <description>
+        
+          &lt;p&gt;水の力と津波の危険性について、まとめました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;覚えておいて。水の力は凄まじい。水力発電でエネルギーを作られるぐらいの力を持っている。「ん？50cmの津波、大したことないやん。」ちょっと待ってくれ、津波は『体積』でやってくるのよ。50cmは男性の8割は立ってられない力を持っています。警報・注意報来たら、迷わず行動起こしてねというお話。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1452209500170162183?ref_src=twsrc%5Etfw&#34;&gt;October 24, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

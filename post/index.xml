@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 18 Feb 2023 19:07:24 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>熊本地震を深さの次元まで含めて3Dにて可視化</title>
-      <link>https://dpnote.netlify.app/post/kumamoto3d/</link>
+      <link>https://dpnote.netlify.app/kumamoto3d/</link>
       <pubDate>Sat, 18 Feb 2023 19:07:24 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/kumamoto3d/</guid>
+      <guid>https://dpnote.netlify.app/kumamoto3d/</guid>
       <description>
         
           &lt;p&gt;熊本地震の震源地の深さで３Dにしたら、どうなるのか？そこの疑問から可視化しました。&lt;/p&gt;
@@ -306,10 +306,10 @@ plotly.com
     
     <item>
       <title>東日本大震災の津波観測地点を結んでみる</title>
-      <link>https://dpnote.netlify.app/post/higashinihon_arclayer/</link>
+      <link>https://dpnote.netlify.app/higashinihon_arclayer/</link>
       <pubDate>Tue, 07 Feb 2023 20:12:34 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/higashinihon_arclayer/</guid>
+      <guid>https://dpnote.netlify.app/higashinihon_arclayer/</guid>
       <description>
         
           &lt;p&gt;東日本大震災の津波観測地点をArcLayerで結んでみました。&lt;/p&gt;
@@ -354,10 +354,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>方丈記の世界観を可視化しました。</title>
-      <link>https://dpnote.netlify.app/post/hojoki/</link>
+      <link>https://dpnote.netlify.app/hojoki/</link>
       <pubDate>Thu, 12 Jan 2023 20:06:39 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/hojoki/</guid>
+      <guid>https://dpnote.netlify.app/hojoki/</guid>
       <description>
         
           &lt;p&gt;方丈記の世界観を味読するため、文献を参考に可視化しました。&lt;/p&gt;
@@ -373,10 +373,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>気象庁の降水ナウキャストを３Dにて可視化</title>
-      <link>https://dpnote.netlify.app/post/krader3d/</link>
+      <link>https://dpnote.netlify.app/krader3d/</link>
       <pubDate>Mon, 09 Jan 2023 16:15:17 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/krader3d/</guid>
+      <guid>https://dpnote.netlify.app/krader3d/</guid>
       <description>
         
           &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
@@ -392,10 +392,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>都市空間の3Dマップを作りました。</title>
-      <link>https://dpnote.netlify.app/post/3dmap/</link>
+      <link>https://dpnote.netlify.app/3dmap/</link>
       <pubDate>Sat, 24 Dec 2022 17:41:54 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/3dmap/</guid>
+      <guid>https://dpnote.netlify.app/3dmap/</guid>
       <description>
         
           &lt;p&gt;ハザードマップの３D可視化に向けて、まずは都市空間の３D化に取り組みました。&lt;/p&gt;
@@ -410,10 +410,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>自然災害伝承碑マップを作成しました。</title>
-      <link>https://dpnote.netlify.app/post/denshouhi/</link>
+      <link>https://dpnote.netlify.app/denshouhi/</link>
       <pubDate>Sat, 17 Dec 2022 16:29:09 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/denshouhi/</guid>
+      <guid>https://dpnote.netlify.app/denshouhi/</guid>
       <description>
         
           &lt;p&gt;自然災害伝承碑マップを作成しました。&lt;/p&gt;
@@ -427,10 +427,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）</title>
-      <link>https://dpnote.netlify.app/post/heavyrain20220803/</link>
+      <link>https://dpnote.netlify.app/heavyrain20220803/</link>
       <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/heavyrain20220803/</guid>
+      <guid>https://dpnote.netlify.app/heavyrain20220803/</guid>
       <description>
         
           &lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）を可視化しました。&lt;/p&gt;
@@ -443,11 +443,11 @@ WebGL-powered visualization framework for large-scale datasets
     </item>
     
     <item>
-      <title>西日本集中豪雨を可視化</title>
-      <link>https://dpnote.netlify.app/post/nishinihonrain/</link>
+      <title>西日本集中豪雨を可視化しました</title>
+      <link>https://dpnote.netlify.app/nishinihonrain/</link>
       <pubDate>Sun, 04 Sep 2022 11:52:12 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/nishinihonrain/</guid>
+      <guid>https://dpnote.netlify.app/nishinihonrain/</guid>
       <description>
         
           &lt;p&gt;西日本集中豪雨を可視化しました。&lt;/p&gt;
@@ -461,10 +461,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>災害事例集「安否確認に１週間」</title>
-      <link>https://dpnote.netlify.app/post/jirei1/</link>
+      <link>https://dpnote.netlify.app/jirei1/</link>
       <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/jirei1/</guid>
+      <guid>https://dpnote.netlify.app/jirei1/</guid>
       <description>
         
           &lt;p&gt;今日は、災害事例集を投稿します。&lt;/p&gt;
@@ -477,10 +477,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>トンガ火山噴火に伴う津波の様子</title>
-      <link>https://dpnote.netlify.app/post/tonga/</link>
+      <link>https://dpnote.netlify.app/tonga/</link>
       <pubDate>Sat, 20 Aug 2022 12:21:33 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/tonga/</guid>
+      <guid>https://dpnote.netlify.app/tonga/</guid>
       <description>
         
           &lt;p&gt;トンガ火山噴火に伴う津波の様子を可視化しました。&lt;/p&gt;
@@ -494,10 +494,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>防災ロードマップを図解化</title>
-      <link>https://dpnote.netlify.app/post/loadmap/</link>
+      <link>https://dpnote.netlify.app/loadmap/</link>
       <pubDate>Sat, 20 Aug 2022 11:44:29 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/loadmap/</guid>
+      <guid>https://dpnote.netlify.app/loadmap/</guid>
       <description>
         
           &lt;p&gt;防災ロードマップを図解にしました。&lt;/p&gt;
@@ -510,10 +510,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>気象庁の雨雲レーダーの取得に成功しました</title>
-      <link>https://dpnote.netlify.app/post/krader/</link>
+      <link>https://dpnote.netlify.app/krader/</link>
       <pubDate>Sat, 13 Aug 2022 13:36:53 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/krader/</guid>
+      <guid>https://dpnote.netlify.app/krader/</guid>
       <description>
         
           &lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、MAPに載せてみました！&lt;/p&gt;
@@ -527,10 +527,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>エレベーターからの避難方法</title>
-      <link>https://dpnote.netlify.app/post/elevator/</link>
+      <link>https://dpnote.netlify.app/elevator/</link>
       <pubDate>Mon, 01 Aug 2022 12:08:48 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/elevator/</guid>
+      <guid>https://dpnote.netlify.app/elevator/</guid>
       <description>
         
           &lt;p&gt;エレベーターからの避難方法を図解にしました。&lt;/p&gt;
@@ -543,10 +543,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>火災統計２０２０を図解化</title>
-      <link>https://dpnote.netlify.app/post/kasai2020/</link>
+      <link>https://dpnote.netlify.app/kasai2020/</link>
       <pubDate>Wed, 27 Jul 2022 11:48:14 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/kasai2020/</guid>
+      <guid>https://dpnote.netlify.app/kasai2020/</guid>
       <description>
         
           &lt;p&gt;火災統計２０２０を図解にしました。&lt;/p&gt;
@@ -559,10 +559,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>30年以内に70%という確率</title>
-      <link>https://dpnote.netlify.app/post/nankai70/</link>
+      <link>https://dpnote.netlify.app/nankai70/</link>
       <pubDate>Sun, 24 Jul 2022 12:15:30 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/nankai70/</guid>
+      <guid>https://dpnote.netlify.app/nankai70/</guid>
       <description>
         
           &lt;p&gt;30年以内に70%という確率について考えます。&lt;/p&gt;
@@ -575,10 +575,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>伝えると伝わるは異なる</title>
-      <link>https://dpnote.netlify.app/post/inform/</link>
+      <link>https://dpnote.netlify.app/inform/</link>
       <pubDate>Thu, 14 Jul 2022 11:55:58 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/inform/</guid>
+      <guid>https://dpnote.netlify.app/inform/</guid>
       <description>
         
           &lt;p&gt;伝えると伝わるは異なるというお話。&lt;/p&gt;
@@ -591,10 +591,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>津波のスピードを図解化</title>
-      <link>https://dpnote.netlify.app/post/tspeed/</link>
+      <link>https://dpnote.netlify.app/tspeed/</link>
       <pubDate>Fri, 24 Jun 2022 12:19:04 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/tspeed/</guid>
+      <guid>https://dpnote.netlify.app/tspeed/</guid>
       <description>
         
           &lt;p&gt;津波のスピードを図解にしました。&lt;/p&gt;
@@ -607,10 +607,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>家具の固定について</title>
-      <link>https://dpnote.netlify.app/post/furniture/</link>
+      <link>https://dpnote.netlify.app/furniture/</link>
       <pubDate>Sat, 18 Jun 2022 12:27:48 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/furniture/</guid>
+      <guid>https://dpnote.netlify.app/furniture/</guid>
       <description>
         
           &lt;p&gt;家具の固定について、考えてみます。&lt;/p&gt;
@@ -623,10 +623,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>東京都河川ライブカメラマップの作成</title>
-      <link>https://dpnote.netlify.app/post/tkriver/</link>
+      <link>https://dpnote.netlify.app/tkriver/</link>
       <pubDate>Sat, 14 May 2022 16:48:28 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/tkriver/</guid>
+      <guid>https://dpnote.netlify.app/tkriver/</guid>
       <description>
         
           &lt;p&gt;東京都のオープンデータを用いて、河川ライブカメラマップを作成しました。&lt;/p&gt;
@@ -640,10 +640,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>ブラックアイスバーンについて</title>
-      <link>https://dpnote.netlify.app/post/blackice/</link>
+      <link>https://dpnote.netlify.app/blackice/</link>
       <pubDate>Sun, 27 Feb 2022 13:36:49 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/blackice/</guid>
+      <guid>https://dpnote.netlify.app/blackice/</guid>
       <description>
         
           &lt;p&gt;ブラックアイスバーンをご存知ですか？&lt;/p&gt;
@@ -656,10 +656,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>パブリックDNSをご存じですか？</title>
-      <link>https://dpnote.netlify.app/post/publicdns/</link>
+      <link>https://dpnote.netlify.app/publicdns/</link>
       <pubDate>Sat, 29 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/publicdns/</guid>
+      <guid>https://dpnote.netlify.app/publicdns/</guid>
       <description>
         
           &lt;p&gt;パブリックDNSについて、ご紹介します。&lt;/p&gt;
@@ -672,10 +672,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>東日本大震災の津波観測を3Dマップにて可視化</title>
-      <link>https://dpnote.netlify.app/post/higashinihontsunami/</link>
+      <link>https://dpnote.netlify.app/higashinihontsunami/</link>
       <pubDate>Sun, 16 Jan 2022 12:39:29 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/higashinihontsunami/</guid>
+      <guid>https://dpnote.netlify.app/higashinihontsunami/</guid>
       <description>
         
           &lt;p&gt;東日本大震災の津波観測を3Dマップにて可視化しました。&lt;/p&gt;
@@ -689,10 +689,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>時間軸を図解にて可視化</title>
-      <link>https://dpnote.netlify.app/post/time/</link>
+      <link>https://dpnote.netlify.app/time/</link>
       <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/time/</guid>
+      <guid>https://dpnote.netlify.app/time/</guid>
       <description>
         
           &lt;p&gt;天気予報などで使われる『時間軸』を図解にて可視化してみました。&lt;/p&gt;
@@ -705,10 +705,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>令和2年九州豪雨を可視化しました。</title>
-      <link>https://dpnote.netlify.app/post/r27mkyusyu/</link>
+      <link>https://dpnote.netlify.app/r27mkyusyu/</link>
       <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/r27mkyusyu/</guid>
+      <guid>https://dpnote.netlify.app/r27mkyusyu/</guid>
       <description>
         
           &lt;p&gt;令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。&lt;/p&gt;
@@ -722,10 +722,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>防災における人の心理バイアスを図解にて可視化</title>
-      <link>https://dpnote.netlify.app/post/bbias/</link>
+      <link>https://dpnote.netlify.app/bbias/</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/bbias/</guid>
+      <guid>https://dpnote.netlify.app/bbias/</guid>
       <description>
         
           &lt;p&gt;防災における人の心理バイアスを図解にて可視化しました。&lt;/p&gt;
@@ -741,10 +741,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>水の力と津波の危険性</title>
-      <link>https://dpnote.netlify.app/post/water/</link>
+      <link>https://dpnote.netlify.app/water/</link>
       <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/water/</guid>
+      <guid>https://dpnote.netlify.app/water/</guid>
       <description>
         
           &lt;p&gt;水の力と津波の危険性について、まとめました。&lt;/p&gt;
@@ -757,10 +757,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>内部被害による怪我の原因</title>
-      <link>https://dpnote.netlify.app/post/glass/</link>
+      <link>https://dpnote.netlify.app/glass/</link>
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/glass/</guid>
+      <guid>https://dpnote.netlify.app/glass/</guid>
       <description>
         
           &lt;p&gt;阪神淡路大震災のときの内部被害の統計を可視化してみました。&lt;/p&gt;
@@ -774,10 +774,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>人は煙のスピードに勝てない</title>
-      <link>https://dpnote.netlify.app/post/smoke/</link>
+      <link>https://dpnote.netlify.app/smoke/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/smoke/</guid>
+      <guid>https://dpnote.netlify.app/smoke/</guid>
       <description>
         
           &lt;p&gt;人と煙の速度を図解にして比較してみました。&lt;/p&gt;
@@ -790,10 +790,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>消防車のサイレンの違い</title>
-      <link>https://dpnote.netlify.app/post/siren/</link>
+      <link>https://dpnote.netlify.app/siren/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/siren/</guid>
+      <guid>https://dpnote.netlify.app/siren/</guid>
       <description>
         
           &lt;p&gt;消防車のサイレンには意味があることをご存知ですか？&lt;/p&gt;
@@ -806,10 +806,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>子ども達の言葉</title>
-      <link>https://dpnote.netlify.app/post/childrenmessage/</link>
+      <link>https://dpnote.netlify.app/childrenmessage/</link>
       <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/childrenmessage/</guid>
+      <guid>https://dpnote.netlify.app/childrenmessage/</guid>
       <description>
         
           &lt;p&gt;東日本大震災の時の子ども達の言葉をご紹介します。&lt;/p&gt;
@@ -822,10 +822,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>正常性バイアス</title>
-      <link>https://dpnote.netlify.app/post/bias/</link>
+      <link>https://dpnote.netlify.app/bias/</link>
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/bias/</guid>
+      <guid>https://dpnote.netlify.app/bias/</guid>
       <description>
         
           &lt;p&gt;防災を語るうえで欠くことのできない人間の心理「正常性バイアス」について解説します。&lt;/p&gt;
@@ -839,10 +839,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>避難時に覚えておきたい４つのこと</title>
-      <link>https://dpnote.netlify.app/post/hinan4/</link>
+      <link>https://dpnote.netlify.app/hinan4/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/hinan4/</guid>
+      <guid>https://dpnote.netlify.app/hinan4/</guid>
       <description>
         
           &lt;p&gt;避難時に「忘れがち」な事項をまとめました。&lt;/p&gt;
@@ -854,50 +854,11 @@ WebGL-powered visualization framework for large-scale datasets
     </item>
     
     <item>
-      <title>可視化データランキング５選</title>
-      <link>https://dpnote.netlify.app/post/datarank/</link>
-      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/post/datarank/</guid>
-      <description>
-        
-          &lt;p&gt;2021年より本格的に災害データ可視化を進めていますが、上半期（４月～９月）で注目度の高かった可視化をランキングにしてみました。&lt;/p&gt;
-&lt;h3 class=&#34;title&#34;&gt;第５位　熱海市土砂災害３Ｄマップ&lt;/h1&gt;
-国土地理院の&lt;a href=&#34;https://maps.gsi.go.jp/&#34; target=&#34;_blank&#34;&gt;電子国土WEB&lt;/a&gt;の機能を利用して、WEB GLで表現した３Ｄマップ。ハザードマップの３Ｄ化を構想している自分には、今後も有効利用していきたいと思っています。
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;熱海市土砂災害を3Dにて可視化しました！&lt;br&gt;&lt;br&gt;傾斜地＋森林＋豪雨＋長時間&lt;br&gt;&lt;br&gt;この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。&lt;br&gt;&lt;br&gt;※PC、スマホ等で動かせます。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/jkNXPyvhLu&#34;&gt;https://t.co/jkNXPyvhLu&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1427949646396104718?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-&lt;h3 class=&#34;title&#34;&gt;第４位　熱海市土砂災害マップ&lt;/h1&gt;
-国土地理院の防災データを利用。航空写真やドローンで撮影した動画を組み合わせてマップ化しました。&lt;a href=&#34;https://leafletjs.com/&#34; target=&#34;_blank&#34;&gt;leaflet&lt;/a&gt;は地図APIのライブラリも多く、これからも活用していきます。
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「熱海市土砂災害をマップ化」&lt;br&gt;国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。&lt;br&gt;&lt;br&gt;山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思う。&lt;a href=&#34;https://t.co/YcD1FqRHfc&#34;&gt;https://t.co/YcD1FqRHfc&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1421790310456254471?ref_src=twsrc%5Etfw&#34;&gt;August 1, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-&lt;h3 class=&#34;title&#34;&gt;第３位　日本列島を河川だけで表現&lt;/h1&gt;
-&lt;a href=&#34;https://nlftp.mlit.go.jp/ksj/&#34; target=&#34;_blank&#34;&gt;国土数値情報&lt;/a&gt;を利用。今まで、geoJSONだけでしたが、topoJSONの使い方を学びました。
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本の都道府県を河川だけで表現してみました！&lt;br&gt;川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？&lt;br&gt;あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う&lt;a href=&#34;https://twitter.com/hashtag/%E9%98%B2%E7%81%BD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#防災のためにできること&lt;/a&gt; &lt;a href=&#34;https://t.co/rqP7WUOUvH&#34;&gt;https://t.co/rqP7WUOUvH&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1430486361325375490?ref_src=twsrc%5Etfw&#34;&gt;August 25, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-&lt;h3 class=&#34;title&#34;&gt;第２位　震源リストマップ&lt;/h1&gt;
-気象庁の&lt;a href=&#34;https://www.data.jma.go.jp/svd/eqev/data/daily_map/index.html&#34; target=&#34;_blank&#34;&gt;震源リスト&lt;/a&gt;をマップ化。緯度・経度が60進数になっているので、10進数に変換する必要があり、ちょっと手間がかかるため、Excelでテキストデータからマップデータに変換するVBAを組みました。自動でマップデータを作成できるようになったので、今後も定期的に投稿していきます。
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。&lt;br&gt;マップURLは↓こちら&lt;a href=&#34;https://t.co/j1eRTA1taz&#34;&gt;https://t.co/j1eRTA1taz&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1439909703786459141?ref_src=twsrc%5Etfw&#34;&gt;September 20, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-&lt;h3 class=&#34;title&#34;&gt;第１位　ダムの可視化マップ&lt;/h1&gt;
-2021年10月9日現在、いいね数601、RT数229、インプレッション67,000超えを獲得したマップ。ダントツの注目度でしたね。Twitterで通知が止まらなくなるというのは、こういうことかと初めて体験しました。１つのマップに落とし込む情報量（マップでは属性といいます。）が豊富だったことも要因かなと思います。今後のマップ化の道標となるマップ化でした。
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本全国のダムの情報を可視化しました。&lt;br&gt;&lt;br&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;br&gt;&lt;br&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます🙇‍♂️&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/V6M0X6gp7W&#34;&gt;https://t.co/V6M0X6gp7W&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1424327617096781829?ref_src=twsrc%5Etfw&#34;&gt;August 8, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-&lt;p&gt;ランキング５選は以上の結果になりました。これからも色々な可視化・マップを作っていきたいと思っています。今後もよろしくお願いします。&lt;/p&gt;
-        
-      </description>
-    </item>
-    
-    <item>
       <title>1日の震源リストを可視化させてみる</title>
-      <link>https://dpnote.netlify.app/post/earthquakelist/</link>
+      <link>https://dpnote.netlify.app/earthquakelist/</link>
       <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/earthquakelist/</guid>
+      <guid>https://dpnote.netlify.app/earthquakelist/</guid>
       <description>
         
           &lt;p&gt;「1000回以上」揺れてます。最近の地震の動向が気になったので、可視化してみました！&lt;/p&gt;
@@ -911,10 +872,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>防災と少子高齢化、DXの役割</title>
-      <link>https://dpnote.netlify.app/post/population/</link>
+      <link>https://dpnote.netlify.app/population/</link>
       <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/population/</guid>
+      <guid>https://dpnote.netlify.app/population/</guid>
       <description>
         
           &lt;p&gt;少子高齢化が加速度的に進む日本の問題です。&lt;/p&gt;
@@ -927,10 +888,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>日本全国のダムの情報をマップ化しました。</title>
-      <link>https://dpnote.netlify.app/post/dam/</link>
+      <link>https://dpnote.netlify.app/dam/</link>
       <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/dam/</guid>
+      <guid>https://dpnote.netlify.app/dam/</guid>
       <description>
         
           &lt;p&gt;日本全国のダムの情報をマップ化しました。&lt;/p&gt;
@@ -944,10 +905,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>Siriに防災を学ばせてみた！</title>
-      <link>https://dpnote.netlify.app/post/siri/</link>
+      <link>https://dpnote.netlify.app/siri/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/siri/</guid>
+      <guid>https://dpnote.netlify.app/siri/</guid>
       <description>
         
           &lt;p&gt;Siriに防災について、学習させてみました！&lt;/p&gt;
@@ -961,10 +922,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>熱海市土砂災害を3Dにて可視化しました</title>
-      <link>https://dpnote.netlify.app/post/atami3d/</link>
+      <link>https://dpnote.netlify.app/atami3d/</link>
       <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/atami3d/</guid>
+      <guid>https://dpnote.netlify.app/atami3d/</guid>
       <description>
         
           &lt;p&gt;熱海市土砂災害を3Dにて可視化しました。&lt;/p&gt;
@@ -978,10 +939,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>00000JAPANをご紹介します。</title>
-      <link>https://dpnote.netlify.app/post/00000japan/</link>
+      <link>https://dpnote.netlify.app/00000japan/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/00000japan/</guid>
+      <guid>https://dpnote.netlify.app/00000japan/</guid>
       <description>
         
           &lt;p&gt;今日は、00000JAPANについて説明します。&lt;/p&gt;
@@ -994,10 +955,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>電話リレーサービスをご存じですか？</title>
-      <link>https://dpnote.netlify.app/post/phonerelay/</link>
+      <link>https://dpnote.netlify.app/phonerelay/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/phonerelay/</guid>
+      <guid>https://dpnote.netlify.app/phonerelay/</guid>
       <description>
         
           &lt;p&gt;今日は、電話リレーサービスについてご紹介します。&lt;/p&gt;
@@ -1010,10 +971,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>日本の各都道府県を河川だけで表現してみる</title>
-      <link>https://dpnote.netlify.app/post/river/</link>
+      <link>https://dpnote.netlify.app/river/</link>
       <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/river/</guid>
+      <guid>https://dpnote.netlify.app/river/</guid>
       <description>
         
           &lt;p&gt;日本の各都道府県を河川だけで表現してみました。&lt;/p&gt;
@@ -1026,10 +987,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>令和3年8月豪雨、六角川の浸水想定を可視化しました</title>
-      <link>https://dpnote.netlify.app/post/rokkaku/</link>
+      <link>https://dpnote.netlify.app/rokkaku/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/rokkaku/</guid>
+      <guid>https://dpnote.netlify.app/rokkaku/</guid>
       <description>
         
           &lt;p&gt;令和3年8月豪雨、六角川の浸水想定を可視化しました。&lt;/p&gt;
@@ -1043,10 +1004,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>熊本地震「活断層図と震度マップの重ね合わせ」</title>
-      <link>https://dpnote.netlify.app/post/kumamotoearthquake/</link>
+      <link>https://dpnote.netlify.app/kumamotoearthquake/</link>
       <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/kumamotoearthquake/</guid>
+      <guid>https://dpnote.netlify.app/kumamotoearthquake/</guid>
       <description>
         
           &lt;p&gt;熊本地震の震度マップと活断層図を重ね合わせてみました。&lt;/p&gt;
@@ -1056,27 +1017,11 @@ WebGL-powered visualization framework for large-scale datasets
     </item>
     
     <item>
-      <title>Twitterアンケート「備蓄編」</title>
-      <link>https://dpnote.netlify.app/post/questionnaire1/</link>
-      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/post/questionnaire1/</guid>
-      <description>
-        
-          &lt;p&gt;Twitterでアンケートを実施しました！&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;皆さん、防災リュックって家の中のどこに保管されてますか？🤔&lt;br&gt;&lt;br&gt;僕は2階の寝室です。&lt;br&gt;&lt;br&gt;理由は夜中に地震が起きて、1階が潰れても2階から脱出できるからです！&lt;br&gt;&lt;br&gt;皆さんの考えを教えて下さい！🙇‍♂️&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1287195358989189120?ref_src=twsrc%5Etfw&#34;&gt;July 26, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Net119をご存じですか？</title>
-      <link>https://dpnote.netlify.app/post/net119/</link>
+      <link>https://dpnote.netlify.app/net119/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/net119/</guid>
+      <guid>https://dpnote.netlify.app/net119/</guid>
       <description>
         
           &lt;p&gt;Net119サービスについてご紹介します。&lt;/p&gt;
@@ -1089,10 +1034,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>熱海市土砂災害をマップ化しました</title>
-      <link>https://dpnote.netlify.app/post/atami/</link>
+      <link>https://dpnote.netlify.app/atami/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/atami/</guid>
+      <guid>https://dpnote.netlify.app/atami/</guid>
       <description>
         
           &lt;p&gt;令和3年7月に起きた熱海市土砂災害をマップ化しました。&lt;/p&gt;
@@ -1105,10 +1050,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>被害率曲線をご存じですか？</title>
-      <link>https://dpnote.netlify.app/post/destructionrate/</link>
+      <link>https://dpnote.netlify.app/destructionrate/</link>
       <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/destructionrate/</guid>
+      <guid>https://dpnote.netlify.app/destructionrate/</guid>
       <description>
         
           &lt;p&gt;今日は、被害率曲線のお話です。&lt;/p&gt;
@@ -1121,10 +1066,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>ハザードマップの認知度をグラフにしてみた</title>
-      <link>https://dpnote.netlify.app/post/hazardmap/</link>
+      <link>https://dpnote.netlify.app/hazardmap/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/hazardmap/</guid>
+      <guid>https://dpnote.netlify.app/hazardmap/</guid>
       <description>
         
           &lt;p&gt;ハザードマップの認知度をグラフにしてみました。&lt;/p&gt;
@@ -1137,10 +1082,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>東京都災害時給水ステーションをマップ化してみた。</title>
-      <link>https://dpnote.netlify.app/post/tokyowater/</link>
+      <link>https://dpnote.netlify.app/tokyowater/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/tokyowater/</guid>
+      <guid>https://dpnote.netlify.app/tokyowater/</guid>
       <description>
         
           &lt;p&gt;東京都のオープンデータを用いて、災害時給水ステーションをマップ化してみました。&lt;/p&gt;
@@ -1154,10 +1099,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>東京都の昼間人口を可視化してみた。</title>
-      <link>https://dpnote.netlify.app/post/tokyodaytime/</link>
+      <link>https://dpnote.netlify.app/tokyodaytime/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/tokyodaytime/</guid>
+      <guid>https://dpnote.netlify.app/tokyodaytime/</guid>
       <description>
         
           &lt;p&gt;東京都の昼間人口を可視化してみました。&lt;/p&gt;
@@ -1170,10 +1115,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>南海トラフ地震の震度マップを見よう！</title>
-      <link>https://dpnote.netlify.app/post/nankaishindomap/</link>
+      <link>https://dpnote.netlify.app/nankaishindomap/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/nankaishindomap/</guid>
+      <guid>https://dpnote.netlify.app/nankaishindomap/</guid>
       <description>
         
           &lt;p&gt;南海トラフ地震の震度マップを可視化しました。&lt;/p&gt;
@@ -1186,10 +1131,10 @@ WebGL-powered visualization framework for large-scale datasets
     
     <item>
       <title>東京都火災発生件数を可視化しました</title>
-      <link>https://dpnote.netlify.app/post/tokyofire/</link>
+      <link>https://dpnote.netlify.app/tokyofire/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/post/tokyofire/</guid>
+      <guid>https://dpnote.netlify.app/tokyofire/</guid>
       <description>
         
           &lt;p&gt;東京都のオープンデータを利用して、都内の火災発生件数を可視化しました。&lt;/p&gt;

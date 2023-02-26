@@ -496,6 +496,7 @@ ul{
   margin-right: 3px;
 }
 
+/* パンくずリスト */
 .breadcrumb {
   padding: .2em 0 0 0 !important;
 
@@ -505,7 +506,10 @@ ul{
   list-style: none;
 }
 .breadcrumb li:not(:last-child)::after {
-  content: '>';
+  content: "・";
   padding: 0 0.2em;
+}
+.breadcrumb li a{
+  border-bottom: 1px dotted;
 }
 
