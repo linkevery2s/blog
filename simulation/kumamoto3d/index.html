@@ -34,18 +34,18 @@
 </head>
 
 <body>
-   <div id="myDiv"><!-- ここにプロットさせる --></div>
+    <div id="myDiv"><!-- ここにプロットさせる --></div>
 
-   <center>
-    <div id="shindo_legend"></div>
-</center>
+    <center>
+        <div id="shindo_legend"></div>
+    </center>
 
 </body>
 <script type="module">
 
     onload = async () => {
 
-        /* 震度マップデータをインポート */
+    /* 震度マップデータをインポート */
         const res = await fetch("./all.json");
         const shindo = await res.json();
 
@@ -77,20 +77,20 @@
             type: "groupby",
             groups: d,
             styles: [
-               {target: "震度７", value: {marker: {color: "rgba(100,1,37,1)", size: 10}}},
-               {target: "震度６強", value: {marker: {color: "rgba(226,4,27,1)", size: 9}}},
-               {target: "震度６弱", value: {marker: {color: "rgba(236,109,81,1)", size: 8}}},
-               {target: "震度５強", value: {marker: {color: "rgba(214,106,53,1)", size: 7}}},
-               {target: "震度５弱", value: {marker: {color: "rgba(219,132,73,1)", size: 6}}},
-               {target: "震度４", value: {marker: {color: "rgba(255,234,0,1)", size: 5}}},
-               {target: "震度３", value: {marker: {color: "rgba(195,216,37,1)", size: 4}}},
-               {target: "震度２", value: {marker: {color: "rgba(89,185,198,1)", size: 3}}},
-               {target: "震度１", value: {marker: {color: "rgba(0,123,187,1)", size: 2}}},
-               ]
+             {target: "震度７", value: {marker: {color: "rgba(100,1,37,1)", size: 10}}},
+             {target: "震度６強", value: {marker: {color: "rgba(226,4,27,1)", size: 9}}},
+             {target: "震度６弱", value: {marker: {color: "rgba(236,109,81,1)", size: 8}}},
+             {target: "震度５強", value: {marker: {color: "rgba(214,106,53,1)", size: 7}}},
+             {target: "震度５弱", value: {marker: {color: "rgba(219,132,73,1)", size: 6}}},
+             {target: "震度４", value: {marker: {color: "rgba(255,234,0,1)", size: 5}}},
+             {target: "震度３", value: {marker: {color: "rgba(195,216,37,1)", size: 4}}},
+             {target: "震度２", value: {marker: {color: "rgba(89,185,198,1)", size: 3}}},
+             {target: "震度１", value: {marker: {color: "rgba(0,123,187,1)", size: 2}}},
+             ]
         }]
     };
 
-        /* シンボルデータをインポート */
+    /* シンボルデータをインポート */
     const res2 = await fetch("./symbol.json");
     const symbol = await res2.json();
 
@@ -122,7 +122,7 @@
 
 const data = [shindo_data, symbol_data];
 
-        /* レイアウト設定 */
+    /* レイアウト設定 */
 let layout = {
     height: 600,
     scene: {
@@ -175,7 +175,7 @@ let layout = {
 
 };
 
-            /* https://fontawesome.com/ より,SVGファイルを指定する。 */
+        /* https://fontawesome.com/ より,SVGファイルを指定する。 */
 const icon1 = {
     "width": 500,
     "height": 500,
@@ -214,24 +214,15 @@ let config = {
 
 };
 
-          /* 3d散布図にプロットする */
+      /* 3d散布図にプロットする */
 Plotly.newPlot("myDiv", data, layout, config);
 
-          /* 震度階級 */
+      /* 震度階級 */
 const grades = ["震度７", "震度６強", "震度６弱", "震度５強", "震度５弱", "震度４", "震度３", "震度２", "震度１"];
 let labels = ["震度階級"];
 let from;
 
-for(let k = 0; k<grades.length; k++){
-    from = grades[k];
-
-    labels.push('<span style="background:' + getColor(from) + '">　</span> ' + from);
-
-}
-
-shindo_legend.innerHTML = labels.join("<br>");
-
-function getColor(d) {
+let getColor = d => {
     return d == "震度７" ? '#640125' :
     d == "震度６強" ? '#e2041b' :
     d == "震度６弱" ? '#ec6d51' :
@@ -242,6 +233,15 @@ function getColor(d) {
     d == "震度２" ? '#59b9c6' :
     '#007bbb';
 }
+
+for(let k = 0; k<grades.length; k++){
+    from = grades[k];
+
+    labels.push('<span style="background:' + getColor(from) + '">　</span> ' + from);
+
+}
+
+shindo_legend.innerHTML = labels.join("<br>");
 
 };
 
