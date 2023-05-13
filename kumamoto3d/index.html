@@ -106,7 +106,7 @@
 
   
   <span class="post_date"><time itemprop="datePublished" datetime="2023-02-18 19:07:24 &#43;0900 JST">公開日：2023.02.18</time></span>
-  <span class="post_date"><time itemprop="dateModified" datetime="2023-03-19 19:18:17.585859464 &#43;0900 JST">更新日：2023.03.19</time></span>
+  <span class="post_date"><time itemprop="dateModified" datetime="2023-05-13 18:06:40.6373829 &#43;0900 JST">更新日：2023.05.13</time></span>
 
   
   
@@ -127,7 +127,7 @@
 
   <div class="at">
     <span id="article_time">Reading time: 4 分
-    30 秒</span>
+    46 秒</span>
   </div>
 
 
@@ -141,16 +141,27 @@
 <div class="balloon">
 	<p>熊本地震の群発地震の様子を地中の震源地でどのように起きているのか、可視化してみたい。</p>
 </div>
+<h2 class="heading1">つぶやき</h2>
+<blockquote>
+<p>熊本地震を深さの次元まで含めて可視化してみる。震度階級で色分けして、地表付近に、各地点のシンボルをテキストで表示させました。こうしてみると、震度７より深い地点でも揺れていたり、群発地震の様子がよく分かりますね。</p>
+</blockquote>
+<!--
 <h2 class="heading1">ソースコード解説</h2>
 <h4 class="heading2">CDNからインポート</h4>
 <p>まずは、<a href="https://plotly.com//" target="_blank" class="linkb">Plotly</a>をCDNから読み込みます。</p>
+
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#a6e22e">script</span> <span style="color:#a6e22e">src</span>=<span style="color:#e6db74">&#34;https://cdn.plot.ly/plotly-2.18.0.min.js&#34;</span>&gt;&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">script</span>&gt;</span></span></code></pre></div>
+
 <p>バージョンは最新版でも、指定したバージョンでも可です。僕は、ここでは、v2.18.0を読み込んでいます。</p>
+
 <h4 class="heading2">DIVの指定</h4>
 <p>divを指定します。ここにグラフが表示されるようになります。</p>
+
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#a6e22e">div</span> <span style="color:#a6e22e">id</span>=<span style="color:#e6db74">&#34;myDiv&#34;</span>&gt;&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">div</span>&gt;</span></span></code></pre></div>
+
 <h4 class="heading2">ES Moduleの読み込み</h4>
 <p>JavaScriptは歴史が長いプログラミング言語です。マニュアルを見ると、新旧混在したコードも見受けられます。僕は、なるべく最新のES Moduleで記述するようにしています。</p>
+
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#a6e22e">script</span> <span style="color:#66d9ef">type</span>=<span style="color:#e6db74">&#34;module&#34;</span>&gt;
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#75715e">/*
@@ -158,6 +169,8 @@
 </span></span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#75715e">*/</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">script</span>&gt;</span></span></code></pre></div>
+
+
 <div class="blcard">
 <div class="blcard-content">
     <div class="blcard-title">
@@ -180,6 +193,10 @@
 
 </div>
 
+
+
+
+
 <h4 class="heading2">JSONファイルの取得</h4>
 <p>僕は、クライアントサイドが大好きなので、<a href="https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" class="linkb">fetch</a>で取得しています。<a href="https://d3js.org/" target="_blank" class="linkb">D3</a>を使う方法もあります。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> = <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#34;./all.json&#34;</span>);
@@ -198,6 +215,7 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>	<span style="color:#a6e22e">d</span>[<span style="color:#a6e22e">i</span>] = <span style="color:#a6e22e">shindo</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">shindo</span>;
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>};</span></span></code></pre></div>
+
 <h4 class="heading2">インポートデータの設定</h4>
 <p>データ設定します。modeで"markers"にすることで、プロットがマーカーになります。typeを<a href="https://plotly.com/javascript/3d-scatter-plots/" target="_blank" class="linkb">scatter3d</a>にすることで、３D散布図となります。targetでは、値により色分けしています。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#a6e22e">let</span> <span style="color:#a6e22e">shindo_data</span> = {
@@ -224,8 +242,11 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>		]
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>	}]
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>};</span></span></code></pre></div>
+
+
 <h4 class="heading2">シンボルデータの取得</h4>
 同じ要領でシンボルデータ（地表付近のテキストデータ）も取得します。modeを"markers+text"にすることで、散布図内にテキストが表示されるようになります。
+
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#a6e22e">let</span> <span style="color:#a6e22e">symbol_data</span> = {
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>	<span style="color:#a6e22e">x</span>: <span style="color:#a6e22e">sb</span>,
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>	<span style="color:#a6e22e">y</span>: <span style="color:#a6e22e">sa</span>,
@@ -236,6 +257,8 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>	<span style="color:#66d9ef">type</span>: <span style="color:#e6db74">&#34;scatter3d&#34;</span>,
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>	<span style="color:#a6e22e">marker</span>: {<span style="color:#a6e22e">color</span>: <span style="color:#e6db74">&#34;black&#34;</span>, <span style="color:#a6e22e">size</span>:<span style="color:#ae81ff">1</span>}
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>};</span></span></code></pre></div>
+
+
 <h4 class="heading2">レイアウトの設定</h4>
 <p>カメラのアングル、軸ラベル、凡例の表示の有無など、図のレイアウトを設定します。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#a6e22e">let</span> <span style="color:#a6e22e">layout</span> = {
@@ -288,12 +311,16 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48</span><span>    },
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49</span><span>	<span style="color:#a6e22e">showlegend</span>: <span style="color:#66d9ef">false</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50</span><span>};</span></span></code></pre></div>
+
 <h4 class="heading2">散布図のプロット</h4>
 <p>散布図をプロットします。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">Plotly</span>.<span style="color:#a6e22e">newPlot</span>(<span style="color:#e6db74">&#34;myDiv&#34;</span>, <span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">layout</span>);</span></span></code></pre></div>
+
 <p>以上で、３D散布図の完成です！</p>
+
 <h4 class="heading2">【参考】散布図の回転</h4>
 <p>動的に散布図を見たかったので、散布図の回転機能を備えました。</p>
+
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">icon1</span> = {
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>	<span style="color:#e6db74">&#34;width&#34;</span>: <span style="color:#ae81ff">500</span>,
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>	<span style="color:#e6db74">&#34;height&#34;</span>: <span style="color:#ae81ff">500</span>,
@@ -331,7 +358,9 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span><span>		]
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span>};</span></span></code></pre></div>
+
 <p>アイコンでは、<a href="https://fontawesome.com/" target="_blank" class="linkb">Font Awesome</a>のSVGファイルを読み込みます。</p>
+
 <p>↓こちらの解説が分かりやすかったです。</p>
 <div class="blcard">
 <div class="blcard-content">
@@ -356,6 +385,8 @@
 
 </div>
 
+
+
 <div class="kokuban-t2">
 	<span class="title-t2">まとめ</span>
 	・Plotly.jsをCDNで読み込む<br>
@@ -363,33 +394,15 @@
 	・インポートデータを設定する<br>
 	・レイアウトを設定する<br>
 	・図に表示させる
+	
 </div>
+
 <p>興味のある方は、是非、可視化にトライしてみてくださいね！</p>
+
+-->
 <h2 class="heading1">参考文献</h2>
 <p>・<a href="https://plotly.com/javascript/" target="_blank" class="linkb">plotly.com</a><br><br>
 ・<a href="https://www.data.jma.go.jp/svd/eqdb/data/shindo/" target="_blank" class="linkb">震度データベース</a></p>
-<!--<div class="blcard">
-<div class="blcard-content">
-    <div class="blcard-title">
-      <a href="https://plotly.com/javascript/" target="_blank">
-	Plotly
-      </a>
-    </div>
-    <div class="blcard-excerpt">
-      
-plotly.com
-
-    </div>
-</div>
-
-  <div class="blcard-thumbnail">
-    <a href="https://plotly.com/javascript/" target="_blank">
-    <img src="https://help.plot.ly/images/twitter-default.png"/>
-    </a>
-  </div>
-
-</div>
--->
 <h2 class="heading1">作成したオープンデータ</h2>
 <div class="blcard">
 <div class="blcard-content">

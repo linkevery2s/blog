@@ -22,16 +22,27 @@
 &lt;div class=&#34;balloon&#34;&gt;
 	&lt;p&gt;熊本地震の群発地震の様子を地中の震源地でどのように起きているのか、可視化してみたい。&lt;/p&gt;
 &lt;/div&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;熊本地震を深さの次元まで含めて可視化してみる。震度階級で色分けして、地表付近に、各地点のシンボルをテキストで表示させました。こうしてみると、震度７より深い地点でも揺れていたり、群発地震の様子がよく分かりますね。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!--
 &lt;h2 class=&#34;heading1&#34;&gt;ソースコード解説&lt;/h2&gt;
 &lt;h4 class=&#34;heading2&#34;&gt;CDNからインポート&lt;/h4&gt;
 &lt;p&gt;まずは、&lt;a href=&#34;https://plotly.com//&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;Plotly&lt;/a&gt;をCDNから読み込みます。&lt;/p&gt;
+
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://cdn.plot.ly/plotly-2.18.0.min.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;バージョンは最新版でも、指定したバージョンでも可です。僕は、ここでは、v2.18.0を読み込んでいます。&lt;/p&gt;
+
 &lt;h4 class=&#34;heading2&#34;&gt;DIVの指定&lt;/h4&gt;
 &lt;p&gt;divを指定します。ここにグラフが表示されるようになります。&lt;/p&gt;
+
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;myDiv&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h4 class=&#34;heading2&#34;&gt;ES Moduleの読み込み&lt;/h4&gt;
 &lt;p&gt;JavaScriptは歴史が長いプログラミング言語です。マニュアルを見ると、新旧混在したコードも見受けられます。僕は、なるべく最新のES Moduleで記述するようにしています。&lt;/p&gt;
+
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;module&amp;#34;&lt;/span&gt;&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&lt;/span&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/*
@@ -39,6 +50,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6&lt;/span&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7&lt;/span&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;div class=&#34;blcard&#34;&gt;
 &lt;div class=&#34;blcard-content&#34;&gt;
     &lt;div class=&#34;blcard-title&#34;&gt;
@@ -61,6 +74,10 @@
 
 &lt;/div&gt;
 
+
+
+
+
 &lt;h4 class=&#34;heading2&#34;&gt;JSONファイルの取得&lt;/h4&gt;
 &lt;p&gt;僕は、クライアントサイドが大好きなので、&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;fetch&lt;/a&gt;で取得しています。&lt;a href=&#34;https://d3js.org/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;D3&lt;/a&gt;を使う方法もあります。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;res&lt;/span&gt; = &lt;span style=&#34;color:#a6e22e&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fetch&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./all.json&amp;#34;&lt;/span&gt;);
@@ -79,6 +96,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;] = &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;].&lt;span style=&#34;color:#a6e22e&#34;&gt;shindo&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15&lt;/span&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h4 class=&#34;heading2&#34;&gt;インポートデータの設定&lt;/h4&gt;
 &lt;p&gt;データ設定します。modeで&#34;markers&#34;にすることで、プロットがマーカーになります。typeを&lt;a href=&#34;https://plotly.com/javascript/3d-scatter-plots/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;scatter3d&lt;/a&gt;にすることで、３D散布図となります。targetでは、値により色分けしています。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;shindo_data&lt;/span&gt; = {
@@ -105,8 +123,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;22&lt;/span&gt;&lt;span&gt;		]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;23&lt;/span&gt;&lt;span&gt;	}]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;24&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h4 class=&#34;heading2&#34;&gt;シンボルデータの取得&lt;/h4&gt;
 同じ要領でシンボルデータ（地表付近のテキストデータ）も取得します。modeを&#34;markers+text&#34;にすることで、散布図内にテキストが表示されるようになります。
+
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;symbol_data&lt;/span&gt; = {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;sb&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;: &lt;span style=&#34;color:#a6e22e&#34;&gt;sa&lt;/span&gt;,
@@ -117,6 +138,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;scatter3d&amp;#34;&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;marker&lt;/span&gt;: {&lt;span style=&#34;color:#a6e22e&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;black&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h4 class=&#34;heading2&#34;&gt;レイアウトの設定&lt;/h4&gt;
 &lt;p&gt;カメラのアングル、軸ラベル、凡例の表示の有無など、図のレイアウトを設定します。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;layout&lt;/span&gt; = {
@@ -169,12 +192,16 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;48&lt;/span&gt;&lt;span&gt;    },
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;49&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;showlegend&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;50&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h4 class=&#34;heading2&#34;&gt;散布図のプロット&lt;/h4&gt;
 &lt;p&gt;散布図をプロットします。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plotly&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;newPlot&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;myDiv&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;layout&lt;/span&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;以上で、３D散布図の完成です！&lt;/p&gt;
+
 &lt;h4 class=&#34;heading2&#34;&gt;【参考】散布図の回転&lt;/h4&gt;
 &lt;p&gt;動的に散布図を見たかったので、散布図の回転機能を備えました。&lt;/p&gt;
+
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;icon1&lt;/span&gt; = {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;width&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3&lt;/span&gt;&lt;span&gt;	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;height&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt;,
@@ -212,7 +239,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;35&lt;/span&gt;&lt;span&gt;		]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;36&lt;/span&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;37&lt;/span&gt;&lt;span&gt;};&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;アイコンでは、&lt;a href=&#34;https://fontawesome.com/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;Font Awesome&lt;/a&gt;のSVGファイルを読み込みます。&lt;/p&gt;
+
 &lt;p&gt;↓こちらの解説が分かりやすかったです。&lt;/p&gt;
 &lt;div class=&#34;blcard&#34;&gt;
 &lt;div class=&#34;blcard-content&#34;&gt;
@@ -237,6 +266,8 @@
 
 &lt;/div&gt;
 
+
+
 &lt;div class=&#34;kokuban-t2&#34;&gt;
 	&lt;span class=&#34;title-t2&#34;&gt;まとめ&lt;/span&gt;
 	・Plotly.jsをCDNで読み込む&lt;br&gt;
@@ -244,33 +275,15 @@
 	・インポートデータを設定する&lt;br&gt;
 	・レイアウトを設定する&lt;br&gt;
 	・図に表示させる
+	
 &lt;/div&gt;
+
 &lt;p&gt;興味のある方は、是非、可視化にトライしてみてくださいね！&lt;/p&gt;
+
+--&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
 &lt;p&gt;・&lt;a href=&#34;https://plotly.com/javascript/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;plotly.com&lt;/a&gt;&lt;br&gt;&lt;br&gt;
 ・&lt;a href=&#34;https://www.data.jma.go.jp/svd/eqdb/data/shindo/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;震度データベース&lt;/a&gt;&lt;/p&gt;
-&lt;!--&lt;div class=&#34;blcard&#34;&gt;
-&lt;div class=&#34;blcard-content&#34;&gt;
-    &lt;div class=&#34;blcard-title&#34;&gt;
-      &lt;a href=&#34;https://plotly.com/javascript/&#34; target=&#34;_blank&#34;&gt;
-	Plotly
-      &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;blcard-excerpt&#34;&gt;
-      
-plotly.com
-
-    &lt;/div&gt;
-&lt;/div&gt;
-
-  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
-    &lt;a href=&#34;https://plotly.com/javascript/&#34; target=&#34;_blank&#34;&gt;
-    &lt;img src=&#34;https://help.plot.ly/images/twitter-default.png&#34;/&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
---&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;作成したオープンデータ&lt;/h2&gt;
 &lt;div class=&#34;blcard&#34;&gt;
 &lt;div class=&#34;blcard-content&#34;&gt;

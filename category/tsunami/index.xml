@@ -48,8 +48,10 @@ WebGL-powered visualization framework for large-scale datasets
 
 &lt;/div&gt;
 
-&lt;!-- ソースコード 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;--&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;東日本大震災の津波観測地点を可視化しました。こうしてみると、本当に日本全国に津波が届くほどの地震だったのだなと改めて分かります。さらにデータを集めて、世界全図にも表示してみます。&lt;/p&gt;
+&lt;/blockquote&gt;
         
       </description>
     </item>
