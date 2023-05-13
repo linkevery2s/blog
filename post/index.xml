@@ -24,9 +24,9 @@
 	&lt;p&gt;熊本地震の群発地震の様子を地中の震源地でどのように起きているのか、可視化してみたい。&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-	&lt;p&gt;熊本地震を深さの次元まで含めて可視化してみる。震度階級で色分けして、地表付近に、各地点のシンボルをテキストで表示させました。こうしてみると、震度７より深い地点でも揺れていたり、群発地震の様子がよく分かりますね。&lt;/p&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;熊本地震を深さの次元まで含めて可視化してみる。震度階級で色分けして、地表付近に、各地点のシンボルをテキストで表示させました。こうしてみると、震度７より深い地点でも揺れていたり、群発地震の様子がよく分かりますね。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;!--
 &lt;h2 class=&#34;heading1&#34;&gt;ソースコード解説&lt;/h2&gt;
 &lt;h4 class=&#34;heading2&#34;&gt;CDNからインポート&lt;/h4&gt;
@@ -360,9 +360,9 @@ WebGL-powered visualization framework for large-scale datasets
 &lt;/div&gt;
 
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-  &lt;p&gt;東日本大震災の津波観測地点を可視化しました。こうしてみると、本当に日本全国に津波が届くほどの地震だったのだなと改めて分かります。さらにデータを集めて、世界全図にも表示してみます。&lt;/p&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;東日本大震災の津波観測地点を可視化しました。こうしてみると、本当に日本全国に津波が届くほどの地震だったのだなと改めて分かります。さらにデータを集めて、世界全図にも表示してみます。&lt;/p&gt;
+&lt;/blockquote&gt;
         
       </description>
     </item>
@@ -380,9 +380,9 @@ WebGL-powered visualization framework for large-scale datasets
 &lt;a href=&#34;https://dpnote.netlify.app/simulation/hojoki/index.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;可視化URL&lt;/a&gt;
 &lt;/div&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-	&lt;p&gt;方丈記の世界観を可視化しました。正常性バイアスという言葉がなかった時代に、それを感じ取っていた鴨長明の繊細な感覚に寄り添ってみたかった。素晴らしい随筆家だったんだろうなと思ってる。&lt;/p&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;方丈記の世界観を可視化しました。正常性バイアスという言葉がなかった時代に、それを感じ取っていた鴨長明の繊細な感覚に寄り添ってみたかった。素晴らしい随筆家だったんだろうなと思ってる。&lt;/p&gt;
+&lt;/blockquote&gt;
         
       </description>
     </item>
@@ -398,9 +398,9 @@ WebGL-powered visualization framework for large-scale datasets
           &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/krader3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-	&lt;p&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;/p&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;/p&gt;
+&lt;/blockquote&gt;
         
       </description>
     </item>
@@ -416,9 +416,9 @@ WebGL-powered visualization framework for large-scale datasets
           &lt;p&gt;ハザードマップの３D可視化に向けて、まずは都市空間の３D化に取り組みました。&lt;/p&gt;
 &lt;iframe src =&#34;../../maptest/3dhazard/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-	&lt;p&gt;「街空間の３D化」OSM BuildingsいうAPIを見つけたので、早速マップに取り込んでみました。ビルの街並みが良い感じに３Dに表示されています。これが無料でできるというすごい時代になりました。このマップにハザードマップを重ねると十分３D表示が達成できるかな？&lt;/p&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;「街空間の３D化」OSM BuildingsいうAPIを見つけたので、早速マップに取り込んでみました。ビルの街並みが良い感じに３Dに表示されています。これが無料でできるというすごい時代になりました。このマップにハザードマップを重ねると十分３D表示が達成できるかな？&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
 &lt;p&gt;・&lt;a href=&#34;https://osmbuildings.org/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;OSM Buildings&lt;/a&gt;&lt;/p&gt;
         
@@ -436,9 +436,9 @@ WebGL-powered visualization framework for large-scale datasets
           &lt;p&gt;自然災害伝承碑マップを作成しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/denshouhi.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-	&lt;p&gt;日本全国の自然災害伝承碑マップを作成しました。全国に1,800箇所以上あります。いかに日本で大規模な災害が起きているかが、分かります。存在そのものすら、知らない方多いのではないかなと思います。次世代に語り継いでいきたいと思っています。&lt;/p&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;日本全国の自然災害伝承碑マップを作成しました。全国に1,800箇所以上あります。いかに日本で大規模な災害が起きているかが、分かります。存在そのものすら、知らない方多いのではないかなと思います。次世代に語り継いでいきたいと思っています。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
 &lt;p&gt;・&lt;a href=&#34;https://www.gsi.go.jp/bousaichiri/denshouhi.html&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;自然災害伝承碑&lt;/a&gt;&lt;/p&gt;
         
@@ -456,9 +456,9 @@ WebGL-powered visualization framework for large-scale datasets
           &lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）を可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/20220803heavyrain.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-	&lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水想定図）を可視化しました。２画面描写で、浸水想定と実際の浸水状況を比較できるようになっています。&lt;/p&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水想定図）を可視化しました。２画面描写で、浸水想定と実際の浸水状況を比較できるようになっています。&lt;/p&gt;
+&lt;/blockquote&gt;
         
       </description>
     </item>
