@@ -1,40 +1,40 @@
 <!DOCTYPE HTML>
 <html lang="ja">
-	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<title>火山噴火及び噴火災害の年表</title>
-  	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="噴火災害の年表をリスト化してみました。">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="噴火災害の年表をリスト化してみました。">
 	<meta property="og:title" content="火山噴火及び噴火災害の年表" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://dpnote.netlify.app/simulation/volcano.html" />
-    <meta property="og:image" content="https://dpnote.netlify.app/images/volcano.png" />
+	<meta property="og:image" content="https://dpnote.netlify.app/images/volcano.png" />
 
-<meta property="og:description" content="噴火災害の年表をリスト化してみました。" />
-  <meta name='twitter:card' content='summary_large_image'>
-  <meta name='twitter:title' content='火山噴火及び噴火災害の年表' />
-  <meta name='twitter:description' content='噴火災害の年表をリスト化してみました。' />
-  <meta name='twitter:image' content='https://dpnote.netlify.app/images/volcano.png' />
+	<meta property="og:description" content="噴火災害の年表をリスト化してみました。" />
+	<meta name='twitter:card' content='summary_large_image'>
+	<meta name='twitter:title' content='火山噴火及び噴火災害の年表' />
+	<meta name='twitter:description' content='噴火災害の年表をリスト化してみました。' />
+	<meta name='twitter:image' content='https://dpnote.netlify.app/images/volcano.png' />
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-202486341-1');
-</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-202486341-1');
+	</script>
 
 	<script type="module">
-	
+		
 		import { CSV } from "https://js.sabae.cc/CSV.js";
 		
 		onload = async () => {
 
-		const url = "https://raw.githubusercontent.com/linkevery2s/opendata/master/volcano.csv";
-		const data = CSV.parse(await (await fetch(url)).text());
+			const url = "https://raw.githubusercontent.com/linkevery2s/opendata/master/volcano.csv";
+			const data = CSV.parse(await (await fetch(url)).text());
 
 			volcano.innerHTML = "";
 			
@@ -43,135 +43,135 @@
 			for (let i = 0; i < count; i++){
 				
 				volcano.innerHTML+= "<li class='link'><span class='date_m'>" + data[i].year + "</span>　" + "<div class='mountain'>" + data[i].mountain + "</div>" +  "<div class = 'victims'>被害者数：" + data[i].victims + "</div><div>"  + data[i].feature + "</div></li>" ;
-			
+				
 			}
 		};
 		
 		
 	</script>
 
-    <style>
-    
-	html,body{
-		margin: 0; padding: 0;
-		font-family: "Meiryo", "Hiragino Kaku Gothic OriN", sans-serif;
-		width: 100%;
-	}
-	
-	h1{
-		text-align:center;
-	}
-	
-	.date_m{
-		color: #007bbb;
-	}
-	
-	.mountain, .victims, .dict{
-		margin: 1em 0 1em 0;
-	}
-	
-	a {
-		text-decoration: none;
-		border-bottom: 2px dotted #FF8C00;
-		color: #FF8C00;
-	}
+	<style>
+		
+		html,body{
+			margin: 0; padding: 0;
+			font-family: "Meiryo", "Hiragino Kaku Gothic OriN", sans-serif;
+			width: 100%;
+		}
+		
+		h1{
+			text-align:center;
+		}
+		
+		.date_m{
+			color: #007bbb;
+		}
+		
+		.mountain, .victims, .dict{
+			margin: 1em 0 1em 0;
+		}
+		
+		a {
+			text-decoration: none;
+			border-bottom: 2px dotted #FF8C00;
+			color: #FF8C00;
+		}
 
-	ul{
-		list-style: none;
-		padding: 0
-	}
+		ul{
+			list-style: none;
+			padding: 0
+		}
 
-	li:nth-child(even) {
-		background:#f2f2f2;
-	}
-	
-	li:nth-child(odd) {
-		background:#ffffff;
-	}
+		li:nth-child(even) {
+			background:#f2f2f2;
+		}
+		
+		li:nth-child(odd) {
+			background:#ffffff;
+		}
 
-	.link{
-		border: 1px dotted #b2b2b2;
-		border-width: 2px 0 0 0;
-		padding: 5px;
-		display: block;
-	}
+		.link{
+			border: 1px dotted #b2b2b2;
+			border-width: 2px 0 0 0;
+			padding: 5px;
+			display: block;
+		}
 
-	.link:last-child{
-		border-bottom-width: 2px;
-	}
-    
-    .fb_iframe_widget > span {
-	vertical-align: baseline !important;
-	}
-    
-    #footer{
-    	width:100%;
-    	text-align:center;
-    	margin:0;
-    	padding: .5em 0 .5em 0;
-    	background: #1f3134;
-    	color: #ffffff;
-    }
+		.link:last-child{
+			border-bottom-width: 2px;
+		}
+		
+		.fb_iframe_widget > span {
+			vertical-align: baseline !important;
+		}
+		
+		#footer{
+			width:100%;
+			text-align:center;
+			margin:0;
+			padding: .5em 0 .5em 0;
+			background: #1f3134;
+			color: #ffffff;
+		}
 
-.header{
-	padding: 25px 0 25px 0;
-	background: #1f3134;
-	color: #ffffff;
-}
+		.header{
+			padding: 25px 0 25px 0;
+			background: #1f3134;
+			color: #ffffff;
+		}
 
-h1 span {
-  display: inline-block;
-}
+		h1 span {
+			display: inline-block;
+		}
 
-    </style>
-	</head>
+	</style>
+</head>
 
 <body>
 
-<div class="container">
-  <div class="row">
-  <div class="col-sm-1">
-  </div>
-  <div class="col-sm-10">
-  <div class="header">
-<h1><span>火山噴火及び</span><span>噴火災害の年表</span></h1>
-	</div>
-  	<ul>
-		<div id="volcano"></div>
-	</ul>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-10">
+				<div class="header">
+					<h1><span>火山噴火及び</span><span>噴火災害の年表</span></h1>
+				</div>
+				<ul>
+					<div id="volcano"></div>
+				</ul>
 
-<div id="footer">
+				<div id="footer">
 
-<div class="dict">
-<div class="sns">
+					<div class="dict">
+						<div class="sns">
 
-<div class="fb-share-button" data-href="https://linkevery2s.github.io/covid19timeline/example/list.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flinkevery2s.github.io%2Fcovid19timeline%2Fexample%2Flist.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
+							<div class="fb-share-button" data-href="https://linkevery2s.github.io/covid19timeline/example/list.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flinkevery2s.github.io%2Fcovid19timeline%2Fexample%2Flist.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://linkevery2s.github.io/covid19timeline/example/list.html" data-via="luffy2sl" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://linkevery2s.github.io/covid19timeline/example/list.html" data-via="luffy2sl" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+							<a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 
-</div>
-</dict>
+						</div>
+					</dict>
 
-<div class="dict">
-<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a> &copy; <a href="https://hitoshi2s.netlify.app/index.html" target="_blank">仁志</a></div>
+					<div class="dict">
+						<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a> &copy; <a href="https://hitoshi2s.netlify.app/index.html" target="_blank">仁志</a></div>
 
-<div class="dict">出典：令和３年防災白書</div>
+						<div class="dict">出典：令和３年防災白書</div>
 
-</div>
+					</div>
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v11.0" nonce="CyqXhSTJ"></script>
+					<div id="fb-root"></div>
+					<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v11.0" nonce="CyqXhSTJ"></script>
 
 
 
-</div>
+				</div>
 
-<div class="col-sm-1"></div>
+				<div class="col-sm-1"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
-</html>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+			</body>
+			</html>
