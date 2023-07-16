@@ -1,115 +1,115 @@
 <!doctype html>
 <html lang="ja-JP">
-	<meta charset='UTF-8' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
-	<meta name="description" content='熱海市土砂災害を3Dにて可視化しました。'>
-	<meta property="og:title" content="熱海市土砂災害を3Dにて可視化しました。" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://dpnote.netlify.app/images/post/202107atami2.png" />
-	<meta property="og:description" content="熱海市土砂災害を3Dにて可視化しました。" />
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="熱海市土砂災害を3Dにて可視化しました。" />
-	<meta name="twitter:description" content='熱海市土砂災害を3Dにて可視化しました。' />
-	<meta name="twitter:image" content="https://dpnote.netlify.app/images/post/202107atami2.png" />
-	<meta name="author" content="仁志">
-	<meta name="keywords" content="防災、災害対策">
-    <title>熱海市土砂災害を3Dにて可視化しました。</title>
+<meta charset='UTF-8' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+<meta name="description" content='熱海市土砂災害を3Dにて可視化しました。'>
+<meta property="og:title" content="熱海市土砂災害を3Dにて可視化しました。" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://dpnote.netlify.app/images/post/202107atami2.png" />
+<meta property="og:description" content="熱海市土砂災害を3Dにて可視化しました。" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="熱海市土砂災害を3Dにて可視化しました。" />
+<meta name="twitter:description" content='熱海市土砂災害を3Dにて可視化しました。' />
+<meta name="twitter:image" content="https://dpnote.netlify.app/images/post/202107atami2.png" />
+<meta name="author" content="仁志">
+<meta name="keywords" content="防災、災害対策">
+<title>熱海市土砂災害を3Dにて可視化しました。</title>
 
-    <style>
-        body { margin: 0; overflow: hidden; }
-        #menu{
-        	position: fixed;
-        	bottom: 0; left: 0;
-        	z-index: 1000;
-        	margin: 0 0 3px 3px;
-        	text-align: left;
-        	background: rgba(255, 255, 255, 0.5);
-        	font-size: 0.6rem;
-        }
-        #menu a{
-        	text-decoration: none;
-        	border-bottom: 1px dotted #485859;
-        }
-        .title{
-        	position: fixed;
-        	top: 0; left: 0;
-        	z-index: 1000;
-        	width: 100%;
-        	text-align: center;
-        }
-    </style>
-    <script src="https://cyberjapandata.gsi.go.jp/3d/three.min.js"></script>
-    <script src="https://cyberjapandata.gsi.go.jp/3d/TrackballControls.js"></script> 
-    <script>
+<style>
+	body { margin: 0; overflow: hidden; }
+	#menu{
+		position: fixed;
+		bottom: 0; left: 0;
+		z-index: 1000;
+		margin: 0 0 3px 3px;
+		text-align: left;
+		background: rgba(255, 255, 255, 0.5);
+		font-size: 0.6rem;
+	}
+	#menu a{
+		text-decoration: none;
+		border-bottom: 1px dotted #485859;
+	}
+	.title{
+		position: fixed;
+		top: 0; left: 0;
+		z-index: 1000;
+		width: 100%;
+		text-align: center;
+	}
+</style>
+<script src="https://cyberjapandata.gsi.go.jp/3d/three.min.js"></script>
+<script src="https://cyberjapandata.gsi.go.jp/3d/TrackballControls.js"></script> 
+<script>
     //<!--
     /****************************************************/
     // 高さの強調度を変える場合は、
     // vSceneMeshZRate = 数値を変更する
     /****************************************************/
-    var vSceneMeshZRate        = 1.5;
+	var vSceneMeshZRate        = 1.5;
     /****************************************************/
     // 枠の表示変える場合は、
     // vFrameMode = 透過'trans' | 表示しない'none'
     /****************************************************/
-    var vFrameMode             = 'trans';
+	var vFrameMode             = 'trans';
     /****************************************************/
-    var Dem                    = "./atami2.csv";
-    var DemTextue              = "./atami2.png";
-    var IconTexture            = "./icon.png";
+	var Dem                    = "./atami2.csv";
+	var DemTextue              = "./atami2.png";
+	var IconTexture            = "./icon.png";
     /****************************************************/
-    var oRenderer              = null;
-    var oScene                 = null;
-    var oSceneLight            = null;
-    var oSceneMesh             = null;
-    var oSceneMeshBase         = null;
-    var oCamera                = null;
-    var oCameraCtrl            = null;
+	var oRenderer              = null;
+	var oScene                 = null;
+	var oSceneLight            = null;
+	var oSceneMesh             = null;
+	var oSceneMeshBase         = null;
+	var oCamera                = null;
+	var oCameraCtrl            = null;
     /****************************************************/
-    var vSceneMesh             = null;
-    var vSceneMeshDistanceRate = 0.1;
+	var vSceneMesh             = null;
+	var vSceneMeshDistanceRate = 0.1;
     /****************************************************/
-    var vWinSizeW              = 0;
-    var vWinSizeH              = 0;
+	var vWinSizeW              = 0;
+	var vWinSizeH              = 0;
     /****************************************************/
-    var vTextureSizeW              = 1024;
-    var vTextureSizeH              = 1024;
+	var vTextureSizeW              = 1024;
+	var vTextureSizeH              = 1024;
     /****************************************************/
-    var vMeshSizeW              = 256;
-    var vMeshSizeH              = 256;
+	var vMeshSizeW              = 256;
+	var vMeshSizeH              = 256;
     /****************************************************/
-    var vGeomSizeW              = 100;
-    var vGeomSizeH              = 100;
-    var nGeomSizeX              = vGeomSizeW;
-    var nGeomSizeY              = vGeomSizeH;
+	var vGeomSizeW              = 100;
+	var vGeomSizeH              = 100;
+	var nGeomSizeX              = vGeomSizeW;
+	var nGeomSizeY              = vGeomSizeH;
     /****************************************************/
-    var oSceneGEODataMeshArr                = null;
-    var oGeo3DData = null;
-    var oTextureCanvas = null;
-    
+	var oSceneGEODataMeshArr                = null;
+	var oGeo3DData = null;
+	var oTextureCanvas = null;
+	
     /*[[insertgeo3ddata]]*/
-    
-    
-    function Init(){
-        var xhr = new XMLHttpRequest();
-        xhr.addEventListener('load', function(evt){
-            vSceneMesh = (evt.target.response || evt.target.responseText).replace(/\n/g, ",").split(",");
-            LoadScene();
-        }, false);
-        xhr.open('GET', Dem, true);
-        xhr.send(null);
+	
+	
+	function Init(){
+		var xhr = new XMLHttpRequest();
+		xhr.addEventListener('load', function(evt){
+			vSceneMesh = (evt.target.response || evt.target.responseText).replace(/\n/g, ",").split(",");
+			LoadScene();
+		}, false);
+		xhr.open('GET', Dem, true);
+		xhr.send(null);
 
-        EvtResize();
-    };
+		EvtResize();
+	};
 
     /*-----------------------------------------------------------------------------------------------*/
     // LoadScene
     /*-----------------------------------------------------------------------------------------------*/
-    function LoadScene(){
-        oRenderer = new THREE.WebGLRenderer({ antialias: true });
-        oRenderer.setSize(vWinSizeW, vWinSizeH);
-        oRenderer.setClearColor(0xe6e6fa, 1.0);
-        document.getElementById('webgl').appendChild(oRenderer.domElement);
-            
-        oScene = new THREE.Scene();
+	function LoadScene(){
+		oRenderer = new THREE.WebGLRenderer({ antialias: true });
+		oRenderer.setSize(vWinSizeW, vWinSizeH);
+		oRenderer.setClearColor(0xe6e6fa, 1.0);
+		document.getElementById('webgl').appendChild(oRenderer.domElement);
+		
+		oScene = new THREE.Scene();
         //oScene.add(new THREE.AmbientLight(0xffffff));
 		oScene.add(new THREE.AmbientLight(0x111111));
 
@@ -118,22 +118,22 @@
 		oSceneLight.position.set(100, -200, 200);
 		oScene.add(oSceneLight);
 
-        oCamera = new THREE.PerspectiveCamera(45, vWinSizeW / vWinSizeH, 1, 10000);
-        oCamera.position.set(0, -100, 100);
+		oCamera = new THREE.PerspectiveCamera(45, vWinSizeW / vWinSizeH, 1, 10000);
+		oCamera.position.set(0, -100, 100);
 		oCamera.up.set(0, 0, 1);
 		oCamera.lookAt( {x:0, y:0, z:0 } );
 
-        oCameraCtrl = new THREE.TrackballControls(oCamera);
+		oCameraCtrl = new THREE.TrackballControls(oCamera);
 
-        var geometry = new THREE.PlaneGeometry( vGeomSizeW, vGeomSizeH, vMeshSizeW, vMeshSizeH );
-	    oTextureCanvas = document.createElement("canvas");
-	    oTextureCanvas.width  = vTextureSizeW;
-	    oTextureCanvas.height = vTextureSizeH;
-	    var texture = new THREE.Texture(oTextureCanvas);
-	    texture.needsUpdate = true;
-        texture.minFilter = THREE.LinearFilter;
-        texture.magFilter = THREE.LinearFilter;
-        var material = new THREE.MeshBasicMaterial({ map: texture });
+		var geometry = new THREE.PlaneGeometry( vGeomSizeW, vGeomSizeH, vMeshSizeW, vMeshSizeH );
+		oTextureCanvas = document.createElement("canvas");
+		oTextureCanvas.width  = vTextureSizeW;
+		oTextureCanvas.height = vTextureSizeH;
+		var texture = new THREE.Texture(oTextureCanvas);
+		texture.needsUpdate = true;
+		texture.minFilter = THREE.LinearFilter;
+		texture.magFilter = THREE.LinearFilter;
+		var material = new THREE.MeshBasicMaterial({ map: texture });
 		material.side = THREE.DoubleSide;
 		
 		material.opacity = 1;
@@ -159,23 +159,23 @@
 			}
 		};
 		img.src = DemTextue;
-        oSceneMesh = new THREE.Mesh(geometry, material);
-        oScene.add(oSceneMesh);
+		oSceneMesh = new THREE.Mesh(geometry, material);
+		oScene.add(oSceneMesh);
 
-        LoadSceneMeshBase();
-        Draw3DGEOData();
-        SceneGeometryZ();
+		LoadSceneMeshBase();
+		Draw3DGEOData();
+		SceneGeometryZ();
 
-        SceneRender();
-        SceneRender();
-    };
+		SceneRender();
+		SceneRender();
+	};
 
-    function LoadSceneMeshBase(){
-        oSceneMeshBase = new Array(5);
+	function LoadSceneMeshBase(){
+		oSceneMeshBase = new Array(5);
 		var h = -1 * vSceneMeshDistanceRate * 100;
-        var i = 0;
+		var i = 0;
 	    //var material = new THREE.MeshBasicMaterial({color: 0x444444});
-	    var material = new THREE.MeshPhongMaterial({color: 0xffffff, depthWrite:false, ambient: 0xffffff, specular: 0xcccccc, shininess:50, metal:true});
+		var material = new THREE.MeshPhongMaterial({color: 0xffffff, depthWrite:false, ambient: 0xffffff, specular: 0xcccccc, shininess:50, metal:true});
 		
 		//var material = new THREE.MeshBasicMaterial( {color:0xffffff, transparent:true,wireframe: true, opacity: 0.5} );
 		
@@ -185,118 +185,118 @@
 			material.opacity = 0.5;
 		}
 		if ( vFrameMode != "none" )
-    	{
-		    var geometry = new THREE.PlaneGeometry(100, 100, 1, 1);
-		    for(i = 0; i < geometry.vertices.length; i++){
-			    geometry.vertices[i].z = h;
-		    }
+		{
+			var geometry = new THREE.PlaneGeometry(100, 100, 1, 1);
+			for(i = 0; i < geometry.vertices.length; i++){
+				geometry.vertices[i].z = h;
+			}
 			geometry.vertices[0].y = -(nGeomSizeY/2);
 			geometry.vertices[1].y = -(nGeomSizeY/2);
 			geometry.vertices[2].y =  (nGeomSizeY/2);
 			geometry.vertices[3].y =  (nGeomSizeY/2);
-		    geometry.computeFaceNormals();
-		    geometry.computeVertexNormals();
-		    geometry.dynamic            = true;
-		    geometry.verticesNeedUpdate = true;
+			geometry.computeFaceNormals();
+			geometry.computeVertexNormals();
+			geometry.dynamic            = true;
+			geometry.verticesNeedUpdate = true;
 
-	        oSceneMeshBase[0] = new THREE.Mesh(geometry, material);
-		    oScene.add(oSceneMeshBase[0]);
+			oSceneMeshBase[0] = new THREE.Mesh(geometry, material);
+			oScene.add(oSceneMeshBase[0]);
 
-	        var nz = 0;
-	        var x  = null;
-	        var y  = null;
-	        for(n = 1; n < 5; n++){
-	            if     (n == 1)geometry = new THREE.PlaneGeometry(nGeomSizeX, 1,vMeshSizeW, 1);
-			    else if(n == 2)geometry = new THREE.PlaneGeometry(nGeomSizeY, 1,vMeshSizeH, 1);
-			    else if(n == 3)geometry = new THREE.PlaneGeometry(nGeomSizeY, 1,vMeshSizeH, 1);
-			    else if(n == 4)geometry = new THREE.PlaneGeometry(nGeomSizeX, 1,vMeshSizeW, 1);
-		        for(i = 0; i < geometry.vertices.length; i++){
-		    
-			        geometry.vertices[i].z = h;
+			var nz = 0;
+			var x  = null;
+			var y  = null;
+			for(n = 1; n < 5; n++){
+				if     (n == 1)geometry = new THREE.PlaneGeometry(nGeomSizeX, 1,vMeshSizeW, 1);
+				else if(n == 2)geometry = new THREE.PlaneGeometry(nGeomSizeY, 1,vMeshSizeH, 1);
+				else if(n == 3)geometry = new THREE.PlaneGeometry(nGeomSizeY, 1,vMeshSizeH, 1);
+				else if(n == 4)geometry = new THREE.PlaneGeometry(nGeomSizeX, 1,vMeshSizeW, 1);
+				for(i = 0; i < geometry.vertices.length; i++){
+					
+					geometry.vertices[i].z = h;
 
-	                x = null;
-		            y = null;
-		            if     (n == 1){ x = null;       y = -(nGeomSizeY/2);                 }
-		            else if(n == 2){ x =  -(nGeomSizeX/2);      y =  (nGeomSizeY/2)-nGeomSizeY/vMeshSizeH*(i%(vMeshSizeH+1)); }
-		            else if(n == 3){ x =   (nGeomSizeX/2);      y = -(nGeomSizeY/2)+nGeomSizeY/vMeshSizeH*(i%(vMeshSizeH+1)); }
-		            else if(n == 4){ x =   (nGeomSizeX/2)-nGeomSizeX/vMeshSizeW*(i%(vMeshSizeW+1)); y =  (nGeomSizeY/2);                 }
+					x = null;
+					y = null;
+					if     (n == 1){ x = null;       y = -(nGeomSizeY/2);                 }
+					else if(n == 2){ x =  -(nGeomSizeX/2);      y =  (nGeomSizeY/2)-nGeomSizeY/vMeshSizeH*(i%(vMeshSizeH+1)); }
+					else if(n == 3){ x =   (nGeomSizeX/2);      y = -(nGeomSizeY/2)+nGeomSizeY/vMeshSizeH*(i%(vMeshSizeH+1)); }
+					else if(n == 4){ x =   (nGeomSizeX/2)-nGeomSizeX/vMeshSizeW*(i%(vMeshSizeW+1)); y =  (nGeomSizeY/2);                 }
 
-		            if(x != null){ geometry.vertices[i].x = x; }
-		            if(y != null){ geometry.vertices[i].y = y; }
-		        }
+					if(x != null){ geometry.vertices[i].x = x; }
+					if(y != null){ geometry.vertices[i].y = y; }
+				}
 
-	            oSceneMeshBase[n] = new THREE.Mesh(geometry, material);
-	            oScene.add(oSceneMeshBase[n]);
-	        }
-	     }
-    };
+				oSceneMeshBase[n] = new THREE.Mesh(geometry, material);
+				oScene.add(oSceneMeshBase[n]);
+			}
+		}
+	};
 
     /*-----------------------------------------------------------------------------------------------*/
     // Scene
     /*-----------------------------------------------------------------------------------------------*/
-    function SceneGeometryZ(){
-        var n  = 0;
-        var nz = 0;
-        for(ny = 0; ny <= vMeshSizeH; ny++){
-	        for(nx = 0; nx <= vMeshSizeW; nx++){
-                nz = ny * (vMeshSizeW+1) + nx;
-			    oSceneMesh.geometry.vertices[nz].z = vSceneMesh[nz] * vSceneMeshZRate;
-		    }
-	    }
+	function SceneGeometryZ(){
+		var n  = 0;
+		var nz = 0;
+		for(ny = 0; ny <= vMeshSizeH; ny++){
+			for(nx = 0; nx <= vMeshSizeW; nx++){
+				nz = ny * (vMeshSizeW+1) + nx;
+				oSceneMesh.geometry.vertices[nz].z = vSceneMesh[nz] * vSceneMeshZRate;
+			}
+		}
 
-	    oSceneMesh.geometry.computeFaceNormals();
-	    oSceneMesh.geometry.computeVertexNormals();
-	    oSceneMesh.geometry.dynamic            = true;
-	    oSceneMesh.geometry.verticesNeedUpdate = true;
+		oSceneMesh.geometry.computeFaceNormals();
+		oSceneMesh.geometry.computeVertexNormals();
+		oSceneMesh.geometry.dynamic            = true;
+		oSceneMesh.geometry.verticesNeedUpdate = true;
 
-        if(oSceneMeshBase != null){
-	        for(n = 1; n < 5; n++){
+		if(oSceneMeshBase != null){
+			for(n = 1; n < 5; n++){
 				switch( n )
 				{
-					case 1:
+				case 1:
 					//下
-						for(i = 0; i < (vMeshSizeW+1); i++){
-							nz = (vMeshSizeH) * (vMeshSizeW+1) + i;
-							try{
-								oSceneMeshBase[n].geometry.vertices[i].z = oSceneMesh.geometry.vertices[nz].z;
-							}catch(e){
-							}
+					for(i = 0; i < (vMeshSizeW+1); i++){
+						nz = (vMeshSizeH) * (vMeshSizeW+1) + i;
+						try{
+							oSceneMeshBase[n].geometry.vertices[i].z = oSceneMesh.geometry.vertices[nz].z;
+						}catch(e){
 						}
-						break;
-						
-					case 2:
+					}
+					break;
+					
+				case 2:
 					//左
-						for(i = 0; i < (vMeshSizeH+1); i++){
-							nz = (vMeshSizeW+1) * i;
-							oSceneMeshBase[n].geometry.vertices[i].z = oSceneMesh.geometry.vertices[nz].z;
-						}
-						
-						break;
-					case 3:
+					for(i = 0; i < (vMeshSizeH+1); i++){
+						nz = (vMeshSizeW+1) * i;
+						oSceneMeshBase[n].geometry.vertices[i].z = oSceneMesh.geometry.vertices[nz].z;
+					}
+					
+					break;
+				case 3:
 					//右
-						for(i = 0; i < (vMeshSizeH+1); i++){
-							nz = (vMeshSizeW+1) * (vMeshSizeH - i) + vMeshSizeW;
-							oSceneMeshBase[n].geometry.vertices[i].z = oSceneMesh.geometry.vertices[nz].z;
-						}
-						break;
-					case 4:
+					for(i = 0; i < (vMeshSizeH+1); i++){
+						nz = (vMeshSizeW+1) * (vMeshSizeH - i) + vMeshSizeW;
+						oSceneMeshBase[n].geometry.vertices[i].z = oSceneMesh.geometry.vertices[nz].z;
+					}
+					break;
+				case 4:
 					//上
-						for(i = 0; i < (vMeshSizeW+1); i++){
-							nz = vMeshSizeW - i;
-							oSceneMeshBase[n].geometry.vertices[i].z = oSceneMesh.geometry.vertices[nz].z;
-						}
-						break;
+					for(i = 0; i < (vMeshSizeW+1); i++){
+						nz = vMeshSizeW - i;
+						oSceneMeshBase[n].geometry.vertices[i].z = oSceneMesh.geometry.vertices[nz].z;
+					}
+					break;
 				}
-		       
-		        oSceneMeshBase[n].geometry.computeFaceNormals();
-		        oSceneMeshBase[n].geometry.computeVertexNormals();
-		        oSceneMeshBase[n].geometry.dynamic            = true;
-		        oSceneMeshBase[n].geometry.verticesNeedUpdate = true;
-	        }
-	    }
-        
-        if ( oSceneGEODataMeshArr != null )
-	    {
+				
+				oSceneMeshBase[n].geometry.computeFaceNormals();
+				oSceneMeshBase[n].geometry.computeVertexNormals();
+				oSceneMeshBase[n].geometry.dynamic            = true;
+				oSceneMeshBase[n].geometry.verticesNeedUpdate = true;
+			}
+		}
+		
+		if ( oSceneGEODataMeshArr != null )
+		{
 			
 			for( var k=0; k<oSceneGEODataMeshArr.length; k++ )
 			{
@@ -314,7 +314,7 @@
 					{
 						var p1 = _latLngToPointData( viewBox, meshData.points[i].lat, meshData.points[i].lng, meshData.points[i].h );
 						meshData.mesh.geometry.vertices[i].z = p1.z;
-					
+						
 					}
 				}
 				
@@ -328,7 +328,7 @@
 						meshData.mesh.geometry.vertices[idx].z = p1.z;
 						meshData.mesh.geometry.vertices[idx+1].z = p2.z;
 						meshData.mesh.geometry.vertices[idx+2].z = p3.z;
-					
+						
 					}
 				}
 				else if (meshData.point)
@@ -349,7 +349,7 @@
 					
 				//var material = new THREE.M
 				}
-			
+				
 				if ( meshData.mesh.geometry )
 				{
 					meshData.mesh.geometry.computeFaceNormals();
@@ -359,31 +359,31 @@
 				}
 			}
 		}
-    };
+	};
 
-    function SceneRender(){
-        if(oRenderer != null && oScene != null && oCamera != null && oCameraCtrl != null){
-            oCameraCtrl.update();
-            requestAnimationFrame(SceneRender);
-            oRenderer.render(oScene, oCamera);
-        }
-    };
+	function SceneRender(){
+		if(oRenderer != null && oScene != null && oCamera != null && oCameraCtrl != null){
+			oCameraCtrl.update();
+			requestAnimationFrame(SceneRender);
+			oRenderer.render(oScene, oCamera);
+		}
+	};
 
     /*-----------------------------------------------------------------------------------------------*/
     // イベント
     /*-----------------------------------------------------------------------------------------------*/
-    function EvtResize(){
-	    vWinSizeW = window.innerWidth;
-	    vWinSizeH = window.innerHeight;
+	function EvtResize(){
+		vWinSizeW = window.innerWidth;
+		vWinSizeH = window.innerHeight;
 
-        if(oCamera != null && oRenderer != null){
-            oRenderer.setSize(vWinSizeW, vWinSizeH);
-            oCamera.aspect = vWinSizeW / vWinSizeH;
-            oCamera.updateProjectionMatrix();
+		if(oCamera != null && oRenderer != null){
+			oRenderer.setSize(vWinSizeW, vWinSizeH);
+			oCamera.aspect = vWinSizeW / vWinSizeH;
+			oCamera.updateProjectionMatrix();
 
-    	    SceneRender();
-        }
-    };
+			SceneRender();
+		}
+	};
 	function getBoxLatLngBounds(center, zoom, w, h)
 	{
 		// latLngToPoint
@@ -398,7 +398,7 @@
 		
 		var latLngToPoint = function( latlng, zoom )
 		{
-		
+			
 			var d = DEG_TO_RAD;
 			var max = MAX_LATITUDE;
 			var lat = Math.max(Math.min(max, latlng.lat), -max);
@@ -426,7 +426,7 @@
 				x: (point.x / scale - _b) / _a,
 				y: (point.y / scale - _d) / _c
 			};
-			        
+			
 			//var untransformedPoint = this.transformation.untransform(point, scale);
 			var d = RAD_TO_DEG;
 			var lng = untransformedPoint.x * d;
@@ -449,7 +449,7 @@
 		
 		
 		
-			
+		
 		return { lt : ltLatLng, rb : rbLatLng, w:w, h:h };
 	}
 	var oGEODataTriangles = [];
@@ -457,14 +457,14 @@
 	{
 		var latLngToPoint = function( latlng, zoom )
 		{
-		
-	        var DEG_TO_RAD = Math.PI / 180;
-	    	var RAD_TO_DEG = 180 / Math.PI;
-	    	var MAX_LATITUDE = 85.0511287798;
-	    	var _a = 0.5 / Math.PI;
-	    	var _b = 0.5;
-	    	var _c = -0.5 / Math.PI;
-	    	var _d = 0.5;
+			
+			var DEG_TO_RAD = Math.PI / 180;
+			var RAD_TO_DEG = 180 / Math.PI;
+			var MAX_LATITUDE = 85.0511287798;
+			var _a = 0.5 / Math.PI;
+			var _b = 0.5;
+			var _c = -0.5 / Math.PI;
+			var _d = 0.5;
 			var d = DEG_TO_RAD;
 			var max = MAX_LATITUDE;
 			var lat = Math.max(Math.min(max, latlng.lat), -max);
@@ -530,7 +530,7 @@
 				{lng:points[idx-1>=0?idx-1:l-1].lng,lat:points[idx-1>=0?idx-1:l-1].lat,h:points[idx-1>=0?idx-1:l-1].h},
 				{lng:points[idx].lng,lat:points[idx].lat,h:points[idx].h},
 				{lng:points[idx+1<l?idx+1:0].lng,lat:points[idx+1<l?idx+1:0].lat,h:points[idx+1<l?idx+1:0].h}
-			];
+				];
 			
 			if ( _isTriangleInPoint(triangle,points ) )
 			{
@@ -553,7 +553,7 @@
 				{lng:points[0].lng,lat:points[0].lat,h:points[0].h},
 				{lng:points[1].lng,lat:points[1].lat,h:points[1].h},
 				{lng:points[2].lng,lat:points[2].lat,h:points[2].h}
-			] );
+				] );
 			return ret;
 		}
 		
@@ -588,7 +588,7 @@
 			var c3 = CA.x * AP.y - CA.y * AP.x;
 
 			if( ( c1 > 0 && c2 > 0 && c3 > 0 ) || ( c1 < 0 && c2 < 0 && c3 < 0 ) ) {
-			    return true;
+				return true;
 			}
 		}
 		return false;
@@ -642,19 +642,19 @@
 				fillColor = ( fillColor ? fillColor : 0x0033ff );
 				var material = new THREE.MeshBasicMaterial(
 					{color: fillColor, 
-						opacity: oGeo3DData[i].properties._fillOpacity, depthWrite:false,  transparent: true});
+					opacity: oGeo3DData[i].properties._fillOpacity, depthWrite:false,  transparent: true});
 				material.side = THREE.DoubleSide;
-			
+				
 				geometry.computeFaceNormals();
 				geometry.computeVertexNormals();
 				
-			    var mesh = new THREE.Mesh(geometry, material);
-			    if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
-			    oSceneGEODataMeshArr.push( {
-			    	type : "Polygon",
-			    	triangles : triangles,
-			    	mesh:mesh
-			    } );
+				var mesh = new THREE.Mesh(geometry, material);
+				if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
+				oSceneGEODataMeshArr.push( {
+					type : "Polygon",
+					triangles : triangles,
+					mesh:mesh
+				} );
 				oScene.add(mesh);
 				
 			}
@@ -673,13 +673,13 @@
 				var mesh = new THREE.Line( geometry, new THREE.LineBasicMaterial( { 
 					color: color,linewidth:parseInt(weight), depthWrite:false,
 					opacity: oGeo3DData[i].properties._opacity,  transparent: true
-					} ) );
-			    if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
+				} ) );
+				if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
 				oSceneGEODataMeshArr.push( {
-			    	type : "LineString",
-			    	points : points,
-			    	mesh:mesh
-			    } );
+					type : "LineString",
+					points : points,
+					mesh:mesh
+				} );
 				oScene.add(mesh);
 				
 				
@@ -697,7 +697,7 @@
 					var x=( ( latlngPoint.lng - viewBox.lt.lng ) / ( viewBox.rb.lng - viewBox.lt.lng ) )  * viewBox.w;
 					var y=( ( latlngPoint.lat - viewBox.rb.lat ) / Math.abs( viewBox.rb.lat - viewBox.lt.lat ) )  * viewBox.h;
 					
-				    y = viewBox.h - y;
+					y = viewBox.h - y;
 					latlngPoint.h = parseFloat(latlngPoint.h) + getDEMValue( x, y, viewBox );
 					oGeo3DData[i].geometry.coordinates[2] = latlngPoint.h;
 				}
@@ -759,20 +759,20 @@
 				
 				var texture = new THREE.Texture(textCanvas);
 				texture.needsUpdate = true; 
-	  
+				
 				var material = new THREE.SpriteMaterial( { map: texture, useScreenCoordinates: false,transparent:true, depthWrite:true } );
 				var mesh = new THREE.Sprite( material );
 				mesh.position.set( point.x, point.y, point.z );
 				mesh.scale.set( iconSize.w,iconSize.h, 1.0 );
 				
 				
-			    if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
+				if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
 				oSceneGEODataMeshArr.push( {
-			    	type : "Icon",
-			    	point : latlngPoint,
-			    	mesh:mesh,
-			    	iconSize : iconSize
-			    } );
+					type : "Icon",
+					point : latlngPoint,
+					mesh:mesh,
+					iconSize : iconSize
+				} );
 				oScene.add(mesh);
 			}
 			else if ( oGeo3DData[i].properties._markerType == "Circle" )
@@ -791,7 +791,7 @@
 					var x=( ( latlngPoint.lng - viewBox.lt.lng ) / ( viewBox.rb.lng - viewBox.lt.lng ) )  * viewBox.w;
 					var y=( ( latlngPoint.lat - viewBox.rb.lat ) / Math.abs( viewBox.rb.lat - viewBox.lt.lat ) )  * viewBox.h;
 					
-				    y = viewBox.h - y;
+					y = viewBox.h - y;
 					latlngPoint.h = parseFloat(latlngPoint.h) + getDEMValue( x, y, viewBox );
 					oGeo3DData[i].geometry.coordinates[2] = latlngPoint.h;
 				}
@@ -816,18 +816,18 @@
 				var material = new THREE.MeshBasicMaterial( { 
 					color: fillColor,
 					opacity: fillOpacity, depthWrite:true,  transparent: true } );
-						
+				
 				var geometry = new THREE.CircleGeometry( vR, 100 );
 				var mesh = new THREE.Mesh( geometry, material );
 				mesh.position.set( point.x, point.y, point.z );
 
-			    if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
+				if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
 				oSceneGEODataMeshArr.push( {
-			    	type : "Icon",
-			    	point : latlngPoint,
-			    	mesh:mesh,
-			    	iconSize : iconSize
-			    } );
+					type : "Icon",
+					point : latlngPoint,
+					mesh:mesh,
+					iconSize : iconSize
+				} );
 				
 				oScene.add(mesh);
 				/*
@@ -862,7 +862,7 @@
 					var x=( ( latlngPoint.lng - viewBox.lt.lng ) / ( viewBox.rb.lng - viewBox.lt.lng ) )  * viewBox.w;
 					var y=( ( latlngPoint.lat - viewBox.rb.lat ) / Math.abs( viewBox.rb.lat - viewBox.lt.lat ) )  * viewBox.h;
 					
-				    y = viewBox.h - y;
+					y = viewBox.h - y;
 					latlngPoint.h = parseFloat(latlngPoint.h) + getDEMValue( x, y, viewBox );
 					oGeo3DData[i].geometry.coordinates[2] = latlngPoint.h;
 				}
@@ -918,24 +918,24 @@
 				
 				
 				textTexture.fillText(text, 0, 0 );
-					
+				
 				
 				var texture = new THREE.Texture(textCanvas);
 				texture.needsUpdate = true; 
-	  
+				
 				var material = new THREE.SpriteMaterial( { map: texture, useScreenCoordinates: false,transparent:true, depthWrite:true } );
 				var mesh = new THREE.Sprite( material );
 				mesh.position.set( point.x, point.y, point.z );
 				mesh.scale.set( iconSize.w,iconSize.h, 1.0 );
 				
 				
-			    if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
+				if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
 				oSceneGEODataMeshArr.push( {
-			    	type : "Text",
-			    	point : latlngPoint,
-			    	mesh:mesh,
-			    	iconSize : iconSize
-			    } );
+					type : "Text",
+					point : latlngPoint,
+					mesh:mesh,
+					iconSize : iconSize
+				} );
 				oScene.add(mesh);
 			}
 			else if ( oGeo3DData[i].properties._markerType == "Icon" )
@@ -1019,14 +1019,14 @@
 				mesh.scale.set( iconSize.w,iconSize.h, 1.0 );
 				
 				
-			    if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
+				if ( !oSceneGEODataMeshArr ) oSceneGEODataMeshArr = [];
 				oSceneGEODataMeshArr.push( {
-			    	type : "Icon",
-			    	point : latlngPoint,
-			    	mesh:mesh,
-			    	iconSize : iconSize,
-		    		iconNo : iconNo
-			    } );
+					type : "Icon",
+					point : latlngPoint,
+					mesh:mesh,
+					iconSize : iconSize,
+					iconNo : iconNo
+				} );
 				oScene.add(mesh);
 				iconNo ++;
 				
@@ -1051,7 +1051,7 @@
 		
 		if ( coordinates.length <= 1 )
 			coordinates = coordinates[0];
-			
+		
 		for( var i=0; i<coordinates.length; i++ )
 		{
 			var p=coordinates[i];
@@ -1095,26 +1095,28 @@
 	
 	
     /*-----------------------------------------------------------------------------------------------*/
-    window.onresize = EvtResize;
+	window.onresize = EvtResize;
 
     //-->
-    </script>
+</script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-202486341-1');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-MPP84V2NHB');
 </script>
 
 </head>
 <body onload="Init();">
-    <div id="webgl"></div>
-    <div class="title"><h2>熱海市土砂災害3Dマップ</h2></div>
+	<div id="webgl"></div>
+	<div class="title"><h2>熱海市土砂災害3Dマップ</h2></div>
 	<div id="menu">
-    出典：
-    <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>、<a href="https://www.gsi.go.jp/BOUSAI/R3_0701_heavyrain.html" target="_blank">令和3年7月1日からの大雨に関する情報</a>、国土地理院<br>&copy; 仁志、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a></div>
+		出典：
+		<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>、<a href="https://www.gsi.go.jp/BOUSAI/R3_0701_heavyrain.html" target="_blank">令和3年7月1日からの大雨に関する情報</a>、国土地理院<br>&copy; 仁志、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a></div>
 	</div>
 </body>
 </html>

@@ -74,7 +74,7 @@
           "type": "vector",
           "tiles": [
             "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
-          ],
+            ],
           "minzoom": 3,
           "maxzoom": 4,
           "attribution": "<a href='https://github.com/gsi-cyberjapan/gsimaps-vector-experiment'>地理院地図Vector</a>"
@@ -83,7 +83,7 @@
           "type": "raster",
           "tiles": [
             "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}?blankTile=false"
-          ],
+            ],
           "tileSize": 256,
           "minzoom": 3,
           "maxzoom": 5,
@@ -93,7 +93,7 @@
           "type": "raster",
           "tiles": [
             `https://www.jma.go.jp/bosai/himawari/data/satimg/${day_time}/fd/${valid_time}/B13/TBB/{z}/{x}/{y}.jpg`
-          ],
+            ],
           "tileSize": 256,
           "minzoom": 3,
           "maxzoom": 5,
@@ -101,32 +101,32 @@
         }
       },
       "layers": [{
-          "id": "base",
-          "type": "raster",
-          "source": "base",
-          "minzoom": 3,
-          "maxzoom": 5
-        },
-        {
-          "id": "himawari",
-          "type": "raster",
-          "source": "himawari",
-          "minzoom": 3,
-          "maxzoom": 5
-        },
-        {
-          "id": "coastline",
-          "type": "line",
-          "source": "tiri",
-          "source-layer": "coastline",
-          "minzoom": 1,
-          "maxzoom": 7,
-          "filter": ["==", ["geometry-type"], "LineString"],
-          "paint": {
-            "line-color": "#fef263",
-            "line-width": 2
-          }
+        "id": "base",
+        "type": "raster",
+        "source": "base",
+        "minzoom": 3,
+        "maxzoom": 5
+      },
+      {
+        "id": "himawari",
+        "type": "raster",
+        "source": "himawari",
+        "minzoom": 3,
+        "maxzoom": 5
+      },
+      {
+        "id": "coastline",
+        "type": "line",
+        "source": "tiri",
+        "source-layer": "coastline",
+        "minzoom": 1,
+        "maxzoom": 7,
+        "filter": ["==", ["geometry-type"], "LineString"],
+        "paint": {
+          "line-color": "#fef263",
+          "line-width": 2
         }
+      }
       ]
 
     }
@@ -146,16 +146,16 @@
     map.addControl(new maplibregl.FullscreenControl());
   </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-202486341-1');
+
+    gtag('config', 'G-MPP84V2NHB');
   </script>
+
 </body>
 
 </html>

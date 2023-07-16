@@ -45,7 +45,7 @@
           "type": "raster",
           "tiles": [
             "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png"
-          ],
+            ],
           "tileSize": 256,
           "minzoom": 2,
           "maxzoom": 8,
@@ -55,7 +55,7 @@
           "type": "raster",
           "tiles": [
             "https://tile.geospatial.jp/nankaitrough/sindobunpu/{z}/{x}/{y}.png"
-          ],
+            ],
           "tileSize": 256,
           "minzoom": 2,
           "maxzoom": 8,
@@ -63,19 +63,19 @@
         }
       },
       "layers": [{
-          "id": "base",
-          "type": "raster",
-          "source": "base",
-          "minzoom": 2,
-          "maxzoom": 18,
-        },
-        {
-          "id": "shindomap",
-          "type": "raster",
-          "source": "shindomap",
-          "minzoom": 2,
-          "maxzoom": 18,
-        }
+        "id": "base",
+        "type": "raster",
+        "source": "base",
+        "minzoom": 2,
+        "maxzoom": 18,
+      },
+      {
+        "id": "shindomap",
+        "type": "raster",
+        "source": "shindomap",
+        "minzoom": 2,
+        "maxzoom": 18,
+      }
       ]
 
     }
@@ -93,16 +93,16 @@
     map.addControl(new maplibregl.FullscreenControl());
   </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-202486341-1');
+
+    gtag('config', 'G-MPP84V2NHB');
   </script>
+
 </body>
 
 </html>

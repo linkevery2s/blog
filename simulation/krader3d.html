@@ -74,7 +74,7 @@
           "type": "raster",
           "tiles": [
             "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}?blankTile=false"
-          ],
+            ],
           "tileSize": 256,
           "minzoom": 2,
           "maxzoom": 8,
@@ -84,7 +84,7 @@
           "type": "raster",
           "tiles": [
             `https://www.jma.go.jp/bosai/jmatile/data/nowc/${day_time}/none/${valid_time}/surf/hrpns/{z}/{x}/{y}.png`
-          ],
+            ],
           "tileSize": 256,
           "minzoom": 2,
           "maxzoom": 8,
@@ -92,19 +92,19 @@
         }
       },
       "layers": [{
-          "id": "back",
-          "type": "raster",
-          "source": "back",
-          "minzoom": 2,
-          "maxzoom": 18,
-        },
-        {
-          "id": "back2",
-          "type": "raster",
-          "source": "back2",
-          "minzoom": 2,
-          "maxzoom": 18,
-        }
+        "id": "back",
+        "type": "raster",
+        "source": "back",
+        "minzoom": 2,
+        "maxzoom": 18,
+      },
+      {
+        "id": "back2",
+        "type": "raster",
+        "source": "back2",
+        "minzoom": 2,
+        "maxzoom": 18,
+      }
       ]
 
     }
@@ -122,16 +122,16 @@
     map.addControl(new maplibregl.FullscreenControl());
   </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202486341-1"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-202486341-1');
+
+    gtag('config', 'G-MPP84V2NHB');
   </script>
+
 </body>
 
 </html>

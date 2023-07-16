@@ -20,15 +20,16 @@
 		<meta name="author" content="仁志">
 		<meta name="keywords" content="東日本大震災,マップ,3Dマップ" />
 
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
-
-			function gtag() {
-				dataLayer.push(arguments);
-			}
+			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-			gtag('config', 'UA-202486341-1');
+
+			gtag('config', 'G-MPP84V2NHB');
 		</script>
+
 		<script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
 		<style>
 			html,
@@ -62,12 +63,12 @@
 		</style>
 	</head>
 
-<body>
+	<body>
 
-	<div class="attribution">
-		© <a href="https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer" target="_blank" rel="noopener noreferrer">USGS Imagery Only</a>、<a href="https://www.jma.go.jp/jma/kishou/books/saigaiji/saigaiji_201101/saigaiji_201101.html" target="_blank">災害時地震・津波速報 平成23年(2011年)東北地方太平洋沖地震</a>、気象庁：<a
+		<div class="attribution">
+			© <a href="https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer" target="_blank" rel="noopener noreferrer">USGS Imagery Only</a>、<a href="https://www.jma.go.jp/jma/kishou/books/saigaiji/saigaiji_201101/saigaiji_201101.html" target="_blank">災害時地震・津波速報 平成23年(2011年)東北地方太平洋沖地震</a>、気象庁：<a
 			href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
-			4.0</a>
+		4.0</a>
 	</div>
 
 </body>
@@ -81,18 +82,18 @@
 	} = deck;
 
 	const layer = new ArcLayer({
-    id: 'arc-layer',
+		id: 'arc-layer',
 		data: "./data/higashinihon_arclayer.json",
-    pickable: true,
-    getWidth: 12,
-    getSourcePosition: p => [Number(p.lon1), Number(p.lat1)],
-    getTargetPosition: p => [Number(p.lon), Number(p.lat)],
+		pickable: true,
+		getWidth: 12,
+		getSourcePosition: p => [Number(p.lon1), Number(p.lat1)],
+		getTargetPosition: p => [Number(p.lon), Number(p.lat)],
 		getSourceColor: [254,242,99],
 		getTargetColor:[255,255,255],
 		getWidth: 0.8,
 		getTilt: 5
 
-  });
+	});
 
 	const tileLayer = new TileLayer({
 		data: 'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}?blankTile=false',
@@ -131,7 +132,7 @@
 		},
 		layers: [
 			tileLayer, layer
-		]
+			]
 	});
 </script>
 

@@ -18,15 +18,17 @@
   <meta name="twitter:description" content="令和2年九州豪雨を可視化しました。">
   <meta name="twitter:image" content="https://dpnote.netlify.app/simulation/r27mkyusyu.png" />
   <script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-202486341-1');
+
+    gtag('config', 'G-MPP84V2NHB');
   </script>
+
   <style>
     html,
     body {
@@ -63,7 +65,7 @@
 
   <div class="attribution">
     © <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors、<a href="https://www.data.jma.go.jp/obd/stats/etrn/" target="_blank">気象データ</a>、気象庁：<a
-      href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a>
+    href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY 4.0</a>
   </div>
 
 </body>
@@ -141,7 +143,7 @@
     },
     layers: [
       tileLayer, layer
-    ],
+      ],
     getTooltip: tooltip
   });
 </script>

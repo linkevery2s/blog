@@ -19,15 +19,17 @@
 		<meta name="twitter:description" content="西日本集中豪雨の3Dマップ" />
 		<meta name="author" content="仁志">
 		<meta name="keywords" content="西日本集中豪雨,マップ,3Dマップ" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
-
-			function gtag() {
-				dataLayer.push(arguments);
-			}
+			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-			gtag('config', 'UA-202486341-1');
+
+			gtag('config', 'G-MPP84V2NHB');
 		</script>
+
 		<script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
 		<style>
 			html,
@@ -61,12 +63,12 @@
 		</style>
 	</head>
 
-<body>
+	<body>
 
-	<div class="attribution">
-		© <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors、<a href="https://www.data.jma.go.jp/gmd/risk/obsdl/index.php" target="_blank">過去の気象データ</a>、気象庁：<a
+		<div class="attribution">
+			© <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors、<a href="https://www.data.jma.go.jp/gmd/risk/obsdl/index.php" target="_blank">過去の気象データ</a>、気象庁：<a
 			href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
-			4.0</a>
+		4.0</a>
 	</div>
 
 </body>
@@ -144,7 +146,7 @@
 		},
 		layers: [
 			tileLayer, layer
-		],
+			],
 		getTooltip: tooltip
 	});
 </script>

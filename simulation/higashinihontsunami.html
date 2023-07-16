@@ -19,15 +19,17 @@
 		<meta name="twitter:description" content="東日本大震災の津波観測マップ" />
 		<meta name="author" content="仁志">
 		<meta name="keywords" content="東日本大震災の津波観測マップ,マップ,3Dマップ" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
-
-			function gtag() {
-				dataLayer.push(arguments);
-			}
+			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-			gtag('config', 'UA-202486341-1');
+
+			gtag('config', 'G-MPP84V2NHB');
 		</script>
+
 		<script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
 		<style>
 			html,
@@ -61,91 +63,91 @@
 		</style>
 	</head>
 
-<body>
+	<body>
 
-	<div class="attribution">
-		© <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors、    出典：<a href="https://www.jma.go.jp/jma/kishou/books/saigaiji/saigaiji_201101/saigaiji_201101.html" target="_blank">災害時地震・津波速報 平成23年(2011年)東北地方太平洋沖地震</a>、気象庁：<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
-		      4.0</a>
-	</div>
+		<div class="attribution">
+			© <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors、    出典：<a href="https://www.jma.go.jp/jma/kishou/books/saigaiji/saigaiji_201101/saigaiji_201101.html" target="_blank">災害時地震・津波速報 平成23年(2011年)東北地方太平洋沖地震</a>、気象庁：<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank">CC BY
+			4.0</a>
+		</div>
 
-</body>
+	</body>
 
-<script type="text/javascript">
-	const {
-		Deck,
-		TileLayer,
-		BitmapLayer,
-		HexagonLayer
-	} = deck;
+	<script type="text/javascript">
+		const {
+			Deck,
+			TileLayer,
+			BitmapLayer,
+			HexagonLayer
+		} = deck;
 
-	const layer = new HexagonLayer({
-		id: 'hexagon-layer',
-		data: "./data/higashinihontsunami.json",
-		pickable: true,
-		extruded: true,
-		getElevationWeight: d => Number(d.height),
-		elevationAggregation: 'MAX',
-		getColorWeight: point => Number(point.height),
-		colorAggregation: 'MAX',
-		radius: 10000,
-		elevationScale: 4,
-		elevationRange: [0, 200000],
-		getPosition: p => [Number(p.lon), Number(p.lat)]
-	});
+		const layer = new HexagonLayer({
+			id: 'hexagon-layer',
+			data: "./data/higashinihontsunami.json",
+			pickable: true,
+			extruded: true,
+			getElevationWeight: d => Number(d.height),
+			elevationAggregation: 'MAX',
+			getColorWeight: point => Number(point.height),
+			colorAggregation: 'MAX',
+			radius: 10000,
+			elevationScale: 4,
+			elevationRange: [0, 200000],
+			getPosition: p => [Number(p.lon), Number(p.lat)]
+		});
 
-	const tileLayer = new TileLayer({
-		data: 'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png',
-		minZoom: 0,
-		maxZoom: 19,
+		const tileLayer = new TileLayer({
+			data: 'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			minZoom: 0,
+			maxZoom: 19,
 
-		renderSubLayers: props => {
-			const {
-				bbox: {
-					west,
-					south,
-					east,
-					north
-				}
-			} = props.tile;
+			renderSubLayers: props => {
+				const {
+					bbox: {
+						west,
+						south,
+						east,
+						north
+					}
+				} = props.tile;
 
-			return new BitmapLayer(props, {
-				data: null,
-				image: props.data,
-				bounds: [west, south, east, north]
-			});
-		}
-	});
+				return new BitmapLayer(props, {
+					data: null,
+					image: props.data,
+					bounds: [west, south, east, north]
+				});
+			}
+		});
 
 
-	const tooltip = (d) => {
+		const tooltip = (d) => {
 
-		if (!d || !d.object) return null;
-		let obj = d.object;
+			if (!d || !d.object) return null;
+			let obj = d.object;
 
-		const html_tr = ["<table>", "津波の高さ：" + obj.colorValue + "cm", "</table>"].join("\n");
+			const html_tr = ["<table>", "津波の高さ：" + obj.colorValue + "cm", "</table>"].join("\n");
 
-		return {
-			html: html_tr
+			return {
+				html: html_tr
+			};
 		};
-	};
 
-	new Deck({
-		initialViewState: {
-			longitude: 137.12,
-			latitude: 33.551,
-			zoom: 4.5,
-			maxZoom: 20,
-			pitch: 40,
-			bearing: -10
-		},
-		controller: {
-			touchRotate: true
-		},
-		layers: [
-			tileLayer, layer
-		],
-		getTooltip: tooltip
-	});
-</script>
+		new Deck({
+			initialViewState: {
+				longitude: 137.12,
+				latitude: 33.551,
+				zoom: 4.5,
+				maxZoom: 20,
+				pitch: 40,
+				bearing: -10
+			},
+			controller: {
+				touchRotate: true
+			},
+			layers: [
+				tileLayer, layer
+				],
+			getTooltip: tooltip
+		});
+	</script>
 
-</html>
+	</html>
