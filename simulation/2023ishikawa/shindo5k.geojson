@@ -1,0 +1,22 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.525",
+          "137.235"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "21:58:04",
+        "name": "能登半島沖",
+        "depth": "14 km",
+        "magni": "5.9",
+        "shindo": "震度５強"
+      }
+    }
+  ]
+}

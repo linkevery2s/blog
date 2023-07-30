@@ -1,0 +1,778 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.435",
+          "137.313"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/07",
+        "time": "14:24:03",
+        "name": "富山湾",
+        "depth": "5 km",
+        "magni": "1.8",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.478",
+          "137.305"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "1:45:44",
+        "name": "石川県能登地方",
+        "depth": "7 km",
+        "magni": "1.8",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.493",
+          "137.293"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/07",
+        "time": "13:37:51",
+        "name": "石川県能登地方",
+        "depth": "11 km",
+        "magni": "2.5",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.493",
+          "137.288"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/07",
+        "time": "14:35:22",
+        "name": "石川県能登地方",
+        "depth": "11 km",
+        "magni": "2.4",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.5",
+          "137.215"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "23:42:26",
+        "name": "石川県能登地方",
+        "depth": "13 km",
+        "magni": "2.6",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.503",
+          "137.302"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:58:32",
+        "name": "石川県能登地方",
+        "depth": "12 km",
+        "magni": "2.6",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.503",
+          "137.275"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "18:11:31",
+        "name": "石川県能登地方",
+        "depth": "12 km",
+        "magni": "2.2",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.505",
+          "137.288"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/07",
+        "time": "3:19:34",
+        "name": "石川県能登地方",
+        "depth": "12 km",
+        "magni": "2.5",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.508",
+          "137.303"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:11:23",
+        "name": "石川県能登地方",
+        "depth": "13 km",
+        "magni": "2.2",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.513",
+          "137.23"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "16:07:32",
+        "name": "石川県能登地方",
+        "depth": "12 km",
+        "magni": "2.9",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.513",
+          "137.257"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "19:56:11",
+        "name": "石川県能登地方",
+        "depth": "12 km",
+        "magni": "2.5",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.515",
+          "137.243"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "14:49:08",
+        "name": "石川県能登地方",
+        "depth": "11 km",
+        "magni": "3",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.515",
+          "137.305"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:28:54",
+        "name": "石川県能登地方",
+        "depth": "12 km",
+        "magni": "3",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.52",
+          "137.307"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "14:55:20",
+        "name": "石川県能登地方",
+        "depth": "12 km",
+        "magni": "3",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.52",
+          "137.207"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "16:24:23",
+        "name": "能登半島沖",
+        "depth": "13 km",
+        "magni": "3.1",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.52",
+          "137.245"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/07",
+        "time": "1:10:24",
+        "name": "能登半島沖",
+        "depth": "12 km",
+        "magni": "3",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.523",
+          "137.282"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:27:39",
+        "name": "石川県能登地方",
+        "depth": "12 km",
+        "magni": "2.6",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.523",
+          "137.217"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "16:01:02",
+        "name": "能登半島沖",
+        "depth": "13 km",
+        "magni": "2.8",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.523",
+          "137.228"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "5:31:16",
+        "name": "能登半島沖",
+        "depth": "13 km",
+        "magni": "2.6",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.525",
+          "137.245"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:03:29",
+        "name": "能登半島沖",
+        "depth": "13 km",
+        "magni": "2.9",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.527",
+          "137.293"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "14:48:16",
+        "name": "石川県能登地方",
+        "depth": "14 km",
+        "magni": "3.4",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.527",
+          "137.317"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "18:30:28",
+        "name": "石川県能登地方",
+        "depth": "13 km",
+        "magni": "2.6",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.528",
+          "137.248"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "18:15:31",
+        "name": "能登半島沖",
+        "depth": "11 km",
+        "magni": "2.6",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.532",
+          "137.23"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:01:25",
+        "name": "能登半島沖",
+        "depth": "12 km",
+        "magni": "3",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.533",
+          "137.243"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "21:29:04",
+        "name": "能登半島沖",
+        "depth": "10 km",
+        "magni": "2.6",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.533",
+          "137.25"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "22:07:19",
+        "name": "能登半島沖",
+        "depth": "13 km",
+        "magni": "3.4",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.537",
+          "137.273"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "17:31:54",
+        "name": "能登半島沖",
+        "depth": "11 km",
+        "magni": "2.5",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.54",
+          "137.328"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "6:48:26",
+        "name": "能登半島沖",
+        "depth": "14 km",
+        "magni": "3.1",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.543",
+          "137.27"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:48:42",
+        "name": "能登半島沖",
+        "depth": "10 km",
+        "magni": "2.8",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.545",
+          "137.23"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "4:44:40",
+        "name": "能登半島沖",
+        "depth": "12 km",
+        "magni": "3",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.547",
+          "137.298"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "16:39:48",
+        "name": "能登半島沖",
+        "depth": "11 km",
+        "magni": "2.8",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.548",
+          "137.293"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "22:43:59",
+        "name": "能登半島沖",
+        "depth": "11 km",
+        "magni": "2.7",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.55",
+          "137.318"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "14:55:39",
+        "name": "能登半島沖",
+        "depth": "14 km",
+        "magni": "2.9",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.55",
+          "137.32"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "20:14:43",
+        "name": "能登半島沖",
+        "depth": "12 km",
+        "magni": "2.8",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.552",
+          "137.338"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/07",
+        "time": "14:11:11",
+        "name": "能登半島沖",
+        "depth": "13 km",
+        "magni": "2.8",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.553",
+          "137.332"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "0:09:05",
+        "name": "能登半島沖",
+        "depth": "13 km",
+        "magni": "2.9",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.555",
+          "137.34"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:32:04",
+        "name": "能登半島沖",
+        "depth": "13 km",
+        "magni": "2.4",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.558",
+          "137.265"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "2:21:47",
+        "name": "能登半島沖",
+        "depth": "12 km",
+        "magni": "3",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.56",
+          "137.335"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "14:51:01",
+        "name": "能登半島沖",
+        "depth": "14 km",
+        "magni": "3.9",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.56",
+          "137.315"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "15:12:39",
+        "name": "能登半島沖",
+        "depth": "11 km",
+        "magni": "3",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.567",
+          "137.26"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/07",
+        "time": "11:44:40",
+        "name": "能登半島沖",
+        "depth": "9 km",
+        "magni": "3.5",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.583",
+          "137.26"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/05",
+        "time": "17:01:11",
+        "name": "能登半島沖",
+        "depth": "8 km",
+        "magni": "3.8",
+        "shindo": "震度１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          "37.598",
+          "137.28"
+        ]
+      },
+      "properties": {
+        "day": "2023/05/06",
+        "time": "1:25:17",
+        "name": "能登半島沖",
+        "depth": "10 km",
+        "magni": "3.3",
+        "shindo": "震度１"
+      }
+    }
+  ]
+}
