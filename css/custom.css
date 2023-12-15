@@ -232,6 +232,24 @@ h3 {
   display: inline-block;
 }
 
+.linkb {
+  border-bottom: 1px dotted;
+  padding-bottom: 3px;
+}
+
+.linkb:hover {
+  color: #2ca9e1;
+  border-bottom: none;
+}
+
+.linkb::before {
+  margin-left: 3px;
+  content: '\f26c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  display: inline-block;
+}
+
 .link_div {
   border: 1px solid #d5dfe6;
   padding: 1.2em;
