@@ -6,7 +6,21 @@
     <description>Recent content in Posts on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 18 Feb 2023 19:07:24 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jan 2024 19:23:51 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>能登半島地震の３Dによる可視化</title>
+      <link>https://dpnote.netlify.app/notoearthquake3d/</link>
+      <pubDate>Fri, 05 Jan 2024 19:23:51 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/notoearthquake3d/</guid>
+      <description>
+        
+          &lt;p&gt;能登半島地震を３Dで可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/notoearthquake3d/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>熊本地震を深さの次元まで含めて3Dにて可視化</title>
       <link>https://dpnote.netlify.app/kumamoto3d/</link>

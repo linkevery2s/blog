@@ -3,14 +3,20 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2023-02-18T19:07:24+09:00",
+    "date": "2024-01-05T19:23:51+09:00",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2023-02-18T19:07:24+09:00",
+    "date": "2024-01-05T19:23:51+09:00",
     "body": "Posts"
+  },
+  {
+    "url": "https://dpnote.netlify.app/notoearthquake3d/",
+    "title": "能登半島地震の３Dによる可視化",
+    "date": "2024-01-05T19:23:51+09:00",
+    "body": "能登半島地震の３Dによる可視化 能登半島地震を３Dで可視化しました。"
   },
   {
     "url": "https://dpnote.netlify.app/kumamoto3d/",
