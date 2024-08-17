@@ -3,14 +3,20 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2024-01-05T19:23:51+09:00",
+    "date": "2024-08-17T12:18:44+09:00",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2024-01-05T19:23:51+09:00",
+    "date": "2024-08-17T12:18:44+09:00",
     "body": "Posts"
+  },
+  {
+    "url": "https://dpnote.netlify.app/higashinihonarcrotate/",
+    "title": "東日本大震災津波観測地点の可視化アニメーション",
+    "date": "2024-08-17T12:18:44+09:00",
+    "body": "東日本大震災津波観測地点の可視化アニメーション 以前、東日本大震災の観測地点をArcLayerで結んだことがあったのですが、アニメーション機能を追記してみました。 全画面で見る 投稿者: @hitoshi17l Threadsで見る"
   },
   {
     "url": "https://dpnote.netlify.app/notoearthquake3d/",
