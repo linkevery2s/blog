@@ -3,14 +3,20 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2024-08-19T15:32:57+09:00",
+    "date": "2024-08-26T18:09:44+09:00",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2024-08-19T15:32:57+09:00",
+    "date": "2024-08-26T18:09:44+09:00",
     "body": "Posts"
+  },
+  {
+    "url": "https://dpnote.netlify.app/2024noto/",
+    "title": "令和6年1月能登半島地震の震度マップをヒートマップとして可視化",
+    "date": "2024-08-26T18:09:44+09:00",
+    "body": "令和6年1月能登半島地震の震度マップをヒートマップとして可視化 令和6年1月に発生した能登半島地震の震度マップをヒートマップとして可視化しました。 全画面で見る 投稿者: @hitoshi17l Threadsで見る"
   },
   {
     "url": "https://dpnote.netlify.app/r67tohoku/",
