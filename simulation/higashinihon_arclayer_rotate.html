@@ -28,7 +28,9 @@
 			integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
 			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+		<script src="https://unpkg.com/deck.gl@^8.9.0/dist.min.js"></script>
 		<style>
 			html,
 			body {
@@ -66,15 +68,33 @@
 				z-index: 15;
 			}
 
-			.button {
-				cursor: pointer;
-				color: #000000;
-				background: rgba(255, 255, 255, .8);
-				border: 1px solid #000000;
-				padding: .5em;
-				border-radius: .5em;
-				border: 1px solid #000000;
-			}
+			.side_menu, .side_menu2 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 15;
+        }
+
+        .button {
+            cursor: pointer;
+            color: #000000;
+            background: rgba(255, 255, 255, .8);
+            border: 1px solid #000000;
+            padding: .5em;
+            border-radius: .5em;
+            border: 1px solid #000000;
+        }
+
+        .button2 {
+            cursor: pointer;
+            color: #000000;
+            background: rgba(255, 255, 255, .8);
+            border: 1px solid #000000;
+            padding: .5em .6em .5em .6em;
+            display: none;
+            border-radius: .5em;
+            border: 1px solid #000000;
+        }
 
 			.deck-tooltip {
 				font-family: Helvetica, Arial, sans-serif;
@@ -91,9 +111,13 @@
 
 <body>
 
-	<span class="side_menu">
-		<div class="button"><i class="fa-solid fa-rotate"></i></div>
-	</span>
+    <span class="side_menu">
+        <div class="button" id="rotate"><i class="fa-solid fa-rotate"></i></div>
+    </span>
+
+    <span class="side_menu2">
+        <div class="button2" id="stop"><i class="fa-solid fa-stop"></i></div>
+    </span>
 
 	<div class="attribution">
 		© <a href="https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer" target="_blank"
@@ -170,6 +194,18 @@
 			deckgl.setProps({ initialViewState });
 		};
 
+		let stop = () => {
+            initialViewState = {
+                ...initialViewState,
+                bearing: initialViewState.bearing + 0.01,
+                transitionDuration: 0,
+                transitionInterpolator: new LinearInterpolator(['bearing']),
+                onTransitionEnd: stop
+            };
+            deckgl.setProps({ initialViewState });
+
+        };
+
 		const tooltip = (d) => {
 
 			if (!d || !d.object) return null;
@@ -205,10 +241,19 @@
 			getTooltip: tooltip,
 		});
 
-		const button = document.querySelector('.button');
-		button.addEventListener('click', () => {
-			rotateCamera();
-		});
+        const button = document.querySelector('.button');
+        const button2 = document.querySelector('.button2');
+        button.addEventListener('click', () => {
+            rotateCamera();
+            $("#rotate").hide();
+            $("#stop").show();
+        });
+
+        button2.addEventListener('click', () => {
+            stop();
+            $("#stop").hide();
+            $("#rotate").show();
+        });
 
 	</script>
 

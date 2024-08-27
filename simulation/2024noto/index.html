@@ -29,6 +29,8 @@
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
 
@@ -63,7 +65,7 @@
             pointer-events: auto;
         }
 
-        .side_menu {
+        .side_menu, .side_menu2 {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -76,6 +78,17 @@
             background: rgba(255, 255, 255, .8);
             border: 1px solid #000000;
             padding: .5em;
+            border-radius: .5em;
+            border: 1px solid #000000;
+        }
+
+        .button2 {
+            cursor: pointer;
+            color: #000000;
+            background: rgba(255, 255, 255, .8);
+            border: 1px solid #000000;
+            padding: .5em .6em .5em .6em;
+            display: none;
             border-radius: .5em;
             border: 1px solid #000000;
         }
@@ -96,7 +109,11 @@
 <body>
 
     <span class="side_menu">
-        <div class="button"><i class="fa-solid fa-rotate"></i></div>
+        <div class="button" id="rotate"><i class="fa-solid fa-rotate"></i></div>
+    </span>
+
+    <span class="side_menu2">
+        <div class="button2" id="stop"><i class="fa-solid fa-stop"></i></div>
     </span>
 
     <div class="attribution">
@@ -160,6 +177,18 @@
             deckgl.setProps({ initialViewState });
         };
 
+        let stop = () => {
+            initialViewState = {
+                ...initialViewState,
+                bearing: initialViewState.bearing + 0.01,
+                transitionDuration: 0,
+                transitionInterpolator: new LinearInterpolator(['bearing']),
+                onTransitionEnd: stop
+            };
+            deckgl.setProps({ initialViewState });
+
+        };
+
         const tooltip = (d) => {
 
             if (!d || !d.object) return null;
@@ -190,8 +219,17 @@
         });
 
         const button = document.querySelector('.button');
+        const button2 = document.querySelector('.button2');
         button.addEventListener('click', () => {
             rotateCamera();
+            $("#rotate").hide();
+            $("#stop").show();
+        });
+
+        button2.addEventListener('click', () => {
+            stop();
+            $("#stop").hide();
+            $("#rotate").show();
         });
 
     </script>
