@@ -3,20 +3,26 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2024-08-26T18:09:44+09:00",
+    "date": "2024-09-19T12:01:29+09:00",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2024-08-26T18:09:44+09:00",
+    "date": "2024-09-19T12:01:29+09:00",
     "body": "Posts"
   },
   {
+    "url": "https://dpnote.netlify.app/noto_shindomap/",
+    "title": "能登半島沖地震の震度マップアニメーション",
+    "date": "2024-09-19T12:01:29+09:00",
+    "body": "能登半島沖地震の震度マップアニメーション 能登半島沖地震の震度マップをアニメーションにて可視化しました。"
+  },
+  {
     "url": "https://dpnote.netlify.app/2024noto/",
-    "title": "令和6年1月能登半島地震の震度マップをヒートマップとして可視化",
+    "title": "能登半島沖地震の震度マップをヒートマップとして可視化",
     "date": "2024-08-26T18:09:44+09:00",
-    "body": "令和6年1月能登半島地震の震度マップをヒートマップとして可視化 令和6年1月に発生した能登半島地震の震度マップをヒートマップとして可視化しました。 全画面で見る 投稿者: @hitoshi17l Threadsで見る"
+    "body": "能登半島沖地震の震度マップをヒートマップとして可視化 令和6年1月に発生した能登半島沖地震の震度マップをヒートマップとして可視化しました。 全画面で見る 投稿者: @hitoshi17l Threadsで見る"
   },
   {
     "url": "https://dpnote.netlify.app/r67tohoku/",
@@ -32,9 +38,9 @@ const data = [
   },
   {
     "url": "https://dpnote.netlify.app/notoearthquake3d/",
-    "title": "能登半島地震の３Dによる可視化",
+    "title": "能登半島沖地震の３Dによる可視化",
     "date": "2024-01-05T19:23:51+09:00",
-    "body": "能登半島地震の３Dによる可視化 能登半島地震を３Dで可視化しました。"
+    "body": "能登半島沖地震の３Dによる可視化 能登半島沖地震を３Dで可視化しました。"
   },
   {
     "url": "https://dpnote.netlify.app/kumamoto3d/",
