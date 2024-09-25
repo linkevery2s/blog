@@ -3,14 +3,20 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2024-09-22T11:50:33+09:00",
+    "date": "2024-09-25T14:11:49+09:00",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2024-09-22T11:50:33+09:00",
+    "date": "2024-09-25T14:11:49+09:00",
     "body": "Posts"
+  },
+  {
+    "url": "https://dpnote.netlify.app/noto3drain/",
+    "title": "令和6年（2024年）9月20日からの能登半島地方の豪雨の可視化",
+    "date": "2024-09-25T14:11:49+09:00",
+    "body": "令和6年（2024年）9月20日からの能登半島地方の豪雨の可視化 令和6年（2024年）9月20日からの能登半島地方の豪雨を可視化しました。 全画面で見る オープンデータ 令和6年（2024年）9月20日からの大雨に関する情報、国土地理院"
   },
   {
     "url": "https://dpnote.netlify.app/noto_connectmap/",
