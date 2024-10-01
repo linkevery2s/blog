@@ -3,13 +3,19 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2024-09-25T14:11:49+09:00",
+    "date": "2024-10-01T12:41:42+09:00",
     "body": "DP Note"
+  },
+  {
+    "url": "https://dpnote.netlify.app/plateau3d/",
+    "title": "PLATEAUを用いた３D都市空間の可視化",
+    "date": "2024-10-01T12:41:42+09:00",
+    "body": "PLATEAUを用いた３D都市空間の可視化 PLATEAUを用いて都市空間の３D化に挑戦しました。 全画面で見る オープンデータ plateau-tokyo23ku-building-mvt-2020 タイトル テキスト --"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2024-09-25T14:11:49+09:00",
+    "date": "2024-10-01T12:41:42+09:00",
     "body": "Posts"
   },
   {
