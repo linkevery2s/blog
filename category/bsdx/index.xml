@@ -9,12 +9,13 @@
     <item>
       <title>PLATEAUを用いた３D都市空間の可視化</title>
       <link>https://dpnote.netlify.app/plateau3d/</link>
-      <pubDate>Tue, 01 Oct 2024 12:41:42 +0900</pubDate>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/plateau3d/</guid>
       <description>
         
           &lt;p&gt;PLATEAUを用いて都市空間の３D化に挑戦しました。&lt;/p&gt;
+&lt;p&gt;今回、３Dに可視化したのは、新宿区です。&lt;/p&gt;
 &lt;iframe src =&#34;../../maptest/plateau3d/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../../maptest/plateau3d/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;

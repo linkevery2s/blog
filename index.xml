@@ -6,16 +6,37 @@
     <description>Recent content on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 01 Oct 2024 12:41:42 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Oct 2024 19:04:33 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>熱海市土砂災害３Dオブジェクトにて可視化</title>
+      <link>https://dpnote.netlify.app/atami3dglb/</link>
+      <pubDate>Wed, 02 Oct 2024 19:04:33 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/atami3dglb/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市の土砂災害を３Dオブジェクトにて可視化しました。&lt;/p&gt;
+&lt;!-- Youtube --&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YA47mdkPYAs?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>PLATEAUを用いた３D都市空間の可視化</title>
       <link>https://dpnote.netlify.app/plateau3d/</link>
-      <pubDate>Tue, 01 Oct 2024 12:41:42 +0900</pubDate>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/plateau3d/</guid>
       <description>
         
           &lt;p&gt;PLATEAUを用いて都市空間の３D化に挑戦しました。&lt;/p&gt;
+&lt;p&gt;今回、３Dに可視化したのは、新宿区です。&lt;/p&gt;
 &lt;iframe src =&#34;../../maptest/plateau3d/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../../maptest/plateau3d/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
@@ -74,7 +95,7 @@
     <item>
       <title>令和6年（2024年）9月20日からの能登半島地方の豪雨の可視化</title>
       <link>https://dpnote.netlify.app/noto3drain/</link>
-      <pubDate>Wed, 25 Sep 2024 14:11:49 +0900</pubDate>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/noto3drain/</guid>
       <description>
@@ -94,7 +115,7 @@
     <item>
       <title>能登半島沖地震コネクトマップの可視化</title>
       <link>https://dpnote.netlify.app/noto_connectmap/</link>
-      <pubDate>Sun, 22 Sep 2024 11:50:33 +0900</pubDate>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/noto_connectmap/</guid>
       <description>
@@ -144,7 +165,7 @@
     <item>
       <title>能登半島沖地震の震度マップをヒートマップとして可視化</title>
       <link>https://dpnote.netlify.app/2024noto/</link>
-      <pubDate>Mon, 26 Aug 2024 18:09:44 +0900</pubDate>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/2024noto/</guid>
       <description>
