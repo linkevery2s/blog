@@ -385,6 +385,12 @@ const data = [
     "body": "Searches"
   },
   {
+    "url": "https://dpnote.netlify.app/category/windflood/",
+    "title": "windflood",
+    "date": "0001-01-01T00:00:00Z",
+    "body": "windflood"
+  },
+  {
     "url": "https://dpnote.netlify.app/category/other/",
     "title": "その他災害",
     "date": "0001-01-01T00:00:00Z",
@@ -419,12 +425,6 @@ const data = [
     "title": "津波",
     "date": "0001-01-01T00:00:00Z",
     "body": "津波"
-  },
-  {
-    "url": "https://dpnote.netlify.app/category/windflood/",
-    "title": "風水害",
-    "date": "0001-01-01T00:00:00Z",
-    "body": "風水害"
   },
   {
     "url": "https://dpnote.netlify.app/category/bsdx/",
