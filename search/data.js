@@ -3,14 +3,20 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2024-10-02T19:04:33+09:00",
+    "date": "2024-10-07T00:00:00Z",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2024-10-02T19:04:33+09:00",
+    "date": "2024-10-07T00:00:00Z",
     "body": "Posts"
+  },
+  {
+    "url": "https://dpnote.netlify.app/kumamoto_shido_animation/",
+    "title": "熊本地震の震度マップアニメーション",
+    "date": "2024-10-07T00:00:00Z",
+    "body": "熊本地震の震度マップアニメーション 熊本地震の震度マップをアニメーションにて可視化しました。"
   },
   {
     "url": "https://dpnote.netlify.app/atami3dglb/",
