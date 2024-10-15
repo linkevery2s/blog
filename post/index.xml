@@ -6,7 +6,79 @@
     <description>Recent content in Posts on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>平成12年9月東海豪雨の可視化</title>
+      <link>https://dpnote.netlify.app/h12tokai/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/h12tokai/</guid>
+      <description>
+        
+          &lt;p&gt;平成12年9月東海豪雨を３Dに可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/h12tokai.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/h12tokai.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;!--
+&lt;h3 class=&#34;heading2&#34;&gt;&lt;/h3&gt;
+
+
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;ここに文章&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- 引用 
+&gt; Hello, World!
+&gt;
+&gt; こんにちは、ひとしです。
+--&gt;
+&lt;!-- テーブル 
+&lt;div class=&#34;kokuban-t2&#34;&gt;
+  &lt;span class=&#34;title-t2&#34;&gt;タイトル&lt;/span&gt;
+    テキスト
+&lt;/div&gt;
+
+
+
+&lt;!-- カードリンク 
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
+	
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;.jpg&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+
+&lt;!-- ソースコード 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;!-- Youtube 
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/id?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+--&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>熊本地震の震度マップアニメーション</title>
       <link>https://dpnote.netlify.app/kumamoto_shido_animation/</link>
