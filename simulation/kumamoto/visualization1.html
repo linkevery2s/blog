@@ -294,20 +294,20 @@
 
 		function geo_k(feature, layer) {
 			var popup;
-			if (feature.properties && feature.properties.Date) {
-				popup = feature.properties.Date + " " + feature.properties.time;
+			if (feature.properties && feature.properties.date) {
+				popup = feature.properties.date + " " + feature.properties.timeline;
 			}
 
 			if (feature.properties && feature.properties.shindo) {
-				popup += "<br>" + feature.properties.shindo;
+				popup += "<br>震度：" + feature.properties.shindo;
 			}
 
 			if (feature.properties && feature.properties.magnitude) {
 				popup += '<br>マグニチュード：' + feature.properties.magnitude;
 			}
 
-			if (feature.properties && feature.properties.deep) {
-				popup += '<br>震源の深さ：' + feature.properties.deep;
+			if (feature.properties && feature.properties.depth) {
+				popup += '<br>震源の深さ：' + feature.properties.depth;
 			}
 
 			layer.bindPopup(popup);
