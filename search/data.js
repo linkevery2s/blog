@@ -3,14 +3,20 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2024-10-15T00:00:00Z",
+    "date": "2024-10-23T00:00:00Z",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2024-10-15T00:00:00Z",
+    "date": "2024-10-23T00:00:00Z",
     "body": "Posts"
+  },
+  {
+    "url": "https://dpnote.netlify.app/atami3d/",
+    "title": "熱海市土砂災害を3Dにて可視化しました",
+    "date": "2024-10-23T00:00:00Z",
+    "body": "熱海市土砂災害を3Dにて可視化しました 熱海市土砂災害を3Dにて可視化しました。 全画面で見る オープンデータ 以下のデータを加工・編集して作成しました。 令和3年(2021年)7月1日からの大雨に関する情報、国土地理院"
   },
   {
     "url": "https://dpnote.netlify.app/h12tokai/",
@@ -293,12 +299,6 @@ const data = [
     "title": "Siriに防災を学ばせてみた！",
     "date": "2021-09-05T00:00:00Z",
     "body": "Siriに防災を学ばせてみた！ Siriに防災について、学習させてみました！ ㊗️YouTubeチャンネル開設‼️✨ 本日、防災アプリ開発者の仁志チャンネルを開設しました‼️ 第１回目は... 「Siriに防災について学ばせてみた！」 です。 フルバージョンはYouTube動画をご覧ください‼️👍 チャンネル登録も是非お願いいたします‼️🙇‍♂️https://t.co/sSxI9wEQcv#防災 #YouTube #Siri pic.twitter.com/HkkjtcY8i9 \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) February 27, 2021"
-  },
-  {
-    "url": "https://dpnote.netlify.app/atami3d/",
-    "title": "熱海市土砂災害を3Dにて可視化しました",
-    "date": "2021-09-02T00:00:00Z",
-    "body": "熱海市土砂災害を3Dにて可視化しました 熱海市土砂災害を3Dにて可視化しました。 熱海市土砂災害を3Dにて可視化しました！ 傾斜地＋森林＋豪雨＋長時間 この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。 ※PC、スマホ等で動かせます。 マップURLは👇こちらhttps://t.co/jkNXPyvhLu \u0026mdash; 防災エンジニア「仁志」 (@hitoshi2sl) August 18, 2021"
   },
   {
     "url": "https://dpnote.netlify.app/00000japan/",

@@ -6,7 +6,28 @@
     <description>Recent content on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>熱海市土砂災害を3Dにて可視化しました</title>
+      <link>https://dpnote.netlify.app/atami3d/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/atami3d/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市土砂災害を3Dにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/atami.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/atami.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
+&lt;p&gt;以下のデータを加工・編集して作成しました。&lt;/p&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://www.gsi.go.jp/BOUSAI/R3_0701_heavyrain.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;令和3年(2021年)7月1日からの大雨に関する情報&lt;/a&gt;、国土地理院
+&lt;/div&gt;
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>平成12年9月東海豪雨の可視化</title>
       <link>https://dpnote.netlify.app/h12tokai/</link>
@@ -1256,22 +1277,6 @@ WebGL-powered visualization framework for large-scale datasets
 &lt;center&gt;
 &lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/6oReqkwbtDs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;㊗️YouTubeチャンネル開設‼️✨&lt;br&gt;&lt;br&gt;本日、防災アプリ開発者の仁志チャンネルを開設しました‼️&lt;br&gt;&lt;br&gt;第１回目は...&lt;br&gt;「Siriに防災について学ばせてみた！」&lt;br&gt;です。&lt;br&gt;&lt;br&gt;フルバージョンはYouTube動画をご覧ください‼️👍&lt;br&gt;&lt;br&gt;チャンネル登録も是非お願いいたします‼️🙇‍♂️&lt;a href=&#34;https://t.co/sSxI9wEQcv&#34;&gt;https://t.co/sSxI9wEQcv&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E9%98%B2%E7%81%BD?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#防災&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/YouTube?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#YouTube&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/Siri?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Siri&lt;/a&gt; &lt;a href=&#34;https://t.co/HkkjtcY8i9&#34;&gt;pic.twitter.com/HkkjtcY8i9&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1365622518443171843?ref_src=twsrc%5Etfw&#34;&gt;February 27, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>熱海市土砂災害を3Dにて可視化しました</title>
-      <link>https://dpnote.netlify.app/atami3d/</link>
-      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/atami3d/</guid>
-      <description>
-        
-          &lt;p&gt;熱海市土砂災害を3Dにて可視化しました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;熱海市土砂災害を3Dにて可視化しました！&lt;br&gt;&lt;br&gt;傾斜地＋森林＋豪雨＋長時間&lt;br&gt;&lt;br&gt;この条件が揃うとリスク管理は難しくなる🤔他にも似た地域あるはず。どのように豪雨と向き合っていくのか、本当に問われる時代になったと思う。&lt;br&gt;&lt;br&gt;※PC、スマホ等で動かせます。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/jkNXPyvhLu&#34;&gt;https://t.co/jkNXPyvhLu&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1427949646396104718?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/center&gt;
         
       </description>

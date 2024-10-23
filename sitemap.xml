@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dpnote.netlify.app/</loc>
-    <lastmod>2024-10-15T19:42:03+09:00</lastmod>
+    <lastmod>2024-10-23T14:39:39+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/post/</loc>
-    <lastmod>2024-10-15T19:42:03+09:00</lastmod>
+    <lastmod>2024-10-23T14:39:39+09:00</lastmod>
+  </url><url>
+    <loc>https://dpnote.netlify.app/atami3d/</loc>
+    <lastmod>2024-10-23T14:39:39+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/h12tokai/</loc>
     <lastmod>2024-10-15T19:42:03+09:00</lastmod>
@@ -148,9 +151,6 @@
   </url><url>
     <loc>https://dpnote.netlify.app/siri/</loc>
     <lastmod>2023-04-30T10:56:07+09:00</lastmod>
-  </url><url>
-    <loc>https://dpnote.netlify.app/atami3d/</loc>
-    <lastmod>2023-12-15T19:18:56+09:00</lastmod>
   </url><url>
     <loc>https://dpnote.netlify.app/00000japan/</loc>
     <lastmod>2023-03-01T20:22:34+09:00</lastmod>
