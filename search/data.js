@@ -76,7 +76,7 @@ const data = [
     "url": "https://dpnote.netlify.app/higashinihonarcrotate/",
     "title": "東日本大震災津波観測地点の可視化アニメーション",
     "date": "2024-08-17T12:18:44+09:00",
-    "body": "東日本大震災津波観測地点の可視化アニメーション 以前、東日本大震災の観測地点をArcLayerで結んだことがあったのですが、アニメーション機能を追記してみました。 全画面で見る 投稿者: @hitoshi17l Threadsで見る"
+    "body": "東日本大震災津波観測地点の可視化アニメーション 以前、東日本大震災の観測地点をArcLayerで結んだことがあったのですが、アニメーション機能を追記してみました。 全画面で見る"
   },
   {
     "url": "https://dpnote.netlify.app/notoearthquake3d/",
