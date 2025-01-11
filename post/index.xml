@@ -1352,14 +1352,14 @@ WebGL-powered visualization framework for large-scale datasets
     </item>
     
     <item>
-      <title>熊本地震「活断層図と震度マップの重ね合わせ」</title>
+      <title>熊本地震の震度マップ</title>
       <link>https://dpnote.netlify.app/kumamotoearthquake/</link>
       <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/kumamotoearthquake/</guid>
       <description>
         
-          &lt;p&gt;熊本地震の震度マップと活断層図を重ね合わせてみました。&lt;/p&gt;
+          &lt;p&gt;熊本地震の震度マップを可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/kumamoto/visualization1.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
         
       </description>

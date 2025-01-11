@@ -1,22 +1,22 @@
 <!DOCTYPE HTML>
 <html lang="ja">
-<title>熊本地震、活断層図と震度マップの重ね合わせ</title>
+<title>熊本地震の震度マップ</title>
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta property="og:title" content="熊本地震、活断層図と震度マップの重ね合わせ" />
+	<meta property="og:title" content="熊本地震の震度マップ" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://dpnote.netlify.app/simulation/kumamoto/ogp.jpg" />
-	<meta property="og:description" content="熊本地震、活断層図と震度マップの重ね合わせ" />
+	<meta property="og:description" content="熊本地震の活震度マップ" />
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="熊本地震、活断層図と震度マップの重ね合わせ" />
+	<meta name="twitter:title" content="熊本地震の震度マップ" />
 	<meta name="twitter:image" content="https://dpnote.netlify.app/simulation/kumamoto/ogp.jpg" />
 	<meta name="twitter:description" content="熊本地震、活断層図と震度マップの重ね合わせ" />
 	<meta name="author" content="仁志">
-	<meta name="keywords" content="熊本地震,災害データ可視化,活断層,震度マップ" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<meta name="keywords" content="熊本地震,災害データ可視化,地震,震度マップ" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 	<script src='data/shindomap1.geojson'></script>
 	<script src='data/shindomap2.geojson'></script>
 	<script src='data/shindomap3.geojson'></script>
@@ -26,16 +26,6 @@
 	<script src='data/shindomap6j.geojson'></script>
 	<script src='data/shindomap6k.geojson'></script>
 	<script src='data/shindomap7.geojson'></script>
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-MPP84V2NHB');
-	</script>
 
 	<style>
 		html,
@@ -57,7 +47,7 @@
 	<script>
 		function ini() {
 			/* 初期設定 */
-			var map = L.map('map_canvas', {
+			const map = L.map('map_canvas', {
 				center: [32.946454, 131.020203],
 				zoom: 8,
 				minZoom: 8,
@@ -66,52 +56,53 @@
 
 			
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors l &copy; <a href="https://www.data.jma.go.jp/svd/eqdb/data/shindo/index.html" target="_blank">気象庁 震度データベース検索</a><br>活断層図：岡田篤正・廣内大助・松多信尚・宮内崇裕(2017):1:25,000都市圏活断層図「中津川」，国土地理院.'
+				attribution: '&copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors l &copy; <a href="https://www.data.jma.go.jp/svd/eqdb/data/shindo/index.html" target="_blank">気象庁 震度データベース検索</a>.'
 			}).addTo(map);
 			
-			var t1 = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/afm/{z}/{x}/{y}.png', {
-				opacity: 0.8
-			}).addTo(map);
-
-
 			/* 震度マップ追加 */
-			var shindo1 = L.geoJson(shindomap1, {
+			let shindo1 = L.geoJson(shindomap1, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro1
 			});
 			map.addLayer(shindo1);
-			var shindo2 = L.geoJson(shindomap2, {
+
+			let shindo2 = L.geoJson(shindomap2, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro2
 			});
 			map.addLayer(shindo2);
-			var shindo3 = L.geoJson(shindomap3, {
+
+			let shindo3 = L.geoJson(shindomap3, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro3
 			});
 			map.addLayer(shindo3);
-			var shindo4 = L.geoJson(shindomap4, {
+
+			let shindo4 = L.geoJson(shindomap4, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro4
 			});
 			map.addLayer(shindo4);
-			var shindo5j = L.geoJson(shindomap5j, {
+
+			let shindo5j = L.geoJson(shindomap5j, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro5j
 			});
 			map.addLayer(shindo5j);
-			var shindo5k = L.geoJson(shindomap5k, {
+
+			let shindo5k = L.geoJson(shindomap5k, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro5k
 			});
 			map.addLayer(shindo5k);
-			var shindo6j = L.geoJson(shindomap6j, {
+
+			let shindo6j = L.geoJson(shindomap6j, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro6j
@@ -123,14 +114,15 @@
 				pointToLayer: iro6k
 			});
 			map.addLayer(shindo6k);
-			var shindo7 = L.geoJson(shindomap7, {
+
+			let shindo7 = L.geoJson(shindomap7, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro7
 			});
 			map.addLayer(shindo7);
 
-			var shindo_all = L.layerGroup([shindo7, shindo6k, shindo6j, shindo5k, shindo5j, shindo4, shindo3, shindo2, shindo1]);
+			let shindo_all = L.layerGroup([shindo7, shindo6k, shindo6j, shindo5k, shindo5j, shindo4, shindo3, shindo2, shindo1]);
 			map.addLayer(shindo_all);
 
 			/* レイヤー選択メニュー追加*/
