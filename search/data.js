@@ -226,7 +226,7 @@ const data = [
     "url": "https://dpnote.netlify.app/r27mkyusyu/",
     "title": "令和2年九州豪雨を可視化しました。",
     "date": "2021-12-11T00:00:00Z",
-    "body": "令和2年九州豪雨を可視化しました。 令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。 令和2年九州豪雨を可視化しました。 各観測地点の24時間降雨量最大値をマッピング。400mmを超える地点もあり、３Dにすると降雨量の多さが確認できますね。 PC、スマホから操作できます↓https://t.co/rOyG0LOxcE pic.twitter.com/zAjtVj2Ue1 \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) December 5, 2021"
+    "body": "令和2年九州豪雨を可視化しました。 令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。"
   },
   {
     "url": "https://dpnote.netlify.app/bbias/",
