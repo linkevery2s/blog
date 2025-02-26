@@ -226,7 +226,7 @@ const data = [
     "url": "https://dpnote.netlify.app/r27mkyusyu/",
     "title": "令和2年九州豪雨を可視化しました。",
     "date": "2021-12-11T00:00:00Z",
-    "body": "令和2年九州豪雨を可視化しました。 令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。"
+    "body": "令和2年九州豪雨を可視化しました。 令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。 全画面で見る"
   },
   {
     "url": "https://dpnote.netlify.app/bbias/",
