@@ -33,6 +33,8 @@
 
 		<script src="https://unpkg.com/deck.gl@^8.0.0/dist.min.js"></script>
 
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+
 		<script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
 		<link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
 
@@ -108,10 +110,10 @@
 		<div class="button2" id="stop"><i class="fa-solid fa-stop"></i></div>
 	</span>
 
-	<div class="attribution">
+	<!--<div class="attribution">
 		出典：<a href="https://www.jma.go.jp/jma/kishou/books/saigaiji/saigaiji_201101/saigaiji_201101.html"
 			target="_blank">災害時地震・津波速報 平成23年(2011年)東北地方太平洋沖地震</a>、気象庁
-	</div>
+	</div>-->
 
 </body>
 
@@ -119,19 +121,31 @@
 
         const { DeckGL, GridLayer, HexagonLayer, LinearInterpolator } = deck;
 
+        const colorRange = [
+            [0, 255, 255, 255],
+            [63, 255, 0, 255],
+            [255, 255, 0, 255],
+            [255, 127, 60, 255],
+            [255, 0, 0, 255],
+            [152, 0, 38, 255]
+        ];
+
+		const data = d3.csv('./data/higashinihontsunami.csv');
+
 	const layer = new HexagonLayer({
 		id: 'hexagon-layer',
-		data: "./data/higashinihontsunami.json",
+		data,
 		pickable: true,
 		extruded: true,
-		getElevationWeight: d => Number(d.height),
+		colorRange,
+		getElevationWeight: d => Number(d.value),
 		elevationAggregation: 'MAX',
-		getColorWeight: point => Number(point.height),
+		getColorWeight: point => Number(point.value),
 		colorAggregation: 'MAX',
 		radius: 10000,
 		elevationScale: 4,
 		elevationRange: [0, 200000],
-		getPosition: p => [Number(p.lon), Number(p.lat)]
+		getPosition: p => [Number(p.lng), Number(p.lat)]
 	});
 
 	let initialViewState = {
