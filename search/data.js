@@ -70,7 +70,7 @@ const data = [
     "url": "https://dpnote.netlify.app/r67tohoku/",
     "title": "令和6年7月東北地方の豪雨を3Dに可視化",
     "date": "2024-08-19T15:32:57+09:00",
-    "body": "令和6年7月東北地方の豪雨を3Dに可視化 令和6年7月に発生した東北地方の豪雨を3Dに可視化しました。 全画面で見る 投稿者: @hitoshi17l Threadsで見る"
+    "body": "令和6年7月東北地方の豪雨を3Dに可視化 令和6年7月に発生した東北地方の豪雨を3Dに可視化しました。 全画面で見る"
   },
   {
     "url": "https://dpnote.netlify.app/higashinihonarcrotate/",
@@ -217,7 +217,7 @@ const data = [
     "body": "時間軸を図解にて可視化 天気予報などで使われる『時間軸』を図解にて可視化してみました。 ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。 pic.twitter.com/maaEy4786o \u0026mdash; 仁志｜防災エンジニア (@hitoshi2sl) December 27, 2021"
   },
   {
-    "url": "https://dpnote.netlify.app/r27mkyusyu/",
+    "url": "https://dpnote.netlify.app/r2kyusyu/",
     "title": "令和2年九州豪雨を可視化しました。",
     "date": "2021-12-11T00:00:00Z",
     "body": "令和2年九州豪雨を可視化しました。 令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。 全画面で見る"

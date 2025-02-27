@@ -8,11 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta property="og:title" content="令和6年7月東北地方の豪雨を3Dに可視化" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://dpnote.netlify.app/simulation/r67tohoku.png" />
+    <meta property="og:image" content="https://dpnote.netlify.app/simulation/r67tohoku.jpg" />
     <meta name="description" content="令和6年7月に起きた東北地方での豪雨を3Dに可視化しました。" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="令和6年7月東北地方の豪雨を3Dに可視化" />
-    <meta name="twitter:image" content="https://dpnote.netlify.app/simulation/r67tohoku.png" />
+    <meta name="twitter:image" content="https://dpnote.netlify.app/simulation/r67tohoku.jpg" />
     <meta name="author" content="Saito Hitoshi">
     <meta name="keywords" content="東北,豪雨,deckgl,3D,3d" />
 
@@ -25,7 +25,8 @@
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
@@ -61,7 +62,8 @@
             pointer-events: auto;
         }
 
-        .side_menu, .side_menu2 {
+        .side_menu,
+        .side_menu2 {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -194,7 +196,7 @@
         };
 
         const deckgl = new DeckGL({
-            mapStyle: 'https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json',
+            mapStyle: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
             initialViewState: initialViewState,
             controller: {
                 touchRotate: true
