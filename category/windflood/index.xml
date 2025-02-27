@@ -36,8 +36,8 @@
       <description>
         
           &lt;p&gt;平成12年9月東海豪雨を３Dに可視化しました。&lt;/p&gt;
-&lt;iframe src =&#34;../../simulation/h12tokai.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;a href=&#34;../../simulation/h12tokai.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;iframe src =&#34;../simulation/h12tokai.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/h12tokai.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
 &lt;!--
 &lt;h3 class=&#34;heading2&#34;&gt;&lt;/h3&gt;
 
@@ -202,11 +202,9 @@
       <guid>https://dpnote.netlify.app/nishinihonrain/</guid>
       <description>
         
-          &lt;p&gt;西日本集中豪雨を可視化しました。&lt;/p&gt;
-&lt;iframe src =&#34;../../simulation/nishinihon.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ついに完成！西日本集中豪雨を３Dマップにしました。四国・中国地方、九州地方、岐阜県と的を絞って、1日の最大降水量をマッピング。猛烈な雨だったことが一目に分かります。 URL→&lt;a href=&#34;https://t.co/nZdzJkDAf8&#34;&gt;https://t.co/nZdzJkDAf8&lt;/a&gt; &lt;a href=&#34;https://t.co/X0jzV5MEZB&#34;&gt;pic.twitter.com/X0jzV5MEZB&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1525785564166987782?ref_src=twsrc%5Etfw&#34;&gt;May 15, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+          &lt;p&gt;平成30年西日本集中豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/h30nishinihon.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/h30nishinihon.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
         
       </description>
     </item>

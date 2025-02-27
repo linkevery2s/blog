@@ -124,7 +124,7 @@ const data = [
     "url": "https://dpnote.netlify.app/nishinihonrain/",
     "title": "西日本集中豪雨を可視化しました",
     "date": "2022-09-04T11:52:12+09:00",
-    "body": "西日本集中豪雨を可視化しました 西日本集中豪雨を可視化しました。 ついに完成！西日本集中豪雨を３Dマップにしました。四国・中国地方、九州地方、岐阜県と的を絞って、1日の最大降水量をマッピング。猛烈な雨だったことが一目に分かります。 URL→https://t.co/nZdzJkDAf8 pic.twitter.com/X0jzV5MEZB \u0026mdash; ひとし｜防災エンジニア (@hitoshi2sl) May 15, 2022"
+    "body": "西日本集中豪雨を可視化しました 平成30年西日本集中豪雨を可視化しました。 全画面で見る"
   },
   {
     "url": "https://dpnote.netlify.app/jirei1/",
