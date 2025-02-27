@@ -3,14 +3,20 @@ const data = [
   {
     "url": "https://dpnote.netlify.app/",
     "title": "DP Note",
-    "date": "2024-10-23T00:00:00Z",
+    "date": "2025-02-27T19:26:47+09:00",
     "body": "DP Note"
   },
   {
     "url": "https://dpnote.netlify.app/post/",
     "title": "Posts",
-    "date": "2024-10-23T00:00:00Z",
+    "date": "2025-02-27T19:26:47+09:00",
     "body": "Posts"
+  },
+  {
+    "url": "https://dpnote.netlify.app/nigata2004/",
+    "title": "新潟県中越地震の震度マップ",
+    "date": "2025-02-27T19:26:47+09:00",
+    "body": "新潟県中越地震の震度マップ 新潟県中越地震の震度マップを可視化しました。 全画面で見る"
   },
   {
     "url": "https://dpnote.netlify.app/atami3d/",

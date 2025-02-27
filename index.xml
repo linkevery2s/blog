@@ -6,7 +6,23 @@
     <description>Recent content on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Feb 2025 19:26:47 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>新潟県中越地震の震度マップ</title>
+      <link>https://dpnote.netlify.app/nigata2004/</link>
+      <pubDate>Thu, 27 Feb 2025 19:26:47 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/nigata2004/</guid>
+      <description>
+        
+          &lt;p&gt;新潟県中越地震の震度マップを可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/nigata2004/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/nigata2004/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>熱海市土砂災害を3Dにて可視化しました</title>
       <link>https://dpnote.netlify.app/atami3d/</link>
