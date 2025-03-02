@@ -5,28 +5,20 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta property="og:title" content="新潟県中越地震の震度マップ" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://dpnote.netlify.app/simulation/nigata2004/ogp.jpg" />
-	<meta property="og:description" content="新潟県中越地震の震度マップ" />
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="新潟県中越地震の震度マップ" />
-	<meta name="twitter:image" content="https://dpnote.netlify.app/simulation/nigata2004/ogp.jpg" />
-	<meta name="twitter:description" content="新潟県中越地震の震度マップ" />
-	<meta name="author" content="Saito Hitoshi">
-	<meta name="keywords" content="新潟県中越地震の震度マップ,災害データ可視化,地震,震度マップ" />
 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-	<script src='data/shindomap1.geojson'></script>
-	<script src='data/shindomap2.geojson'></script>
-	<script src='data/shindomap3.geojson'></script>
-	<script src='data/shindomap4.geojson'></script>
-	<script src='data/shindomap5j.geojson'></script>
-	<script src='data/shindomap5k.geojson'></script>
-	<script src='data/shindomap6j.geojson'></script>
-	<script src='data/shindomap6k.geojson'></script>
-	<script src='data/shindomap7.geojson'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.min.js" integrity="sha512-0A4MbfuZq5Au9EdpI1S5rUTXlibNBi8CuZ/X3ycwXyZiCjNzpiO9YH6EMqPgzZm6vfNCuZStBQHjnO17nIC0IQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src='./data/shindomap1.geojson'></script>
+	<script src='./data/shindomap2.geojson'></script>
+	<script src='./data/shindomap3.geojson'></script>
+	<script src='./data/shindomap4.geojson'></script>
+	<script src='./data/shindomap5j.geojson'></script>
+	<script src='./data/shindomap5k.geojson'></script>
+	<script src='./data/shindomap6j.geojson'></script>
+	<script src='./data/shindomap6k.geojson'></script>
+	<script src='./data/shindomap7.geojson'></script>
 
 	<style>
 		html,
@@ -45,19 +37,22 @@
 			border: solid 2px #000000;
 		}
 	</style>
-	<script>
-		function ini() {
+
+	<script type="module">
+
+		onload = async() => {
 			/* 初期設定 */
 			const map = L.map('map_canvas', {
-				center: [37.2, 138.8],
+				center: [37.2943, 138.8927],
 				zoom: 10,
 				minZoom: 8,
 				maxZoom: 12
 			});
 
+			const hash = new L.Hash(map);
 			
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors l &copy; <a href="https://www.data.jma.go.jp/svd/eqdb/data/shindo/index.html" target="_blank">気象庁 震度データベース検索</a>.'
+				attribution: '&copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors l &copy; <a href="https://www.data.jma.go.jp/svd/eqdb/data/shindo/index.html" target="_blank">気象庁 震度データベース検索</a>'
 			}).addTo(map);
 			
 			/* 震度マップ追加 */
@@ -109,7 +104,8 @@
 				pointToLayer: iro6j
 			});
 			map.addLayer(shindo6j);
-			var shindo6k = L.geoJson(shindomap6k, {
+
+			let shindo6k = L.geoJson(shindomap6k, {
 				style: sty,
 				onEachFeature: geo_k,
 				pointToLayer: iro6k
@@ -127,7 +123,7 @@
 			map.addLayer(shindo_all);
 
 			/* レイヤー選択メニュー追加*/
-			var baseMaps = {
+			const baseMaps = {
 				"全表示": shindo_all,
 				"震度７": shindo7,
 				"震度６強": shindo6k,
@@ -142,18 +138,18 @@
 
 			L.control.layers(baseMaps).addTo(map);
 
-			var legend = L.control({
+			const legend = L.control({
 				position: 'bottomright'
 			});
 
 			legend.onAdd = function(map) {
 
-				var div = L.DomUtil.create('div', 'info_legend'),
+				let div = L.DomUtil.create('div', 'info_legend'),
 				grades = ["震度７", "震度６強", "震度６弱", "震度５強", "震度５弱", "震度４", "震度３", "震度２", "震度１"],
 				labels = ['震度階級'],
 				from, to;
 
-				for (var i = 0; i < grades.length; i++) {
+				for (let i = 0; i < grades.length; i++) {
 					from = grades[i];
 
 					labels.push(
@@ -167,10 +163,9 @@
 
 			legend.addTo(map);
 
-
 		}
 
-		function getColor(d) {
+		let getColor = (d) => {
 			return d == "震度７" ? '#640125' :
 			d == "震度６強" ? '#e2041b' :
 			d == "震度６弱" ? '#ec6d51' :
@@ -182,11 +177,11 @@
 			'#007bbb';
 		}
 
-		function sty(feature) {
+		let sty = (feature) => {
 			return feature.properties && feature.properties.style;
 		}
 
-		function iro1(feature, latlng) {
+		let iro1 = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#007bbb",
@@ -197,7 +192,7 @@
 			});
 		}
 
-		function iro2(feature, latlng) {
+		let iro2 = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#59b9c6",
@@ -208,7 +203,7 @@
 			});
 		}
 
-		function iro3(feature, latlng) {
+		let iro3 = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#c3d825",
@@ -219,7 +214,7 @@
 			});
 		}
 
-		function iro4(feature, latlng) {
+		let iro4 = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#ffea00",
@@ -230,7 +225,7 @@
 			});
 		}
 
-		function iro5j(feature, latlng) {
+		let iro5j = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#db8449",
@@ -241,7 +236,7 @@
 			});
 		}
 
-		function iro5k(feature, latlng) {
+		let iro5k = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#d66a35",
@@ -252,7 +247,7 @@
 			});
 		}
 
-		function iro6j(feature, latlng) {
+		let iro6j = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#ec6d51",
@@ -263,7 +258,7 @@
 			});
 		}
 
-		function iro6k(feature, latlng) {
+		let iro6k = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#e2041b",
@@ -274,7 +269,7 @@
 			});
 		}
 
-		function iro7(feature, latlng) {
+		let iro7 = (feature, latlng) => {
 			return L.circleMarker(latlng, {
 				radius: 10,
 				fillColor: "#640125",
@@ -285,8 +280,8 @@
 			});
 		}
 
-		function geo_k(feature, layer) {
-			var popup;
+		let geo_k = (feature, layer) => {
+			let popup;
 			if (feature.properties && feature.properties.date) {
 				popup = feature.properties.date + " " + feature.properties.timeline;
 			}
@@ -306,7 +301,6 @@
 			layer.bindPopup(popup);
 		}
 	</script>
-	<title>新潟県中越地震の震度マップ</title>
 
 </head>
 
