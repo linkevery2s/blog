@@ -1,0 +1,7709 @@
+const shindomap1 = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:02:46",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.877,
+          38.913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:04:08",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.885,
+          38.997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:09:19",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.857,
+          38.993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:15:43",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.867,
+          38.892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:16:56",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.867,
+          38.995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:25:56",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.93,
+          39.148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:27:31",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.85,
+          39.053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:28:49",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.78,
+          38.912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:36:54",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.853,
+          39.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:37:49",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.777,
+          38.862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:40:49",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.687,
+          38.868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:41:25",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.923,
+          39.145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:42:50",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.683,
+          38.81
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:43:06",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.847,
+          39.108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:44:13",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.827,
+          38.995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:44:40",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.913,
+          39.09
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:45:15",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.832,
+          38.878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:46:54",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.742,
+          38.797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:48:19",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.84,
+          39.035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:49:03",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.905,
+          39.093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:52:28",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.693,
+          38.872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:54:44",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.925,
+          39.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:03:15",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.915,
+          39.132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:05:28",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.785,
+          39.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:08:12",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.803,
+          38.837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:11:02",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.867,
+          38.913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:20:44",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.862,
+          39.097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:22:18",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.93,
+          39.137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:23:02",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.858,
+          38.907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:25:11",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.733,
+          38.857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:35:03",
+        "place": "岩手県内陸南部",
+        "depth": "13 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.903,
+          39.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:36:04",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.838,
+          39.058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:45:15",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.953,
+          39.078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "10:49:42",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.875,
+          39.088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:05:39",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.772,
+          38.788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:08:47",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.695,
+          38.878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:14:23",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.872,
+          39.048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:15:06",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.982,
+          39.095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:16:37",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.832,
+          38.872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:21:15",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.937,
+          39.095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:22:44",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.907,
+          39.137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:25:18",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.86,
+          39.065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:32:36",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.842,
+          39.002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:36:28",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.822,
+          38.987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:49:02",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.928,
+          39.145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:49:41",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.84,
+          38.965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "11:51:23",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.94,
+          39.067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:04:46",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.865,
+          38.998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:16:27",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.907,
+          39.088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:18:42",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.823,
+          39.067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:42:28",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.913,
+          39.118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:43:11",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.948,
+          39.083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:48:17",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.94,
+          39.12
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:50:22",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.825,
+          39.088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:56:26",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.935,
+          39.103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "12:59:12",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.69,
+          38.828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:04:32",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.868,
+          39.113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:09:31",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.843,
+          39.092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:17:33",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.825,
+          39.07
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:18:39",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.85,
+          39.075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:23:43",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.903,
+          39.077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:34:33",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.807,
+          38.807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:35:52",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.67,
+          38.897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:36:29",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.758,
+          38.885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:39:51",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.878,
+          39.098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:46:10",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9,
+          39.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:56:43",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.92,
+          39.01
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "13:57:43",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.707,
+          38.827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "14:06:52",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.798,
+          38.933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "14:12:51",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.935,
+          39.112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "14:19:15",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.698,
+          38.822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "14:27:12",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.93,
+          39.097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "14:33:09",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.882,
+          39.123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "14:45:47",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.727,
+          38.857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "14:46:13",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.673,
+          38.883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "14:47:35",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.728,
+          38.79
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:09:33",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.78,
+          38.822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:14:58",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.798,
+          38.822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:17:38",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.898,
+          38.965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:31:44",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.932,
+          39.118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:33:03",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.932,
+          39.122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:37:19",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.885,
+          39.122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:40:21",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.783,
+          38.782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:46:39",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.808,
+          38.93
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:48:08",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.922,
+          39.15
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:53:02",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.89,
+          39.127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:53:32",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.877,
+          39.022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "15:57:06",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.887,
+          39.085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "16:00:44",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.905,
+          39.047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "16:08:34",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.777,
+          38.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "16:10:30",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.903,
+          39.085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "16:22:26",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.867,
+          38.905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "16:27:27",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.945,
+          39.08
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "16:31:58",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.938,
+          39.117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "17:03:36",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.772,
+          38.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "17:11:20",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.95,
+          39.162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "17:48:37",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.86,
+          39.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "17:56:55",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.85,
+          39.048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "17:58:25",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.81,
+          38.977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:00:06",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.79,
+          38.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:13:43",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.852,
+          38.972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:27:21",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.93,
+          39.078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:31:47",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.85,
+          38.872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:33:46",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.817,
+          38.797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:37:53",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.792,
+          39.003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:38:58",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.827,
+          38.988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:40:08",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.828,
+          38.995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:52:32",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.863,
+          39.037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "18:56:30",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "1.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.67,
+          38.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "19:05:27",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.888,
+          38.935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "19:06:17",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.668,
+          38.798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "19:22:52",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.803,
+          38.838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "19:37:27",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "1.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.665,
+          38.802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "19:39:48",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.675,
+          38.807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "19:44:22",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.023,
+          39.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "20:35:58",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.87,
+          39.097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "21:54:15",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.928,
+          39.095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "21:56:15",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.795,
+          38.797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "21:59:47",
+        "place": "岩手県内陸南部",
+        "depth": "3 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.833,
+          38.99
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "22:08:35",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.75,
+          38.893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "22:10:26",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.767,
+          38.883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "22:18:30",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.942,
+          39.082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "22:35:10",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.828,
+          39.003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "22:43:34",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.875,
+          38.932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "23:13:33",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.873,
+          39.045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "23:34:28",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.973,
+          39.12
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "23:44:19",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.933,
+          39.013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "23:49:18",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.875,
+          39.003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "23:55:22",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.958,
+          39.087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "0:26:03",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.895,
+          38.953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "0:51:59",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.972,
+          39.077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "0:54:40",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.757,
+          38.833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "1:27:56",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.865,
+          39.16
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "1:36:00",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.858,
+          38.965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "1:37:08",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.847,
+          39.067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "2:20:25",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.763,
+          38.883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "2:40:14",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.805,
+          39.048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "2:43:09",
+        "place": "宮城県北部",
+        "depth": "9 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.857,
+          38.882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "2:55:12",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.702,
+          38.887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "2:56:10",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.977,
+          39.09
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "3:04:36",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.783,
+          38.773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "3:08:20",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.773,
+          38.787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "3:36:19",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.87,
+          39.16
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "4:04:01",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.913,
+          39.057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "4:09:11",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.807,
+          38.905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "4:21:05",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.938,
+          39.087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "4:34:51",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.785,
+          38.788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "6:07:37",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.965,
+          39.07
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "6:15:39",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "1.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.69,
+          38.823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "6:23:37",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.743,
+          38.893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "6:34:49",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.797,
+          38.785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "6:48:44",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.927,
+          39.093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "6:52:21",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.937,
+          39.112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "6:56:55",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.958,
+          39.163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "7:04:59",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.858,
+          39.028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "7:06:37",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.855,
+          38.885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "7:22:40",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.877,
+          39.018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "7:23:36",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.825,
+          39.185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "8:26:20",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.85,
+          39.16
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "8:27:56",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.773,
+          38.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "8:34:20",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "0.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.668,
+          38.798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "9:00:16",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.843,
+          39.065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "9:34:28",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "1.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.678,
+          38.797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "9:50:25",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.88,
+          39.052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "9:53:39",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "1.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.68,
+          38.795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "10:06:37",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.868,
+          39.037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "10:26:07",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.908,
+          39.125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "10:35:53",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.903,
+          39.13
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "10:56:37",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.93,
+          39.143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "11:21:59",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.972,
+          39.075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "12:09:42",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.86,
+          38.925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "12:16:26",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.947,
+          39.072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "14:00:59",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.855,
+          39.038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "14:26:16",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.795,
+          38.893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "14:31:29",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.792,
+          39.005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "15:56:38",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.887,
+          39.025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "17:32:41",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.802,
+          38.793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "19:11:00",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.907,
+          39.135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "22:30:47",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.962,
+          39.085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "22:40:18",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.868,
+          38.917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "23:16:22",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.782,
+          38.785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "23:41:44",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "1.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.735,
+          38.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/15",
+        "timeline": "23:57:34",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.953,
+          39.158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "1:11:17",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.772,
+          38.758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "3:07:40",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.952,
+          39.082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "3:25:35",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.87,
+          39.052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "4:02:36",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.843,
+          39.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "4:26:27",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.917,
+          39.117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "4:37:28",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.792,
+          38.787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "6:06:34",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.852,
+          39.007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "7:01:46",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.853,
+          38.885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "7:04:41",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.948,
+          39.103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "9:53:26",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.928,
+          38.998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "11:46:19",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.86,
+          39.058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "12:00:33",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.852,
+          39.062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "13:37:06",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.927,
+          39.098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "14:30:28",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.882,
+          39.047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "14:36:43",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.798,
+          38.802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "14:38:11",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.938,
+          39.135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "15:57:28",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.898,
+          38.98
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "16:09:51",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.848,
+          39.048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "16:29:22",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.938,
+          39.177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "17:50:16",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.833,
+          39.088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "18:08:45",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.933,
+          39.103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "18:26:09",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.847,
+          39.042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "18:31:47",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.947,
+          39.092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "19:55:35",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.978,
+          39.102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "20:06:37",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.93,
+          39.128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "20:13:50",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.897,
+          38.963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/16",
+        "timeline": "23:21:05",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.988,
+          39.202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "2:59:47",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.853,
+          38.998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "3:11:11",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.873,
+          38.915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "3:48:52",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.835,
+          38.997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "4:53:00",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.878,
+          38.937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "5:08:22",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.93,
+          39.137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "6:42:22",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.797,
+          38.785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "6:47:44",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.767,
+          38.768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "7:13:08",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8,
+          38.883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "8:31:54",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.748,
+          38.878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "9:10:41",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.95,
+          39.098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "10:45:36",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.928,
+          39.097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "13:44:53",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.782,
+          38.79
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "15:01:59",
+        "place": "岩手県内陸南部",
+        "depth": "4 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.85,
+          38.98
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "15:29:51",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.908,
+          39.025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "19:03:55",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.802,
+          39.152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "20:01:00",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.958,
+          39.063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "20:09:13",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.912,
+          38.942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/17",
+        "timeline": "22:00:15",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.842,
+          39.07
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "0:35:32",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.927,
+          39.11
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "0:53:21",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.962,
+          39.087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "3:10:12",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.945,
+          39.122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "4:12:46",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.798,
+          38.835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "4:50:20",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.885,
+          39.032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "6:13:28",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.828,
+          39.003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "8:05:56",
+        "place": "宮城県北部",
+        "depth": "9 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.868,
+          38.885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "17:05:19",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.86,
+          39.038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "21:53:41",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.745,
+          38.86
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "21:57:44",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.742,
+          38.757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/18",
+        "timeline": "23:55:44",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.888,
+          39.038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/19",
+        "timeline": "3:38:25",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.945,
+          39.205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/19",
+        "timeline": "5:19:37",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.903,
+          39.045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/19",
+        "timeline": "5:51:31",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.788,
+          38.802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/19",
+        "timeline": "10:51:31",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.898,
+          39.047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/19",
+        "timeline": "13:27:35",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.972,
+          39.198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/19",
+        "timeline": "18:15:29",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.825,
+          38.867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/19",
+        "timeline": "19:28:11",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.893,
+          39.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/19",
+        "timeline": "20:20:50",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.743,
+          38.86
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "11:10:34",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.837,
+          38.908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "12:01:38",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.833,
+          38.807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "15:47:45",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.782,
+          38.787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "18:07:28",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.745,
+          38.863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "19:47:09",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.762,
+          38.778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "19:53:14",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.762,
+          38.78
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "20:38:21",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.947,
+          39.105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "21:40:00",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9,
+          39.088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "21:50:04",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.777,
+          38.797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "21:51:18",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.78,
+          38.798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "21:56:24",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.882,
+          38.932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "22:06:53",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.778,
+          38.842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/20",
+        "timeline": "22:33:58",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.775,
+          38.84
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/21",
+        "timeline": "2:54:07",
+        "place": "岩手県沿岸北部",
+        "depth": "88 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.93,
+          39.49
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/21",
+        "timeline": "12:19:39",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.795,
+          38.865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/21",
+        "timeline": "16:00:40",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.85,
+          39.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/21",
+        "timeline": "20:19:33",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.862,
+          39.047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/22",
+        "timeline": "10:47:37",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.863,
+          38.872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/22",
+        "timeline": "12:45:43",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.727,
+          38.88
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/22",
+        "timeline": "12:58:17",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.93,
+          39.085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/22",
+        "timeline": "13:09:54",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.88,
+          38.93
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/22",
+        "timeline": "14:16:20",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.833,
+          38.805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/23",
+        "timeline": "3:43:31",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.903,
+          39.082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/23",
+        "timeline": "4:42:52",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.887,
+          38.975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/23",
+        "timeline": "21:14:46",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.798,
+          38.815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/23",
+        "timeline": "22:05:57",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.895,
+          38.948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "0:21:16",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.737,
+          38.758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "2:18:56",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.895,
+          38.943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "4:24:09",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.875,
+          39.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "5:13:58",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.86,
+          38.895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "7:31:53",
+        "place": "岩手県内陸南部",
+        "depth": "13 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.033,
+          39.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "9:31:19",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.848,
+          39.065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "11:27:53",
+        "place": "岩手県沖",
+        "depth": "40 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.262,
+          40.372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "16:21:35",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.74,
+          38.855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/24",
+        "timeline": "16:24:46",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.785,
+          38.893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/25",
+        "timeline": "1:10:34",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.873,
+          38.902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/25",
+        "timeline": "3:48:40",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.018,
+          39.155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/25",
+        "timeline": "9:47:12",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.822,
+          39.055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/25",
+        "timeline": "10:05:48",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8,
+          38.792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/25",
+        "timeline": "12:22:24",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.75,
+          38.742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/26",
+        "timeline": "2:11:48",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.853,
+          38.872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/26",
+        "timeline": "16:53:08",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.793,
+          38.808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/26",
+        "timeline": "22:56:17",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.798,
+          38.815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/26",
+        "timeline": "23:57:49",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.785,
+          38.752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/27",
+        "timeline": "1:06:33",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.772,
+          38.757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/27",
+        "timeline": "4:17:39",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "1.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.667,
+          38.79
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/27",
+        "timeline": "5:17:55",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.987,
+          39.203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/27",
+        "timeline": "7:51:31",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.698,
+          38.86
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/27",
+        "timeline": "12:05:58",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.775,
+          38.763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/27",
+        "timeline": "15:15:40",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.78,
+          38.752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/27",
+        "timeline": "20:41:50",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.862,
+          38.988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/28",
+        "timeline": "3:14:47",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.752,
+          38.752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/28",
+        "timeline": "11:13:22",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.767,
+          38.745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/28",
+        "timeline": "15:39:39",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.768,
+          38.753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/28",
+        "timeline": "18:45:30",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.765,
+          38.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/28",
+        "timeline": "18:46:33",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.763,
+          38.773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/28",
+        "timeline": "22:11:58",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9,
+          38.923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/29",
+        "timeline": "9:35:27",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.907,
+          38.968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/29",
+        "timeline": "10:04:40",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.77,
+          38.755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/29",
+        "timeline": "15:56:05",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.73,
+          38.887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/29",
+        "timeline": "21:50:14",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.858,
+          38.992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/30",
+        "timeline": "1:15:02",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.777,
+          38.755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/30",
+        "timeline": "9:47:21",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.865,
+          39.052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/01",
+        "timeline": "1:21:10",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.832,
+          38.855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/01",
+        "timeline": "7:14:17",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.862,
+          39.09
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/01",
+        "timeline": "10:59:22",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.725,
+          38.78
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/01",
+        "timeline": "19:15:57",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.772,
+          38.755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/01",
+        "timeline": "22:38:08",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.777,
+          38.792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/02",
+        "timeline": "8:19:16",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "1.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.672,
+          38.793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/02",
+        "timeline": "11:36:58",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.972,
+          39.077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/02",
+        "timeline": "21:45:37",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.772,
+          38.755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/03",
+        "timeline": "0:50:24",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.95,
+          39.098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/03",
+        "timeline": "0:56:06",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.787,
+          38.792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/03",
+        "timeline": "21:18:28",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.797,
+          38.812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/03",
+        "timeline": "21:30:24",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.86,
+          39.04
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/04",
+        "timeline": "4:38:40",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.765,
+          38.892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/04",
+        "timeline": "15:21:52",
+        "place": "岩手県沖",
+        "depth": "50 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.08,
+          40.355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/04",
+        "timeline": "19:16:05",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.808,
+          39.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/04",
+        "timeline": "21:29:29",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.842,
+          39.172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/05",
+        "timeline": "14:18:38",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.932,
+          39.123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/05",
+        "timeline": "23:24:34",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.862,
+          39.062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/06",
+        "timeline": "11:54:08",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.885,
+          39.035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/07",
+        "timeline": "13:00:46",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.847,
+          38.882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/07",
+        "timeline": "16:56:23",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.908,
+          38.947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/08",
+        "timeline": "8:06:19",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.958,
+          39.058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/11",
+        "timeline": "21:16:51",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.853,
+          39.062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/12",
+        "timeline": "5:54:51",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.928,
+          39.097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/13",
+        "timeline": "15:53:23",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.823,
+          38.842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/14",
+        "timeline": "4:24:08",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.795,
+          39.013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/14",
+        "timeline": "19:09:07",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.798,
+          38.807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/14",
+        "timeline": "21:18:41",
+        "place": "岩手県沿岸北部",
+        "depth": "69 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.962,
+          39.792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/15",
+        "timeline": "2:34:38",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.86,
+          39.103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/15",
+        "timeline": "17:42:03",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.94,
+          39.093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/17",
+        "timeline": "1:08:14",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.852,
+          39.108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/18",
+        "timeline": "7:53:40",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.933,
+          39.085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/19",
+        "timeline": "10:24:46",
+        "place": "宮城県北部",
+        "depth": "8 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.88,
+          38.918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/21",
+        "timeline": "12:38:31",
+        "place": "宮城県沖",
+        "depth": "86 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.863,
+          38.633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/23",
+        "timeline": "14:45:19",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.902,
+          38.938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/24",
+        "timeline": "12:14:03",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.865,
+          39.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/24",
+        "timeline": "23:44:47",
+        "place": "宮城県中部",
+        "depth": "11 km",
+        "magnitude": "1.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.197,
+          38.412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/27",
+        "timeline": "5:28:43",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.932,
+          39.158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/27",
+        "timeline": "13:42:27",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.74,
+          38.902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/27",
+        "timeline": "15:32:57",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.877,
+          38.925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/27",
+        "timeline": "17:56:39",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.827,
+          38.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/28",
+        "timeline": "11:06:02",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.935,
+          39.008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/29",
+        "timeline": "23:09:37",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.993,
+          39.202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/30",
+        "timeline": "8:15:53",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.865,
+          39.052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/31",
+        "timeline": "14:31:53",
+        "place": "岩手県沖",
+        "depth": "31 km",
+        "magnitude": "3.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.382,
+          39.167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/31",
+        "timeline": "18:28:58",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.73,
+          38.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/01",
+        "timeline": "2:55:33",
+        "place": "岩手県内陸南部",
+        "depth": "12 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.858,
+          39.103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/02",
+        "timeline": "16:31:29",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.79,
+          38.772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/02",
+        "timeline": "23:31:18",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.812,
+          38.807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/06",
+        "timeline": "5:24:23",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.785,
+          38.782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/06",
+        "timeline": "17:23:10",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.773,
+          38.752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/08",
+        "timeline": "9:00:58",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.943,
+          39.107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/17",
+        "timeline": "11:14:36",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.82,
+          38.835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/19",
+        "timeline": "9:38:48",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9,
+          38.945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/20",
+        "timeline": "5:05:01",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.785,
+          38.873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/20",
+        "timeline": "11:42:43",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.83,
+          39.177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/20",
+        "timeline": "14:28:03",
+        "place": "宮城県沖",
+        "depth": "30 km",
+        "magnitude": "4.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.527,
+          38.945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/20",
+        "timeline": "17:04:33",
+        "place": "宮城県北部",
+        "depth": "15 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.982,
+          38.648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/22",
+        "timeline": "14:45:16",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.932,
+          39.13
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/24",
+        "timeline": "16:10:57",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.942,
+          39.107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/24",
+        "timeline": "21:10:56",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.918,
+          39.127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/25",
+        "timeline": "0:09:23",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.848,
+          38.887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/25",
+        "timeline": "5:00:21",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.92,
+          39.065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/25",
+        "timeline": "13:15:09",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.938,
+          39.11
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/25",
+        "timeline": "19:35:00",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.928,
+          39.145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/27",
+        "timeline": "7:45:28",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.84,
+          39.173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/28",
+        "timeline": "20:58:53",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.897,
+          39.04
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/08/30",
+        "timeline": "3:11:46",
+        "place": "岩手県内陸南部",
+        "depth": "5 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.81,
+          38.982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/07",
+        "timeline": "7:55:41",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.775,
+          38.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/07",
+        "timeline": "8:21:48",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.775,
+          38.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/07",
+        "timeline": "8:58:55",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.862,
+          39.062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/07",
+        "timeline": "23:07:20",
+        "place": "岩手県内陸南部",
+        "depth": "13 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.838,
+          39.37
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/10",
+        "timeline": "5:01:22",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.917,
+          38.96
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/12",
+        "timeline": "4:22:55",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.818,
+          38.853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/13",
+        "timeline": "3:18:06",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.858,
+          39.115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/14",
+        "timeline": "3:48:31",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "1.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.757,
+          38.643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/14",
+        "timeline": "19:10:21",
+        "place": "岩手県内陸南部",
+        "depth": "6 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.845,
+          39.053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/15",
+        "timeline": "16:51:13",
+        "place": "宮城県北部",
+        "depth": "6 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.885,
+          38.928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/15",
+        "timeline": "23:04:32",
+        "place": "岩手県内陸北部",
+        "depth": "7 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.162,
+          40.13
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/17",
+        "timeline": "1:08:16",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.937,
+          39.095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/18",
+        "timeline": "19:20:17",
+        "place": "宮城県沖",
+        "depth": "54 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.363,
+          38.933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/21",
+        "timeline": "19:47:04",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.778,
+          38.798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/23",
+        "timeline": "19:29:39",
+        "place": "岩手県内陸南部",
+        "depth": "10 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.892,
+          39.133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/24",
+        "timeline": "3:05:35",
+        "place": "宮城県北部",
+        "depth": "73 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.66,
+          38.885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/26",
+        "timeline": "15:50:43",
+        "place": "宮城県北部",
+        "depth": "5 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.825,
+          38.845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/09/28",
+        "timeline": "16:45:09",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.777,
+          38.793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/01",
+        "timeline": "22:22:47",
+        "place": "宮城県中部",
+        "depth": "12 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.19,
+          38.477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/06",
+        "timeline": "7:23:05",
+        "place": "宮城県中部",
+        "depth": "6 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.655,
+          38.338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/06",
+        "timeline": "10:32:48",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.812,
+          38.81
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/07",
+        "timeline": "15:22:33",
+        "place": "岩手県内陸南部",
+        "depth": "119 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.322,
+          39.508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/08",
+        "timeline": "18:07:22",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.92,
+          39.067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/08",
+        "timeline": "18:07:22",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.92,
+          39.067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/09",
+        "timeline": "9:11:35",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.832,
+          39.177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/10",
+        "timeline": "0:28:35",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.907,
+          39.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/10",
+        "timeline": "19:17:15",
+        "place": "岩手県内陸南部",
+        "depth": "9 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.913,
+          39.188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/12",
+        "timeline": "19:22:47",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.843,
+          39.055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/13",
+        "timeline": "22:57:08",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.733,
+          38.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/14",
+        "timeline": "16:49:15",
+        "place": "宮城県沖",
+        "depth": "29 km",
+        "magnitude": "4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.155,
+          38.677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/15",
+        "timeline": "10:06:17",
+        "place": "岩手県沖",
+        "depth": "37 km",
+        "magnitude": "3.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.328,
+          40.322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/15",
+        "timeline": "19:51:12",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.998,
+          39.168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/16",
+        "timeline": "20:35:09",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.977,
+          39.102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/18",
+        "timeline": "19:38:26",
+        "place": "宮城県沖",
+        "depth": "81 km",
+        "magnitude": "3.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.298,
+          37.915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/22",
+        "timeline": "23:36:49",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.895,
+          39.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/23",
+        "timeline": "2:32:12",
+        "place": "岩手県沖",
+        "depth": "30 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.057,
+          39.613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/26",
+        "timeline": "0:34:48",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.788,
+          38.765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/26",
+        "timeline": "6:35:36",
+        "place": "宮城県沖",
+        "depth": "47 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.902,
+          38.618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/28",
+        "timeline": "2:41:28",
+        "place": "岩手県内陸南部",
+        "depth": "7 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.977,
+          39.093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/28",
+        "timeline": "7:53:14",
+        "place": "岩手県内陸南部",
+        "depth": "11 km",
+        "magnitude": "3.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.858,
+          39.107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/30",
+        "timeline": "10:51:22",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.823,
+          38.863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/10/31",
+        "timeline": "23:06:07",
+        "place": "宮城県沖",
+        "depth": "74 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.59,
+          38.815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/11/04",
+        "timeline": "5:30:48",
+        "place": "岩手県内陸南部",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.872,
+          39.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/11/10",
+        "timeline": "2:24:18",
+        "place": "宮城県北部",
+        "depth": "2 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.783,
+          38.783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/11/10",
+        "timeline": "16:23:34",
+        "place": "宮城県中部",
+        "depth": "14 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.98,
+          38.388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/11/11",
+        "timeline": "7:37:17",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.822,
+          38.798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/11/13",
+        "timeline": "18:44:22",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.815,
+          38.823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/11/14",
+        "timeline": "16:10:54",
+        "place": "宮城県北部",
+        "depth": "4 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.802,
+          38.818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/11/14",
+        "timeline": "20:30:46",
+        "place": "宮城県北部",
+        "depth": "3 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.782,
+          38.777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/11/16",
+        "timeline": "14:11:30",
+        "place": "宮城県沖",
+        "depth": "53 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.303,
+          38.977
+        ]
+      }
+    }
+  ]
+};

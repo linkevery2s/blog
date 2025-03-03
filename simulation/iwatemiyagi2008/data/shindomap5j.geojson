@@ -1,0 +1,23 @@
+const shindomap5j = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/06/14",
+        "timeline": "9:20:12",
+        "place": "宮城県北部",
+        "depth": "7 km",
+        "magnitude": "5.7",
+        "shindo": "震度５弱"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.672,
+          38.885
+        ]
+      }
+    }
+  ]
+};

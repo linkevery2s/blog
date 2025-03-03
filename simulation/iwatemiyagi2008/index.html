@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="ja">
-<title>新潟県中越地震の震度マップの可視化</title>
+<title>岩手・宮城内陸地震の震度マップの可視化</title>
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -15,10 +15,8 @@
 	<script src='./data/shindomap3.geojson'></script>
 	<script src='./data/shindomap4.geojson'></script>
 	<script src='./data/shindomap5j.geojson'></script>
-	<script src='./data/shindomap5k.geojson'></script>
 	<script src='./data/shindomap6j.geojson'></script>
 	<script src='./data/shindomap6k.geojson'></script>
-	<script src='./data/shindomap7.geojson'></script>
 
 	<style>
 		html,
@@ -41,9 +39,10 @@
 	<script type="module">
 
 		onload = async() => {
+
 			/* 初期設定 */
 			const map = L.map('map_canvas', {
-				center: [37.2943, 138.8927],
+				center: [38.9790, 140.8509],
 				zoom: 10,
 				minZoom: 8,
 				maxZoom: 12
@@ -91,13 +90,6 @@
 			});
 			map.addLayer(shindo5j);
 
-			let shindo5k = L.geoJson(shindomap5k, {
-				style: sty,
-				onEachFeature: geo_k,
-				pointToLayer: iro5k
-			});
-			map.addLayer(shindo5k);
-
 			let shindo6j = L.geoJson(shindomap6j, {
 				style: sty,
 				onEachFeature: geo_k,
@@ -112,23 +104,14 @@
 			});
 			map.addLayer(shindo6k);
 
-			let shindo7 = L.geoJson(shindomap7, {
-				style: sty,
-				onEachFeature: geo_k,
-				pointToLayer: iro7
-			});
-			map.addLayer(shindo7);
-
-			let shindo_all = L.layerGroup([shindo7, shindo6k, shindo6j, shindo5k, shindo5j, shindo4, shindo3, shindo2, shindo1]);
+			let shindo_all = L.layerGroup([shindo6k, shindo6j, shindo5j, shindo4, shindo3, shindo2, shindo1]);
 			map.addLayer(shindo_all);
 
 			/* レイヤー選択メニュー追加*/
 			const baseMaps = {
 				"全表示": shindo_all,
-				"震度７": shindo7,
 				"震度６強": shindo6k,
 				"震度６弱": shindo6j,
-				"震度５強": shindo5k,
 				"震度５弱": shindo5j,
 				"震度４": shindo4,
 				"震度３": shindo3,
@@ -145,7 +128,7 @@
 			legend.onAdd = function(map) {
 
 				let div = L.DomUtil.create('div', 'info_legend'),
-				grades = ["震度７", "震度６強", "震度６弱", "震度５強", "震度５弱", "震度４", "震度３", "震度２", "震度１"],
+				grades = ["震度６強", "震度６弱", "震度５弱", "震度４", "震度３", "震度２", "震度１"],
 				labels = ['震度階級'],
 				from, to;
 
@@ -166,10 +149,8 @@
 		}
 
 		let getColor = (d) => {
-			return d == "震度７" ? '#640125' :
-			d == "震度６強" ? '#e2041b' :
+			return d == "震度６強" ? '#e2041b' :
 			d == "震度６弱" ? '#ec6d51' :
-			d == "震度５強" ? '#d66a35' :
 			d == "震度５弱" ? '#db8449' :
 			d == "震度４" ? '#ffea00' :
 			d == "震度３" ? '#c3d825' :

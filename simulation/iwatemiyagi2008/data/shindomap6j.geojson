@@ -1,0 +1,23 @@
+const shindomap6j = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2008/07/24",
+        "timeline": "0:26:20",
+        "place": "岩手県沿岸北部",
+        "depth": "108 km",
+        "magnitude": "6.8",
+        "shindo": "震度６弱"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.635,
+          39.732
+        ]
+      }
+    }
+  ]
+};
