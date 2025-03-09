@@ -338,9 +338,9 @@ const data = [
   },
   {
     "url": "https://dpnote.netlify.app/kumamotoearthquake/",
-    "title": "熊本地震の震度マップ",
+    "title": "熊本地震の震度マップと活断層図の重ね合わせ",
     "date": "2021-08-24T00:00:00Z",
-    "body": "熊本地震の震度マップ 熊本地震の震度マップを可視化しました。 全画面で見る"
+    "body": "熊本地震の震度マップと活断層図の重ね合わせ 熊本地震の震度マップと活断層図を重ね合わせて可視化しました。 全画面で見る"
   },
   {
     "url": "https://dpnote.netlify.app/net119/",
