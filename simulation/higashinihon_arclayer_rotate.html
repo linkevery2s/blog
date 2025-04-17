@@ -28,9 +28,13 @@
 			integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
 			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-			<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 		<script src="https://unpkg.com/deck.gl@^8.9.0/dist.min.js"></script>
+
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+
 		<style>
 			html,
 			body {
@@ -68,33 +72,34 @@
 				z-index: 15;
 			}
 
-			.side_menu, .side_menu2 {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 15;
-        }
+			.side_menu,
+			.side_menu2 {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				z-index: 15;
+			}
 
-        .button {
-            cursor: pointer;
-            color: #000000;
-            background: rgba(255, 255, 255, .8);
-            border: 1px solid #000000;
-            padding: .5em;
-            border-radius: .5em;
-            border: 1px solid #000000;
-        }
+			.button {
+				cursor: pointer;
+				color: #000000;
+				background: rgba(255, 255, 255, .8);
+				border: 1px solid #000000;
+				padding: .5em;
+				border-radius: .5em;
+				border: 1px solid #000000;
+			}
 
-        .button2 {
-            cursor: pointer;
-            color: #000000;
-            background: rgba(255, 255, 255, .8);
-            border: 1px solid #000000;
-            padding: .5em .6em .5em .6em;
-            display: none;
-            border-radius: .5em;
-            border: 1px solid #000000;
-        }
+			.button2 {
+				cursor: pointer;
+				color: #000000;
+				background: rgba(255, 255, 255, .8);
+				border: 1px solid #000000;
+				padding: .5em .6em .5em .6em;
+				display: none;
+				border-radius: .5em;
+				border: 1px solid #000000;
+			}
 
 			.deck-tooltip {
 				font-family: Helvetica, Arial, sans-serif;
@@ -111,13 +116,13 @@
 
 <body>
 
-    <span class="side_menu">
-        <div class="button" id="rotate"><i class="fa-solid fa-rotate"></i></div>
-    </span>
+	<span class="side_menu">
+		<div class="button" id="rotate"><i class="fa-solid fa-rotate"></i></div>
+	</span>
 
-    <span class="side_menu2">
-        <div class="button2" id="stop"><i class="fa-solid fa-stop"></i></div>
-    </span>
+	<span class="side_menu2">
+		<div class="button2" id="stop"><i class="fa-solid fa-stop"></i></div>
+	</span>
 
 	<!--<div class="attribution">
 		© <a href="https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer" target="_blank"
@@ -137,13 +142,15 @@
 			LinearInterpolator
 		} = deck;
 
+		const data = d3.csv('./data/higashinihontsunami.csv');
+
 		const layer = new ArcLayer({
 			id: 'arc-layer',
-			data: "./data/higashinihontsunami.json",
+			data,
 			pickable: true,
 			getWidth: 12,
 			getSourcePosition: p => [142.85, 38.1],
-			getTargetPosition: p => [Number(p.lon), Number(p.lat)],
+			getTargetPosition: p => [Number(p.lng), Number(p.lat)],
 			getSourceColor: [254, 242, 99],
 			getTargetColor: [255, 255, 255],
 			getWidth: 0.8,
@@ -195,23 +202,23 @@
 		};
 
 		let stop = () => {
-            initialViewState = {
-                ...initialViewState,
-                bearing: initialViewState.bearing + 0.01,
-                transitionDuration: 0,
-                transitionInterpolator: new LinearInterpolator(['bearing']),
-                onTransitionEnd: stop
-            };
-            deckgl.setProps({ initialViewState });
+			initialViewState = {
+				...initialViewState,
+				bearing: initialViewState.bearing + 0.01,
+				transitionDuration: 0,
+				transitionInterpolator: new LinearInterpolator(['bearing']),
+				onTransitionEnd: stop
+			};
+			deckgl.setProps({ initialViewState });
 
-        };
+		};
 
 		const tooltip = (d) => {
 
 			if (!d || !d.object) return null;
 			let obj = d.object;
 
-			const html_tr = ["<table>", obj.point + "<br>波高：" + obj.height / 100 + "m", "</table>"].join("\n");
+			const html_tr = ["<table>", obj.name + "<br>波高：" + obj.value / 100 + "m", "</table>"].join("\n");
 
 			return {
 				html: html_tr,
@@ -241,19 +248,19 @@
 			getTooltip: tooltip,
 		});
 
-        const button = document.querySelector('.button');
-        const button2 = document.querySelector('.button2');
-        button.addEventListener('click', () => {
-            rotateCamera();
-            $("#rotate").hide();
-            $("#stop").show();
-        });
+		const button = document.querySelector('.button');
+		const button2 = document.querySelector('.button2');
+		button.addEventListener('click', () => {
+			rotateCamera();
+			$("#rotate").hide();
+			$("#stop").show();
+		});
 
-        button2.addEventListener('click', () => {
-            stop();
-            $("#stop").hide();
-            $("#rotate").show();
-        });
+		button2.addEventListener('click', () => {
+			stop();
+			$("#stop").hide();
+			$("#rotate").show();
+		});
 
 	</script>
 
