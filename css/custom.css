@@ -418,6 +418,9 @@ ul{
   padding: 15px;
   background: #fff0c6;
   border-radius: 30px;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-break: strict;
 }
 
 .balloon:before {  
