@@ -58,6 +58,8 @@
       font-size: 1.2em;
       font-weight: bolder;
       height: 45px;
+      padding-left: .2em;
+      border-radius: .3em;
     }
 
     input::-webkit-input-placeholder {
@@ -77,6 +79,7 @@
 
     #result {
       margin: 1em;
+      border-bottom: 1px dotted #000;
     }
 
     .item_title {
@@ -87,7 +90,7 @@
 
     .item_ex {
       background: #fff;
-      margin: 0.5em 2em 1em 1em;
+      margin: 0.5em 1em 1em 1em;
       padding: 0.5em;
       font-size: smaller;
       border-radius: .5em;
@@ -110,6 +113,21 @@
       border-top: 1px dotted #000;
       padding-top: 1em;
     }
+
+
+    #page_list li{
+      list-style: none;
+      display: inline-block;
+      border: 2px solid #007bbb;
+      color: #007bbb;
+      background-color: #ffffff;
+      padding: .5em;
+      border-radius: .5em;
+      margin-right: .5em;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 
@@ -128,9 +146,14 @@
     <div class="grid-inverse wrap content">
       <article class="post_content">
         <h1 class="post_title">サービス内検索</h1>
-        <p>キーワードを入力すると投稿記事を検索することができます。（検索例.熊本地震、東海豪雨など）</p>
-        <input type="text" name="text1" id="text" size="15" autocomplete="off" autofocus placeholder="キーワード検索" /> <span id="exp">検 索</span><br>
-        <span id="inputWord"></span> <span id="resultCount"></span>
+        <p>災害名などのキーワードを入力すると投稿記事を検索することができます。</p>
+
+        <input type="text" name="text1" id="text" size="15" autocomplete="off" autofocus placeholder="キーワード検索" />  <span id="exp" class="search">検 索</span>  <br><br>
+
+        <ul id="page_list"><div id="koumoku"></div></ul>
+    
+        <p><span id="resultCount"></span></p>
+
         <div id="result"></div>
 
       </article>
@@ -191,65 +214,242 @@
 
       
 
-      
-
-      
-
     </div>
   </main>
 
   <footer class="footer">
     <div class="foot">
-      <a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank"><img src="https://dpnote.netlify.app/images/license.png" alt="CC BY 4.0 license"></a>
-      <p>このブログの記事は、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" class="footer_link">CC BY 4.0 <i class="fas fa-external-link-alt"></i></a> のもと公開しています。</p>
-      <center>
-
-        <a href="https://twitter.com/hitoshi2sl" target="_blank">
-          <div class="circle1"><i class="fab fa-twitter"></i></div>
-        </a><a href="https://www.instagram.com/hitoshi17l/" target="_blank">
-          <div class="circle2"><i class="fab fa-instagram"></i></div>
-        </a><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-WMoBJRTdA1bmN_SmQ-bsNGeLs1l737d3c9BUNuErjH-KBw/viewform" target="_blank">
-          <div class="circle4"><i class="far fa-envelope"></i></div>
-        </a><a href="https://dpnote.netlify.app/index.xml" target="_blank">
-          <div class="circle3"><i class="fas fa-rss-square"></i></div>
-        </a>
-
-        <br>
-        <img src="../images/qr_dpnote.png">
-        <br>
-        <i class="fa fa-copyright" aria-hidden="true"></i> <a href="https://hitoshi2s.netlify.app/index.html" target="_blank" class="footer_link">仁志</a>. By <a href="https://gohugo.io/" target="_blank" class="footer_link">hugo</a>
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank"><img src="https://dpnote.netlify.app/images/license.png" alt="CC BY 4.0 license"></a>
+    <p>投稿した記事は、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" class="footer_link">CC BY 4.0 <i class="fas fa-external-link-alt"></i></a> のもと公開しています。</p>
+    <center>
+  
+      <a href="https://github.com/linkevery2s" target="_blank"><div class="circle2"><i class="fab fa-github"></i></div></a><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-WMoBJRTdA1bmN_SmQ-bsNGeLs1l737d3c9BUNuErjH-KBw/viewform" target="_blank"><div class="circle4"><i class="far fa-envelope"></i></div></a><a href="https://dpnote.netlify.app/index.xml" target="_blank"><div class="circle3"><i class="fas fa-rss-square"></i></div></a>
+  
+      <br>
+      <img src="https://dpnote.netlify.app/images/qr_dpnote.png">
+      <br>
+  
+      <div class="fb-share-button" data-href="https://dpnote.netlify.app/" data-layout="button_count"
+      data-size="small"></div>
+  
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v19.0"
+        nonce="Pm3nh7PB"></script>
+  
+      <br>
+      <i class="fa fa-copyright" aria-hidden="true"></i> <a href="https://hitoshi2s.netlify.app/index.html" target="_blank" class="footer_link">齋藤 仁志</a>. By <a href="https://gohugo.io/" target="_blank" class="footer_link">hugo</a> themes <a href="https://themes.gohugo.io/themes/hugo-clarity/"  target="_blank" class="footer_link">Clarity</a>
       </center>
     </div>
   </footer>
 
   <script src="data.js"></script>
+
   <script type="module">
-    document.getElementById('exp').addEventListener('click',
 
-      async () => {
-        result.innerHTML = "";
+    let i_bunkatu = 10;
 
-        let kensaku = text.value;
+   
+    onload = async () => {
+      result.innerHTML = "";
 
-        const max = data.length;
-        let count = 0;
+      let kensaku = text.value;
 
-        for (let j = 0; j < max; j++) {
-          if (data[j].body.indexOf(kensaku) != -1) {
-            result.innerHTML += '<div class="item">' +
-            '<a class="item_title" href="' + data[j].url + '">' + data[j].title + '</a>' +
-            '<div class="item_ex">' + data[j].body.substring(data[j].body.indexOf(kensaku) - 3, data[j].body.indexOf(kensaku) + 200).replaceAll(kensaku, "<b>" + kensaku + "</b>") + '</div>' +
+      const max = data.length;
+      let count = 0;
+
+
+
+      let b = Math.ceil( max / i_bunkatu ) ;
+      console.log(b);
+
+      koumoku.innerHTML = "";
+
+      let bunkatu =[];
+
+      for (let i = 0; i< b; i++){
+        let v = i + 1;
+        koumoku.innerHTML += '<li onclick="kirikae(' + v + ')">' + v + '</li>';
+
+        bunkatu[i] ="";
+
+        for (let mm = 0; mm < i_bunkatu; mm++) {
+
+          if (i * i_bunkatu + mm < max){
+
+            bunkatu[i] += '<div class="item">' +
+            "<a href='" + data[i * i_bunkatu + mm].url + "'>" + '<span class="item_title">' + data[i * i_bunkatu + mm].title + '</span>' + "</a>" +
+            '<div class="item_ex">' + data[i * i_bunkatu + mm].body + '</div>' +
             '</div>';
+
             count = count + 1;
+
           }
+          else{}
         }
 
-        resultCount.innerHTML = '<b>' + count + '</b> 件見つかりました（' + max + '件中）';
+      }
+
+      result.innerHTML = bunkatu[0];
+
+      let list = document.querySelector("#page_list");
+      list.childNodes[0].childNodes[0].style.backgroundColor = "#007bbb";
+      list.childNodes[0].childNodes[0].style.color = "#ffffff";
+
+      resultCount.innerHTML = '<b>' + count + '</b> 件見つかりました（' + max + '件中）';
+
+      window.kirikae = (x) =>{
+
+        result.innerHTML = "";
+
+        result.innerHTML = bunkatu[x-1];
+
+        for (let i = 0; i < b; i++){
+
+          if(i == x-1){
+
+            list.childNodes[0].childNodes[i].style.backgroundColor = "#007bbb";
+            list.childNodes[0].childNodes[i].style.color = "#ffffff";
+
+          }else{
+
+            list.childNodes[0].childNodes[i].style.backgroundColor = "#ffffff";
+            list.childNodes[0].childNodes[i].style.color = "#007bbb";
+
+          }
+
+
+
+        }
+
+      }
+
+    }
+
+
+ 
+document.querySelector('.search').addEventListener('click',
+
+      async () => {
+
+        if(text.value != ""){
+
+          result.innerHTML = "";
+          koumoku.innerHTML = "";
+
+          let kensaku = text.value;
+
+          let kensaku_arr =[];
+
+        
+
+
+          const max = data.length;
+          let count = 0;
+
+          for (let j = 0; j < max; j++) {
+            if (data[j].title.indexOf(kensaku) != -1 || data[j].body.indexOf(kensaku) != -1) {
+              kensaku_arr[j] = '<div class="item">' +
+              "<a href='" + data[j].url + "'>" + '<span class="item_title">' + data[j].title.replaceAll(kensaku, "<b>" + kensaku + "</b>") + '</span>' + "</a>" +
+              '<div class="item_ex">' + data[j].body.replaceAll(kensaku, "<b>" + kensaku + "</b>") + '</div>' +
+              '</div>';
+            }else{
+              kensaku_arr[j] = "";
+            }
+          }
+
+          let new_arr = kensaku_arr.filter(function(x){
+            return !(x == ""); 
+          })
+          console.log(new_arr);
+
+          count = new_arr.length;
+
+          let b = Math.ceil( count / i_bunkatu ) ;
+          console.log(b);
+
+         
+          if(b == 0){
+            result.innerHTML = "検索結果はありませんでした。別のキーワードを入力してください。";
+            resultCount.innerHTML = '<b>' + b + '</b> 件見つかりました（' + max + '件中）';
+            return false;
+          }else{}
+
+          let bunkatu2 =[];
+
+
+          for (let i = 0; i< b; i++){
+            let v = i + 1;
+            koumoku.innerHTML += '<li onclick="kirikae2(' + v + ')">' + v + '</li>';
+
+            bunkatu2[i] =　"";
+
+            for (let mm = 0; mm < i_bunkatu; mm++) {
+
+              if (i * i_bunkatu + mm < count){
+
+                bunkatu2[i] += new_arr[i * i_bunkatu + mm];
+              }
+              else{}
+            }
+
+          }
+
+
+          result.innerHTML = bunkatu2[0];
+
+          let list = document.querySelector("#page_list");
+          list.childNodes[0].childNodes[0].style.backgroundColor = "#007bbb";
+          list.childNodes[0].childNodes[0].style.color = "#ffffff";
+
+          resultCount.innerHTML = '<b>' + count + '</b> 件見つかりました（' + max + '件中）';
+
+          window.kirikae2 = (x) =>{
+
+            result.innerHTML = "";
+
+            result.innerHTML = bunkatu2[x-1];
+
+            let list = document.querySelector("#page_list");
+
+            for (let i = 0; i < b; i++){
+
+              if(i == x-1){
+
+                list.childNodes[0].childNodes[i].style.backgroundColor = "#007bbb";
+                list.childNodes[0].childNodes[i].style.color = "#ffffff";
+
+              }else{
+
+                list.childNodes[0].childNodes[i].style.backgroundColor = "#ffffff";
+                list.childNodes[0].childNodes[i].style.color = "#007bbb";
+
+              }
+
+            }
+          }
+
+        }else{
+
+          window.location.reload();
+        }
 
       }
 
       );
+
+    document.querySelector('.reset').addEventListener('click',
+
+      async () =>{
+
+        window.location.reload();
+
+      }
+      );
+
     </script>
+
+
+  
   </body>
 
   </html>
