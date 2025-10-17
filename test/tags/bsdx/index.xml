@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bsdx on DP Note</title>
-    <link>https://dpnote.netlify.app/tags/bsdx/</link>
+    <link>https://dpnote.netlify.app/test/tags/bsdx/</link>
     <description>Recent content in bsdx on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/bsdx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/test/tags/bsdx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PLATEAUを用いた３D都市空間の可視化</title>
-      <link>https://dpnote.netlify.app/plateau3d/</link>
+      <link>https://dpnote.netlify.app/test/plateau3d/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/plateau3d/</guid>
+      <guid>https://dpnote.netlify.app/test/plateau3d/</guid>
       <description>
         
           &lt;p&gt;PLATEAUを用いて都市空間の３D化に挑戦しました。&lt;/p&gt;
@@ -74,10 +74,10 @@
     
     <item>
       <title>都市空間の3Dマップを作りました。</title>
-      <link>https://dpnote.netlify.app/3dmap/</link>
+      <link>https://dpnote.netlify.app/test/3dmap/</link>
       <pubDate>Sat, 24 Dec 2022 17:41:54 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/3dmap/</guid>
+      <guid>https://dpnote.netlify.app/test/3dmap/</guid>
       <description>
         
           &lt;p&gt;ハザードマップの３D可視化に向けて、まずは都市空間の３D化に取り組みました。&lt;/p&gt;
@@ -94,10 +94,10 @@
     
     <item>
       <title>東京都河川ライブカメラマップの作成</title>
-      <link>https://dpnote.netlify.app/tkriver/</link>
+      <link>https://dpnote.netlify.app/test/tkriver/</link>
       <pubDate>Sat, 14 May 2022 16:48:28 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/tkriver/</guid>
+      <guid>https://dpnote.netlify.app/test/tkriver/</guid>
       <description>
         
           &lt;p&gt;東京都のオープンデータを用いて、河川ライブカメラマップを作成しました。&lt;/p&gt;
@@ -111,10 +111,10 @@
     
     <item>
       <title>パブリックDNSをご存じですか？</title>
-      <link>https://dpnote.netlify.app/publicdns/</link>
+      <link>https://dpnote.netlify.app/test/publicdns/</link>
       <pubDate>Sat, 29 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/publicdns/</guid>
+      <guid>https://dpnote.netlify.app/test/publicdns/</guid>
       <description>
         
           &lt;p&gt;パブリックDNSについて、ご紹介します。&lt;/p&gt;
@@ -127,10 +127,10 @@
     
     <item>
       <title>時間軸を図解にて可視化</title>
-      <link>https://dpnote.netlify.app/time/</link>
+      <link>https://dpnote.netlify.app/test/time/</link>
       <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/time/</guid>
+      <guid>https://dpnote.netlify.app/test/time/</guid>
       <description>
         
           &lt;p&gt;天気予報などで使われる『時間軸』を図解にて可視化してみました。&lt;/p&gt;
@@ -143,10 +143,10 @@
     
     <item>
       <title>Siriに防災を学ばせてみた！</title>
-      <link>https://dpnote.netlify.app/siri/</link>
+      <link>https://dpnote.netlify.app/test/siri/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/siri/</guid>
+      <guid>https://dpnote.netlify.app/test/siri/</guid>
       <description>
         
           &lt;p&gt;Siriに防災について、学習させてみました！&lt;/p&gt;
@@ -159,10 +159,10 @@
     
     <item>
       <title>00000JAPANをご紹介します。</title>
-      <link>https://dpnote.netlify.app/00000japan/</link>
+      <link>https://dpnote.netlify.app/test/00000japan/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/00000japan/</guid>
+      <guid>https://dpnote.netlify.app/test/00000japan/</guid>
       <description>
         
           &lt;p&gt;今日は、00000JAPANについて説明します。&lt;/p&gt;
@@ -178,10 +178,10 @@
     
     <item>
       <title>電話リレーサービスをご存じですか？</title>
-      <link>https://dpnote.netlify.app/phonerelay/</link>
+      <link>https://dpnote.netlify.app/test/phonerelay/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/phonerelay/</guid>
+      <guid>https://dpnote.netlify.app/test/phonerelay/</guid>
       <description>
         
           &lt;p&gt;今日は、電話リレーサービスについてご紹介します。&lt;/p&gt;
@@ -197,10 +197,10 @@
     
     <item>
       <title>東京都災害時給水ステーションをマップ化してみた。</title>
-      <link>https://dpnote.netlify.app/tokyowater/</link>
+      <link>https://dpnote.netlify.app/test/tokyowater/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/tokyowater/</guid>
+      <guid>https://dpnote.netlify.app/test/tokyowater/</guid>
       <description>
         
           &lt;p&gt;東京都のオープンデータを用いて、災害時給水ステーションをマップ化してみました。&lt;/p&gt;

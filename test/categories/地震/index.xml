@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>地震 on DP Note</title>
-    <link>https://dpnote.netlify.app/categories/%E5%9C%B0%E9%9C%87/</link>
+    <link>https://dpnote.netlify.app/test/categories/%E5%9C%B0%E9%9C%87/</link>
     <description>Recent content in 地震 on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 03 Mar 2025 13:56:18 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/categories/%E5%9C%B0%E9%9C%87/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Mar 2025 13:56:18 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/test/categories/%E5%9C%B0%E9%9C%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>岩手・宮城内陸地震の震度マップの可視化</title>
-      <link>https://dpnote.netlify.app/iwatemiyagi2008/</link>
+      <link>https://dpnote.netlify.app/test/iwatemiyagi2008/</link>
       <pubDate>Mon, 03 Mar 2025 13:56:18 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/iwatemiyagi2008/</guid>
+      <guid>https://dpnote.netlify.app/test/iwatemiyagi2008/</guid>
       <description>
         
           &lt;p&gt;岩手・宮城内陸地震の震度マップを可視化しました。&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>新潟県中越地震の震度マップの可視化</title>
-      <link>https://dpnote.netlify.app/nigata2004/</link>
+      <link>https://dpnote.netlify.app/test/nigata2004/</link>
       <pubDate>Thu, 27 Feb 2025 19:26:47 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/nigata2004/</guid>
+      <guid>https://dpnote.netlify.app/test/nigata2004/</guid>
       <description>
         
           &lt;p&gt;新潟県中越地震の震度マップを可視化しました。&lt;/p&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>熊本地震の震度マップアニメーション</title>
-      <link>https://dpnote.netlify.app/kumamoto_shido_animation/</link>
+      <link>https://dpnote.netlify.app/test/kumamoto_shido_animation/</link>
       <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/kumamoto_shido_animation/</guid>
+      <guid>https://dpnote.netlify.app/test/kumamoto_shido_animation/</guid>
       <description>
         
           &lt;p&gt;熊本地震の震度マップをアニメーションにて可視化しました。&lt;/p&gt;
@@ -61,10 +61,10 @@
     
     <item>
       <title>能登半島沖地震コネクトマップの可視化</title>
-      <link>https://dpnote.netlify.app/noto_connectmap/</link>
+      <link>https://dpnote.netlify.app/test/noto_connectmap/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/noto_connectmap/</guid>
+      <guid>https://dpnote.netlify.app/test/noto_connectmap/</guid>
       <description>
         
           &lt;p&gt;能登半島沖地震のコネクトマップを可視化しました。&lt;/p&gt;
@@ -93,10 +93,10 @@
     
     <item>
       <title>能登半島沖地震の震度マップアニメーション</title>
-      <link>https://dpnote.netlify.app/noto_shindomap/</link>
+      <link>https://dpnote.netlify.app/test/noto_shindomap/</link>
       <pubDate>Thu, 19 Sep 2024 12:01:29 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/noto_shindomap/</guid>
+      <guid>https://dpnote.netlify.app/test/noto_shindomap/</guid>
       <description>
         
           &lt;p&gt;能登半島沖地震の震度マップをアニメーションにて可視化しました。&lt;/p&gt;
@@ -111,10 +111,10 @@
     
     <item>
       <title>能登半島沖地震の震度マップをヒートマップとして可視化</title>
-      <link>https://dpnote.netlify.app/2024notoheatmap/</link>
+      <link>https://dpnote.netlify.app/test/2024notoheatmap/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/2024notoheatmap/</guid>
+      <guid>https://dpnote.netlify.app/test/2024notoheatmap/</guid>
       <description>
         
           &lt;p&gt;令和6年1月に発生した能登半島沖地震の震度マップをヒートマップとして可視化しました。&lt;/p&gt;
@@ -132,10 +132,10 @@
     
     <item>
       <title>能登半島沖地震の３Dによる可視化</title>
-      <link>https://dpnote.netlify.app/notoearthquake3d/</link>
+      <link>https://dpnote.netlify.app/test/notoearthquake3d/</link>
       <pubDate>Fri, 05 Jan 2024 19:23:51 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/notoearthquake3d/</guid>
+      <guid>https://dpnote.netlify.app/test/notoearthquake3d/</guid>
       <description>
         
           &lt;p&gt;能登半島沖地震を３Dで可視化しました。&lt;/p&gt;
@@ -146,10 +146,10 @@
     
     <item>
       <title>熊本地震を深さの次元まで含めて3Dにて可視化</title>
-      <link>https://dpnote.netlify.app/kumamoto3d/</link>
+      <link>https://dpnote.netlify.app/test/kumamoto3d/</link>
       <pubDate>Sat, 18 Feb 2023 19:07:24 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/kumamoto3d/</guid>
+      <guid>https://dpnote.netlify.app/test/kumamoto3d/</guid>
       <description>
         
           &lt;p&gt;熊本地震の震源地の深さで３Dにしたら、どうなるのか？そこの疑問から可視化しました。&lt;/p&gt;
@@ -199,10 +199,10 @@
     
     <item>
       <title>家具の固定について</title>
-      <link>https://dpnote.netlify.app/furniture/</link>
+      <link>https://dpnote.netlify.app/test/furniture/</link>
       <pubDate>Sat, 18 Jun 2022 12:27:48 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/furniture/</guid>
+      <guid>https://dpnote.netlify.app/test/furniture/</guid>
       <description>
         
           &lt;p&gt;家具の固定について、考えてみます。&lt;/p&gt;
@@ -215,10 +215,10 @@
     
     <item>
       <title>内部被害による怪我の原因</title>
-      <link>https://dpnote.netlify.app/glass/</link>
+      <link>https://dpnote.netlify.app/test/glass/</link>
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/glass/</guid>
+      <guid>https://dpnote.netlify.app/test/glass/</guid>
       <description>
         
           &lt;p&gt;阪神淡路大震災のときの内部被害の統計を可視化してみました。&lt;/p&gt;
@@ -232,10 +232,10 @@
     
     <item>
       <title>1日の震源リストを可視化させてみる</title>
-      <link>https://dpnote.netlify.app/earthquakelist/</link>
+      <link>https://dpnote.netlify.app/test/earthquakelist/</link>
       <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/earthquakelist/</guid>
+      <guid>https://dpnote.netlify.app/test/earthquakelist/</guid>
       <description>
         
           &lt;p&gt;「1000回以上」揺れてます。最近の地震の動向が気になったので、可視化してみました！&lt;/p&gt;
@@ -249,10 +249,10 @@
     
     <item>
       <title>熊本地震の震度マップと活断層図の重ね合わせ</title>
-      <link>https://dpnote.netlify.app/kumamotoearthquake/</link>
+      <link>https://dpnote.netlify.app/test/kumamotoearthquake/</link>
       <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/kumamotoearthquake/</guid>
+      <guid>https://dpnote.netlify.app/test/kumamotoearthquake/</guid>
       <description>
         
           &lt;p&gt;熊本地震の震度マップと活断層図を重ね合わせて可視化しました。&lt;/p&gt;
@@ -265,10 +265,10 @@
     
     <item>
       <title>被害率曲線をご存じですか？</title>
-      <link>https://dpnote.netlify.app/destructionrate/</link>
+      <link>https://dpnote.netlify.app/test/destructionrate/</link>
       <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/destructionrate/</guid>
+      <guid>https://dpnote.netlify.app/test/destructionrate/</guid>
       <description>
         
           &lt;p&gt;今日は、被害率曲線のお話です。&lt;/p&gt;
@@ -281,10 +281,10 @@
     
     <item>
       <title>南海トラフ地震の震度マップを見よう！</title>
-      <link>https://dpnote.netlify.app/nankaishindomap/</link>
+      <link>https://dpnote.netlify.app/test/nankaishindomap/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/nankaishindomap/</guid>
+      <guid>https://dpnote.netlify.app/test/nankaishindomap/</guid>
       <description>
         
           &lt;p&gt;南海トラフ地震の震度マップを可視化しました。&lt;/p&gt;

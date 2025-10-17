@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fire on DP Note</title>
-    <link>https://dpnote.netlify.app/tags/fire/</link>
+    <link>https://dpnote.netlify.app/test/tags/fire/</link>
     <description>Recent content in fire on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 27 Jul 2022 11:48:14 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/fire/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 11:48:14 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/test/tags/fire/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>火災統計２０２０を図解化</title>
-      <link>https://dpnote.netlify.app/kasai2020/</link>
+      <link>https://dpnote.netlify.app/test/kasai2020/</link>
       <pubDate>Wed, 27 Jul 2022 11:48:14 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/kasai2020/</guid>
+      <guid>https://dpnote.netlify.app/test/kasai2020/</guid>
       <description>
         
           &lt;p&gt;火災統計２０２０を図解にしました。&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>人は煙のスピードに勝てない</title>
-      <link>https://dpnote.netlify.app/smoke/</link>
+      <link>https://dpnote.netlify.app/test/smoke/</link>
       <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/smoke/</guid>
+      <guid>https://dpnote.netlify.app/test/smoke/</guid>
       <description>
         
           &lt;p&gt;人と煙の速度を図解にして比較してみました。&lt;/p&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>消防車のサイレンの違い</title>
-      <link>https://dpnote.netlify.app/siren/</link>
+      <link>https://dpnote.netlify.app/test/siren/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/siren/</guid>
+      <guid>https://dpnote.netlify.app/test/siren/</guid>
       <description>
         
           &lt;p&gt;消防車のサイレンには意味があることをご存知ですか？&lt;/p&gt;
@@ -57,10 +57,10 @@
     
     <item>
       <title>東京都火災発生件数を可視化しました</title>
-      <link>https://dpnote.netlify.app/tokyofire/</link>
+      <link>https://dpnote.netlify.app/test/tokyofire/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/tokyofire/</guid>
+      <guid>https://dpnote.netlify.app/test/tokyofire/</guid>
       <description>
         
           &lt;p&gt;東京都のオープンデータを利用して、都内の火災発生件数を可視化しました。&lt;/p&gt;

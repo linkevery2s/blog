@@ -539,7 +539,7 @@ ul{
   border-bottom: 1px dotted;
 }
 
-#button{
+/*#button{
   background: #2477b8;
   color: #ffffff;
   padding: .2em .3em;
@@ -549,4 +549,15 @@ ul{
 
 #button:hover{
   background: #0b3552;
+}*/
+
+#button{
+  border-bottom: 1px dashed;
+  padding: .2em .3em;
+  margin-bottom: .3em;
+}
+
+#button:hover{
+  border-bottom: none;
+  color: #0b3552;
 }
