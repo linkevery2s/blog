@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+<meta charset='UTF-8' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="leaflet-hash.js"></script>
+    <link rel="stylesheet" href="Control.OSMGeocoder.css" />
+    <script src="Control.OSMGeocoder.js"></script>
+
+
+<style>
+html,body,#map{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+<script>
+function ini(){
+
+var map = L.map('map');
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+map.setView([37.3, 137.8], 5)
+
+        var option = {
+          position: 'topright', // topright, topleft, bottomright, bottomleft
+          text: '検索',
+          placeholder: '検索条件キーワード'
+        }
+        var osmGeocoder = new L.Control.OSMGeocoder(option);
+    		map.addControl(osmGeocoder);
+
+        var hash = new L.Hash(map);
+
+    //クリックイベント
+map.on('click', function(e) {
+
+    lat = e.latlng.lat;
+    lng = e.latlng.lng;
+
+    lat = Math.round(lat * 1000) / 1000;
+
+    lng = Math.round(lng * 1000) / 1000;
+
+    alert(lat + "," + lng);
+} );
+
+
+}
+</script>
+<title>緯度・経度、Geocoder</title>
+
+</head>
+<body onLoad='ini()'>
+	<div id='map'></div>
+</body>
+</html>

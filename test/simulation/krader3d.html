@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset='UTF-8' name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+  <meta name="description" content='気象庁の雨雲レーダーを3次元で表現しました。'>
+  <meta property="og:title" content="気象庁の雨雲レーダー3次元マップ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dpnote.netlify.app/images/post/krader3d.png" />
+  <meta property="og:description" content="気象庁の雨雲レーダーを3次元で表現しました。" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="気象庁の雨雲レーダー3次元マップ" />
+  <meta name="twitter:description" content='気象庁の雨雲レーダーを3次元で表現しました。' />
+  <meta name="twitter:image" content="https://dpnote.netlify.app/images/post/krader3d.png" />
+  <meta name="author" content="仁志">
+  <meta name="keywords" content="防災,災害対策,雨雲レーダー,降水ナウキャスト">
+  <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+  <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+  <style>
+    html,
+    body,
+    #map {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+
+    }
+
+    #time_stamp {
+      z-index: 100;
+      position: fixed;
+      left: 5px;
+      top: 5px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 5px;
+      border: 3px solid #1e50a2;
+    }
+
+    a {
+      text-decoration: none !important;
+      border-bottom: #1e50a2 dotted 1px;
+      color: #1e50a2 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='map'></div>
+  <div id="time_stamp"></div>
+  <script type="module">
+    const res = await fetch('https://www.jma.go.jp/bosai/jmatile/data/nowc/targetTimes_N1.json');
+    const data = await res.json();
+
+    let day_time = data[0].basetime;
+    let valid_time = data[0].validtime;
+    let year = day_time.slice(0, 4);
+    let month = day_time.slice(4, 6);
+    let day = day_time.slice(6, 8);
+    let jikoku_h = parseInt(day_time.slice(8, 10), 10) + 9;
+    if (jikoku_h > 23) {
+      jikoku_h = jikoku_h - 24;
+    } else {}
+
+    let jikoku_m = day_time.slice(10, 12);
+
+    time_stamp.innerHTML = year + "年" + month + "月" + day + "日" + jikoku_h + "時" + jikoku_m + "分";
+
+    const style = {
+      "version": 8,
+
+      "sources": {
+        "back": {
+          "type": "raster",
+          "tiles": [
+            "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}?blankTile=false"
+            ],
+          "tileSize": 256,
+          "minzoom": 2,
+          "maxzoom": 8,
+          "attribution": "<a href='https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer'>USGS Imagery Only</a>"
+        },
+        "back2": {
+          "type": "raster",
+          "tiles": [
+            `https://www.jma.go.jp/bosai/jmatile/data/nowc/${day_time}/none/${valid_time}/surf/hrpns/{z}/{x}/{y}.png`
+            ],
+          "tileSize": 256,
+          "minzoom": 2,
+          "maxzoom": 8,
+          "attribution": "<a href='https://www.jma.go.jp/jma/kishou/know/kurashi/highres_nowcast.html'>気象庁(高解像度降水ナウキャスト)</a>"
+        }
+      },
+      "layers": [{
+        "id": "back",
+        "type": "raster",
+        "source": "back",
+        "minzoom": 2,
+        "maxzoom": 18,
+      },
+      {
+        "id": "back2",
+        "type": "raster",
+        "source": "back2",
+        "minzoom": 2,
+        "maxzoom": 18,
+      }
+      ]
+
+    }
+
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: style,
+      center: [136, 36],
+      zoom: 5,
+      pitch: 50,
+      bearing: -10,
+      hash: true,
+    });
+
+    map.addControl(new maplibregl.FullscreenControl());
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MPP84V2NHB');
+  </script>
+
+</body>
+
+</html>

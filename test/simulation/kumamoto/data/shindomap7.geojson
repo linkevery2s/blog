@@ -1,0 +1,41 @@
+let shindomap7 = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2016/04/14",
+        "timeline": "21:26:34",
+        "place": "熊本県熊本地方",
+        "depth": "11 km",
+        "magnitude": "6.5",
+        "shindo": "震度７"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.801,
+          32.735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2016/04/16",
+        "timeline": "1:25:05",
+        "place": "熊本県熊本地方",
+        "depth": "12 km",
+        "magnitude": "7.3",
+        "shindo": "震度７"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.752,
+          32.751
+        ]
+      }
+    }
+  ]
+};

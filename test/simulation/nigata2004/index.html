@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<title>新潟県中越地震の震度マップの可視化</title>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.min.js" integrity="sha512-0A4MbfuZq5Au9EdpI1S5rUTXlibNBi8CuZ/X3ycwXyZiCjNzpiO9YH6EMqPgzZm6vfNCuZStBQHjnO17nIC0IQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src='./data/shindomap1.geojson'></script>
+	<script src='./data/shindomap2.geojson'></script>
+	<script src='./data/shindomap3.geojson'></script>
+	<script src='./data/shindomap4.geojson'></script>
+	<script src='./data/shindomap5j.geojson'></script>
+	<script src='./data/shindomap5k.geojson'></script>
+	<script src='./data/shindomap6j.geojson'></script>
+	<script src='./data/shindomap6k.geojson'></script>
+	<script src='./data/shindomap7.geojson'></script>
+
+	<style>
+		html,
+		body,
+		#map_canvas {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.info_legend {
+			background-color: rgba(255, 255, 255, 0.7);
+			padding: 10px;
+			margin-bottom: 20px;
+			border: solid 2px #000000;
+		}
+	</style>
+
+	<script type="module">
+
+		onload = async() => {
+			/* 初期設定 */
+			const map = L.map('map_canvas', {
+				center: [37.2943, 138.8927],
+				zoom: 10,
+				minZoom: 8,
+				maxZoom: 12
+			});
+
+			const hash = new L.Hash(map);
+			
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors l &copy; <a href="https://www.data.jma.go.jp/svd/eqdb/data/shindo/index.html" target="_blank">気象庁 震度データベース検索</a>'
+			}).addTo(map);
+			
+			/* 震度マップ追加 */
+			let shindo1 = L.geoJson(shindomap1, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro1
+			});
+			map.addLayer(shindo1);
+
+			let shindo2 = L.geoJson(shindomap2, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro2
+			});
+			map.addLayer(shindo2);
+
+			let shindo3 = L.geoJson(shindomap3, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro3
+			});
+			map.addLayer(shindo3);
+
+			let shindo4 = L.geoJson(shindomap4, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro4
+			});
+			map.addLayer(shindo4);
+
+			let shindo5j = L.geoJson(shindomap5j, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro5j
+			});
+			map.addLayer(shindo5j);
+
+			let shindo5k = L.geoJson(shindomap5k, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro5k
+			});
+			map.addLayer(shindo5k);
+
+			let shindo6j = L.geoJson(shindomap6j, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro6j
+			});
+			map.addLayer(shindo6j);
+
+			let shindo6k = L.geoJson(shindomap6k, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro6k
+			});
+			map.addLayer(shindo6k);
+
+			let shindo7 = L.geoJson(shindomap7, {
+				style: sty,
+				onEachFeature: geo_k,
+				pointToLayer: iro7
+			});
+			map.addLayer(shindo7);
+
+			let shindo_all = L.layerGroup([shindo7, shindo6k, shindo6j, shindo5k, shindo5j, shindo4, shindo3, shindo2, shindo1]);
+			map.addLayer(shindo_all);
+
+			/* レイヤー選択メニュー追加*/
+			const baseMaps = {
+				"全表示": shindo_all,
+				"震度７": shindo7,
+				"震度６強": shindo6k,
+				"震度６弱": shindo6j,
+				"震度５強": shindo5k,
+				"震度５弱": shindo5j,
+				"震度４": shindo4,
+				"震度３": shindo3,
+				"震度２": shindo2,
+				"震度１": shindo1
+			};
+
+			L.control.layers(baseMaps).addTo(map);
+
+			const legend = L.control({
+				position: 'bottomright'
+			});
+
+			legend.onAdd = function(map) {
+
+				let div = L.DomUtil.create('div', 'info_legend'),
+				grades = ["震度７", "震度６強", "震度６弱", "震度５強", "震度５弱", "震度４", "震度３", "震度２", "震度１"],
+				labels = ['震度階級'],
+				from, to;
+
+				for (let i = 0; i < grades.length; i++) {
+					from = grades[i];
+
+					labels.push(
+						'<span style="background:' + getColor(from) + '">　</span> ' +
+						from);
+				}
+
+				div.innerHTML = labels.join('<br>');
+				return div;
+			};
+
+			legend.addTo(map);
+
+		}
+
+		let getColor = (d) => {
+			return d == "震度７" ? '#640125' :
+			d == "震度６強" ? '#e2041b' :
+			d == "震度６弱" ? '#ec6d51' :
+			d == "震度５強" ? '#d66a35' :
+			d == "震度５弱" ? '#db8449' :
+			d == "震度４" ? '#ffea00' :
+			d == "震度３" ? '#c3d825' :
+			d == "震度２" ? '#59b9c6' :
+			'#007bbb';
+		}
+
+		let sty = (feature) => {
+			return feature.properties && feature.properties.style;
+		}
+
+		let iro1 = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#007bbb",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let iro2 = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#59b9c6",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let iro3 = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#c3d825",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let iro4 = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#ffea00",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let iro5j = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#db8449",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let iro5k = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#d66a35",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let iro6j = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#ec6d51",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let iro6k = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#e2041b",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let iro7 = (feature, latlng) => {
+			return L.circleMarker(latlng, {
+				radius: 10,
+				fillColor: "#640125",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+
+		let geo_k = (feature, layer) => {
+			let popup;
+			if (feature.properties && feature.properties.date) {
+				popup = feature.properties.date + " " + feature.properties.timeline;
+			}
+
+			if (feature.properties && feature.properties.shindo) {
+				popup += "<br>震度：" + feature.properties.shindo;
+			}
+
+			if (feature.properties && feature.properties.magnitude) {
+				popup += '<br>マグニチュード：' + feature.properties.magnitude;
+			}
+
+			if (feature.properties && feature.properties.depth) {
+				popup += '<br>震源の深さ：' + feature.properties.depth;
+			}
+
+			layer.bindPopup(popup);
+		}
+	</script>
+
+</head>
+
+<body onLoad='ini()'>
+	<div id='map_canvas'></div>
+</body>
+
+</html>

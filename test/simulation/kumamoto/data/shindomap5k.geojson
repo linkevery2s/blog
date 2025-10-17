@@ -1,0 +1,77 @@
+let shindomap5k = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2016/04/15",
+        "timeline": "0:06:21",
+        "place": "熊本県熊本地方",
+        "depth": "11 km",
+        "magnitude": "5",
+        "shindo": "震度５強"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.75,
+          32.685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2016/04/16",
+        "timeline": "3:03:11",
+        "place": "熊本県阿蘇地方",
+        "depth": "7 km",
+        "magnitude": "5.9",
+        "shindo": "震度５強"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.084,
+          32.952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2016/04/18",
+        "timeline": "20:41:58",
+        "place": "熊本県阿蘇地方",
+        "depth": "9 km",
+        "magnitude": "5.8",
+        "shindo": "震度５強"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.186,
+          33.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2016/04/19",
+        "timeline": "17:52:14",
+        "place": "熊本県熊本地方",
+        "depth": "10 km",
+        "magnitude": "5.5",
+        "shindo": "震度５強"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.634,
+          32.534
+        ]
+      }
+    }
+  ]
+};
