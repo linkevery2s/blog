@@ -539,3 +539,14 @@ ul{
   border-bottom: 1px dotted;
 }
 
+#button{
+  background: #2477b8;
+  color: #ffffff;
+  padding: .2em .3em;
+  margin-bottom: .3em;
+  border-radius: .3em;
+}
+
+#button:hover{
+  background: #0b3552;
+}
