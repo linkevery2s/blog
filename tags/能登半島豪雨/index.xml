@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>能登半島豪雨 on DP Note</title>
+    <link>https://dpnote.netlify.app/tags/%E8%83%BD%E7%99%BB%E5%8D%8A%E5%B3%B6%E8%B1%AA%E9%9B%A8/</link>
+    <description>Recent content in 能登半島豪雨 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E8%83%BD%E7%99%BB%E5%8D%8A%E5%B3%B6%E8%B1%AA%E9%9B%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>能登半島豪雨の可視化</title>
+      <link>https://dpnote.netlify.app/noto3drain/</link>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/noto3drain/</guid>
+      <description>
+        
+          &lt;p&gt;令和6年（2024年）9月20日からの能登半島地方の豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/noto3drain/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/noto3drain/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://www.gsi.go.jp/BOUSAI/R6_noto_heavyrain.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;令和6年（2024年）9月20日からの大雨に関する情報、国土地理院&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

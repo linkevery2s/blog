@@ -6,7 +6,27 @@
     <description>Recent content in 2016年4月14日 on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 18 Feb 2023 19:07:24 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/archives/2016%E5%B9%B44%E6%9C%8814%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/archives/2016%E5%B9%B44%E6%9C%8814%E6%97%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>熊本地震の震度マップアニメーション</title>
+      <link>https://dpnote.netlify.app/kumamoto_shido_animation/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/kumamoto_shido_animation/</guid>
+      <description>
+        
+          &lt;p&gt;熊本地震の震度マップをアニメーションにて可視化しました。&lt;/p&gt;
+&lt;!-- Youtube --&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zKaphBhYKOI?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>熊本地震を深さの次元まで含めて3Dにて可視化</title>
       <link>https://dpnote.netlify.app/kumamoto3d/</link>
