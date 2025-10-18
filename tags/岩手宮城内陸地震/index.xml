@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>岩手・宮城内陸地震 on DP Note</title>
+    <link>https://dpnote.netlify.app/tags/%E5%B2%A9%E6%89%8B%E5%AE%AE%E5%9F%8E%E5%86%85%E9%99%B8%E5%9C%B0%E9%9C%87/</link>
+    <description>Recent content in 岩手・宮城内陸地震 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 03 Mar 2025 13:56:18 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E5%B2%A9%E6%89%8B%E5%AE%AE%E5%9F%8E%E5%86%85%E9%99%B8%E5%9C%B0%E9%9C%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>岩手・宮城内陸地震の震度マップの可視化</title>
+      <link>https://dpnote.netlify.app/iwatemiyagi2008/</link>
+      <pubDate>Mon, 03 Mar 2025 13:56:18 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/iwatemiyagi2008/</guid>
+      <description>
+        
+          &lt;p&gt;岩手・宮城内陸地震の震度マップを可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/iwatemiyagi2008/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/iwatemiyagi2008/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -475,14 +475,14 @@
     </item>
     
     <item>
-      <title>西日本集中豪雨を可視化しました</title>
+      <title>西日本豪雨を可視化しました</title>
       <link>https://dpnote.netlify.app/nishinihonrain/</link>
       <pubDate>Sun, 04 Sep 2022 11:52:12 +0900</pubDate>
       
       <guid>https://dpnote.netlify.app/nishinihonrain/</guid>
       <description>
         
-          &lt;p&gt;平成30年西日本集中豪雨を可視化しました。&lt;/p&gt;
+          &lt;p&gt;平成30年西日本豪雨を可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../simulation/h30nishinihon.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../simulation/h30nishinihon.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
         
@@ -548,9 +548,12 @@
       <description>
         
           &lt;p&gt;エレベーターからの避難方法を図解にしました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;目に焼き付けて。エレベーターからの避難方法を図解にまとめました。頭で分かっていても、いざという時に行動出来ないのが「人」です。ただ、立ち尽くすのではなく、冷静に状況を判断し、行動に移すことで、助かる可能性が上がると思います。覚えておこうね！ &lt;a href=&#34;https://t.co/ovKsjzLD9J&#34;&gt;pic.twitter.com/ovKsjzLD9J&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1505491097887272963?ref_src=twsrc%5Etfw&#34;&gt;March 20, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;エレベーターからの避難方法を図解にまとめました。頭で分かっていても、いざという時に行動出来ないのが「人」です。ただ、立ち尽くすのではなく、冷静に状況を判断し、行動に移すことで、助かる可能性が上がると思います。覚えておこうね！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -564,9 +567,15 @@
       <description>
         
           &lt;p&gt;火災統計２０２０を図解にしました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote&gt;火災統計2020を図解にしました（令和3年消防白書）。過去10年間で約70％にまで減少していますが、全国で1年間に「3万件以上」の火災が発生しています。出火原因は、タバコ・焚き火・コンロと続いています。これからも、火災には気を付けようね！&lt;/blockquote&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;火災統計2020を図解にしました（令和3年消防白書）。&lt;/p&gt;
+&lt;p&gt;過去10年間で約70％にまで減少していますが、全国で1年間に「3万件以上」の火災が発生しています。&lt;/p&gt;
+&lt;p&gt;出火原因は、タバコ・焚き火・コンロと続いています。&lt;/p&gt;
+&lt;p&gt;これからも、火災には気を付けましょう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -580,9 +589,17 @@
       <description>
         
           &lt;p&gt;30年以内に70%という確率について考えます。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;大事なこと言います。確率は不確定な所もあって絶対ではない。ただ、熊本地震は発生確率1%と言われながら起きた。南海トラフ地震や首都直下型地震は【30年以内に70%】と言われている。まだこれらの巨大地震は起きていない。今からでも一人一人が出来ることをやれば、被害を限りなく減らせると思う。&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1455848118767931399?ref_src=twsrc%5Etfw&#34;&gt;November 3, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;大事なこと言います。
+確率は不確定な所もあって絶対ではない。
+ただ、熊本地震は発生確率1%と言われながら起きた。
+南海トラフ地震や首都直下型地震は【30年以内に70%以上】と言われている。
+まだこれらの巨大地震は起きていない。
+今からでも一人一人が出来ることをやれば、被害を限りなく減らせると思う。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -596,9 +613,12 @@
       <description>
         
           &lt;p&gt;伝えると伝わるは異なるというお話。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote&gt;忘れがちなんだけどさ。「伝える」と「伝わる」は異なるんだよね。伝えるは自分目線、伝わるは相手目線。良い文章書けたと自分では思っていても、相手に伝わるかどうかは、また別の次元だと思う。だから、家族や友人など、他の人に読んでもらうことは大切。伝わる文章にこだわっていきたいというお話。&lt;/blockquote&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;忘れがちなんだけどさ。「伝える」と「伝わる」は異なるんだよね。伝えるは自分目線、伝わるは相手目線。良い文章書けたと自分では思っていても、相手に伝わるかどうかは、また別の次元だと思う。だから、家族や友人など、他の人に読んでもらうことは大切。伝わる文章にこだわっていきたいというお話。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -741,12 +761,12 @@
       <description>
         
           &lt;p&gt;防災における人の心理バイアスを図解にて可視化しました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;防災における人の心理バイアスについて、図解にて可視化してみました。いざという時に冷静な行動を取れるように覚えておこう。 &lt;a href=&#34;https://t.co/N5MpVjmcaW&#34;&gt;pic.twitter.com/N5MpVjmcaW&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1464904399860477953?ref_src=twsrc%5Etfw&#34;&gt;November 28, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;大切なので何度でも言います。『正常性バイアス』予期せぬ出来事に対し正常心を保つための人の特性。災害時に、これが強くかかると〝なぜか〟大丈夫と思い込み、避難行動に移さないというリスクがあります。災害に遭ったら、まずは身を守ります。そして、次の行動のとき、この言葉を思い出してね。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1453670379243851776?ref_src=twsrc%5Etfw&#34;&gt;October 28, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;大事なこと言います。「同調性バイアス」集団の中にいると、つい他人と同じ行動をとってしまう心理。避難が遅れる原因にもなり得ます。特に危険なのが火災。その時の判断ミスで命に関わります。この心理を逆利用して、誰かが率先して逃げると皆、動きます。あなたが率先して逃げて！というお話。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1459464807518777345?ref_src=twsrc%5Etfw&#34;&gt;November 13, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;大事なこと言います。「同化性バイアス」異常があっても背景に埋もれてしまい、危険と認識しない心理状態。小石が落ち始めるなどの土砂災害の前兆を「見逃す」のが典型例。クイズ番組で背景変化の問題がありますが、人はわずかな変化を察知するのが苦手です。防災訓練で意識することが大切ですね。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1463092460943466502?ref_src=twsrc%5Etfw&#34;&gt;November 23, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;防災における人の心理バイアスについて、図解にて可視化してみました。いざという時に冷静な行動を取れるように覚えておきましょう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -776,10 +796,13 @@
       <description>
         
           &lt;p&gt;阪神淡路大震災のときの内部被害の統計を可視化してみました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;阪神淡路大震災のときの内部被害の可視化。これを見れば分かるとおり、地震時には、上から降ってくるor飛んでくるリスクがあるから、やっぱり整理整頓は大切ですね。 &lt;a href=&#34;https://t.co/AfjV1Wc0mm&#34;&gt;pic.twitter.com/AfjV1Wc0mm&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1460555745901133826?ref_src=twsrc%5Etfw&#34;&gt;November 16, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;やってみよう。今日から出来る超簡単な防災があります。阪神淡路大震災にて内部被害のあったご家庭のうち、29%の方は【ガラス】による被害があったと報告されています（総務省消防庁）。つまり、あなたの寝室に『スリッパ』を置きましょう。ちなみに僕は寝るのが趣味の一つです。現場からは以上です。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1454395153234505732?ref_src=twsrc%5Etfw&#34;&gt;October 30, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+&lt;p&gt;阪神淡路大震災のときの内部被害の可視化。これを見れば分かるとおり、地震時には、上から降ってくるor飛んでくるリスクがあるから、やっぱり整理整頓は大切ですね。 &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+&lt;p&gt;やってみよう。今日から出来る超簡単な防災があります。阪神淡路大震災にて内部被害のあったご家庭のうち、29%の方は【ガラス】による被害があったと報告されています（総務省消防庁）。つまり、あなたの寝室に『スリッパ』を置きましょう。ちなみに僕は寝るのが趣味の一つです。現場からは以上です。&lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -825,26 +848,12 @@
       <description>
         
           &lt;p&gt;東日本大震災の時の子ども達の言葉をご紹介します。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote&gt;突き刺さった。東日本大震災の時、盗難被害が相次いだ。それを知った子供達の言葉『しっかりしろ！大人！！』子供達は純粋で、ちゃんと分かってるんだなと思った。この子達が社会に出る時に&amp;quot;ちゃんとした大人もいるんだよ&amp;quot;と胸張って言えるように、このアカウントの世界観を作っていきたいと思うのです。&lt;/blockquote&gt;
-&lt;/center&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>正常性バイアス</title>
-      <link>https://dpnote.netlify.app/bias/</link>
-      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/bias/</guid>
-      <description>
-        
-          &lt;p&gt;防災を語るうえで欠くことのできない人間の心理「正常性バイアス」について解説します。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote&gt;大切なので何度でも言います。『正常性バイアス』予期せぬ出来事に対し正常心を保つための人の特性。災害時に、これが強くかかると〝なぜか〟大丈夫と思い込み、避難行動に移さないというリスクがあります。災害に遭ったら、まずは身を守ります。そして、次の行動のとき、この言葉を思い出してね。&lt;/blockquote&gt;
-&lt;blockquote&gt;大事なこと言います。「同調性バイアス」集団の中にいると、つい他人と同じ行動をとってしまう心理。避難が遅れる原因にもなり得ます。特に危険なのが火災。その時の判断ミスで命に関わります。この心理を逆利用して、誰かが率先して逃げると皆、動きます。あなたが率先して逃げて！というお話。&lt;/blockquote&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;突き刺さった。東日本大震災の時、盗難被害が相次いだ。それを知った子供達の言葉『しっかりしろ！大人！！』子供達は純粋で、ちゃんと分かってるんだなと思った。この子達が社会に出る時に&amp;quot;ちゃんとした大人もいるんだよ&amp;quot;と胸張って言えるように、このサービスの世界観を作っていきたいと思うのです。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -858,9 +867,20 @@
       <description>
         
           &lt;p&gt;避難時に「忘れがち」な事項をまとめました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote&gt;忘れがちなんですが...自宅から避難する際、❶ブレーカーを落とす(通電火災防止)、❷戸締り(盗難防止)、❸ガス栓を閉める(火災防止)ことは、よく言われます。あと、もう一つ❹『洗濯機の水栓は普段、閉めてますか？』何かの拍子にホースが外れると大変なことになります。習慣化しておくと良いですね！&lt;/blockquote&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;忘れがちなんですが&amp;hellip;自宅から避難する際、&lt;/p&gt;
+&lt;p&gt;❶ブレーカーを落とす(通電火災防止)&lt;/p&gt;
+&lt;p&gt;❷戸締り(盗難防止)&lt;/p&gt;
+&lt;p&gt;❸ガス栓を閉める(火災防止)&lt;/p&gt;
+&lt;p&gt;ことは、よく言われます。
+あと、もう一つ&lt;/p&gt;
+&lt;p&gt;❹『洗濯機の水栓は普段、閉めてますか？』&lt;/p&gt;
+&lt;p&gt;何かの拍子にホースが外れると大変なことになります。
+習慣化しておくと良いですね！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -911,44 +931,6 @@
 &lt;center&gt;
 &lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/6oReqkwbtDs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/center&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>00000JAPANをご紹介します。</title>
-      <link>https://dpnote.netlify.app/00000japan/</link>
-      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/00000japan/</guid>
-      <description>
-        
-          &lt;p&gt;今日は、00000JAPANについて説明します。&lt;/p&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-  &lt;p&gt;「00000JAPAN」をご存知ですか？災害時に、被災者等がインターネットに接続できるよう通信事業者等が公衆無線LANのアクセスポイントを無料で開放する取り組みです。
-※暗号化はされていないので個人情報の使用は控えてくださいね。
-&lt;p&gt;総務省URL：https://www.soumu.go.jp/menu_kyotsuu/important/kinkyu02_000427.html&lt;/p&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>電話リレーサービスをご存じですか？</title>
-      <link>https://dpnote.netlify.app/phonerelay/</link>
-      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/phonerelay/</guid>
-      <description>
-        
-          &lt;p&gt;今日は、電話リレーサービスについてご紹介します。&lt;/p&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-  &lt;p&gt;
-  電話リレーサービスをご存知ですか？聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。昨年の法改正により令和3年7月1日から開始しました。必要な方々に教えてあげてください！
-&lt;p&gt;総務省URL：https://www.soumu.go.jp/menu_seisaku/ictseisaku/telephonerelay/index.html&lt;/p&gt;
-&lt;/p&gt;
-&lt;/div&gt;
         
       </description>
     </item>
@@ -1011,9 +993,14 @@
       <description>
         
           &lt;p&gt;令和3年7月に起きた熱海市土砂災害をマップ化しました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「熱海市土砂災害をマップ化」&lt;br&gt;国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。&lt;br&gt;&lt;br&gt;山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思う。&lt;a href=&#34;https://t.co/YcD1FqRHfc&#34;&gt;https://t.co/YcD1FqRHfc&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1421790310456254471?ref_src=twsrc%5Etfw&#34;&gt;August 1, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「熱海市土砂災害をマップ化」&lt;/p&gt;
+&lt;p&gt;国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。&lt;/p&gt;
+&lt;p&gt;山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -1043,9 +1030,20 @@
       <description>
         
           &lt;p&gt;ハザードマップの認知度をグラフにしてみました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote&gt;「マップの認知度と避難行動」&lt;br&gt;&lt;br&gt;やはり、リスク管理が出来ていないと行動にシフトさせるのは難しいですね&lt;br&gt;&lt;br&gt;防災に &amp;quot;気付き&amp;quot; は大切です&lt;br&gt;&lt;br&gt;❶ハザードマップ閲覧&lt;br&gt;❷指定緊急避難場所の把握&lt;br&gt;❸水平避難、垂直避難&lt;br&gt;❹罹災証明書&lt;br&gt;❺浸水被害等の税金の減免制度&lt;br&gt;&lt;br&gt;最低限の知識は蓄えておいた方が良いと思う&lt;/blockquote&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「マップの認知度と避難行動」&lt;/p&gt;
+&lt;p&gt;やはり、リスク管理が出来ていないと行動にシフトさせるのは難しいですね。&lt;/p&gt;
+&lt;p&gt;防災に &amp;ldquo;気付き&amp;rdquo; は大切です。&lt;/p&gt;
+&lt;p&gt;❶ハザードマップ閲覧
+❷指定緊急避難場所の把握
+❸水平避難、垂直避難
+❹罹災証明書
+❺浸水被害等の税金の減免制度&lt;/p&gt;
+&lt;p&gt;最低限の知識は蓄えておいた方が良いと思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -1061,6 +1059,7 @@
           &lt;p&gt;東京都のオープンデータを用いて、災害時給水ステーションをマップ化してみました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/watersupply.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../../simulation/watersupply.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
 &lt;div class=&#34;balloon&#34;&gt;
   &lt;p&gt;
 「東京都災害時給水ステーションをマップ化」

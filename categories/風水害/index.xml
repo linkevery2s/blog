@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>風水害 on DP Note</title>
+    <link>https://dpnote.netlify.app/categories/%E9%A2%A8%E6%B0%B4%E5%AE%B3/</link>
+    <description>Recent content in 風水害 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/categories/%E9%A2%A8%E6%B0%B4%E5%AE%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>熱海市土砂災害を3Dにて可視化しました</title>
+      <link>https://dpnote.netlify.app/atami3d/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/atami3d/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市土砂災害を3Dにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/atami.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/atami.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
+&lt;p&gt;以下のデータを加工・編集して作成しました。&lt;/p&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://www.gsi.go.jp/BOUSAI/R3_0701_heavyrain.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;令和3年(2021年)7月1日からの大雨に関する情報&lt;/a&gt;、国土地理院
+&lt;/div&gt;
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>平成12年9月東海豪雨の可視化</title>
+      <link>https://dpnote.netlify.app/h12tokai/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/h12tokai/</guid>
+      <description>
+        
+          &lt;p&gt;平成12年9月東海豪雨を３Dに可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/h12tokai.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/h12tokai.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熱海市土砂災害３Dオブジェクトにて可視化</title>
+      <link>https://dpnote.netlify.app/atami3dglb/</link>
+      <pubDate>Wed, 02 Oct 2024 19:04:33 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/atami3dglb/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市の土砂災害を３Dオブジェクトにて可視化しました。&lt;/p&gt;
+&lt;!-- Youtube --&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YA47mdkPYAs?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和6年（2024年）9月20日からの能登半島地方の豪雨の可視化</title>
+      <link>https://dpnote.netlify.app/noto3drain/</link>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/noto3drain/</guid>
+      <description>
+        
+          &lt;p&gt;令和6年（2024年）9月20日からの能登半島地方の豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/noto3drain/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/noto3drain/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://www.gsi.go.jp/BOUSAI/R6_noto_heavyrain.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;令和6年（2024年）9月20日からの大雨に関する情報、国土地理院&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和6年7月東北地方の豪雨を3Dに可視化</title>
+      <link>https://dpnote.netlify.app/r67tohoku/</link>
+      <pubDate>Mon, 19 Aug 2024 15:32:57 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/r67tohoku/</guid>
+      <description>
+        
+          &lt;p&gt;令和6年7月に発生した東北地方の豪雨を3Dに可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/r67tohoku.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/r67tohoku.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>気象庁の降水ナウキャストを３Dにて可視化</title>
+      <link>https://dpnote.netlify.app/krader3d/</link>
+      <pubDate>Mon, 09 Jan 2023 16:15:17 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/krader3d/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;/p&gt;
+&lt;/blockquote&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）</title>
+      <link>https://dpnote.netlify.app/heavyrain20220803/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/heavyrain20220803/</guid>
+      <description>
+        
+          &lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/20220803heavyrain.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水想定図）を可視化しました。２画面描写で、浸水想定と実際の浸水状況を比較できるようになっています。&lt;/p&gt;
+&lt;/blockquote&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>西日本豪雨を可視化しました</title>
+      <link>https://dpnote.netlify.app/nishinihonrain/</link>
+      <pubDate>Sun, 04 Sep 2022 11:52:12 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/nishinihonrain/</guid>
+      <description>
+        
+          &lt;p&gt;平成30年西日本豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/h30nishinihon.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/h30nishinihon.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>気象庁の雨雲レーダーの取得に成功しました</title>
+      <link>https://dpnote.netlify.app/krader/</link>
+      <pubDate>Sat, 13 Aug 2022 13:36:53 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/krader/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、MAPに載せてみました！&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。動作テストを行い、問題なければ、防災INSIGHTに組み込みたいと思います。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;a href=&#34;https://t.co/yoJtvUW1dw&#34;&gt;https://t.co/yoJtvUW1dw&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1558400469235638273?ref_src=twsrc%5Etfw&#34;&gt;August 13, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和2年九州豪雨を可視化しました。</title>
+      <link>https://dpnote.netlify.app/r2kyusyu/</link>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/r2kyusyu/</guid>
+      <description>
+        
+          &lt;p&gt;令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/r2kyusyu.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/r2kyusyu.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>日本全国のダムの情報をマップ化しました。</title>
+      <link>https://dpnote.netlify.app/dam/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/dam/</guid>
+      <description>
+        
+          &lt;p&gt;日本全国のダムの情報をマップ化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/dam.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本全国のダムの情報を可視化しました。&lt;br&gt;&lt;br&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;br&gt;&lt;br&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます🙇‍♂️&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/V6M0X6gp7W&#34;&gt;https://t.co/V6M0X6gp7W&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1424327617096781829?ref_src=twsrc%5Etfw&#34;&gt;August 8, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>日本の各都道府県を河川だけで表現してみる</title>
+      <link>https://dpnote.netlify.app/river/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/river/</guid>
+      <description>
+        
+          &lt;p&gt;日本の各都道府県を河川だけで表現してみました。&lt;/p&gt;
+&lt;center&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本の都道府県を河川だけで表現してみました！&lt;br&gt;川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？&lt;br&gt;あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う&lt;a href=&#34;https://twitter.com/hashtag/%E9%98%B2%E7%81%BD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#防災のためにできること&lt;/a&gt; &lt;a href=&#34;https://t.co/rqP7WUOUvH&#34;&gt;https://t.co/rqP7WUOUvH&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1430486361325375490?ref_src=twsrc%5Etfw&#34;&gt;August 25, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和3年8月豪雨、六角川の浸水想定を可視化しました</title>
+      <link>https://dpnote.netlify.app/rokkaku/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/rokkaku/</guid>
+      <description>
+        
+          &lt;p&gt;令和3年8月豪雨、六角川の浸水想定を可視化しました。&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/4SpIxFJSzGk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;令和3年8月豪雨 六角川の浸水想定を可視化しました。&lt;br&gt;&lt;br&gt;今回は、2画面連動地図を採用しました。標準地図、色別標高図、ハザードマップと比較することができます。スマホは横にしてご覧いただければと思います。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/FG4mcXaDGX&#34;&gt;https://t.co/FG4mcXaDGX&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1429038067881545731?ref_src=twsrc%5Etfw&#34;&gt;August 21, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熱海市土砂災害をマップ化しました</title>
+      <link>https://dpnote.netlify.app/atami/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/atami/</guid>
+      <description>
+        
+          &lt;p&gt;令和3年7月に起きた熱海市土砂災害をマップ化しました。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「熱海市土砂災害をマップ化」&lt;/p&gt;
+&lt;p&gt;国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。&lt;/p&gt;
+&lt;p&gt;山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

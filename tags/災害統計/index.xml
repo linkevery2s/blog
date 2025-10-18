@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>災害統計 on DP Note</title>
+    <link>https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E7%B5%B1%E8%A8%88/</link>
+    <description>Recent content in 災害統計 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E7%81%BD%E5%AE%B3%E7%B5%B1%E8%A8%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>東京都火災発生件数を可視化しました</title>
+      <link>https://dpnote.netlify.app/tokyofire/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/tokyofire/</guid>
+      <description>
+        
+          &lt;p&gt;東京都のオープンデータを利用して、都内の火災発生件数を可視化しました。&lt;/p&gt;
+&lt;p&gt;令和2年火災年報によると全国で発生した火災のうち&lt;/p&gt;
+&lt;p&gt;出火原因1位:たばこ、2位:たき火&lt;/p&gt;
+&lt;p&gt;とのことです。&lt;/p&gt;
+&lt;p&gt;知識の整理&lt;/p&gt;
+&lt;p&gt;１．避難時はブレーカーを落とす　→　通電火災防止&lt;/p&gt;
+&lt;p&gt;２．家の周りに燃える物を置かない　→　放火防止&lt;/p&gt;
+&lt;p&gt;３．火災報知器の取り付け・点検&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

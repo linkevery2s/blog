@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>マップ化 on DP Note</title>
+    <link>https://dpnote.netlify.app/tags/%E3%83%9E%E3%83%83%E3%83%97%E5%8C%96/</link>
+    <description>Recent content in マップ化 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E3%83%9E%E3%83%83%E3%83%97%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>東京都災害時給水ステーションをマップ化してみた。</title>
+      <link>https://dpnote.netlify.app/tokyowater/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/tokyowater/</guid>
+      <description>
+        
+          &lt;p&gt;東京都のオープンデータを用いて、災害時給水ステーションをマップ化してみました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/watersupply.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/watersupply.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+「東京都災害時給水ステーションをマップ化」
+&lt;p&gt;人が生きていく上で何よりも「水」が大切‼️&lt;/p&gt;
+&lt;p&gt;東京都のオープンデータを利用。地域に偏りが無いことが分かります。日本全国のオープンデータ化を求めます！&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

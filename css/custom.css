@@ -59,6 +59,10 @@ h3 {
   padding: 15px 0 15px 10px;
 }
 
+.li_menu:hover{
+  color: #0b3552;
+}
+
 .ul_menu:last-child {
   border-bottom: 1px solid #b2b2b2;
 }
@@ -162,7 +166,7 @@ h3 {
   padding: 0 !important;
 }
 
-<!-- #next_cont{
+#next_cont{
   text-align: left !important;
   margin: 0;
   padding: 5px;
@@ -185,7 +189,7 @@ h3 {
 .link-reverse img{
   display: inline-block;
   width: 100px;
-}-->
+}
 
 .fa-chevron-left, .fa-chevron-right {
   color: #94846a;
@@ -539,3 +543,15 @@ ul{
   border-bottom: 1px dotted;
 }
 
+#button{
+  border-bottom: 1px dashed;
+  padding: .1em 0 .1em 0;
+  margin-bottom: .3em;
+  margin-right: .3em;
+  line-height: 2.5;
+}
+
+#button:hover{
+  border-bottom: none;
+  color: #0b3552;
+}
