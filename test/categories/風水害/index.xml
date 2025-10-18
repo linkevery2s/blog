@@ -137,14 +137,14 @@
     </item>
     
     <item>
-      <title>西日本集中豪雨を可視化しました</title>
+      <title>西日本豪雨を可視化しました</title>
       <link>https://dpnote.netlify.app/test/nishinihonrain/</link>
       <pubDate>Sun, 04 Sep 2022 11:52:12 +0900</pubDate>
       
       <guid>https://dpnote.netlify.app/test/nishinihonrain/</guid>
       <description>
         
-          &lt;p&gt;平成30年西日本集中豪雨を可視化しました。&lt;/p&gt;
+          &lt;p&gt;平成30年西日本豪雨を可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../simulation/h30nishinihon.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../simulation/h30nishinihon.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
         

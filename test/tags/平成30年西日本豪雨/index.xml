@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>平成30年西日本豪雨 on DP Note</title>
+    <link>https://dpnote.netlify.app/test/tags/%E5%B9%B3%E6%88%9030%E5%B9%B4%E8%A5%BF%E6%97%A5%E6%9C%AC%E8%B1%AA%E9%9B%A8/</link>
+    <description>Recent content in 平成30年西日本豪雨 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 04 Sep 2022 11:52:12 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/test/tags/%E5%B9%B3%E6%88%9030%E5%B9%B4%E8%A5%BF%E6%97%A5%E6%9C%AC%E8%B1%AA%E9%9B%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>西日本豪雨を可視化しました</title>
+      <link>https://dpnote.netlify.app/test/nishinihonrain/</link>
+      <pubDate>Sun, 04 Sep 2022 11:52:12 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/test/nishinihonrain/</guid>
+      <description>
+        
+          &lt;p&gt;平成30年西日本豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/h30nishinihon.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/h30nishinihon.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2024年10月 on DP Note</title>
+    <link>https://dpnote.netlify.app/test/archives/2024%E5%B9%B410%E6%9C%88/</link>
+    <description>Recent content in 2024年10月 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/test/archives/2024%E5%B9%B410%E6%9C%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>熱海市土砂災害を3Dにて可視化しました</title>
+      <link>https://dpnote.netlify.app/test/atami3d/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/test/atami3d/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市土砂災害を3Dにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/atami.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/atami.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
+&lt;p&gt;以下のデータを加工・編集して作成しました。&lt;/p&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://www.gsi.go.jp/BOUSAI/R3_0701_heavyrain.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;令和3年(2021年)7月1日からの大雨に関する情報&lt;/a&gt;、国土地理院
+&lt;/div&gt;
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熊本地震の震度マップアニメーション</title>
+      <link>https://dpnote.netlify.app/test/kumamoto_shido_animation/</link>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/test/kumamoto_shido_animation/</guid>
+      <description>
+        
+          &lt;p&gt;熊本地震の震度マップをアニメーションにて可視化しました。&lt;/p&gt;
+&lt;!-- Youtube --&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zKaphBhYKOI?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熱海市土砂災害３Dオブジェクトにて可視化</title>
+      <link>https://dpnote.netlify.app/test/atami3dglb/</link>
+      <pubDate>Wed, 02 Oct 2024 19:04:33 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/test/atami3dglb/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市の土砂災害を３Dオブジェクトにて可視化しました。&lt;/p&gt;
+&lt;!-- Youtube --&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YA47mdkPYAs?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PLATEAUを用いた３D都市空間の可視化</title>
+      <link>https://dpnote.netlify.app/test/plateau3d/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/test/plateau3d/</guid>
+      <description>
+        
+          &lt;p&gt;PLATEAUを用いて都市空間の３D化に挑戦しました。&lt;/p&gt;
+&lt;p&gt;今回、３Dに可視化したのは、新宿区です。&lt;/p&gt;
+&lt;iframe src =&#34;../../maptest/plateau3d/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../maptest/plateau3d/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://github.com/indigo-lab/plateau-tokyo23ku-building-mvt-2020&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;plateau-tokyo23ku-building-mvt-2020&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;!-- テーブル 
+&lt;div class=&#34;kokuban-t2&#34;&gt;
+  &lt;span class=&#34;title-t2&#34;&gt;タイトル&lt;/span&gt;
+    テキスト
+&lt;/div&gt;
+
+
+
+&lt;!-- カードリンク 
+&lt;div class=&#34;blcard&#34;&gt;
+&lt;div class=&#34;blcard-content&#34;&gt;
+    &lt;div class=&#34;blcard-title&#34;&gt;
+      &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
+	
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;blcard-excerpt&#34;&gt;
+      
+
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;blcard-thumbnail&#34;&gt;
+    &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;
+    &lt;img src=&#34;.jpg&#34;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+
+&lt;!-- ソースコード 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;!-- Youtube 
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/id?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+--&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

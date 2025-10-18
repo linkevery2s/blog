@@ -158,44 +158,6 @@
     </item>
     
     <item>
-      <title>00000JAPANをご紹介します。</title>
-      <link>https://dpnote.netlify.app/test/00000japan/</link>
-      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/test/00000japan/</guid>
-      <description>
-        
-          &lt;p&gt;今日は、00000JAPANについて説明します。&lt;/p&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-  &lt;p&gt;「00000JAPAN」をご存知ですか？災害時に、被災者等がインターネットに接続できるよう通信事業者等が公衆無線LANのアクセスポイントを無料で開放する取り組みです。
-※暗号化はされていないので個人情報の使用は控えてくださいね。
-&lt;p&gt;総務省URL：https://www.soumu.go.jp/menu_kyotsuu/important/kinkyu02_000427.html&lt;/p&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>電話リレーサービスをご存じですか？</title>
-      <link>https://dpnote.netlify.app/test/phonerelay/</link>
-      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/test/phonerelay/</guid>
-      <description>
-        
-          &lt;p&gt;今日は、電話リレーサービスについてご紹介します。&lt;/p&gt;
-&lt;div class=&#34;balloon&#34;&gt;
-  &lt;p&gt;
-  電話リレーサービスをご存知ですか？聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。昨年の法改正により令和3年7月1日から開始しました。必要な方々に教えてあげてください！
-&lt;p&gt;総務省URL：https://www.soumu.go.jp/menu_seisaku/ictseisaku/telephonerelay/index.html&lt;/p&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-        
-      </description>
-    </item>
-    
-    <item>
       <title>東京都災害時給水ステーションをマップ化してみた。</title>
       <link>https://dpnote.netlify.app/test/tokyowater/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
@@ -206,6 +168,7 @@
           &lt;p&gt;東京都のオープンデータを用いて、災害時給水ステーションをマップ化してみました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/watersupply.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../../simulation/watersupply.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
 &lt;div class=&#34;balloon&#34;&gt;
   &lt;p&gt;
 「東京都災害時給水ステーションをマップ化」

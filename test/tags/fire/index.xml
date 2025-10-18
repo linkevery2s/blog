@@ -55,25 +55,5 @@
       </description>
     </item>
     
-    <item>
-      <title>東京都火災発生件数を可視化しました</title>
-      <link>https://dpnote.netlify.app/test/tokyofire/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/test/tokyofire/</guid>
-      <description>
-        
-          &lt;p&gt;東京都のオープンデータを利用して、都内の火災発生件数を可視化しました。&lt;/p&gt;
-&lt;p&gt;令和2年火災年報によると全国で発生した火災のうち&lt;/p&gt;
-&lt;p&gt;出火原因1位:たばこ、2位:たき火&lt;/p&gt;
-&lt;p&gt;とのことです。&lt;/p&gt;
-&lt;p&gt;知識の整理&lt;/p&gt;
-&lt;p&gt;１．避難時はブレーカーを落とす　→　通電火災防止&lt;/p&gt;
-&lt;p&gt;２．家の周りに燃える物を置かない　→　放火防止&lt;/p&gt;
-&lt;p&gt;３．火災報知器の取り付け・点検&lt;/p&gt;
-        
-      </description>
-    </item>
-    
   </channel>
 </rss>
