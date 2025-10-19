@@ -529,7 +529,7 @@ ul{
 /* パンくずリスト */
 .breadcrumb {
   padding: .2em 0 0 0 !important;
-
+  margin-top: 2em;
 }
 .breadcrumb li {
   display: inline;
@@ -554,4 +554,8 @@ ul{
 #button:hover{
   border-bottom: none;
   color: #0b3552;
+}
+
+#timeline{
+  border-left: 1px solid #000000;
 }
