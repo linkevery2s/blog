@@ -40,11 +40,13 @@
           &lt;p&gt;自然災害伝承碑マップを作成しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/denshouhi.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;日本全国の自然災害伝承碑マップを作成しました。全国に1,800箇所以上あります。いかに日本で大規模な災害が起きているかが、分かります。存在そのものすら、知らない方多いのではないかなと思います。次世代に語り継いでいきたいと思っています。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;日本全国の自然災害伝承碑マップを作成しました。全国に1,800箇所以上あります。いかに日本で大規模な災害が起きているかが、分かります。存在そのものを知らない方が多いのではないかなと思います。次世代に語り継いでいきたいと思っています。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
-&lt;p&gt;・&lt;a href=&#34;https://www.gsi.go.jp/bousaichiri/denshouhi.html&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;自然災害伝承碑&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;・自然災害伝承碑、国土地理院&lt;/p&gt;
         
       </description>
     </item>
@@ -131,6 +133,25 @@
     </item>
     
     <item>
+      <title>家具の固定について</title>
+      <link>https://dpnote.netlify.app/furniture/</link>
+      <pubDate>Sat, 18 Jun 2022 12:27:48 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/furniture/</guid>
+      <description>
+        
+          &lt;p&gt;家具の固定について、考えてみます。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;家具の固定は当然大事ですが、それ以上に「家具を無くす」ことの方が大事だと思っています。家具が多いほど、地震時の危険になり得ます。リスク&amp;quot;そのもの&amp;quot;を取り除けば、被害は0になる。この観点を押さえると色々な対策が見えてくる。覚えておきましょう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
       <title>ブラックアイスバーンについて</title>
       <link>https://dpnote.netlify.app/blackice/</link>
       <pubDate>Sun, 27 Feb 2022 13:36:49 +0900</pubDate>
@@ -139,9 +160,12 @@
       <description>
         
           &lt;p&gt;ブラックアイスバーンをご存知ですか？&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;覚えておいて。ブラックアイスバーンってご存じですか？冷え込む夜間や朝方、日陰など、凍っているように見えなくても「実は凍っている」路面のことを言います。雪が少ない地域でも積雪・凍結を原因とする転倒災害が報告されており、特に例年「１〜３月」に集中しています。凍結に御用心というお話。&lt;/p&gt;&amp;mdash; 仁志｜二刀流エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1485198120740962308?ref_src=twsrc%5Etfw&#34;&gt;January 23, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;覚えておいて！ブラックアイスバーンってご存じですか？冷え込む夜間や朝方、日陰など、凍っているように見えなくても「実は凍っている」路面のことを言います。雪が少ない地域でも積雪・凍結を原因とする転倒災害が報告されており、特に例年「１〜３月」に集中しています。凍結に御用心というお話。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -212,6 +236,69 @@
     </item>
     
     <item>
+      <title>1日の震源リストを可視化させてみる</title>
+      <link>https://dpnote.netlify.app/earthquakelist/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/earthquakelist/</guid>
+      <description>
+        
+          &lt;p&gt;「1000回以上」揺れてます。最近の地震の動向が気になったので、可視化してみました！&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/earthquakelist/20210919/index.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>日本全国のダムの情報をマップ化しました。</title>
+      <link>https://dpnote.netlify.app/dam/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/dam/</guid>
+      <description>
+        
+          &lt;p&gt;日本全国のダムの情報をマップ化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/dam.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;日本全国のダムの情報を可視化しました。&lt;/p&gt;
+&lt;p&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;/p&gt;
+&lt;p&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>被害率曲線をご存じですか？</title>
+      <link>https://dpnote.netlify.app/destructionrate/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/destructionrate/</guid>
+      <description>
+        
+          &lt;p&gt;今日は、被害率曲線のお話です。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「被害率曲線をご存知ですか？」&lt;/p&gt;
+&lt;p&gt;耐震化は、まずは1981年がポイントです。&lt;/p&gt;
+&lt;p&gt;内閣府の資料の木造建物の被害率曲線をみると、1981年以後と以前で震度6以上から全壊率に &amp;ldquo;開き&amp;rdquo; が出ています。そこで、家の築年数を調べてみましょう。また、自治体に耐震診断を依頼できます。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
       <title>ハザードマップの認知度をグラフにしてみた</title>
       <link>https://dpnote.netlify.app/hazardmap/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
@@ -247,7 +334,18 @@
       <description>
         
           &lt;p&gt;東京都の昼間人口を可視化してみました。&lt;/p&gt;
-&lt;blockquote&gt;首都直下型地震対策を考える⑤&lt;br&gt;「東京都 昼間人口を可視化」&lt;br&gt;&lt;br&gt;昼夜間人口率は、117.8&lt;br&gt;（参考：昼夜間人口比率＝昼間人口÷常住人口×100）&lt;br&gt;&lt;br&gt;❶昼間の方が人が多い&lt;br&gt;❷通勤・通学の行き来が多い&lt;br&gt;&lt;br&gt;ことが分かります。朝の通勤・通学及び夜の帰宅ラッシュ時の災害対策と帰宅困難者対策は必須です！&lt;/blockquote&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;首都直下型地震対策を考える
+「東京都 昼間人口を可視化」&lt;/p&gt;
+&lt;p&gt;昼夜間人口率は、117.8
+（参考：昼夜間人口比率＝昼間人口÷常住人口×100）&lt;/p&gt;
+&lt;p&gt;❶昼間の方が人が多い
+❷通勤・通学の行き来が多い&lt;/p&gt;
+&lt;p&gt;ことが分かります。朝の通勤・通学及び夜の帰宅ラッシュ時の災害対策と帰宅困難者対策は必須です！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>

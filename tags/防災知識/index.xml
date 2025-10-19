@@ -50,6 +50,70 @@
     </item>
     
     <item>
+      <title>気象庁の降水ナウキャストを３Dにて可視化</title>
+      <link>https://dpnote.netlify.app/krader3d/</link>
+      <pubDate>Mon, 09 Jan 2023 16:15:17 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/krader3d/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>都市空間の3Dマップを作りました。</title>
+      <link>https://dpnote.netlify.app/city3dmap/</link>
+      <pubDate>Sat, 24 Dec 2022 17:41:54 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/city3dmap/</guid>
+      <description>
+        
+          &lt;p&gt;ハザードマップの３D可視化に向けて、まずは都市空間の３D化に取り組みました。&lt;/p&gt;
+&lt;iframe src =&#34;../../maptest/3dhazard/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「街空間の３D化」OSM BuildingsいうAPIを見つけたので、早速マップに取り込んでみました。ビルの街並みが良い感じに３Dに表示されています。これが無料でできるというすごい時代になりました。このマップにハザードマップを重ねると３Dハザードマップが達成できるかな？&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
+&lt;p&gt;・OSM Buildings&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>自然災害伝承碑マップを作成しました。</title>
+      <link>https://dpnote.netlify.app/denshouhi/</link>
+      <pubDate>Sat, 17 Dec 2022 16:29:09 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/denshouhi/</guid>
+      <description>
+        
+          &lt;p&gt;自然災害伝承碑マップを作成しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/denshouhi.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;日本全国の自然災害伝承碑マップを作成しました。全国に1,800箇所以上あります。いかに日本で大規模な災害が起きているかが、分かります。存在そのものを知らない方が多いのではないかなと思います。次世代に語り継いでいきたいと思っています。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
+&lt;p&gt;・自然災害伝承碑、国土地理院&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
       <title>防災ロードマップを図解化</title>
       <link>https://dpnote.netlify.app/loadmap/</link>
       <pubDate>Sat, 20 Aug 2022 11:44:29 +0900</pubDate>
@@ -62,6 +126,26 @@
 &lt;div class=&#34;balloon&#34;&gt;
   &lt;p&gt;
 &lt;p&gt;防災って大事だけど何から始めればいいか分からないあなたへ」今からでも「出来ること」をやろう！防災ロードマップに沿って取り組んでいけば、あなたのご家庭の防災力は確実に上がります。やってみよう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>気象庁の雨雲レーダーの取得に成功しました</title>
+      <link>https://dpnote.netlify.app/krader/</link>
+      <pubDate>Sat, 13 Aug 2022 13:36:53 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/krader/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、MAPに載せてみました！&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;/p&gt;
   &lt;/p&gt;
 &lt;/div&gt;
         
@@ -153,6 +237,121 @@
     </item>
     
     <item>
+      <title>津波のスピードを図解化</title>
+      <link>https://dpnote.netlify.app/tspeed/</link>
+      <pubDate>Fri, 24 Jun 2022 12:19:04 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/tspeed/</guid>
+      <description>
+        
+          &lt;p&gt;津波のスピードを図解にしました。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;津波のスピードを図解にしてみました。津波の速さの式には、震度やマグニチュードの値が「含まれていない」ことが分かります。トンガ火山噴火による潮位変化が日本でありましたが、このことからも、津波は「地震以外で起こりうること」に起因しているのかもしれませんね。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>家具の固定について</title>
+      <link>https://dpnote.netlify.app/furniture/</link>
+      <pubDate>Sat, 18 Jun 2022 12:27:48 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/furniture/</guid>
+      <description>
+        
+          &lt;p&gt;家具の固定について、考えてみます。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;家具の固定は当然大事ですが、それ以上に「家具を無くす」ことの方が大事だと思っています。家具が多いほど、地震時の危険になり得ます。リスク&amp;quot;そのもの&amp;quot;を取り除けば、被害は0になる。この観点を押さえると色々な対策が見えてくる。覚えておきましょう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東京都河川ライブカメラマップの作成</title>
+      <link>https://dpnote.netlify.app/tkriver/</link>
+      <pubDate>Sat, 14 May 2022 16:48:28 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/tkriver/</guid>
+      <description>
+        
+          &lt;p&gt;東京都のオープンデータを用いて、河川ライブカメラマップを作成しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/tkriver/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;これすごく良い！東京都河川ライブカメラマップを公開しました。東京都のオープンデータが非常に使いやすい。同様の取り組みが、全国に広まると良いですね！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ブラックアイスバーンについて</title>
+      <link>https://dpnote.netlify.app/blackice/</link>
+      <pubDate>Sun, 27 Feb 2022 13:36:49 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/blackice/</guid>
+      <description>
+        
+          &lt;p&gt;ブラックアイスバーンをご存知ですか？&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;覚えておいて！ブラックアイスバーンってご存じですか？冷え込む夜間や朝方、日陰など、凍っているように見えなくても「実は凍っている」路面のことを言います。雪が少ない地域でも積雪・凍結を原因とする転倒災害が報告されており、特に例年「１〜３月」に集中しています。凍結に御用心というお話。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>パブリックDNSをご存じですか？</title>
+      <link>https://dpnote.netlify.app/publicdns/</link>
+      <pubDate>Sat, 29 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/publicdns/</guid>
+      <description>
+        
+          &lt;p&gt;パブリックDNSについて、ご紹介します。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;パブリックDNSについて、図解にてまとめました。いざという時に役に立つ知識だと思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>天気予報の時間軸を図解にて可視化</title>
+      <link>https://dpnote.netlify.app/time/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/time/</guid>
+      <description>
+        
+          &lt;p&gt;天気予報などで使われる『時間軸』を図解にて可視化してみました。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
       <title>防災における人の心理バイアスを図解にて可視化</title>
       <link>https://dpnote.netlify.app/bbias/</link>
       <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
@@ -165,6 +364,44 @@
 &lt;div class=&#34;balloon&#34;&gt;
   &lt;p&gt;
 &lt;p&gt;防災における人の心理バイアスについて、図解にて可視化してみました。いざという時に冷静な行動を取れるように覚えておきましょう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>人は煙のスピードに勝てない</title>
+      <link>https://dpnote.netlify.app/smoke/</link>
+      <pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/smoke/</guid>
+      <description>
+        
+          &lt;p&gt;人と煙の速度を図解にして比較してみました。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;衝撃です。人は煙のスピードに「勝てない」というお話。いかに事前に危険を察知して「逃げ切れるか」だと思う。あとは、❶煙は上に上がるので、低い姿勢で歩く、❷お出かけの際は、ハンカチやタオルは持っていくなど、災害データから見えてくる防災は確実に存在しますね。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>消防車のサイレンの違い</title>
+      <link>https://dpnote.netlify.app/siren/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/siren/</guid>
+      <description>
+        
+          &lt;p&gt;消防車のサイレンには意味があることをご存知ですか？&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;あまり知られていないのですが、消防車のサイレンには意味があります。❶&amp;quot;ウー、ウー、カンカンカン&amp;quot;(サイレンと鐘)は火災の出動、❷&amp;quot;ウー、ウー&amp;quot;(サイレンのみ)は火災以外(交通事故、水害の救助など)の出動、❸&amp;quot;カンカン&amp;quot;(鐘のみ)は鎮静後の戻り。乾燥シーズン、火には気を付けましょう！&lt;/p&gt;
   &lt;/p&gt;
 &lt;/div&gt;
         
@@ -218,6 +455,48 @@
     </item>
     
     <item>
+      <title>1日の震源リストを可視化させてみる</title>
+      <link>https://dpnote.netlify.app/earthquakelist/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/earthquakelist/</guid>
+      <description>
+        
+          &lt;p&gt;「1000回以上」揺れてます。最近の地震の動向が気になったので、可視化してみました！&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/earthquakelist/20210919/index.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>日本全国のダムの情報をマップ化しました。</title>
+      <link>https://dpnote.netlify.app/dam/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/dam/</guid>
+      <description>
+        
+          &lt;p&gt;日本全国のダムの情報をマップ化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/dam.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;日本全国のダムの情報を可視化しました。&lt;/p&gt;
+&lt;p&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;/p&gt;
+&lt;p&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Siriに防災を学ばせてみた！</title>
       <link>https://dpnote.netlify.app/siri/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
@@ -229,6 +508,27 @@
 &lt;center&gt;
 &lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/6oReqkwbtDs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>被害率曲線をご存じですか？</title>
+      <link>https://dpnote.netlify.app/destructionrate/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/destructionrate/</guid>
+      <description>
+        
+          &lt;p&gt;今日は、被害率曲線のお話です。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「被害率曲線をご存知ですか？」&lt;/p&gt;
+&lt;p&gt;耐震化は、まずは1981年がポイントです。&lt;/p&gt;
+&lt;p&gt;内閣府の資料の木造建物の被害率曲線をみると、1981年以後と以前で震度6以上から全壊率に &amp;ldquo;開き&amp;rdquo; が出ています。そこで、家の築年数を調べてみましょう。また、自治体に耐震診断を依頼できます。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -278,6 +578,31 @@
 &lt;p&gt;人が生きていく上で何よりも「水」が大切‼️&lt;/p&gt;
 &lt;p&gt;東京都のオープンデータを利用。地域に偏りが無いことが分かります。日本全国のオープンデータ化を求めます！&lt;/p&gt;
 &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>東京都の昼間人口を可視化してみた。</title>
+      <link>https://dpnote.netlify.app/tokyodaytime/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/tokyodaytime/</guid>
+      <description>
+        
+          &lt;p&gt;東京都の昼間人口を可視化してみました。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;首都直下型地震対策を考える
+「東京都 昼間人口を可視化」&lt;/p&gt;
+&lt;p&gt;昼夜間人口率は、117.8
+（参考：昼夜間人口比率＝昼間人口÷常住人口×100）&lt;/p&gt;
+&lt;p&gt;❶昼間の方が人が多い
+❷通勤・通学の行き来が多い&lt;/p&gt;
+&lt;p&gt;ことが分かります。朝の通勤・通学及び夜の帰宅ラッシュ時の災害対策と帰宅困難者対策は必須です！&lt;/p&gt;
+  &lt;/p&gt;
 &lt;/div&gt;
         
       </description>

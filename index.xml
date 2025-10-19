@@ -157,7 +157,7 @@
     </item>
     
     <item>
-      <title>能登半島沖地震コネクトマップの可視化</title>
+      <title>能登半島地震コネクトマップの可視化</title>
       <link>https://dpnote.netlify.app/noto_connectmap/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       
@@ -189,7 +189,7 @@
     </item>
     
     <item>
-      <title>能登半島沖地震の震度マップアニメーション</title>
+      <title>能登半島地震の震度マップアニメーション</title>
       <link>https://dpnote.netlify.app/noto_shindomap/</link>
       <pubDate>Thu, 19 Sep 2024 12:01:29 +0900</pubDate>
       
@@ -208,10 +208,10 @@
     
     <item>
       <title>能登半島地震の震度マップをヒートマップとして可視化</title>
-      <link>https://dpnote.netlify.app/2024notoheatmap/</link>
+      <link>https://dpnote.netlify.app/notoheatmap/</link>
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://dpnote.netlify.app/2024notoheatmap/</guid>
+      <guid>https://dpnote.netlify.app/notoheatmap/</guid>
       <description>
         
           &lt;p&gt;令和6年1月に発生した能登半島沖地震の震度マップをヒートマップとして可視化しました。&lt;/p&gt;
@@ -267,14 +267,14 @@
     </item>
     
     <item>
-      <title>能登半島沖地震の３Dによる可視化</title>
+      <title>能登半島地震の３Dによる可視化</title>
       <link>https://dpnote.netlify.app/notoearthquake3d/</link>
       <pubDate>Fri, 05 Jan 2024 19:23:51 +0900</pubDate>
       
       <guid>https://dpnote.netlify.app/notoearthquake3d/</guid>
       <description>
         
-          &lt;p&gt;能登半島沖地震を３Dで可視化しました。&lt;/p&gt;
+          &lt;p&gt;能登半島地震を３Dで可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/notoearthquake3d/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
         
       </description>
@@ -366,29 +366,33 @@
           &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/krader3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;blockquote&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
 &lt;p&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;/p&gt;
-&lt;/blockquote&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
     
     <item>
       <title>都市空間の3Dマップを作りました。</title>
-      <link>https://dpnote.netlify.app/3dmap/</link>
+      <link>https://dpnote.netlify.app/city3dmap/</link>
       <pubDate>Sat, 24 Dec 2022 17:41:54 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/3dmap/</guid>
+      <guid>https://dpnote.netlify.app/city3dmap/</guid>
       <description>
         
           &lt;p&gt;ハザードマップの３D可視化に向けて、まずは都市空間の３D化に取り組みました。&lt;/p&gt;
 &lt;iframe src =&#34;../../maptest/3dhazard/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「街空間の３D化」OSM BuildingsいうAPIを見つけたので、早速マップに取り込んでみました。ビルの街並みが良い感じに３Dに表示されています。これが無料でできるというすごい時代になりました。このマップにハザードマップを重ねると十分３D表示が達成できるかな？&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「街空間の３D化」OSM BuildingsいうAPIを見つけたので、早速マップに取り込んでみました。ビルの街並みが良い感じに３Dに表示されています。これが無料でできるというすごい時代になりました。このマップにハザードマップを重ねると３Dハザードマップが達成できるかな？&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
-&lt;p&gt;・&lt;a href=&#34;https://osmbuildings.org/&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;OSM Buildings&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;・OSM Buildings&lt;/p&gt;
         
       </description>
     </item>
@@ -404,29 +408,33 @@
           &lt;p&gt;自然災害伝承碑マップを作成しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/denshouhi.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;日本全国の自然災害伝承碑マップを作成しました。全国に1,800箇所以上あります。いかに日本で大規模な災害が起きているかが、分かります。存在そのものすら、知らない方多いのではないかなと思います。次世代に語り継いでいきたいと思っています。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;日本全国の自然災害伝承碑マップを作成しました。全国に1,800箇所以上あります。いかに日本で大規模な災害が起きているかが、分かります。存在そのものを知らない方が多いのではないかなと思います。次世代に語り継いでいきたいと思っています。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
-&lt;p&gt;・&lt;a href=&#34;https://www.gsi.go.jp/bousaichiri/denshouhi.html&#34; target=&#34;_blank&#34; class=&#34;linkb&#34;&gt;自然災害伝承碑&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;・自然災害伝承碑、国土地理院&lt;/p&gt;
         
       </description>
     </item>
     
     <item>
-      <title>令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）</title>
+      <title>令和4年8月の大雨等による災害（村上市坂町周辺浸水推定図）</title>
       <link>https://dpnote.netlify.app/heavyrain20220803/</link>
       <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dpnote.netlify.app/heavyrain20220803/</guid>
       <description>
         
-          &lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水推定図）を可視化しました。&lt;/p&gt;
+          &lt;p&gt;令和4年8月の大雨等による災害（村上市坂町周辺浸水推定図）を可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/20220803heavyrain.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;令和4年8月3日からの大雨（村上市坂町周辺浸水想定図）を可視化しました。２画面描写で、浸水想定と実際の浸水状況を比較できるようになっています。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;令和4年8月の大雨等による災害（村上市坂町周辺浸水想定図）を可視化しました。２画面描写で、浸水想定と実際の浸水状況を比較できるようになっています。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -447,7 +455,7 @@
     </item>
     
     <item>
-      <title>トンガ火山噴火に伴う津波の様子</title>
+      <title>トンガ火山噴火に伴う潮位変化の様子</title>
       <link>https://dpnote.netlify.app/tonga/</link>
       <pubDate>Sat, 20 Aug 2022 12:21:33 +0900</pubDate>
       
@@ -456,9 +464,12 @@
         
           &lt;p&gt;トンガ火山噴火に伴う津波の様子を可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/tonga/index.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「初公開！」誰も見たことがない津波マップを公開します。トンガ火山噴火に伴う津波の様子を可視化しました。&lt;br&gt;&lt;br&gt;前例のない情報収集で、気象庁の方々も大変だったと思います。本当にお疲れ様でした。&lt;br&gt;&lt;br&gt;マップURLはこちら↓&lt;a href=&#34;https://t.co/9nGLktBxdO&#34;&gt;https://t.co/9nGLktBxdO&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1484835733961535489?ref_src=twsrc%5Etfw&#34;&gt;January 22, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「初公開！」誰も見たことがない津波マップを公開します。トンガ火山噴火に伴う津波の様子を可視化しました。前例のない情報収集で、気象庁の方々も大変だったと思います。本当にお疲れ様でした。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -492,9 +503,12 @@
         
           &lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、MAPに載せてみました！&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/krader.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。動作テストを行い、問題なければ、防災INSIGHTに組み込みたいと思います。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;a href=&#34;https://t.co/yoJtvUW1dw&#34;&gt;https://t.co/yoJtvUW1dw&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1558400469235638273?ref_src=twsrc%5Etfw&#34;&gt;August 13, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -592,9 +606,12 @@
       <description>
         
           &lt;p&gt;津波のスピードを図解にしました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「津波のスピードを図解にしてみた」津波の速さの式には、震度やマグニチュードの値が「含まれていない」ことが分かる。このことからも、津波は「地震以外で起こりうること」に起因しているのかもしれない。 &lt;a href=&#34;https://t.co/3DMvhcwuV8&#34;&gt;pic.twitter.com/3DMvhcwuV8&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1488459611157925890?ref_src=twsrc%5Etfw&#34;&gt;February 1, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;津波のスピードを図解にしてみました。津波の速さの式には、震度やマグニチュードの値が「含まれていない」ことが分かります。トンガ火山噴火による潮位変化が日本でありましたが、このことからも、津波は「地震以外で起こりうること」に起因しているのかもしれませんね。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -608,9 +625,12 @@
       <description>
         
           &lt;p&gt;家具の固定について、考えてみます。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;重要なこと言います。家具の固定は当然大事なんだけど、それ以上に「家具を無くす」ことの方が大事だと思ってる。家具が多いほど、地震時の危険になり得る。リスク&amp;quot;そのもの&amp;quot;を取り除けば、被害は0になる。情報セキュリティも防災もこの観点を押さえると色々な対策が見えてくる。覚えておいてね！&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1534120484542943232?ref_src=twsrc%5Etfw&#34;&gt;June 7, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;家具の固定は当然大事ですが、それ以上に「家具を無くす」ことの方が大事だと思っています。家具が多いほど、地震時の危険になり得ます。リスク&amp;quot;そのもの&amp;quot;を取り除けば、被害は0になる。この観点を押さえると色々な対策が見えてくる。覚えておきましょう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -624,10 +644,13 @@
       <description>
         
           &lt;p&gt;東京都のオープンデータを用いて、河川ライブカメラマップを作成しました。&lt;/p&gt;
-&lt;center&gt;
-&lt;iframe src =&#34;../../simulation/tkriver.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;これすごく良い！東京都河川ライブカメラマップを公開しました。東京都のオープンデータが非常に使いやすい。同様の取り組みが、全国に広まると良いですね！&lt;a href=&#34;https://t.co/zdIb0Ejl09&#34;&gt;https://t.co/zdIb0Ejl09&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1522524072633978880?ref_src=twsrc%5Etfw&#34;&gt;May 6, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;iframe src =&#34;../../simulation/tkriver/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;これすごく良い！東京都河川ライブカメラマップを公開しました。東京都のオープンデータが非常に使いやすい。同様の取り組みが、全国に広まると良いですね！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -641,9 +664,12 @@
       <description>
         
           &lt;p&gt;ブラックアイスバーンをご存知ですか？&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;覚えておいて。ブラックアイスバーンってご存じですか？冷え込む夜間や朝方、日陰など、凍っているように見えなくても「実は凍っている」路面のことを言います。雪が少ない地域でも積雪・凍結を原因とする転倒災害が報告されており、特に例年「１〜３月」に集中しています。凍結に御用心というお話。&lt;/p&gt;&amp;mdash; 仁志｜二刀流エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1485198120740962308?ref_src=twsrc%5Etfw&#34;&gt;January 23, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;覚えておいて！ブラックアイスバーンってご存じですか？冷え込む夜間や朝方、日陰など、凍っているように見えなくても「実は凍っている」路面のことを言います。雪が少ない地域でも積雪・凍結を原因とする転倒災害が報告されており、特に例年「１〜３月」に集中しています。凍結に御用心というお話。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -657,9 +683,12 @@
       <description>
         
           &lt;p&gt;パブリックDNSについて、ご紹介します。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「ブクマ必須」パブリックDNSについて、図解にてまとめました。いざという時にきっと、役に立つ知識だと思います。 &lt;a href=&#34;https://t.co/23UCqIFETW&#34;&gt;pic.twitter.com/23UCqIFETW&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1480849468480131072?ref_src=twsrc%5Etfw&#34;&gt;January 11, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;パブリックDNSについて、図解にてまとめました。いざという時に役に立つ知識だと思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -681,7 +710,7 @@
     </item>
     
     <item>
-      <title>時間軸を図解にて可視化</title>
+      <title>天気予報の時間軸を図解にて可視化</title>
       <link>https://dpnote.netlify.app/time/</link>
       <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
       
@@ -689,9 +718,12 @@
       <description>
         
           &lt;p&gt;天気予報などで使われる『時間軸』を図解にて可視化してみました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。 &lt;a href=&#34;https://t.co/maaEy4786o&#34;&gt;pic.twitter.com/maaEy4786o&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1475413649175064578?ref_src=twsrc%5Etfw&#34;&gt;December 27, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;ふと思いついたのですが、天気予報などで使われる「時間軸」を図解にて可視化させてみました。普段、何気なく聞いている言葉もこうすると意味があるんだなと感じられます。天気予報の見方が変わるかも。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -732,22 +764,6 @@
     </item>
     
     <item>
-      <title>水の力と津波の危険性</title>
-      <link>https://dpnote.netlify.app/water/</link>
-      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/water/</guid>
-      <description>
-        
-          &lt;p&gt;水の力と津波の危険性について、まとめました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;覚えておいて。水の力は凄まじい。水力発電でエネルギーを作られるぐらいの力を持っている。「ん？50cmの津波、大したことないやん。」ちょっと待ってくれ、津波は『体積』でやってくるのよ。50cmは男性の8割は立ってられない力を持っています。警報・注意報来たら、迷わず行動起こしてねというお話。&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1452209500170162183?ref_src=twsrc%5Etfw&#34;&gt;October 24, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-        
-      </description>
-    </item>
-    
-    <item>
       <title>内部被害による怪我の原因</title>
       <link>https://dpnote.netlify.app/glass/</link>
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
@@ -776,9 +792,12 @@
       <description>
         
           &lt;p&gt;人と煙の速度を図解にして比較してみました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;衝撃です！人は煙のスピードに「勝てない」というお話。いかに事前に危険を察知して「逃げ切れるか」だと思う。あとは、❶煙は上に上がるので、低い姿勢で歩く、❷お出かけの際は、ハンカチやタオルは持っていくなど、災害データから見えてくる防災は確実に存在する。 &lt;a href=&#34;https://t.co/1F6T8aHxtD&#34;&gt;pic.twitter.com/1F6T8aHxtD&lt;/a&gt;&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1460916875353894913?ref_src=twsrc%5Etfw&#34;&gt;November 17, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;衝撃です。人は煙のスピードに「勝てない」というお話。いかに事前に危険を察知して「逃げ切れるか」だと思う。あとは、❶煙は上に上がるので、低い姿勢で歩く、❷お出かけの際は、ハンカチやタオルは持っていくなど、災害データから見えてくる防災は確実に存在しますね。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -792,9 +811,12 @@
       <description>
         
           &lt;p&gt;消防車のサイレンには意味があることをご存知ですか？&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;あまり知られていないのですが、消防車のサイレンには意味があります。❶&amp;quot;ウー、ウー、カンカンカン&amp;quot;(サイレンと鐘)は火災の出動、❷&amp;quot;ウー、ウー&amp;quot;(サイレンのみ)は火災以外(交通事故、水害の救助など)の出動、❸&amp;quot;カンカン&amp;quot;(鐘のみ)は鎮静後の戻り。乾燥シーズン、火には気を付けようね！&lt;/p&gt;&amp;mdash; 仁志｜防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1456931868876500997?ref_src=twsrc%5Etfw&#34;&gt;November 6, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;あまり知られていないのですが、消防車のサイレンには意味があります。❶&amp;quot;ウー、ウー、カンカンカン&amp;quot;(サイレンと鐘)は火災の出動、❷&amp;quot;ウー、ウー&amp;quot;(サイレンのみ)は火災以外(交通事故、水害の救助など)の出動、❸&amp;quot;カンカン&amp;quot;(鐘のみ)は鎮静後の戻り。乾燥シーズン、火には気を付けましょう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -855,9 +877,12 @@
         
           &lt;p&gt;「1000回以上」揺れてます。最近の地震の動向が気になったので、可視化してみました！&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/earthquakelist/20210919/index.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。&lt;br&gt;マップURLは↓こちら&lt;a href=&#34;https://t.co/j1eRTA1taz&#34;&gt;https://t.co/j1eRTA1taz&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1439909703786459141?ref_src=twsrc%5Etfw&#34;&gt;September 20, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「1000回以上揺れてます」最近の地震の動向が気になったので、可視化してみた。震源なので、人が感知しない揺れも含まれています。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -872,9 +897,14 @@
         
           &lt;p&gt;日本全国のダムの情報をマップ化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/dam.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本全国のダムの情報を可視化しました。&lt;br&gt;&lt;br&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;br&gt;&lt;br&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます🙇‍♂️&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/V6M0X6gp7W&#34;&gt;https://t.co/V6M0X6gp7W&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1424327617096781829?ref_src=twsrc%5Etfw&#34;&gt;August 8, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;日本全国のダムの情報を可視化しました。&lt;/p&gt;
+&lt;p&gt;ダムの形式、使用目的、貯水量など、必要な情報を余すとこなく盛り込みました！&lt;/p&gt;
+&lt;p&gt;そして、水害対策のため、貯水量のコントロールという難しい業務をされている方々に心より感謝申し上げます。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -896,23 +926,7 @@
     </item>
     
     <item>
-      <title>日本の各都道府県を河川だけで表現してみる</title>
-      <link>https://dpnote.netlify.app/river/</link>
-      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/river/</guid>
-      <description>
-        
-          &lt;p&gt;日本の各都道府県を河川だけで表現してみました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;日本の都道府県を河川だけで表現してみました！&lt;br&gt;川は日々の生活に欠かせないものです。水害の多い現代、どのように暮らしていくのか？&lt;br&gt;あって当たり前ではなく昔から受け継がれてきた尊い存在のことを再認識する必要があると思う&lt;a href=&#34;https://twitter.com/hashtag/%E9%98%B2%E7%81%BD%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#防災のためにできること&lt;/a&gt; &lt;a href=&#34;https://t.co/rqP7WUOUvH&#34;&gt;https://t.co/rqP7WUOUvH&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1430486361325375490?ref_src=twsrc%5Etfw&#34;&gt;August 25, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>令和3年8月豪雨、六角川の浸水想定を可視化しました</title>
+      <title>令和3年8月の大雨、六角川の浸水想定を可視化しました</title>
       <link>https://dpnote.netlify.app/rokkaku/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -920,10 +934,13 @@
       <description>
         
           &lt;p&gt;令和3年8月豪雨、六角川の浸水想定を可視化しました。&lt;/p&gt;
-&lt;center&gt;
-&lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/4SpIxFJSzGk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;令和3年8月豪雨 六角川の浸水想定を可視化しました。&lt;br&gt;&lt;br&gt;今回は、2画面連動地図を採用しました。標準地図、色別標高図、ハザードマップと比較することができます。スマホは横にしてご覧いただければと思います。&lt;br&gt;&lt;br&gt;マップURLは👇こちら&lt;a href=&#34;https://t.co/FG4mcXaDGX&#34;&gt;https://t.co/FG4mcXaDGX&lt;/a&gt;&lt;/p&gt;&amp;mdash; 防災エンジニア「仁志」 (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1429038067881545731?ref_src=twsrc%5Etfw&#34;&gt;August 21, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;iframe src =&#34;../../simulation/202108heavyrain.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;令和3年8月豪雨 六角川の浸水想定を可視化しました。今回は、2画面連動地図を採用しました。標準地図、色別標高図、ハザードマップと比較することができます。スマホは横にしてご覧いただければと思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -974,9 +991,14 @@
       <description>
         
           &lt;p&gt;今日は、被害率曲線のお話です。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;南海トラフ地震対策を考える②&lt;br&gt;「被害率曲線をご存知ですか？」&lt;br&gt;&lt;br&gt;耐震化は、まずは1981年がポイントです。&lt;br&gt;&lt;br&gt;内閣府の資料の木造建物の被害率曲線をみると、1981年以後と以前で震度6以上から全壊率に &amp;quot;開き&amp;quot; が出ています。&lt;br&gt;&lt;br&gt;家の築年数を調べてみましょう。また、自治体に耐震診断を依頼できます。 &lt;a href=&#34;https://t.co/CnU0SDLYwi&#34;&gt;pic.twitter.com/CnU0SDLYwi&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし 防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1415636560909770755?ref_src=twsrc%5Etfw&#34;&gt;July 15, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「被害率曲線をご存知ですか？」&lt;/p&gt;
+&lt;p&gt;耐震化は、まずは1981年がポイントです。&lt;/p&gt;
+&lt;p&gt;内閣府の資料の木造建物の被害率曲線をみると、1981年以後と以前で震度6以上から全壊率に &amp;ldquo;開き&amp;rdquo; が出ています。そこで、家の築年数を調べてみましょう。また、自治体に耐震診断を依頼できます。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -1040,23 +1062,18 @@
       <description>
         
           &lt;p&gt;東京都の昼間人口を可視化してみました。&lt;/p&gt;
-&lt;blockquote&gt;首都直下型地震対策を考える⑤&lt;br&gt;「東京都 昼間人口を可視化」&lt;br&gt;&lt;br&gt;昼夜間人口率は、117.8&lt;br&gt;（参考：昼夜間人口比率＝昼間人口÷常住人口×100）&lt;br&gt;&lt;br&gt;❶昼間の方が人が多い&lt;br&gt;❷通勤・通学の行き来が多い&lt;br&gt;&lt;br&gt;ことが分かります。朝の通勤・通学及び夜の帰宅ラッシュ時の災害対策と帰宅困難者対策は必須です！&lt;/blockquote&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>南海トラフ地震の震度マップを見よう！</title>
-      <link>https://dpnote.netlify.app/nankaishindomap/</link>
-      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dpnote.netlify.app/nankaishindomap/</guid>
-      <description>
-        
-          &lt;p&gt;南海トラフ地震の震度マップを可視化しました。&lt;/p&gt;
-&lt;center&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;南海トラフ地震対策を考える①&lt;br&gt;「まずは震度マップを見よう！」&lt;br&gt;&lt;br&gt;ついにこのシリーズを始めます！１回目は、震度マップを可視化させました！&lt;br&gt;&lt;br&gt;これから、中央防災会議の統計資料等をお借りし、様々なアングルから考察していきます‼️&lt;br&gt;&lt;br&gt;👇マップURLはこちら&lt;a href=&#34;https://t.co/na7ER7XiGt&#34;&gt;https://t.co/na7ER7XiGt&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E9%98%B2%E7%81%BD?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#防災&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/%E5%8D%97%E6%B5%B7%E3%83%88%E3%83%A9%E3%83%95?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#南海トラフ&lt;/a&gt; &lt;a href=&#34;https://t.co/iku8s7KhAZ&#34;&gt;pic.twitter.com/iku8s7KhAZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; ひとし 防災エンジニア (@hitoshi2sl) &lt;a href=&#34;https://twitter.com/hitoshi2sl/status/1413455389530550276?ref_src=twsrc%5Etfw&#34;&gt;July 9, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/center&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;首都直下型地震対策を考える
+「東京都 昼間人口を可視化」&lt;/p&gt;
+&lt;p&gt;昼夜間人口率は、117.8
+（参考：昼夜間人口比率＝昼間人口÷常住人口×100）&lt;/p&gt;
+&lt;p&gt;❶昼間の方が人が多い
+❷通勤・通学の行き来が多い&lt;/p&gt;
+&lt;p&gt;ことが分かります。朝の通勤・通学及び夜の帰宅ラッシュ時の災害対策と帰宅困難者対策は必須です！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
