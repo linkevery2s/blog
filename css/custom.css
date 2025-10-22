@@ -559,3 +559,13 @@ ul{
 #timeline{
   border-left: 1px solid #000000;
 }
+
+#experience{
+  border: double 5px #e7e7eb;
+  padding: .3em;
+  margin: .2em !important;
+}
+
+#experience p{
+  padding-bottom: .1em !important;
+}
