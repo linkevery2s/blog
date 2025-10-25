@@ -60,7 +60,7 @@
   
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('https://dpnote.netlify.app/json/service-worker.js').then(function() {
+      navigator.serviceWorker.register('https:\/\/dpnote.netlify.app\/json/service-worker.js').then(function() {
         console.log('Service Worker Registered');
       });
     }
@@ -99,9 +99,8 @@
 <div class="post_meta">
 
 
-  <span class="post_date"><time itemprop="datePublished" datetime='2021-08-01'>公開日：2021.08.01</time></span>
-  <span class="post_date" id="post_date_top"><time itemprop="dateModified" datetime='2025-10-18'>更新日：2025.10.18</time></span>
-
+  <span class="post_date" id="post_date_top"><time itemprop="dateModified" datetime='2025.10.18'>更新日：2025.10.18</time></span>
+  <span class="post_date"><time itemprop="datePublished" datetime='2021.08.01'>公開日：2021.08.01</time></span>
 
   
   
@@ -325,6 +324,16 @@
     <i class="fa fa-copyright" aria-hidden="true"></i> <a href="https://hitoshi2s.netlify.app/index.html" target="_blank" class="footer_link">齋藤 仁志</a>. By <a href="https://gohugo.io/" target="_blank" class="footer_link">hugo</a> themes <a href="https://themes.gohugo.io/themes/hugo-clarity/"  target="_blank" class="footer_link">Clarity</a>
     </center>
   </div>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-MPP84V2NHB');
+  </script>
+
 </footer>
 
   
