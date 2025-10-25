@@ -1,18 +1,18 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/will/desktop/DP Note 2",
+	"sourceRoot": "/Users/will/desktop/DP Note",
 	"sources": [
 		"themes/hugo-clarity/assets/sass/main.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/_variables.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/_override.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/_fonts.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/_base.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/_components.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/_utils.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/_mobile.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/_syntax.sass",
-		"../../desktop/DP Note 2/themes/hugo-clarity/assets/sass/custom.sass"
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/_variables.sass",
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/_override.sass",
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/_fonts.sass",
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/_base.sass",
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/_components.sass",
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/_utils.sass",
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/_mobile.sass",
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/_syntax.sass",
+		"../../desktop/DP Note/themes/hugo-clarity/assets/sass/custom.sass"
 	],
 	"sourcesContent": [
 		"@import 'variables';\n@import 'override';\n@import 'fonts';\n@import 'base';\n@import 'components';\n@import 'utils';\n@import 'mobile';\n@import 'syntax';\n@import 'custom';\n",
