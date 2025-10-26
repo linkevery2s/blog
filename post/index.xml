@@ -6,7 +6,27 @@
     <description>Recent content in Posts on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 03 Mar 2025 13:56:18 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Oct 2025 14:39:51 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>避難場所マップを作成しました。</title>
+      <link>https://dpnote.netlify.app/refugemap/</link>
+      <pubDate>Fri, 24 Oct 2025 14:39:51 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/refugemap/</guid>
+      <description>
+        
+          &lt;p&gt;指定緊急避難場所・指定避難所マップを作成しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/refugemap/index.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/refugemap/index.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>岩手・宮城内陸地震の震度マップの可視化</title>
       <link>https://dpnote.netlify.app/iwatemiyagi2008/</link>
@@ -18,6 +38,16 @@
           &lt;p&gt;岩手・宮城内陸地震の震度マップを可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../simulation/iwatemiyagi2008/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../simulation/iwatemiyagi2008/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;災害の概要&lt;/h2&gt;
+&lt;p&gt;平成２０年６月１４日８時４３分，岩手県内陸南部の深さ８kmでマグニチュード７．２の地震が発生し，岩手県奥州市，宮城県栗原市で震度６強，宮城県大崎市で震度６弱，岩手県北上市，一関市，金ヶ崎町，平泉町，宮城県加美町，涌谷町，登米市，美里町，名取市，仙台市，利府町，秋田県湯沢市，東成瀬村で震度５強を観測した。&lt;/p&gt;
+&lt;p&gt;この地震により，死者１３名，行方不明者１０名，負傷者４５１名，住家全壊３０棟，住家半壊１４３棟，住家一部破損２，３８０棟の被害が発生したほか，合計で４８７人に避難勧告・指示が出され，最大時で３２２人が避難所に避難した。&lt;/p&gt;
+&lt;p&gt;土砂災害については，岩手県，宮城県，秋田県及び福島県の６市で４８件発生した。また，岩手・宮城県境の栗駒山周辺において１５箇所の河道閉塞が発生した。&lt;/p&gt;
+&lt;p&gt;ライフライン関係においては，東北電力管内で最大２９，００５戸が停電となったほか，都市ガスについては，岩手県，宮城県及び秋田県内で１，９４４戸が供給停止，上水道については岩手県，宮城県，秋田県及び山形県内の５，５６０戸が断水した。また，電気通信関係では，岩手県及び宮城県内で１１９回線の電話が不通となったほか，携帯電話基地局１３局が停波した。&lt;/p&gt;
+&lt;p&gt;道路については，県管理道路等２２区間において法面崩壊や陥没等により通行規制が行われた。鉄道については，東北新幹線等で被害が発生し運休した。&lt;/p&gt;
+&lt;p&gt;公共土木施設では，河川３４か所，砂防２３施設，道路（橋梁を含む）６６９施設，下水道７施設，公園１施設に被害が発生した。&lt;/p&gt;
+&lt;p&gt;農林水産関係では，農地４６４か所，農業用施設等９３７か所，林地荒廃２９９か所，治山施設２７か所，林道施設９８６か所，養殖施設１０か所等で被害が発生した。&lt;/p&gt;
+&lt;p&gt;文教施設では，国立学校施設５校，公立学校施設２５６校，私立学校施設２０校，社会教育・体育，文化施設等１８０施設，文化財等３０件で被害が発生した。&lt;/p&gt;
+&lt;p&gt;社会福祉施設等では，１１６施設に被害が発生した。&lt;/p&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;災害体験談&lt;/h2&gt;
 &lt;div id=&#34;experience&#34;&gt;
 &lt;p&gt;「ここにいるよ！」と笛をひと吹き&lt;/p&gt;
@@ -53,6 +83,9 @@
 &lt;p&gt;栗原市 60代 男性&lt;/p&gt;
 &lt;/p&gt;
 &lt;/div&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;出典&lt;/h2&gt;
+・平成21年版 防災白書、内閣府
+&lt;p&gt;・1日前プロジェクト、内閣府&lt;/p&gt;
         
       </description>
     </item>
@@ -356,12 +389,6 @@
     &lt;/a&gt;
   &lt;/div&gt;
 
-&lt;/div&gt;
-
-&lt;h2 class=&#34;heading1&#34;&gt;YouTube動画&lt;/h2&gt;
-
-&lt;div class=&#34;video&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Ihb1vMYBZEU?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
         
       </description>
