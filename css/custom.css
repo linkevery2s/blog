@@ -569,3 +569,7 @@ ul{
 #experience p{
   padding-bottom: .1em !important;
 }
+
+#experience span{
+  font-weight: bold;
+}
