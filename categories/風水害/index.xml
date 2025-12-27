@@ -18,6 +18,12 @@
           &lt;p&gt;熱海市土砂災害を3Dにて可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../../simulation/atami.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../../simulation/atami.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;災害の概要&lt;/h2&gt;
+梅雨前線による大雨に伴い、2021年7月3日10時30分頃に静岡県熱海市伊豆山の逢初川で土石流が発生した。
+&lt;p&gt;逢初川の上流部 標高約390m地点で発生した崩壊が土石流化し、下流で甚大な被害が発生した。&lt;/p&gt;
+&lt;p&gt;熱海雨量観測所における降り始めからの総雨量は400ｍｍ以上を記録した。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
+・静岡県熱海市伊豆山で発生した土石流災害、国土交通省
 &lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
 &lt;p&gt;以下のデータを加工・編集して作成しました。&lt;/p&gt;
 &lt;div class=&#34;link_div&#34;&gt;
@@ -39,7 +45,15 @@
           &lt;p&gt;平成12年9月東海豪雨を３Dに可視化しました。&lt;/p&gt;
 &lt;iframe src =&#34;../simulation/h12tokai.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;a href=&#34;../simulation/h12tokai.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;災害の概要&lt;/h2&gt;
+&lt;p&gt;2000年9月11日に、台風14号からの暖かい湿った空気により、秋雨前線の活動が活発化した。名古屋雨量観測所では、年間総雨量の1/3に及ぶ567mmを記録（11日未明～12日）した。&lt;/p&gt;
+&lt;p&gt;治水施設の計画規模を上回る集中豪雨であった。&lt;/p&gt;
+&lt;p&gt;庄内川支川新川では、12日午前3時30分頃に、名古屋市西区において左岸堤防が幅約100mにわたって決壊した。&lt;/p&gt;
+&lt;p&gt;庄内川本川も決壊には至らなかったものの、国道1号線下流において右岸堤防から約2時間越水した。&lt;/p&gt;
+&lt;p&gt;人的被害は死者10名であったが、全壊・半壊・一部損壊508棟、床上・床浸水69,837戸に及ぶとともに、都市型水害の特徴が顕著であった。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
+・大規模水害対策に関する専門調査会（第３回）、資料３「平成12年東海豪雨水害時の状況」、内閣府
+&lt;br&gt;
         
       </description>
     </item>
