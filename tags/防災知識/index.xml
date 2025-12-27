@@ -6,7 +6,30 @@
     <description>Recent content in 防災知識 on DP Note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E7%9F%A5%E8%AD%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Oct 2025 14:39:51 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E7%9F%A5%E8%AD%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>避難場所・避難所マップ</title>
+      <link>https://dpnote.netlify.app/refugemap/</link>
+      <pubDate>Fri, 24 Oct 2025 14:39:51 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/refugemap/</guid>
+      <description>
+        
+          &lt;p&gt;指定緊急避難場所・指定避難所マップを作成しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/refugemap/index.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/refugemap/index.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;日本全国で10万箇所以上ある、指定緊急避難場所・指定避難所をマップに可視化しました。GPS機能も付いているので、ご自身の近くの避難場所などを調べてみましょう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
+・指定緊急避難場所・指定避難所データ、国土地理院
+        
+      </description>
+    </item>
+    
     <item>
       <title>PLATEAUを用いた３D都市空間の可視化</title>
       <link>https://dpnote.netlify.app/plateau3d/</link>
