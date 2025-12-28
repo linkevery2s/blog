@@ -64,8 +64,25 @@
   <title>地震速報 | DP Note</title>
 
   <style>
+    h4.soku {
+      position: relative;
+      padding: .5em .5em .1em 1.7em;
+      display: inline-block;
+      border-bottom: 1px solid #ee7800;
+    }
 
-
+    h4.soku::after {
+      position: absolute;
+      top: .9em;
+      left: .4em;
+      z-index: 2;
+      content: '';
+      width: 12px;
+      height: 12px;
+      background-color: #ee7800;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
   </style>
 </head>
 
@@ -85,7 +102,18 @@
       <article class="post_content">
         <h1 class="post_title">地震速報</h1>
 
+        <ul class="actions">
+          <li><span class="button" onclick="reload();"><i class="fa fa-undo"></i>　更新</span></li>
+        </ul>
+        <div id="smap"></div>
+        <div id="data_result"></div>
+        <div id="points_data"></div>
 
+        <hr />
+
+        <h2 class="heading1">参考文献</h2>
+
+        <a href="https://www.data.jma.go.jp/multi/quake/index.html?lang=jp" target="_blank">地震情報（気象庁）</a><br><br>
 
 
       </article>
@@ -105,10 +133,9 @@
     <div>
       <h2 class="mt-4 taxonomy" id="information-section">Information</h2>
       <ul class="ul_menu">
-
+        <a href='https://dpnote.netlify.app/breakingnews/'><li class="li_menu">地震速報</li></a>
         <a href='https://dpnote.netlify.app/krader/'><li class="li_menu">雨雲レーダー</li></a>
         <a href='https://dpnote.netlify.app/bsmap/'><li class="li_menu">防災マップ</li></a>
-
       </ul>
 
     </div>
@@ -224,6 +251,99 @@
 
 
   <script type="module">
+
+    onload = async () => {
+
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var json_data = eval('(' + xhr.responseText + ')');
+
+          if (json_data[0].code == 551) {
+            var maxs = json_data[0].earthquake.maxScale;
+
+            if (maxs == 10) { var max = "１"; }
+            else if (maxs == 20) { var max = "２"; }
+            else if (maxs == 30) { var max = "３"; }
+            else if (maxs == 40) { var max = "４"; }
+            else if (maxs == 45) { var max = "５弱"; }
+            else if (maxs == 50) { var max = "５強"; }
+            else if (maxs == 55) { var max = "６弱"; }
+            else if (maxs == 60) { var max = "６強"; }
+            else if (maxs == 70) { var max = "７"; }
+            else { exit; }
+
+            let txt;
+
+            txt = json_data[0].earthquake.time + "　震度：" + max + "　" + json_data[0].earthquake.hypocenter.name + "<br><br>";
+
+            txt += "緯度：" + json_data[0].earthquake.hypocenter.latitude + "　経度：" + json_data[0].earthquake.hypocenter.longitude + "<br><br>震源の深さ：" + json_data[0].earthquake.hypocenter.depth + "<br><br>";
+
+            txt += "マグニチュード：" + json_data[0].earthquake.hypocenter.magnitude + "<br><br>";
+
+            var result = document.getElementById('data_result');
+            result.innerHTML = txt;
+
+            var ido = json_data[0].earthquake.hypocenter.latitude.replace(/[^0-9^.]/g, "");
+            var keido = json_data[0].earthquake.hypocenter.longitude.replace(/[^0-9^.]/g, "");
+
+            document.getElementById('smap').innerHTML = '<iframe src="./smap.html#6/' + ido + '/' + keido + '" width="100%" height="400px" frameborder="yes" scrolling="yes"></iframe>';
+
+            var p_count = json_data[0].points.length;
+
+            if (p_count == 0) { exit; }
+
+            var p_result = document.getElementById('points_data');
+
+            p_result.innerHTML = "各地の震度は以下のとおりです。<br>";
+
+            var name1 = ""; var name2 = ""; var name3 = ""; var name4 = ""; var name45 = ""; var name5 = ""; var name55 = ""; var name6 = ""; var name7 = "";
+
+            for (let j = 0; j < p_count; j++) {
+
+              var max_p = json_data[0].points[j].scale;
+
+
+              if (max_p == 10) { name1 = name1 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 20) { name2 = name2 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 30) { name3 = name3 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 40) { name4 = name4 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 45) { name45 = name45 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 50) { name5 = name5 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 55) { name55 = name55 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 60) { name6 = name6 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 70) { name7 = name7 + json_data[0].points[j].addr + "　"; }
+              else { exit; }
+
+            }
+            if (name7 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度７</h4><br>" + name7 + "<br><br>"; }
+            if (name6 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度６強</h4><br>" + name6 + "<br><br>"; }
+            if (name55 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度６弱</h4><br>" + name55 + "<br><br>"; }
+            if (name5 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度５強</h4><br>" + name50 + "<br><br>"; }
+            if (name45 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度５弱</h4><br>" + name45 + "<br><br>"; }
+            if (name4 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度４</h4><br>" + name4 + "<br><br>"; }
+            if (name3 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度３</h4><br>" + name3 + "<br><br>"; }
+            if (name2 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度２</h4><br>" + name2 + "<br><br>"; }
+            if (name1 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度１</h4><br>" + name1; }
+
+
+          }
+          else {
+            document.getElementById('data_result').innerHTML = "情報収集中です。";
+            document.getElementById('points_data').innerHTML = "";
+
+          }
+
+        }
+      };
+      var url = "https://api.p2pquake.net/v1/human-readable";
+      xhr.open('GET', url);
+      xhr.send(null);
+    }
+
+    window.reload = () => {
+      location.href = "./index.html";
+    }
 
 
   </script>
