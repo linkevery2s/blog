@@ -170,6 +170,26 @@
     </item>
     
     <item>
+      <title>雨雲レーダー</title>
+      <link>https://dpnote.netlify.app/krader/</link>
+      <pubDate>Sat, 13 Aug 2022 13:36:53 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/krader/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の雨雲レーダーをマップに可視化しました！&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
       <title>令和2年九州豪雨を可視化しました。</title>
       <link>https://dpnote.netlify.app/r2kyusyu/</link>
       <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>

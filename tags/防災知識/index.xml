@@ -8,24 +8,24 @@
     <language>ja</language>
     <lastBuildDate>Fri, 24 Oct 2025 14:39:51 +0900</lastBuildDate><atom:link href="https://dpnote.netlify.app/tags/%E9%98%B2%E7%81%BD%E7%9F%A5%E8%AD%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>避難場所・避難所マップ</title>
-      <link>https://dpnote.netlify.app/refugemap/</link>
+      <title>防災マップ</title>
+      <link>https://dpnote.netlify.app/bsmap/</link>
       <pubDate>Fri, 24 Oct 2025 14:39:51 +0900</pubDate>
       
-      <guid>https://dpnote.netlify.app/refugemap/</guid>
+      <guid>https://dpnote.netlify.app/bsmap/</guid>
       <description>
         
-          &lt;p&gt;指定緊急避難場所・指定避難所マップを作成しました。&lt;/p&gt;
-&lt;iframe src =&#34;../simulation/refugemap/index.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-&lt;a href=&#34;../simulation/refugemap/index.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+          &lt;p&gt;防災マップを作成しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/bsmap/index.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
 &lt;div class=&#34;balloon&#34;&gt;
   &lt;p&gt;
-&lt;p&gt;日本全国で10万箇所以上ある、指定緊急避難場所・指定避難所をマップに可視化しました。GPS機能も付いているので、ご自身の近くの避難場所などを調べてみましょう！&lt;/p&gt;
+&lt;p&gt;日本全国で10万箇所以上ある指定緊急避難場所・指定避難所やハザードマップを１つのマップに可視化しました。GPS機能も付いているので、ご自身の近くの避難場所や浸水想定などを調べてみましょう！&lt;/p&gt;
   &lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
 ・指定緊急避難場所・指定避難所データ、国土地理院
+・ハザードマップポータルサイト、国土交通省
         
       </description>
     </item>
@@ -149,6 +149,26 @@
 &lt;div class=&#34;balloon&#34;&gt;
   &lt;p&gt;
 &lt;p&gt;防災って大事だけど何から始めればいいか分からないあなたへ」今からでも「出来ること」をやろう！防災ロードマップに沿って取り組んでいけば、あなたのご家庭の防災力は確実に上がります。やってみよう！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>雨雲レーダー</title>
+      <link>https://dpnote.netlify.app/krader/</link>
+      <pubDate>Sat, 13 Aug 2022 13:36:53 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/krader/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の雨雲レーダーをマップに可視化しました！&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。&lt;/p&gt;
   &lt;/p&gt;
 &lt;/div&gt;
         
