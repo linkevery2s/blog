@@ -34,6 +34,7 @@ h3 {
 
 .h_s {
   position: fixed;
+  cursor: pointer;
   top: 0;
   right: 0;
   padding: 20px 15px 0 0;
@@ -45,7 +46,7 @@ h3 {
   text-align: center;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: .5em;
   border: 1px solid #ffffff;
   line-height: 50px;
 }
@@ -572,4 +573,33 @@ ul{
 
 #experience span{
   font-weight: bold;
+}
+
+#nav_m #nav_m_li {
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  border-bottom: 1px dotted #fff;
+}
+
+#nav_m div:last-child {
+  border: none;
+}
+
+#nav_m div:hover {
+  background: rgba(56, 180, 139, .8);
+}
+
+#nav_m {
+  background: rgba(31, 49, 52, .8);
+  color: #ffffff;
+  position: fixed;
+  top: 5.3rem;
+  z-index: 9;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  transition: .5s;
+  display: none;
+
 }

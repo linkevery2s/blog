@@ -46,6 +46,11 @@
   
 
   <link rel="stylesheet" href='https://dpnote.netlify.app/css/custom.css'>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script type="module" src='https://dpnote.netlify.app/js/custom.js'></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -143,14 +148,25 @@
 
 <body data-code="100" data-lines="false" id="documentTop">
 
-  <div id="header1">
 
-    <h1 class="h_h1"><a href="https://dpnote.netlify.app/index.html">ＤＰ Ｎｏｔｅ</a></h1>
-  </div>
 
-  <div class="h_s"><a href="https://dpnote.netlify.app/search/index.html">
-      <div class="h_circle"><i class="fas fa-search"></i></div>
-    </a></div>
+<div id="header1">
+	<h1 class="h_h1"><a href="https://dpnote.netlify.app/index.html">ＤＰ Ｎｏｔｅ</a></h1>
+</div>
+
+<div class="h_s"><div class="h_circle"><i class="fas fa-bars"></i></div></div>
+
+<div id="nav_m">
+    <ul>
+      <a href="https://dpnote.netlify.app/breakingnews"><div id="nav_m_li" class="breakingnews">地震速報</div></a>
+      <a href="https://dpnote.netlify.app/krader"><div id="nav_m_li" class="krader">雨雲レーダー</div></a>
+      <a href="https://dpnote.netlify.app/bsmap"><div id="nav_m_li" class="bsmap">防災マップ</div></a>
+      <a href="https://dpnote.netlify.app/stocklist"><div id="nav_m_li" class="stocklist">備蓄リスト</div></a>
+      <a href="https://dpnote.netlify.app/refugelevel"><div id="nav_m_li" class="refugelevel">避難行動判定フロー</div></a>
+      <a href="https://dpnote.netlify.app/search"><div id="nav_m_li" class="search">記事検索</div></a>
+    </ul>
+</div>
+
   <main>
 
     <div class="grid-inverse wrap content">
