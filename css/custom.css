@@ -607,10 +607,6 @@ ul {
   border-bottom: 1px dotted #fff;
 }
 
-#nav_m div:last-child {
-  border: none;
-}
-
 #nav_m div:hover {
   background: rgba(128, 171, 169, .8);
 }
