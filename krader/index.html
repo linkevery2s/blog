@@ -8,11 +8,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  
 <meta property="og:locale" content="ja" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="気象庁の雨雲レーダーをマップに可視化しました！">
+<meta name="description" content="">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="雨雲レーダー" />
@@ -21,16 +20,16 @@
 
 
 
-<meta name="twitter:image" content="https://dpnote.netlify.app/images/post/krader.jpg" />
+<meta name="twitter:image" content="https://dpnote.netlify.app/" />
 
 
 
-<meta property="og:image" content="https://dpnote.netlify.app/images/post/krader.jpg">
+<meta property="og:image" content="https://dpnote.netlify.app/">
 
 
 <meta property="og:url" content="https://dpnote.netlify.app/krader/" />
 <meta property="og:title" content="雨雲レーダー" />
-<meta property="og:description" content="気象庁の雨雲レーダーをマップに可視化しました！" />
+<meta property="og:description" content="" />
 
 
 
@@ -42,7 +41,8 @@
   
 
   
-  <link rel="preload" href="https://dpnote.netlify.app/css/styles.07015b78eada1bea1b52fca88d93e547841340a0660500e57454e8c127831bab2a56a85e088a1ee7723ea931072ac15f3111f1fdc3fe9bdea3f3cca3f0f6b49e.css" integrity="sha512-BwFbeOraG&#43;obUvyojZPlR4QTQKBmBQDldFTowSeDG6sqVqheCIoe53I&#43;qTEHKsFfMRHx/cP&#43;m96j88yj8Pa0ng==" as="style" crossorigin="anonymous">
+  <link rel="preload" href="https://dpnote.netlify.app/css/styles.07015b78eada1bea1b52fca88d93e547841340a0660500e57454e8c127831bab2a56a85e088a1ee7723ea931072ac15f3111f1fdc3fe9bdea3f3cca3f0f6b49e.css" integrity="sha512-BwFbeOraG&#43;obUvyojZPlR4QTQKBmBQDldFTowSeDG6sqVqheCIoe53I&#43;qTEHKsFfMRHx/cP&#43;m96j88yj8Pa0ng==" as="style"
+    crossorigin="anonymous">
   
 
   <link rel="stylesheet" href='https://dpnote.netlify.app/css/custom.css'>
@@ -51,33 +51,43 @@
 
   <script type="module" src='https://dpnote.netlify.app/js/custom.js'></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+    integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
 
-  <link rel="apple-touch-icon" href="https://dpnote.netlify.app/icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="https://dpnote.netlify.app/icons/apple-touch-icon.png">
-  <link rel="manifest" href="https://dpnote.netlify.app/json/manifest.json">
+
   
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('https://dpnote.netlify.app/json/service-worker.js').then(function() {
-        console.log('Service Worker Registered');
-      });
+  <link rel="stylesheet" type="text/css" href="https://dpnote.netlify.app/css/styles.07015b78eada1bea1b52fca88d93e547841340a0660500e57454e8c127831bab2a56a85e088a1ee7723ea931072ac15f3111f1fdc3fe9bdea3f3cca3f0f6b49e.css" integrity="sha512-BwFbeOraG&#43;obUvyojZPlR4QTQKBmBQDldFTowSeDG6sqVqheCIoe53I&#43;qTEHKsFfMRHx/cP&#43;m96j88yj8Pa0ng=="
+    crossorigin="anonymous">
+  
+
+  <style>
+    h4.soku {
+      position: relative;
+      padding: .5em .5em .1em 1.7em;
+      display: inline-block;
+      border-bottom: 1px solid #ee7800;
     }
-  </script>
 
-
-  
-  <link rel="stylesheet" type="text/css" href="https://dpnote.netlify.app/css/styles.07015b78eada1bea1b52fca88d93e547841340a0660500e57454e8c127831bab2a56a85e088a1ee7723ea931072ac15f3111f1fdc3fe9bdea3f3cca3f0f6b49e.css" integrity="sha512-BwFbeOraG&#43;obUvyojZPlR4QTQKBmBQDldFTowSeDG6sqVqheCIoe53I&#43;qTEHKsFfMRHx/cP&#43;m96j88yj8Pa0ng==" crossorigin="anonymous">
-  
+    h4.soku::after {
+      position: absolute;
+      top: .9em;
+      left: .4em;
+      z-index: 2;
+      content: '';
+      width: 12px;
+      height: 12px;
+      background-color: #ee7800;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  </style>
 </head>
-
-
-
-
 
 <body data-code="100" data-lines="false" id="documentTop">
 
@@ -104,124 +114,31 @@
 
   <main>
 
-<div class="grid-inverse wrap content">
+    <div class="grid-inverse wrap content">
+      <article class="post_content">
+        <h1 class="post_title">雨雲レーダー</h1>
 
-  <article class="post_content">
-    <h1 class="post_title">雨雲レーダー</h1>
+        
+        
 
+        <div class="post_meta">
+          <span class="post_date"><time itemprop="dateModified" datetime='2025.12.28'>更新日：2025.12.28</time></span>
+          <span class="post_date"><time itemprop="datePublished" datetime='2025.12.28'>公開日：2025.12.28</time></span>
+        </div>
 
-<div class="post_meta">
+        <iframe src ="../../simulation/krader.html" width="100%" height="550px" frameborder="no" scrolling="no"></iframe>
 
-
-  <span class="post_date"><time itemprop="dateModified" datetime='2025.12.28'>更新日：2025.12.28</time></span>
-  <span class="post_date"><time itemprop="datePublished" datetime='2022.08.13'>公開日：2022.08.13</time></span>
-
-  
-  
-  <span> 
-    <a href='../tags/%E9%98%B2%E7%81%BD%E7%9F%A5%E8%AD%98/' class="post_tag"><i class="fas fa-tags"></i>防災知識
-    </a>
-
-  </span>
-
-  
-
-  </div>
-
-  
-
-  
-  
-
-  <div class="at">
-    <span id="article_time">Reading time: 0 分
-    15 秒</span>
-  </div>
+        <h2 class="heading1">つぶやき</h2>
+        <div class="balloon">
+          <p>
+          
+          気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。
+          
+          </p>
+        </div>
 
 
-
-    
-    <p>気象庁の雨雲レーダーをマップに可視化しました！</p>
-<iframe src ="../../simulation/krader.html" width="100%" height="550px" frameborder="no" scrolling="no"></iframe>
-<h2 class="heading1">つぶやき</h2>
-<div class="balloon">
-  <p>
-<p>気象庁の雨雲レーダーの取得方法が分かったので、マップに表示させてみました。また、今後は3Dマップなど、GUIも工夫して可視化させてみたいと思います。</p>
-  </p>
-</div>
-
-
-
-    
-
-
-    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
-
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-
-    <a href="../" itemprop="item"><span itemprop="name">ホーム</span></a>
-    <meta itemprop="position" content="1">
-  </li>
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a href='../categories/%E9%A2%A8%E6%B0%B4%E5%AE%B3/' itemprop="item"><span itemprop="name">風水害
-
-    </span></a>
-    <meta itemprop="position" content="2">
-  </li>
-
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <span itemprop="name">雨雲レーダー</span>
-    <meta itemprop="position" content="3">
-  </li>
-
-</ol>
-
-<hr>
-
-
-   
-
-   
-
-<h3>関連記事</h3>
-  <div class="related">
-    
-      <div class="item1"><a href="/atami3d/">
-              <img src='https://dpnote.netlify.app/images/post/atami202107.jpg'>
-          </a>
-
-        <a href="/atami3d/">熱海市土砂災害を3Dにて可視化しました</a>
-      </div>
-    
-      <div class="item1"><a href="/h12tokai/">
-              <img src='https://dpnote.netlify.app/images/post/h12tokai.jpg'>
-          </a>
-
-        <a href="/h12tokai/">平成12年9月東海豪雨の可視化</a>
-      </div>
-    
-      <div class="item1"><a href="/atami3dglb/">
-              <img src='https://dpnote.netlify.app/images/post/atami3dglb.jpg'>
-          </a>
-
-        <a href="/atami3dglb/">熱海市土砂災害３Dオブジェクトにて可視化</a>
-      </div>
-    
-      <div class="item1"><a href="/noto3drain/">
-              <img src='https://dpnote.netlify.app/images/post/noto3drain.jpg'>
-          </a>
-
-        <a href="/noto3drain/">能登半島豪雨の可視化</a>
-      </div>
-    
-</div>
-
-
-
-
-
-
- </article>
+      </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
 
@@ -352,10 +269,9 @@
 
   </section>
 </aside>
- 
+      
 
-
-</div>
+    </div>
   </main>
 
 <footer class="footer">
@@ -393,8 +309,105 @@
 
 </footer>
 
-  
-  
+
+  <script type="module">
+
+    onload = async () => {
+
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var json_data = eval('(' + xhr.responseText + ')');
+
+          if (json_data[0].code == 551) {
+            var maxs = json_data[0].earthquake.maxScale;
+
+            if (maxs == 10) { var max = "１"; }
+            else if (maxs == 20) { var max = "２"; }
+            else if (maxs == 30) { var max = "３"; }
+            else if (maxs == 40) { var max = "４"; }
+            else if (maxs == 45) { var max = "５弱"; }
+            else if (maxs == 50) { var max = "５強"; }
+            else if (maxs == 55) { var max = "６弱"; }
+            else if (maxs == 60) { var max = "６強"; }
+            else if (maxs == 70) { var max = "７"; }
+            else { exit; }
+
+            let txt;
+
+            txt = json_data[0].earthquake.time + "　震度：" + max + "　" + json_data[0].earthquake.hypocenter.name + "<br><br>";
+
+            txt += "緯度：" + json_data[0].earthquake.hypocenter.latitude + "　経度：" + json_data[0].earthquake.hypocenter.longitude + "<br><br>震源の深さ：" + json_data[0].earthquake.hypocenter.depth + "<br><br>";
+
+            txt += "マグニチュード：" + json_data[0].earthquake.hypocenter.magnitude + "<br><br>";
+
+            var result = document.getElementById('data_result');
+            result.innerHTML = txt;
+
+            var ido = json_data[0].earthquake.hypocenter.latitude.replace(/[^0-9^.]/g, "");
+            var keido = json_data[0].earthquake.hypocenter.longitude.replace(/[^0-9^.]/g, "");
+
+            document.getElementById('smap').innerHTML = '<iframe src="./smap.html#6/' + ido + '/' + keido + '" width="100%" height="550px" frameborder="yes" scrolling="yes"></iframe>';
+
+            var p_count = json_data[0].points.length;
+
+            if (p_count == 0) { exit; }
+
+            var p_result = document.getElementById('points_data');
+
+            p_result.innerHTML = "各地の震度は以下のとおりです。<br>";
+
+            var name1 = ""; var name2 = ""; var name3 = ""; var name4 = ""; var name45 = ""; var name5 = ""; var name55 = ""; var name6 = ""; var name7 = "";
+
+            for (let j = 0; j < p_count; j++) {
+
+              var max_p = json_data[0].points[j].scale;
+
+
+              if (max_p == 10) { name1 = name1 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 20) { name2 = name2 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 30) { name3 = name3 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 40) { name4 = name4 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 45) { name45 = name45 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 50) { name5 = name5 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 55) { name55 = name55 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 60) { name6 = name6 + json_data[0].points[j].addr + "　"; }
+              else if (max_p == 70) { name7 = name7 + json_data[0].points[j].addr + "　"; }
+              else { exit; }
+
+            }
+            if (name7 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度７</h4><br>" + name7 + "<br><br>"; }
+            if (name6 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度６強</h4><br>" + name6 + "<br><br>"; }
+            if (name55 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度６弱</h4><br>" + name55 + "<br><br>"; }
+            if (name5 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度５強</h4><br>" + name50 + "<br><br>"; }
+            if (name45 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度５弱</h4><br>" + name45 + "<br><br>"; }
+            if (name4 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度４</h4><br>" + name4 + "<br><br>"; }
+            if (name3 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度３</h4><br>" + name3 + "<br><br>"; }
+            if (name2 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度２</h4><br>" + name2 + "<br><br>"; }
+            if (name1 !== "") { p_result.innerHTML += "<h4 class = 'soku'>震度１</h4><br>" + name1; }
+
+
+          }
+          else {
+            document.getElementById('data_result').innerHTML = "情報収集中です。";
+            document.getElementById('points_data').innerHTML = "";
+
+          }
+
+        }
+      };
+      var url = "https://api.p2pquake.net/v1/human-readable";
+      xhr.open('GET', url);
+      xhr.send(null);
+    }
+
+    window.reload = () => {
+      location.href = "./index.html";
+    }
+
+
+  </script>
+
 </body>
 
 </html>
