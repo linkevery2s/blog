@@ -919,6 +919,24 @@
     </item>
     
     <item>
+      <title>水の力と津波の危険性</title>
+      <link>https://dpnote.netlify.app/water/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/water/</guid>
+      <description>
+        
+          &lt;p&gt;水の力と津波の危険性について、まとめました。&lt;/p&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+覚えておいて。水の力は凄まじい。水力発電でエネルギーを作られるぐらいの力を持っている。例えば「ん？50cmの津波、大したことないやん。」と思うかもしれない。ちょっと待ってくれ、津波は『体積』でやってくるのよ。50cmは男性の8割は立ってられない力を持っています。警報・注意報来たら、迷わず行動起こしてねというお話。
+&lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
       <title>内部被害による怪我の原因</title>
       <link>https://dpnote.netlify.app/glass/</link>
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
@@ -1082,6 +1100,25 @@
 &lt;center&gt;
 &lt;iframe width=&#34;90%&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/6oReqkwbtDs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/center&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>電話リレーサービスをご存じですか？</title>
+      <link>https://dpnote.netlify.app/phonerelay/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/phonerelay/</guid>
+      <description>
+        
+          &lt;p&gt;電話リレーサービスについて、ご紹介します。&lt;/p&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+  電話リレーサービスをご存知ですか？聴覚や発話に困難のある方との会話を、通訳オペレータが手話・文字と音声を通訳することにより電話で双方向につなぐサービスです。法改正により令和3年7月1日から開始しました。必要な方々に教えてあげてください！
+&lt;p&gt;総務省URL：&lt;a href=&#34;https://www.soumu.go.jp/menu_seisaku/ictseisaku/telephonerelay/index.html&#34; target=&#34;_blank&#34;&gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/div&gt;
         
       </description>
     </item>
@@ -1268,6 +1305,20 @@
 &lt;p&gt;ことが分かります。朝の通勤・通学及び夜の帰宅ラッシュ時の災害対策と帰宅困難者対策は必須です！&lt;/p&gt;
   &lt;/p&gt;
 &lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>南海トラフ地震の震度マップを可視化</title>
+      <link>https://dpnote.netlify.app/nankai3d/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/nankai3d/</guid>
+      <description>
+        
+          &lt;p&gt;南海トラフ地震の震度マップを3Dマップに可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/nankai3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
         
       </description>
     </item>
