@@ -1,17 +1,17 @@
 $('#nav_m').hide();
 
-const menu_btn = document.querySelector(".h_circle");
+const menu_btn = document.querySelector(".h_circle2");
 
 menu_btn.addEventListener("click", () =>{
     $('#nav_m').toggle();
 });
 
-/*const breakingnews = document.querySelector(".breakingnews");
+const breakingnews = document.querySelector(".breakingnews");
 const krader = document.querySelector(".krader");
 const bsmap = document.querySelector(".bsmap");
 const stocklist = document.querySelector(".stocklist");
 const refugelevel = document.querySelector(".refugelevel");
-const search = document.querySelector(".search");
+//const search = document.querySelector(".search");
 
 breakingnews.addEventListener("click", () =>{
     location.href = "./breakingnews/";
@@ -33,6 +33,6 @@ refugelevel.addEventListener("click", () =>{
     location.href = "./refugelevel/";
 });
 
-search.addEventListener("click", () =>{
+/*search.addEventListener("click", () =>{
     location.href = "./search/";
 });*/
