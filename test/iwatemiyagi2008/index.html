@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="ja" data-figures=""  class="page"  data-mode="lit" >
+
+<head>
+<title>岩手・宮城内陸地震の震度マップの可視化 | DP Note</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+<meta property="og:locale" content="ja" />
+
+<meta property="og:type" content="article">
+<meta name="description" content="岩手・宮城内陸地震の震度マップを可視化しました。">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="">
+<meta name="twitter:title" content="岩手・宮城内陸地震の震度マップの可視化" />
+
+
+
+
+
+<meta name="twitter:image" content="https://dpnote.netlify.app/images/post/iwatemiyagi2008.jpg" />
+
+
+
+<meta property="og:image" content="https://dpnote.netlify.app/images/post/iwatemiyagi2008.jpg">
+
+
+<meta property="og:url" content="https://dpnote.netlify.app/iwatemiyagi2008/" />
+<meta property="og:title" content="岩手・宮城内陸地震の震度マップの可視化" />
+<meta property="og:description" content="岩手・宮城内陸地震の震度マップを可視化しました。" />
+
+
+
+<link rel="canonical" href="https://dpnote.netlify.app/iwatemiyagi2008/">
+
+  
+
+  
+  
+
+  
+  <link rel="preload" href="https://dpnote.netlify.app/css/styles.07015b78eada1bea1b52fca88d93e547841340a0660500e57454e8c127831bab2a56a85e088a1ee7723ea931072ac15f3111f1fdc3fe9bdea3f3cca3f0f6b49e.css" integrity="sha512-BwFbeOraG&#43;obUvyojZPlR4QTQKBmBQDldFTowSeDG6sqVqheCIoe53I&#43;qTEHKsFfMRHx/cP&#43;m96j88yj8Pa0ng==" as="style" crossorigin="anonymous">
+  
+
+  <link rel="stylesheet" href='https://dpnote.netlify.app/css/custom.css'>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script type="module" src='https://dpnote.netlify.app/js/custom.js'></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
+  <link rel="apple-touch-icon" href="https://dpnote.netlify.app/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="https://dpnote.netlify.app/icons/apple-touch-icon.png">
+  <link rel="manifest" href="https://dpnote.netlify.app/json/manifest.json">
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('https://dpnote.netlify.app/json/service-worker.js').then(function() {
+        console.log('Service Worker Registered');
+      });
+    }
+  </script>
+
+
+  
+  <link rel="stylesheet" type="text/css" href="https://dpnote.netlify.app/css/styles.07015b78eada1bea1b52fca88d93e547841340a0660500e57454e8c127831bab2a56a85e088a1ee7723ea931072ac15f3111f1fdc3fe9bdea3f3cca3f0f6b49e.css" integrity="sha512-BwFbeOraG&#43;obUvyojZPlR4QTQKBmBQDldFTowSeDG6sqVqheCIoe53I&#43;qTEHKsFfMRHx/cP&#43;m96j88yj8Pa0ng==" crossorigin="anonymous">
+  
+</head>
+
+
+
+
+
+<body data-code="100" data-lines="false" id="documentTop">
+
+
+
+<center>
+<div id="header1">
+	<h1 class="h_h1"><a href="https://dpnote.netlify.app/index.html">ＤＰ Ｎｏｔｅ</a></h1>
+</div>
+</center>
+
+<div class="h_s"><a href="https://dpnote.netlify.app/search/index.html"><div class="h_circle"><i class="fas fa-search"></i></div></a></div>
+
+
+
+<div class="h_s2"><div class="h_circle2"><i class="fas fa-bars"></i></div></div>
+
+<div id="nav_m">
+    <ul>
+      <a href='/'><div id="nav_m_li" class="breakingnews"><i class="fa-solid fa-home"></i> ホーム</div></a>
+      <a href="/breakingnews"><div id="nav_m_li" class="breakingnews"><i class="fa-regular fa-lightbulb"></i> 地震速報</div></a>
+      <a href="/krader"><div id="nav_m_li" class="krader"><i class="fa-solid fa-cloud-sun-rain"></i> 雨雲レーダー</div></a>
+      <a href="/bsmap"><div id="nav_m_li" class="bsmap"><i class="fa-regular fa-map"></i> 防災マップ</div></a>
+      <a href="/stocklist"><div id="nav_m_li" class="stocklist"><i class="fa-solid fa-list"></i> 備蓄リスト</div></a>
+      <a href="/refugelevel"><div id="nav_m_li" class="refugelevel"><i class="fa-solid fa-shuffle"></i> 避難行動判定フロー</div></a>
+      <a href="/tags/%E9%98%B2%E7%81%BD%E7%9F%A5%E8%AD%98"><div id="nav_m_li" class="refugelevel"><i class="fa-solid fa-graduation-cap"></i> 防災知識</div></a>
+    </ul>
+</div>
+
+  <main>
+
+<div class="grid-inverse wrap content">
+
+  <article class="post_content">
+    <h1 class="post_title">岩手・宮城内陸地震の震度マップの可視化</h1>
+
+
+<div class="post_meta">
+
+
+  <span class="post_date"><time itemprop="dateModified" datetime='2025.11.09'>更新日：2025.11.09</time></span>
+  <span class="post_date"><time itemprop="datePublished" datetime='2025.03.03'>公開日：2025.03.03</time></span>
+
+  
+  
+  <span> 
+    <a href='../tags/%E5%B2%A9%E6%89%8B%E5%AE%AE%E5%9F%8E%E5%86%85%E9%99%B8%E5%9C%B0%E9%9C%87/' class="post_tag"><i class="fas fa-tags"></i>岩手・宮城内陸地震
+    </a>
+
+  </span>
+
+  
+
+  </div>
+
+  
+
+  
+  
+
+  <div class="at">
+    <span id="article_time">Reading time: 5 分
+    47 秒</span>
+  </div>
+
+
+
+    
+    <p>岩手・宮城内陸地震の震度マップを可視化しました。</p>
+<iframe src ="../simulation/iwatemiyagi2008/" width="100%" height="550px" frameborder="no" scrolling="no"></iframe>
+<a href="../simulation/iwatemiyagi2008/" target="_blank" class="linka">全画面で見る</a>
+<h2 class="heading1">災害の概要</h2>
+<p>平成２０年６月１４日８時４３分，岩手県内陸南部の深さ８kmでマグニチュード７．２の地震が発生し，岩手県奥州市，宮城県栗原市で震度６強，宮城県大崎市で震度６弱，岩手県北上市，一関市，金ヶ崎町，平泉町，宮城県加美町，涌谷町，登米市，美里町，名取市，仙台市，利府町，秋田県湯沢市，東成瀬村で震度５強を観測した。</p>
+<p>この地震により，死者１３名，行方不明者１０名，負傷者４５１名，住家全壊３０棟，住家半壊１４３棟，住家一部破損２，３８０棟の被害が発生したほか，合計で４８７人に避難勧告・指示が出され，最大時で３２２人が避難所に避難した。</p>
+<p>土砂災害については，岩手県，宮城県，秋田県及び福島県の６市で４８件発生した。また，岩手・宮城県境の栗駒山周辺において１５箇所の河道閉塞が発生した。</p>
+<p>ライフライン関係においては，東北電力管内で最大２９，００５戸が停電となったほか，都市ガスについては，岩手県，宮城県及び秋田県内で１，９４４戸が供給停止，上水道については岩手県，宮城県，秋田県及び山形県内の５，５６０戸が断水した。また，電気通信関係では，岩手県及び宮城県内で１１９回線の電話が不通となったほか，携帯電話基地局１３局が停波した。</p>
+<p>道路については，県管理道路等２２区間において法面崩壊や陥没等により通行規制が行われた。鉄道については，東北新幹線等で被害が発生し運休した。</p>
+<p>公共土木施設では，河川３４か所，砂防２３施設，道路（橋梁を含む）６６９施設，下水道７施設，公園１施設に被害が発生した。</p>
+<p>農林水産関係では，農地４６４か所，農業用施設等９３７か所，林地荒廃２９９か所，治山施設２７か所，林道施設９８６か所，養殖施設１０か所等で被害が発生した。</p>
+<p>文教施設では，国立学校施設５校，公立学校施設２５６校，私立学校施設２０校，社会教育・体育，文化施設等１８０施設，文化財等３０件で被害が発生した。</p>
+<p>社会福祉施設等では，１１６施設に被害が発生した。</p>
+<h2 class="heading1">災害体験談</h2>
+<div id="experience">
+<p><span>「ここにいるよ！」と笛をひと吹き</span></p>
+<p>
+地震で道路が割れて、運転していた軽トラックもろとも横転してしまい、何とかかんとか車からはい出して、一応安全かなと思うところに逃げ込んだんですが、余震が来て、また道路にひびが入ったんですね。
+<p>怖かったけれど車に戻り、靴を山用に履き替え、リュックを持って、車から離れた広いところへ避難したんです。</p>
+<p>山岳救助隊の隊員でもあるので、私のリュックにはいろいろなものが入っているんです。で、「さあ、どうするか」ですよね。歩いて山を越えたとしても、自分の住む地区も多分山が崩れているだろうし、山岳会では「何かあった時は動くな」というのが鉄則ですから、その場でじっと動かずに待っていました。</p>
+<p>1時間ぐらい経ったころ、地元の人たちが見回りに来たらしく話し声が聞こえてきたのです。「おおい！」と呼んでも答えがないから、今度は笛を吹きました。すると、すぐに区長さんが来てくれて、「とにかく避難所に行きましょう」と。</p>
+<p>笛というのは、200メーター、300メーター先まで聞こえますからね。持っていてほんとうに良かったなと思います。</p>
+<p>栗原市 60代 男性</p>
+</p>
+</div>
+<br>
+<div id="experience">
+<p><span>経験活かして事前準備 ～すぐに役立った応急危険度判定用紙～</span></p>
+<p>
+役所の人たちも今までの経験から、地震の時には何をしなきゃいけないかというのがけっこうわかってきているんですね。
+<p>今回、被災した建物を調査して、余震などによる倒壊の危険性や外壁・窓ガラスの落下、付属設備の転倒などの危険性を判定する『応急危険度判定』のお手伝いをしたのですが、行政の方で、判定に使う緑と黄色と赤の紙をあらかじめ何枚も印刷して段ボールに詰めていたのです。</p>
+<p>「地震なんてほんとうに来るかどうかわからない。そんなのは無駄な経費だ」と言った職員もいたということですが、担当課の人は、「これだけは用意しておいたほうがいいんだ」と言って、ゆずらなかったそうです。</p>
+<p>結果的に、どこよりも早くとりかかることができたと評判になりました。その担当者に「動きが速かったですね」と言ったら、「経験者ですから」って笑っておられました。やっぱり事前の備えは大切だなと思いました。</p>
+<p>栗原市 40代 男性 建築士</p>
+</p>
+</div>
+<br>
+<div id="experience">
+<p><span>役に立った保存水と意外に使えた発煙筒</span></p>
+<p>
+前の宮城県沖地震※当時、仙台の方に住んでいて、やっぱり水で苦労したものだから、10年だかもつっていうペットボトルの水6本入りを買っていたんですよ。
+<p>ここに移住する時に、「山の中でわき水も豊富だから、もう使わないだろう」と思いながらも倉庫に入れておいたら、それが今回うんと役に立ったわけです。</p>
+<p>それから、こういう災害の時に割と持っていて便利なものは、発煙筒です。何に使うかというと、発煙筒2本ぐらいで、枯れ木にはすぐに火がつくんですよ。だから、暖をとることも、煮たり焼いたりすることもできます。</p>
+<p>発煙筒って、どの車にもひとつはついていますよね。以前は修理工場に行くと車検の時に交換した発煙筒がいっぱいあったんです。私は、そういうのを100本ぐらいもらってきて、山岳会の人たちに「何かあった時のために、5本ぐらいずつリュックに入れて歩きなさい」って、あげていました。それを思い出して使ったわけですが、思わぬところで意外なものが役に立ったなという感じです。</p>
+<p>※昭和53年（1978年）6月12日に仙台市を襲ったマグニチュード7.4（震度5）の地震で、死者16人、重軽傷者10,119人、住家の全半壊が4,385戸、部分壊が86,010戸という多大な被害が生じました。</p>
+<p>栗原市 60代 男性</p>
+</p>
+</div>
+<h2 class="heading1">参考文献</h2>
+・平成21年版 防災白書、内閣府
+<p>・1日前プロジェクト、内閣府</p>
+
+
+
+    
+
+
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+
+  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+
+    <a href="../" itemprop="item"><span itemprop="name">ホーム</span></a>
+    <meta itemprop="position" content="1">
+  </li>
+  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a href='../categories/%E5%9C%B0%E9%9C%87/' itemprop="item"><span itemprop="name">地震
+
+    </span></a>
+    <meta itemprop="position" content="2">
+  </li>
+
+  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <span itemprop="name">岩手・宮城内陸地震の震度マップの可視化</span>
+    <meta itemprop="position" content="3">
+  </li>
+
+</ol>
+
+<hr>
+
+
+   
+
+   
+
+<h3>関連記事</h3>
+  <div class="related">
+    
+      <div class="item1"><a href="/nigata2004/">
+              <img src='https://dpnote.netlify.app/images/post/nigata2004.jpg'>
+          </a>
+
+        <a href="/nigata2004/">新潟県中越地震の震度マップの可視化</a>
+      </div>
+    
+      <div class="item1"><a href="/kumamoto_shido_animation/">
+              <img src='https://dpnote.netlify.app/images/post/kumamoto_shindo_animation.jpg'>
+          </a>
+
+        <a href="/kumamoto_shido_animation/">熊本地震の震度マップアニメーション</a>
+      </div>
+    
+      <div class="item1"><a href="/noto_connectmap/">
+              <img src='https://dpnote.netlify.app/images/post/noto_connectmap.jpg'>
+          </a>
+
+        <a href="/noto_connectmap/">能登半島地震コネクトマップの可視化</a>
+      </div>
+    
+      <div class="item1"><a href="/noto_shindomap/">
+              <img src='https://dpnote.netlify.app/images/post/noto_shindomap.jpg'>
+          </a>
+
+        <a href="/noto_shindomap/">能登半島地震の震度マップアニメーション</a>
+      </div>
+    
+</div>
+
+
+
+
+
+
+ </article>
+<aside class="sidebar">
+  <section class="sidebar_inner">
+
+    <div>
+      <h2 class="mt-4 taxonomy" id="introduction-section">Introduction</h2>
+      <ul class="ul_menu">
+
+        <a href='https://dpnote.netlify.app/about/'>
+          <li class="li_menu"><i class="fa-solid fa-book-open"></i> サービス概要</li>
+        </a>
+
+      </ul>
+
+    </div>
+
+    
+
+    <div>
+      <h2 class="mt-4 taxonomy" id="calendar-section">Calendar</h2>
+      <ul class="ul_menu">
+
+        <a href='https://dpnote.netlify.app/calendar/'>
+          <li class="li_menu"><i class="fa-regular fa-calendar-days"></i> 災害カレンダー</li>
+        </a>
+
+      </ul>
+
+    </div>
+
+    <div>
+
+      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <ul class="ul_menu">
+
+        <a href='https://dpnote.netlify.app/categories/%E5%9C%B0%E9%9C%87/'>
+          <li class="li_menu"><i class="fa-solid fa-house-chimney-crack"></i> 地震</li>
+        </a>
+
+        <a href='https://dpnote.netlify.app/categories/%E9%A2%A8%E6%B0%B4%E5%AE%B3/'>
+          <li class="li_menu"><i class="fa-solid fa-cloud-rain"></i> 風水害</li>
+        </a>
+
+        <a href='https://dpnote.netlify.app/categories/%E6%B4%A5%E6%B3%A2/'>
+          <li class="li_menu"><i class="fa-solid fa-water"></i> 津波</li>
+        </a>
+
+        <a href='https://dpnote.netlify.app/categories/%E7%81%AB%E7%81%BD/'>
+          <li class="li_menu"><i class="fa-solid fa-fire"></i> 火災</li>
+        </a>
+
+        <a href='https://dpnote.netlify.app/categories/%E3%81%9D%E3%81%AE%E4%BB%96%E7%81%BD%E5%AE%B3/'>
+          <li class="li_menu"><i class="fa-solid fa-volcano"></i> その他災害</li>
+        </a>
+
+        <a href='https://dpnote.netlify.app/categories/%E9%98%B2%E7%81%BDdx/'>
+          <li class="li_menu"><i class="fa-solid fa-robot"></i> 防災DX</li>
+        </a>
+
+      </ul>
+    </div>
+
+    <h2 class="mt-4 taxonomy" id="tags-section">Names</h2>
+
+    
+    
+    
+    <a href="/tags/%E3%83%88%E3%83%B3%E3%82%AC%E7%81%AB%E5%B1%B1%E5%99%B4%E7%81%AB%E3%81%AB%E4%BC%B4%E3%81%86%E6%BD%AE%E4%BD%8D%E5%A4%89%E5%8C%96" id="button">トンガ火山噴火に伴う潮位変化</a>
+    
+    
+    
+    <a href="/tags/%E4%B9%9D%E5%B7%9E%E8%B1%AA%E9%9B%A8" id="button">九州豪雨</a>
+    
+    
+    
+    <a href="/tags/%E4%BB%A4%E5%92%8C3%E5%B9%B48%E6%9C%88%E3%81%AE%E5%A4%A7%E9%9B%A8" id="button">令和3年8月の大雨</a>
+    
+    
+    
+    <a href="/tags/%E4%BB%A4%E5%92%8C4%E5%B9%B48%E6%9C%88%E3%81%AE%E5%A4%A7%E9%9B%A8%E7%AD%89%E3%81%AB%E3%82%88%E3%82%8B%E7%81%BD%E5%AE%B3" id="button">令和4年8月の大雨等による災害</a>
+    
+    
+    
+    <a href="/tags/%E5%B2%A9%E6%89%8B%E5%AE%AE%E5%9F%8E%E5%86%85%E9%99%B8%E5%9C%B0%E9%9C%87" id="button">岩手宮城内陸地震</a>
+    
+    
+    
+    <a href="/tags/%E6%96%B0%E6%BD%9F%E7%9C%8C%E4%B8%AD%E8%B6%8A%E5%9C%B0%E9%9C%87" id="button">新潟県中越地震</a>
+    
+    
+    
+    <a href="/tags/%E6%9D%B1%E5%8C%97%E5%9C%B0%E6%96%B9%E3%81%AE%E8%B1%AA%E9%9B%A8" id="button">東北地方の豪雨</a>
+    
+    
+    
+    <a href="/tags/%E6%9D%B1%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%9C%87%E7%81%BD" id="button">東日本大震災</a>
+    
+    
+    
+    <a href="/tags/%E6%9D%B1%E6%B5%B7%E8%B1%AA%E9%9B%A8" id="button">東海豪雨</a>
+    
+    
+    
+    <a href="/tags/%E7%86%8A%E6%9C%AC%E5%9C%B0%E9%9C%87" id="button">熊本地震</a>
+    
+    
+    
+    <a href="/tags/%E7%86%B1%E6%B5%B7%E5%B8%82%E5%9C%9F%E7%A0%82%E7%81%BD%E5%AE%B3" id="button">熱海市土砂災害</a>
+    
+    
+    
+    <a href="/tags/%E8%83%BD%E7%99%BB%E5%8D%8A%E5%B3%B6%E5%9C%B0%E9%9C%87" id="button">能登半島地震</a>
+    
+    
+    
+    <a href="/tags/%E8%83%BD%E7%99%BB%E5%8D%8A%E5%B3%B6%E8%B1%AA%E9%9B%A8" id="button">能登半島豪雨</a>
+    
+    
+    
+    <a href="/tags/%E8%A5%BF%E6%97%A5%E6%9C%AC%E8%B1%AA%E9%9B%A8" id="button">西日本豪雨</a>
+    
+    
+    
+    <a href="/tags/%E9%98%AA%E7%A5%9E%E6%B7%A1%E8%B7%AF%E5%A4%A7%E9%9C%87%E7%81%BD" id="button">阪神淡路大震災</a>
+    
+    
+    
+    
+
+  </section>
+</aside>
+ 
+
+
+</div>
+  </main>
+
+<footer class="footer">
+  <div class="foot">
+  <a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank"><img src="https://dpnote.netlify.app/images/license.png" alt="CC BY 4.0 license"></a>
+  <p>投稿した記事は、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" class="footer_link">CC BY 4.0 <i class="fas fa-external-link-alt"></i></a> のもと公開しています。</p>
+  <center>
+
+    <a href="https://github.com/linkevery2s" target="_blank"><div class="circle2"><i class="fab fa-github"></i></div></a><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-WMoBJRTdA1bmN_SmQ-bsNGeLs1l737d3c9BUNuErjH-KBw/viewform" target="_blank"><div class="circle4"><i class="far fa-envelope"></i></div></a><a href="https://dpnote.netlify.app/index.xml" target="_blank"><div class="circle3"><i class="fas fa-rss-square"></i></div></a>
+
+    <br>
+    <img src="https://dpnote.netlify.app/images/qr_dpnote.png">
+    <br>
+
+    <div class="fb-share-button" data-href="https://dpnote.netlify.app/" data-layout="button_count"
+    data-size="small"></div>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v19.0"
+      nonce="Pm3nh7PB"></script>
+
+    <br>
+    <i class="fa fa-copyright" aria-hidden="true"></i> <a href="https://hitoshi2s.netlify.app/index.html" target="_blank" class="footer_link">齋藤 仁志</a>. By <a href="https://gohugo.io/" target="_blank" class="footer_link">hugo</a> themes <a href="https://themes.gohugo.io/themes/hugo-clarity/"  target="_blank" class="footer_link">Clarity</a>
+    </center>
+  </div>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPP84V2NHB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-MPP84V2NHB');
+  </script>
+
+</footer>
+
+  
+  
+</body>
+
+</html>

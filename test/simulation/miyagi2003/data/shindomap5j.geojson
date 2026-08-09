@@ -1,0 +1,1 @@
+var shindomap5j={"type":"FeatureCollection","features":[{"type":"Feature","properties":{"time":"2003/07/26 10:22:25","place":"宮城県北部","deep":"13 km","magnitude":5.1,"shindo":"震度５弱"},"geometry":{"type":"Point","coordinates":[141.1522222,38.45083333]}}]};

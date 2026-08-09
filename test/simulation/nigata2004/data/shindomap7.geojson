@@ -1,0 +1,23 @@
+const shindomap7 = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "17:56:00",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "6.8",
+        "shindo": "震度７"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.867,
+          37.292
+        ]
+      }
+    }
+  ]
+};

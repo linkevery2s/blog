@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>風水害 on DP Note</title>
+    <link>https://dpnote.netlify.app/categories/%E9%A2%A8%E6%B0%B4%E5%AE%B3/</link>
+    <description>Recent content in 風水害 on DP Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 23 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dpnote.netlify.app/categories/%E9%A2%A8%E6%B0%B4%E5%AE%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>熱海市土砂災害を3Dにて可視化しました</title>
+      <link>https://dpnote.netlify.app/atami3d/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/atami3d/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市土砂災害を3Dにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/atami.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/atami.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;災害の概要&lt;/h2&gt;
+梅雨前線による大雨に伴い、2021年7月3日10時30分頃に静岡県熱海市伊豆山の逢初川で土石流が発生した。
+&lt;p&gt;逢初川の上流部 標高約390m地点で発生した崩壊が土石流化し、下流で甚大な被害が発生した。&lt;/p&gt;
+&lt;p&gt;熱海雨量観測所における降り始めからの総雨量は400ｍｍ以上を記録した。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;参考文献&lt;/h2&gt;
+・静岡県熱海市伊豆山で発生した土石流災害、国土交通省
+&lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
+&lt;p&gt;以下のデータを加工・編集して作成しました。&lt;/p&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://www.gsi.go.jp/BOUSAI/R3_0701_heavyrain.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;令和3年(2021年)7月1日からの大雨に関する情報&lt;/a&gt;、国土地理院
+&lt;/div&gt;
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>平成12年9月東海豪雨の可視化</title>
+      <link>https://dpnote.netlify.app/h12tokai/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/h12tokai/</guid>
+      <description>
+        
+          &lt;p&gt;平成12年9月東海豪雨を３Dに可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/h12tokai.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/h12tokai.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34; id=&#34;災害の概要&#34;&gt;災害の概要&lt;/h2&gt;
+&lt;p&gt;東海豪雨は、2000年（平成12年）9月11日〜12日にかけて、東海地方を中心に発生した記録的な集中豪雨災害です。&lt;/p&gt;
+&lt;p&gt;秋雨前線が日本列島上に停滞するところへ、台風14号からの暖かく湿った空気が流れ込んだことにより、東海地方に極めて強い雨が降り続きました。&lt;/p&gt;
+&lt;p&gt;名古屋では48時間総雨量が567mmに達する観測史上まれな豪雨となり、都市部を流れる庄内川や新川では堤防の決壊・越水による広範囲の浸水が発生しました。&lt;/p&gt;
+&lt;p&gt;これにより都市機能が麻痺し、甚大な被害をもたらしました。（都市型洪水災害の典型例）&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34; id=&#34;被害の規模&#34;&gt;被害の規模&lt;/h2&gt;
+&lt;p&gt;浸水被害：&lt;/p&gt;
+&lt;p&gt;内川水系新川では堤防決壊等により、愛知県を中心に約6万棟を超える住宅が浸水しました。損害保険の支払見込額は1,000億円を超え、史上4番目の大規模浸水被害となりました。&lt;/p&gt;
+&lt;p&gt;人的被害：&lt;/p&gt;
+&lt;p&gt;被災地域全体で約10名程度の死亡者が報告されています。（※地域・資料により数値が若干異なる場合があります。）&lt;/p&gt;
+&lt;p&gt;避難・勧告：&lt;/p&gt;
+&lt;p&gt;約580,000人に避難勧告等が出され、多くの住民が避難所生活を余儀なくされました。&lt;/p&gt;
+&lt;p&gt;交通の被害：&lt;/p&gt;
+&lt;p&gt;東海地方では河川の氾濫や浸水により、道路・鉄道の運行にも大きな支障が出ました。&lt;/p&gt;
+&lt;p&gt;国道や県道など、多くの道路が冠水・土砂崩れで通行止めになり、広範囲で交通網が分断されました。&lt;/p&gt;
+&lt;p&gt;都市内の鉄道・バスなども一時的に影響があり、公共交通機関の運行が停止・遅延した地域が多数ありました。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34; id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
+&lt;p&gt;・大規模水害対策に関する専門調査会（第３回）、資料３「平成12年東海豪雨水害時の状況」、内閣府&lt;/p&gt;
+&lt;p&gt;・内閣府防災情報ページ「2000年（平成12年）東海豪雨」、内閣府&lt;/p&gt;
+&lt;p&gt;・東海豪雨 災害報告、名古屋地方気象台&lt;/p&gt;
+&lt;p&gt;・平成13年版防災白書、内閣府&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熱海市土砂災害３Dオブジェクトにて可視化</title>
+      <link>https://dpnote.netlify.app/atami3dglb/</link>
+      <pubDate>Wed, 02 Oct 2024 19:04:33 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/atami3dglb/</guid>
+      <description>
+        
+          &lt;p&gt;熱海市の土砂災害を３Dオブジェクトにて可視化しました。&lt;/p&gt;
+&lt;!-- Youtube --&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YA47mdkPYAs?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>能登半島豪雨の可視化</title>
+      <link>https://dpnote.netlify.app/noto3drain/</link>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/noto3drain/</guid>
+      <description>
+        
+          &lt;p&gt;令和6年（2024年）9月20日からの能登半島地方の豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/noto3drain/&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../../simulation/noto3drain/&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;オープンデータ&lt;/h2&gt;
+&lt;div class=&#34;link_div&#34;&gt;
+&lt;a href=&#34;https://www.gsi.go.jp/BOUSAI/R6_noto_heavyrain.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;令和6年（2024年）9月20日からの大雨に関する情報、国土地理院&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和6年7月東北地方の豪雨を3Dに可視化</title>
+      <link>https://dpnote.netlify.app/r67tohoku/</link>
+      <pubDate>Mon, 19 Aug 2024 15:32:57 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/r67tohoku/</guid>
+      <description>
+        
+          &lt;p&gt;令和6年7月に発生した東北地方の豪雨を3Dに可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/r67tohoku.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/r67tohoku.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>気象庁の降水ナウキャストを３Dにて可視化</title>
+      <link>https://dpnote.netlify.app/krader3d/</link>
+      <pubDate>Mon, 09 Jan 2023 16:15:17 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/krader3d/</guid>
+      <description>
+        
+          &lt;p&gt;気象庁の降水ナウキャストを３Dにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/krader3d.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;気象庁の雨雲レーダー(降水ナウキャスト)を3次元で可視化しました。航空写真と合わせて、より立体的に可視化できたと思います！&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和4年8月の大雨等による災害（村上市坂町周辺浸水推定図）</title>
+      <link>https://dpnote.netlify.app/heavyrain20220803/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/heavyrain20220803/</guid>
+      <description>
+        
+          &lt;p&gt;令和4年8月の大雨等による災害（村上市坂町周辺浸水推定図）を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/20220803heavyrain.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;令和4年8月の大雨等による災害（村上市坂町周辺浸水想定図）を可視化しました。２画面描写で、浸水想定と実際の浸水状況を比較できるようになっています。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>西日本豪雨を可視化しました</title>
+      <link>https://dpnote.netlify.app/nishinihonrain/</link>
+      <pubDate>Sun, 04 Sep 2022 11:52:12 +0900</pubDate>
+      
+      <guid>https://dpnote.netlify.app/nishinihonrain/</guid>
+      <description>
+        
+          &lt;p&gt;平成30年西日本豪雨を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/h30nishinihon.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/h30nishinihon.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和2年九州豪雨を可視化しました。</title>
+      <link>https://dpnote.netlify.app/r2kyusyu/</link>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/r2kyusyu/</guid>
+      <description>
+        
+          &lt;p&gt;令和2年7月に発生した九州豪雨を３Dマップにて可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../simulation/r2kyusyu.html&#34; width=&#34;100%&#34; height=&#34;550px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;a href=&#34;../simulation/r2kyusyu.html&#34; target=&#34;_blank&#34; class=&#34;linka&#34;&gt;全画面で見る&lt;/a&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>令和3年8月の大雨、六角川の浸水想定を可視化しました</title>
+      <link>https://dpnote.netlify.app/rokkaku/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/rokkaku/</guid>
+      <description>
+        
+          &lt;p&gt;令和3年8月豪雨、六角川の浸水想定を可視化しました。&lt;/p&gt;
+&lt;iframe src =&#34;../../simulation/202108heavyrain.html&#34; width=&#34;100%&#34; height=&#34;500px&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;令和3年8月豪雨 六角川の浸水想定を可視化しました。今回は、2画面連動地図を採用しました。標準地図、色別標高図、ハザードマップと比較することができます。スマホは横にしてご覧いただければと思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>熱海市土砂災害をマップ化しました</title>
+      <link>https://dpnote.netlify.app/atami/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpnote.netlify.app/atami/</guid>
+      <description>
+        
+          &lt;p&gt;令和3年7月に起きた熱海市土砂災害をマップ化しました。&lt;/p&gt;
+&lt;h2 class=&#34;heading1&#34;&gt;つぶやき&lt;/h2&gt;
+&lt;div class=&#34;balloon&#34;&gt;
+  &lt;p&gt;
+&lt;p&gt;「熱海市土砂災害をマップ化」&lt;/p&gt;
+&lt;p&gt;国土地理院のデータを使用。様々な角度から災害を捉えました。右上ボタンから表示・非表示の切替えが可能です。&lt;/p&gt;
+&lt;p&gt;山鳴りがする・川に流木がまざり始める等、「ん？何か変だぞ？」と感じ取れるかどうかが避難の行動に繋がると思います。&lt;/p&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

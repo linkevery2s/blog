@@ -1,0 +1,8321 @@
+const shindomap1 = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "18:22:55",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.947,
+          37.403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "18:26:49",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.843,
+          37.217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "18:44:05",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.867,
+          37.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "18:52:29",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "3.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.865,
+          37.267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "18:59:18",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.84,
+          37.357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "19:03:06",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.88,
+          37.197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "19:14:18",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.942,
+          37.338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "19:26:00",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.982,
+          37.338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "19:58:30",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "20:01:15",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.978,
+          37.377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "20:03:25",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "3.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.967,
+          37.383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "20:08:35",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.01,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "20:24:19",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.83,
+          37.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "20:32:17",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "20:33:05",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.968,
+          37.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "20:36:12",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.018,
+          37.372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "20:56:57",
+        "place": "新潟県中越地方",
+        "depth": "19 km",
+        "magnitude": "3.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.792,
+          37.243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:02:11",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.953,
+          37.365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:16:21",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.99,
+          37.337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:17:07",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.995,
+          37.327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:18:25",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.98,
+          37.403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:22:23",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.832,
+          37.293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:25:10",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.832,
+          37.245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:30:48",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.96,
+          37.277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:35:02",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.967,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:37:10",
+        "place": "新潟県中越地方",
+        "depth": "19 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.963,
+          37.327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:40:17",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.877,
+          37.265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:41:54",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.873,
+          37.237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:42:59",
+        "place": "新潟県中越地方",
+        "depth": "18 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.862,
+          37.313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:52:15",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.845,
+          37.353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:55:37",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.938,
+          37.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:58:10",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.815,
+          37.227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "21:59:24",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.898,
+          37.345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:02:30",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:07:10",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.998,
+          37.393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:11:36",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.973,
+          37.372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:12:56",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.865,
+          37.247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:15:41",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.823,
+          37.212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:20:28",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:23:40",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.835,
+          37.367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:25:17",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.93,
+          37.275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:32:32",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.882,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:47:43",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.89,
+          37.297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:48:32",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.888,
+          37.337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:55:38",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.813,
+          37.158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "22:57:11",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.89,
+          37.228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:06:19",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.92,
+          37.423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:11:33",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9,
+          37.303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:14:09",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.855,
+          37.168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:19:54",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.815,
+          37.202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:22:19",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:24:48",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.947,
+          37.357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:29:33",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:33:32",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.873,
+          37.325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:41:51",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.897,
+          37.313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:43:41",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.812,
+          37.223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:47:56",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.82,
+          37.237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/23",
+        "timeline": "23:52:19",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.852,
+          37.252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:08:29",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.935,
+          37.272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:11:43",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.882,
+          37.24
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:18:40",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.805,
+          37.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:19:45",
+        "place": "新潟県中越地方",
+        "depth": "4 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.97,
+          37.417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:21:09",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.817,
+          37.242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:29:10",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.918,
+          37.275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:29:42",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.898,
+          37.322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:36:25",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.872,
+          37.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:38:21",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.843,
+          37.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:51:04",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.888,
+          37.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "0:58:57",
+        "place": "新潟県中越地方",
+        "depth": "18 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.928,
+          37.407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:04:59",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.997,
+          37.428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:06:29",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.925,
+          37.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:07:14",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.868,
+          37.312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:10:29",
+        "place": "新潟県中越地方",
+        "depth": "19 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.877,
+          37.402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:15:44",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.837,
+          37.228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:15:51",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.915,
+          37.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:22:01",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:46:31",
+        "place": "新潟県中越地方",
+        "depth": "19 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:55:14",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "1:58:36",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.827,
+          37.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "2:01:33",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.955,
+          37.302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "2:08:49",
+        "place": "新潟県中越地方",
+        "depth": "19 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.922,
+          37.372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "2:20:06",
+        "place": "新潟県中越地方",
+        "depth": "18 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9,
+          37.275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "2:27:01",
+        "place": "新潟県中越地方",
+        "depth": "20 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.915,
+          37.307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "2:49:16",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.997,
+          37.367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "2:51:55",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.902,
+          37.323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "2:53:52",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.927,
+          37.378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "3:09:26",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.965,
+          37.298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "3:14:42",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.898,
+          37.233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "3:15:28",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.928,
+          37.383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "3:18:34",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.88,
+          37.288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "3:56:27",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.927,
+          37.263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "4:07:52",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.948,
+          37.272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "4:13:50",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.957,
+          37.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "4:47:48",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.842,
+          37.192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "5:40:04",
+        "place": "新潟県中越地方",
+        "depth": "19 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.867,
+          37.322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "6:52:18",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.998,
+          37.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "7:14:18",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.948,
+          37.333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "7:43:15",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "9:17:59",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.013,
+          37.375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "10:09:08",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.918,
+          37.217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "10:14:58",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.977,
+          37.295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "10:47:41",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.003,
+          37.358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "10:52:53",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "11:16:14",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.952,
+          37.18
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "11:36:15",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.878,
+          37.282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "11:47:56",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.93,
+          37.24
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "11:58:20",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.838,
+          37.238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "12:01:32",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.842,
+          37.237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "12:07:03",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.903,
+          37.317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "12:27:23",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.912,
+          37.312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "12:39:25",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.902,
+          37.233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "12:42:59",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.975,
+          37.295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "13:08:27",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0,
+          37.407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "13:09:45",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.912,
+          37.273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "13:11:33",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.912,
+          37.247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "13:29:59",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.912,
+          37.308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "13:40:33",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.925,
+          37.408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "14:04:05",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.932,
+          37.292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "14:28:33",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.917,
+          37.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "14:32:32",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.85,
+          37.258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "14:41:11",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.21
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "15:02:42",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "15:13:40",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.97,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "15:48:51",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.842,
+          37.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "16:08:13",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.987,
+          37.322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "16:40:46",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9,
+          37.228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "17:13:16",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.902,
+          37.225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "17:48:20",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.865,
+          37.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "18:00:39",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.843,
+          37.203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "18:04:25",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.983,
+          37.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "18:12:25",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.948,
+          37.298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "18:24:13",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.955,
+          37.267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "18:29:45",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "1.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "19:39:04",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.753,
+          37.172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "19:53:14",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.825,
+          37.237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "20:07:29",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.932,
+          37.365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "20:11:52",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.968,
+          37.345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "20:20:15",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.958,
+          37.343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "20:36:22",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.858,
+          37.282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "21:01:49",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "22:20:06",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.907,
+          37.317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "23:23:35",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.998,
+          37.333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/24",
+        "timeline": "23:51:24",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.817,
+          37.283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "0:13:14",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.852,
+          37.238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "0:23:53",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.853,
+          37.243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "0:59:10",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.857,
+          37.272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "1:12:13",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "1:13:11",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.843,
+          37.258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "1:20:56",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9,
+          37.215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "1:40:25",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "1:49:13",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.888,
+          37.252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "1:57:26",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.96,
+          37.275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "2:38:56",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.952,
+          37.252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "2:44:06",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.915,
+          37.252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "2:46:18",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.828,
+          37.302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "2:53:12",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.89,
+          37.343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "3:33:24",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.828,
+          37.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "3:58:38",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.903,
+          37.283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "5:01:21",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.845,
+          37.198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "5:21:21",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.955,
+          37.277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "5:38:45",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.76,
+          37.162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "5:58:59",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.86,
+          37.278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "6:00:15",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.995,
+          37.333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "6:11:47",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.99,
+          37.357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "6:24:36",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.93,
+          37.298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "6:39:07",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.877,
+          37.307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "6:48:42",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.83,
+          37.238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "6:55:59",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "8:11:45",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.918,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "8:50:27",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.957,
+          37.303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "9:38:48",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.833,
+          37.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "9:43:32",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "1.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "9:58:17",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.968,
+          37.298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "10:01:51",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.913,
+          37.272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "10:15:49",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.83,
+          37.228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "10:47:35",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.96,
+          37.248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "10:57:20",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.928,
+          37.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "11:07:47",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.01,
+          37.332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "11:10:42",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.912,
+          37.24
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "11:31:55",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.982,
+          37.317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "12:18:43",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.885,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "12:24:57",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.83,
+          37.205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "13:17:11",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.827,
+          37.205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "13:32:49",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "13:44:32",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.873,
+          37.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "14:14:55",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "14:31:02",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.97,
+          37.308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "14:36:20",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.897,
+          37.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "15:08:47",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "15:44:24",
+        "place": "新潟県中越地方",
+        "depth": "18 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9,
+          37.39
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "18:16:02",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.837,
+          37.213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "18:29:08",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.907,
+          37.223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "18:55:37",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.918,
+          37.072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "18:58:36",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.827,
+          37.228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/25",
+        "timeline": "20:01:42",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.86,
+          37.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "0:21:59",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "0:48:26",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.907,
+          37.312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "1:34:48",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.95,
+          37.272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "2:06:07",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "1.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.883,
+          37.308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "4:18:59",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.907,
+          37.24
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "4:35:06",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.835,
+          37.223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "5:29:49",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.852,
+          37.227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "6:58:44",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "7:09:55",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.925,
+          37.243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "9:16:11",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.927,
+          37.247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "9:45:17",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.858,
+          37.293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "9:55:49",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.832,
+          37.162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "10:08:34",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.94,
+          37.255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "10:22:11",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.945,
+          37.258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "13:07:35",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.805,
+          37.157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "16:08:05",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.86,
+          37.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "16:19:04",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.837,
+          37.24
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "17:43:18",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.925,
+          37.427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "19:20:04",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.997,
+          37.348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "20:27:30",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.913,
+          37.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "20:30:29",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.868,
+          37.26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "21:20:27",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.855,
+          37.355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "21:28:07",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.917,
+          37.433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/26",
+        "timeline": "21:38:14",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "0:59:54",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.833,
+          37.197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "1:23:51",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.958,
+          37.305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "2:47:01",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.917,
+          37.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "4:53:58",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.848,
+          37.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "7:17:22",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.895,
+          37.387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "10:49:59",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.985,
+          37.277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "10:50:45",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.005,
+          37.268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "11:07:11",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.017,
+          37.267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "12:55:50",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.887,
+          37.397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "13:38:36",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.898,
+          37.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "14:58:16",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.967,
+          37.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "15:06:59",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.008,
+          37.275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "15:17:52",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.835,
+          37.203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "15:26:48",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9,
+          37.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "16:01:22",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.945,
+          37.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "18:10:56",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.968,
+          37.288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "19:14:24",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.943,
+          37.268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "19:27:29",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.915,
+          37.245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "20:26:18",
+        "place": "新潟県中越地方",
+        "depth": "1 km",
+        "magnitude": "1.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.907,
+          37.41
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "21:10:58",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.875,
+          37.237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "22:54:46",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9,
+          37.237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/27",
+        "timeline": "23:36:48",
+        "place": "新潟県中越地方",
+        "depth": "1 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.98,
+          37.348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "0:49:03",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.888,
+          37.397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "1:28:05",
+        "place": "新潟県中越地方",
+        "depth": "4 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "1:55:53",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.917,
+          37.312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "2:40:10",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.828,
+          37.17
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "4:17:39",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "4:31:16",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.865,
+          37.285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "5:42:59",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.847,
+          37.257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "6:01:52",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.82,
+          37.205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "7:00:09",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.942,
+          37.328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "8:56:45",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.845,
+          37.26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "10:05:28",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.902,
+          37.39
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "12:05:00",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.963,
+          37.292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "14:34:16",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.963,
+          37.282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "17:20:52",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.862,
+          37.273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "17:58:51",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.97,
+          37.298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "18:03:42",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.873,
+          37.393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "18:15:12",
+        "place": "新潟県中越地方",
+        "depth": "6 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.877,
+          37.398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "20:34:27",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.022,
+          37.277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "22:13:57",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.898,
+          37.245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/28",
+        "timeline": "23:55:40",
+        "place": "新潟県中越地方",
+        "depth": "4 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.89,
+          37.407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/29",
+        "timeline": "1:16:15",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.863,
+          37.363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/29",
+        "timeline": "1:27:23",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.83,
+          37.19
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/29",
+        "timeline": "5:13:27",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.922,
+          37.352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/29",
+        "timeline": "7:28:48",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.997,
+          37.347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/29",
+        "timeline": "12:39:16",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.932,
+          37.268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/29",
+        "timeline": "15:40:53",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.882,
+          37.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/29",
+        "timeline": "19:04:28",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.957,
+          37.292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/29",
+        "timeline": "23:03:50",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "0:20:59",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.927,
+          37.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "0:48:50",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.018,
+          37.383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "3:39:08",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.902,
+          37.262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "4:01:51",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.86,
+          37.275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "10:22:52",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.712,
+          37.255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "12:01:34",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.985,
+          37.258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "13:14:08",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.868,
+          37.297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "14:01:16",
+        "place": "新潟県中越地方",
+        "depth": "6 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.863,
+          37.432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "14:51:30",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.957,
+          37.278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "19:25:25",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.91,
+          37.233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/30",
+        "timeline": "20:16:38",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.997,
+          37.368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "0:39:50",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.927,
+          37.258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "2:33:29",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.865,
+          37.263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "2:48:58",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.865,
+          37.265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "6:04:56",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.78,
+          37.233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "7:04:32",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "7:42:49",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.848,
+          37.237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "9:09:20",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.98,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "12:54:59",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "13:35:09",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.855,
+          37.363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "15:14:02",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.89,
+          37.305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "16:12:53",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.82,
+          37.308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "16:59:56",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.972,
+          37.378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "18:15:13",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.892,
+          37.308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/10/31",
+        "timeline": "22:19:00",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.872,
+          37.288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "0:34:04",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.958,
+          37.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "1:45:21",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.808,
+          37.19
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "4:43:24",
+        "place": "新潟県中越地方",
+        "depth": "1 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.02,
+          37.382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "5:08:58",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "6:12:05",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.912,
+          37.225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "7:04:16",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.895,
+          37.213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "9:39:42",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.693,
+          37.062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "9:55:33",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.917,
+          37.227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "17:16:03",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.998,
+          37.383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "17:20:38",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.925,
+          37.258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "20:56:20",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.84,
+          37.228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/01",
+        "timeline": "23:37:28",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.89,
+          37.385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "2:32:01",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.902,
+          37.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "6:52:40",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "7:14:24",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.837,
+          37.218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "9:05:39",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.837,
+          37.232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "11:52:34",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.882,
+          37.365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "15:12:01",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.923,
+          37.243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "20:10:38",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.985,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "23:32:18",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.82,
+          37.212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/02",
+        "timeline": "23:39:46",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.075,
+          37.53
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "0:31:37",
+        "place": "新潟県中越地方",
+        "depth": "17 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.852,
+          37.338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "7:32:48",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.84,
+          37.19
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "8:56:16",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.908,
+          37.248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "9:51:45",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.91,
+          37.392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "9:56:52",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.752,
+          36.997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "10:49:46",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.86,
+          37.447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "13:23:37",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.953,
+          37.275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "14:15:22",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.847,
+          37.417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "22:51:56",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.867,
+          37.292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/03",
+        "timeline": "23:10:24",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.953,
+          37.277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/04",
+        "timeline": "8:32:18",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.912,
+          37.223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/04",
+        "timeline": "9:09:02",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/04",
+        "timeline": "11:21:25",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.91,
+          37.422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/04",
+        "timeline": "13:31:21",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.075,
+          37.528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/04",
+        "timeline": "19:44:35",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.813,
+          37.273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/05",
+        "timeline": "6:00:42",
+        "place": "新潟県中越地方",
+        "depth": "6 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.885,
+          37.208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/05",
+        "timeline": "10:53:37",
+        "place": "新潟県中越地方",
+        "depth": "19 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.942,
+          37.435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/05",
+        "timeline": "12:05:46",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.872,
+          37.36
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/05",
+        "timeline": "22:49:24",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.002,
+          37.365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/06",
+        "timeline": "4:54:07",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.007,
+          37.368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/06",
+        "timeline": "15:04:31",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.008,
+          37.362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/06",
+        "timeline": "16:03:01",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.752,
+          37.17
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/06",
+        "timeline": "18:43:00",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.708,
+          37.282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/06",
+        "timeline": "22:11:46",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.957,
+          37.267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/07",
+        "timeline": "0:11:02",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.737,
+          37.155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/07",
+        "timeline": "3:24:01",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.002,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/07",
+        "timeline": "5:48:44",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.912,
+          37.218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/07",
+        "timeline": "13:25:44",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.825,
+          37.223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/07",
+        "timeline": "14:57:48",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.943,
+          37.323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/07",
+        "timeline": "20:05:32",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.947,
+          37.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/07",
+        "timeline": "21:48:37",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.897,
+          37.307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "10:22:18",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.942,
+          37.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "11:23:53",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.998,
+          37.37
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "11:35:54",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "3.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.985,
+          37.392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "11:40:30",
+        "place": "新潟県中越地方",
+        "depth": "1 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.017,
+          37.387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "11:56:15",
+        "place": "新潟県中越地方",
+        "depth": "4 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.047,
+          37.385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "12:30:45",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.032,
+          37.388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "12:41:10",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.027,
+          37.375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "13:03:28",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.013,
+          37.392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "14:52:29",
+        "place": "新潟県中越地方",
+        "depth": "6 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.015,
+          37.397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "19:17:38",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.023,
+          37.395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/08",
+        "timeline": "21:45:03",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.042,
+          37.378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "0:10:48",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.013,
+          37.392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "0:43:34",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.832,
+          37.218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "5:10:33",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.873,
+          37.19
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "5:34:13",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.003,
+          37.365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "5:36:59",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.01,
+          37.355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "11:19:49",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.017,
+          37.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "14:48:37",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.922,
+          37.333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "19:26:29",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.838,
+          37.242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "19:29:20",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.903,
+          37.307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "23:20:10",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/09",
+        "timeline": "23:48:04",
+        "place": "新潟県上越地方",
+        "depth": "14 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.293,
+          37.035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/10",
+        "timeline": "0:50:06",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.71,
+          37.182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/10",
+        "timeline": "4:48:53",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.005,
+          37.358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/10",
+        "timeline": "6:16:21",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0,
+          37.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/10",
+        "timeline": "6:57:52",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.77,
+          37.232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/10",
+        "timeline": "10:48:13",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.913,
+          37.292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/10",
+        "timeline": "15:10:57",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.992,
+          37.362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/10",
+        "timeline": "15:15:27",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.952,
+          37.395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/11",
+        "timeline": "2:44:02",
+        "place": "新潟県中越地方",
+        "depth": "4 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.995,
+          37.355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/11",
+        "timeline": "10:09:54",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.827,
+          37.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/11",
+        "timeline": "14:15:56",
+        "place": "新潟県中越地方",
+        "depth": "6 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.983,
+          37.393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/12",
+        "timeline": "2:45:52",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.935,
+          37.235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/12",
+        "timeline": "21:10:40",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.888,
+          37.277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/13",
+        "timeline": "0:03:46",
+        "place": "新潟県中越地方",
+        "depth": "4 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.013,
+          37.395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/13",
+        "timeline": "3:42:02",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.832,
+          37.238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/13",
+        "timeline": "15:42:20",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.795,
+          37.16
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/13",
+        "timeline": "15:54:43",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.807,
+          37.17
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/13",
+        "timeline": "19:47:27",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.795,
+          37.163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/14",
+        "timeline": "1:37:45",
+        "place": "新潟県中越地方",
+        "depth": "15 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9,
+          37.297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/14",
+        "timeline": "4:09:04",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.893,
+          37.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/14",
+        "timeline": "19:55:04",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.878,
+          37.373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/14",
+        "timeline": "22:53:49",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.013,
+          37.415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/14",
+        "timeline": "23:05:34",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.923,
+          37.355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/15",
+        "timeline": "13:26:01",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.943,
+          37.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/15",
+        "timeline": "20:35:59",
+        "place": "新潟県中越地方",
+        "depth": "6 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.82,
+          37.118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/15",
+        "timeline": "21:22:50",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.905,
+          37.225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/16",
+        "timeline": "4:54:50",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.923,
+          37.268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/16",
+        "timeline": "8:39:56",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.855,
+          37.363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/17",
+        "timeline": "8:43:27",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.765,
+          37.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/17",
+        "timeline": "8:45:39",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.085,
+          37.523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/17",
+        "timeline": "20:14:21",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.868,
+          37.268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/17",
+        "timeline": "21:14:20",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.078,
+          37.522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/17",
+        "timeline": "21:39:00",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.082,
+          37.525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/18",
+        "timeline": "2:04:35",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.79,
+          37.165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/18",
+        "timeline": "21:03:58",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/19",
+        "timeline": "0:26:06",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.858,
+          37.472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/19",
+        "timeline": "0:49:42",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.852,
+          37.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/19",
+        "timeline": "0:57:12",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.86,
+          37.398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/19",
+        "timeline": "8:30:54",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.932,
+          37.363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/19",
+        "timeline": "8:57:50",
+        "place": "新潟県中越地方",
+        "depth": "16 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.707,
+          37.12
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/19",
+        "timeline": "21:28:42",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.85,
+          37.238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/20",
+        "timeline": "9:40:37",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.925,
+          37.252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/20",
+        "timeline": "10:12:19",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.845,
+          37.232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/20",
+        "timeline": "12:19:42",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.833,
+          37.217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/20",
+        "timeline": "23:04:57",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.945,
+          37.405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/21",
+        "timeline": "13:50:58",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.72,
+          37.192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/21",
+        "timeline": "17:06:42",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.082,
+          37.52
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/22",
+        "timeline": "2:07:34",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.888,
+          37.29
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/24",
+        "timeline": "5:11:18",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.835,
+          37.235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/24",
+        "timeline": "12:47:35",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.838,
+          37.223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/24",
+        "timeline": "18:40:45",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "3.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.83,
+          37.19
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/25",
+        "timeline": "7:07:27",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.942,
+          37.403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/25",
+        "timeline": "11:02:46",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.958,
+          37.283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/26",
+        "timeline": "7:15:39",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.953,
+          37.288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/26",
+        "timeline": "11:33:42",
+        "place": "新潟県中越地方",
+        "depth": "3 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0,
+          37.37
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/26",
+        "timeline": "18:22:39",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.832,
+          37.218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/26",
+        "timeline": "22:20:54",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.83,
+          37.218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/27",
+        "timeline": "14:23:49",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.888,
+          37.398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/27",
+        "timeline": "23:57:43",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.852,
+          37.27
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/28",
+        "timeline": "2:14:25",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.825,
+          37.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/29",
+        "timeline": "7:27:34",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.71,
+          37.272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/11/29",
+        "timeline": "8:03:25",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.843,
+          37.242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/01",
+        "timeline": "1:42:28",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.81,
+          37.18
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/01",
+        "timeline": "8:25:32",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.002,
+          37.355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/02",
+        "timeline": "14:45:51",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.5",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.823,
+          37.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/02",
+        "timeline": "20:38:05",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.898,
+          37.385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/04",
+        "timeline": "9:02:15",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.955,
+          37.343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/04",
+        "timeline": "10:51:35",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.98,
+          37.268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/04",
+        "timeline": "16:56:16",
+        "place": "新潟県中越地方",
+        "depth": "1 km",
+        "magnitude": "3.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.002,
+          37.377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/05",
+        "timeline": "2:17:38",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.878,
+          37.202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/05",
+        "timeline": "3:04:02",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.955,
+          37.343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/05",
+        "timeline": "9:47:04",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.82,
+          37.175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/06",
+        "timeline": "1:23:02",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.943,
+          37.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/06",
+        "timeline": "6:49:17",
+        "place": "新潟県中越地方",
+        "depth": "6 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.84,
+          37.202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/09",
+        "timeline": "10:39:07",
+        "place": "新潟県中越地方",
+        "depth": "2 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.983,
+          37.352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/09",
+        "timeline": "21:38:45",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.833,
+          37.207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/11",
+        "timeline": "2:12:28",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.832,
+          37.228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/12",
+        "timeline": "5:39:11",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.882,
+          37.198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/17",
+        "timeline": "1:43:53",
+        "place": "新潟県中越地方",
+        "depth": "5 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.895,
+          37.41
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/19",
+        "timeline": "17:58:57",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.843,
+          37.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/19",
+        "timeline": "22:34:08",
+        "place": "新潟県中越地方",
+        "depth": "12 km",
+        "magnitude": "2.1",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.86,
+          37.275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/19",
+        "timeline": "22:39:29",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.832,
+          37.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/20",
+        "timeline": "2:19:55",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "3.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.827,
+          37.197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/20",
+        "timeline": "7:17:43",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.742,
+          37.152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/20",
+        "timeline": "12:35:33",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "1.9",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.845,
+          37.257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/20",
+        "timeline": "14:13:21",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.842,
+          37.242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/21",
+        "timeline": "4:07:11",
+        "place": "新潟県中越地方",
+        "depth": "8 km",
+        "magnitude": "2.3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.873,
+          37.375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/21",
+        "timeline": "21:51:21",
+        "place": "新潟県中越地方",
+        "depth": "10 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.993,
+          37.313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/22",
+        "timeline": "4:15:16",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "3",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.887,
+          37.335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/23",
+        "timeline": "5:10:33",
+        "place": "新潟県中越地方",
+        "depth": "0 km",
+        "magnitude": "2.6",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.99,
+          37.347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/27",
+        "timeline": "12:37:42",
+        "place": "新潟県中越地方",
+        "depth": "9 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.83,
+          37.212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/28",
+        "timeline": "1:51:19",
+        "place": "新潟県中越地方",
+        "depth": "13 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.793,
+          37.26
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/29",
+        "timeline": "20:19:37",
+        "place": "新潟県中越地方",
+        "depth": "7 km",
+        "magnitude": "2.4",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.843,
+          37.21
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/30",
+        "timeline": "6:25:28",
+        "place": "新潟県中越地方",
+        "depth": "11 km",
+        "magnitude": "1.7",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.752,
+          37.278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2004/12/31",
+        "timeline": "18:34:32",
+        "place": "新潟県中越地方",
+        "depth": "14 km",
+        "magnitude": "2.8",
+        "shindo": "震度１"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.933,
+          37.298
+        ]
+      }
+    }
+  ]
+};
