@@ -59,9 +59,11 @@
 			const map = L.map('map', {
 				center: [34.624, 135.341],
 				maxZoom: 14,
-				minZoom: 4,
+				minZoom: 3,
 				zoomControl: false,
-				zoom: 6,
+				zoom: 4,
+				zoomSnap: 2,
+				zoomDelta: 2,
 				layers: [tiri, ame_layer]
 			});
 
@@ -70,11 +72,12 @@
 			}).addTo(map);
 
 
-			let reload = () =>{
+			/*let reload = () =>{
 				location.href = "./krader.html";
 			}
 
 			let reload_button = L.easyButton('fa-arrow-rotate-left', function () { reload(); }, { position: 'topright' }).addTo(map);
+			*/
 
 		}
 	</script>
